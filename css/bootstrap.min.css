@@ -170,7 +170,7 @@ sup {
 }
 
 a {
-    color: #007bff;
+    color: var(--themeColor);
     text-decoration: none;
     background-color: transparent
 }
