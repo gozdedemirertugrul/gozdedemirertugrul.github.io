@@ -319,7 +319,7 @@
                     </p>
                     </p>
 
-                    <p>
+                    <p><br>
                     <div style="text-align: center;">
                         <img width="65%" height="65%"
                             src="../../images/blogs/git_gitflow_github_kavramlari_ve_bazi_git_komutlari/02.jfif"
@@ -330,12 +330,12 @@
                         Git’e biraz hakimim, duruma özel kullanabileceğim komutu arıyorum diyorsan aşağıdaki
                         adrese direk göz atabilirsin.<br>
                         <a href="https://gitexplorer.com/">Git Explorer</a>
-                    </p>
+                    </p><br>
                     <div style="text-align: center;">
                         <img width="65%" height="65%"
                             src="../../images/blogs/git_gitflow_github_kavramlari_ve_bazi_git_komutlari/03.png"
                             class="img-fluid" />
-                    </div>
+                    </div><br>
                     </p><br><br>
 
                     <p>
@@ -397,7 +397,7 @@
                         olduğunuz proje dosyalarını Github kod deponuza gönderebilirsiniz. Bu komut ikisi
                         arasında bağ oluşturduktan sonra kontrol etmek amacıyla kullanılabilir.
                     </p>
-                    </p><br><br>
+                    </p><br>
 
                     <!-- Branch Kısmı-->
                     <div>
@@ -407,7 +407,7 @@
                         <p>git branch -a / git branch: Tüm uzak ve yerel branch’ları listelemek için kullanılır.</p>
                         <p>git branch -r: İlişkili, kullandığımız brach’ı döndürür.</p>
                         <p>git branch -d “branch_name”: Branch silmek için kullanılır.</p>
-                    </div><br><br>
+                    </div><br>
 
                     <!-- Checkout Kısmı-->
                     <div>
@@ -417,7 +417,7 @@
                             kullanılır.</p>
                         <p>git checkout “commit_ID” : Commitler arası geçiş yapmak için kullanılır. (Eski bir versiyona
                             dönmek istediğimiz zaman)</p>
-                    </div><br><br>
+                    </div><br>
 
                     <!-- Merge Kısmı-->
                     <div>
@@ -429,7 +429,7 @@
                             Bunun gibi oluşan durumlarda çakışan kısımların düzeltilmesi ve gözden
                             geçirilmesi gerekir. (release)
                         </p>
-                    </div><br><br>
+                    </div><br>
 
                     <!-- Status Kısmı-->
                     <div>
@@ -442,13 +442,13 @@
                         <p>Changes not staged for commit -> Üzerinde değişiklik yapılan ama staged ortamına
                             gönderilmemiş dosyaları ifade eder.</p>
                         <p>Untracked files -> Takibi yapılmayan dosyaları ifade eder.</p>
-                    </div><br><br>
+                    </div><br>
 
                     <div>
                         <p><b>git reflog:</b> Yerel bir deponun tarihçesini yani dal bünyesinde olup
                             bitenlerin listesini bizlere gösterir.</p>
                         <p><b>git log --graph:</b> Genel bilgilendirmeleri bir ağaç yapısı ile bize sunar.</p>
-                    </div><br><br>
+                    </div><br>
 
                     <!-- Push Kısmı-->
                     <div>
@@ -475,7 +475,7 @@
                         <p>git rm — cached “dosya ve klasor_name”: Git sistemine eklenmiş ve takip
                             edilen bir dosyayı, takip edilmez olarak işaretler.
                             Bu sayede bu dosyaya dair değişikliklerin takibi bırakılır.</p>
-                    </div><br><br>
+                    </div><br>
 
 
                     <div>
@@ -486,7 +486,7 @@
                             dosyaların depoya eklenmemesi gerekir, çünkü bu tür dosyalar
                             yapılandırma (build) işlemleri esnasında sürekli yeniden oluşturulurlar.
                         </p>
-                    </div><br><br>
+                    </div><br>
 
                     <div>
                         <p><b>git diff:</b> Repository üzerinde yapılan değişikliklerden sonra dosyalar
@@ -496,15 +496,15 @@
 
                         <p><b>git clean:</b> Clean komutu ile dizin içinde bulunan ve indexe henüz eklenmemiş
                             tüm değişiklikleri yok edebiliriz.</p>
-                        <p>git clean -n: Hangi dosyaların silineceğini görmemizi sağlar.</p>
-                        <p>git clean -f: Listelenen dosyaları siler.</p>
-                        <p>git clean -f “dizin_ismi/”: Dizin silmek için kullanılabilir.</p>
+                        <p><b>git clean -n:</b> Hangi dosyaların silineceğini görmemizi sağlar.</p>
+                        <p><b>git clean -f:</b> Listelenen dosyaları siler.</p>
+                        <p><b>git clean -f “dizin_ismi/”:</b> Dizin silmek için kullanılabilir.</p>
                         <p><b>git commit — amend:</b> Belirli önceden oluşturulmuş bir commit’e ek yapmak için
                             kullanılır.</p>
                         <p><b>git commit — amend -m “Bu yeni bir mesaj”:</b> Var olan commit’in açıklamasını değiştirmek
                             için kullanılır.</p>
 
-                        <br><br>
+                        <br>
                         <p><b>git revert “hash_degeri”:</b> Yanlışlıkla atılan commit’i nasıl geri alırız?</p>
                         <p>Geri almak istediğimiz commit’in HashID’sini git log ile bakarız.</p>
                         <p>Daha sonra git revert 165194161(HashID) yazarak atılmış olan commit’i geri alabiliriz.</p>
@@ -590,18 +590,13 @@
 
                     <div>
                         <h3>Kaynakça</h3>
-                        <ul>
-                            <li><a href="https://app.patika.dev/moduller/git/git-bash-ile-git-temel-komutlari">Git Bash
-                                    Komutları</a></li>
-                            <li><a href="https://app.patika.dev/moduller/ileri-seviye-git">İleri Seviye Git</a></li>
-                            <li><a
-                                    href="https://app.patika.dev/moduller/git/gitignore-dosyasi-ne-i̇se-yarar-nasil-kullaniriz">Git
-                                    İgnore Dosyası Ne İşe Yarar?</a></li>
-                            <li><a href="https://www.mobilhanem.com/git-tag-ile-commit-etiketleme/">Git Tag İle Commit
-                                    Etiketleme</a></li>
-                            <li><a href="https://developpaper.com/git-flow-workflow-summary/">Git Flow Workflow
-                                    Summary</a></li>
-                        </ul>
+                        <p>
+                            <a href="https://app.patika.dev/moduller/git/git-bash-ile-git-temel-komutlari">Git Bash Komutları</a><br>
+                            <a href="https://app.patika.dev/moduller/ileri-seviye-git">İleri Seviye Git</a></br>
+                            <a href="https://app.patika.dev/moduller/git/gitignore-dosyasi-ne-i̇se-yarar-nasil-kullaniriz">Git İgnore Dosyası Ne İşe Yarar?</a></br>
+                            <a href="https://www.mobilhanem.com/git-tag-ile-commit-etiketleme/">Git Tag İle Commit Etiketleme</a></br>
+                            <a href="https://developpaper.com/git-flow-workflow-summary/">Git Flow Workflow  Summary</a></br>
+                        </p>
                     </div>
                 </div>
             </div>
