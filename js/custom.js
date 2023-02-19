@@ -2,10 +2,27 @@
 
   "use strict";
 
+    window.onload = function(){
+      if(localStorage.getItem('dark-mode-state') == 1)
+      {
+        $('.color-mode-icon').toggleClass('active')
+        $('body').toggleClass('dark-mode')
+      }
+    }
+
     // COLOR MODE
     $('.color-mode').click(function(){
         $('.color-mode-icon').toggleClass('active')
         $('body').toggleClass('dark-mode')
+         
+        if(localStorage.getItem('dark-mode-state') != null)
+        {
+          var colorModeTemp = (localStorage.getItem('dark-mode-state') == 1) ? 0 : 1;
+          localStorage.setItem('dark-mode-state', colorModeTemp);
+        }
+        else{
+          localStorage.setItem('dark-mode-state', 1);
+        }
     })
 
     // HEADER
