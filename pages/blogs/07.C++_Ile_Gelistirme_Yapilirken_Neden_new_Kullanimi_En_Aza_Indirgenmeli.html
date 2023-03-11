@@ -148,10 +148,10 @@
                 Tarayıcınız video etiketini desteklemiyor.
               </video>
             </p>
-            <p>Örnek üzerinden gidecek olursak "lenght" değişkeni burada bir lokal değişken bu yüzden "Automatic Memory Allocation | Otomatik Bellek Ayırma" ile yönetiliyor. Dikkat edecek olursak programın başında tanımlanıyor ve alanın (scope) dışına çıkmasıyla birlikte belleğe iade ediliyor.
-              Bu örneği bellek üzerinden de kendiniz yazarak kolayca görebilirsiniz. Fakat new ile tanımladığımız "localstring" değişkeni için durum bu şekilde ilerlemiyor. Programın if şartı içerisinde yer alan "return" ifadesi birlikte sonlanmasıyla birlikte "delete[]" komutu asla çalışmıyor.
-              Bu sayede bir "Memory Leak" oluşuyor. Belleğin bir kısmında "hello" şeklinde verimiz kalmış oluyor. Bu durum şu an için korkutucu gözükmeyebilir. Fakat eğer bu parçacığı çok fazla çalıştırırsam? Bir süre zarfı sonrası belleğimde alan kalmayacak ve işletim sistemi üzerinden diğer programlar, 
-              süreçler hatalı davranmaya, belki de sonlanmaya başlayacaktır. Ayrıca kritik bir noktada bırakılan bu tip bir veri güvenlik ihlali de oluşturabilir.
+            <p>
+              Örnek üzerinden gidecek olursak yukarıdaki kod parçacağında görüldüğü üzere bir "MyClass" adıyla bir sınıf tanımlı, bu sınıftan bir nesne oluşturuyoruz ve "delete" işlemi gerçekleştirilmeden if şartı içerisinde yer alan return ile programı sonlandırıyoruz. Görüldüğü üzere "MyClass"
+              sınıfına ait "Destructor | Yıkıcı" herhangi bir şekilde çağrılmıyor. Son durumda tanımlamış olduğumuz class nesnesi halen bellekte yer almaya devam ediyor. Bu durum şu an için korkutucu gözükmeyebilir. Fakat eğer bu parçacığı çok fazla çalıştırırsam? Bir süre zarfı sonrası 
+              belleğimde alan kalmayacak ve işletim sistemi üzerinden diğer programlar, süreçler hatalı davranmaya, belki de sonlanmaya başlayacaktır. Ayrıca kritik bir noktada bırakılan bu tip bir veri güvenlik ihlali de oluşturabilir.
             </p>
             <p>
               <b>! C ve C++ bellek yönetimi için sizlere farklı yollar sunuyor fakat "Garbage Collector" bulunmayışıyla birlikte yönetimin tüm sorumluluğunu da size devrediyor.</b>
@@ -171,8 +171,7 @@
               </video>
             </p>
             <p>
-              Bu örnek üzerinden baktığımızda ise program return ettiğinde var olan değişken değeri için bellek alanı iade ediliyor. Bellek alanın içerisinde yer alan veri belleğe iade edildiği için tekrar kullanabilir hale geliyor, göreceğiniz üzere içerisindeki veri değişiyor.
-              Bu sayede ben pointer için "reset" çağrısını unutsam bile belirli bir scope dışına çıktığında smart pointer bu yanlışımı benim için düzeltiyor. Sonuç olarak performans ve güvenilirlik için ayrıca bir artı olarak hanemize yazılıyor.
+              Bu örnek üzerinden baktığımızda ise if şartı içerisinde program return ettiğinde var olan değişken değeri için bellek alanı iade ediliyor. Çünkü "Destructor | Yıkıcı" çağrısının gerçekleştiğini görüyoruz. Ayrıca nesnenin bellek adresi boşlatılarak yeniden kullanılmak üzere tahsis ediliyor.
             </p>
 
             <h3>Neden Smart Pointer?</h3>
@@ -188,7 +187,7 @@
               "New" deyimini kullanmaktan her zaman kaçınmak zorunda değilsiniz. Bazı durumlarda "new" kullanmak gerekebilir, özellikle yığın boyutuna oranla daha fazla veri almanız gerektiğinde veya new ifadesinin iadesini iyi yönetebileceğiniz durumlarda. 
               Ancak mümkün olduğunca "Smart Pointers | Akıllı İşaretçileri" kullanmanızı öneririm. "Smart Pointers | Akıllı İşaretçiler" bellek kaynaklarını daha iyi yönetmenize yardımcı olacak ve programınızın erken "return" etmesi veya bir exception durumu
               oluşması durumunda size yardımcı olacaktır. Sınıf yapıları oluştururken akıllık işaretçiler ayrıca çok kullanışlı olabilirler. Çünkü birden fazla akıllı işaretçi türü var. Bu işaretçileri işinize özgü kullanabilirsiniz. TheCherno kanalına ait 
-              "<a href="https://www.youtube.com/watch?v=UOB7-B2MfwA">SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr, std::weak_ptr)</a><br>" videosunu izleyerek daha fazla bilgi edinebilirsiniz.
+              "<a href="https://www.youtube.com/watch?v=UOB7-B2MfwA">SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr, std::weak_ptr)</a>" videosunu izleyerek daha fazla bilgi edinebilirsiniz.
             </p>
 
             <p>
