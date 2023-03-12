@@ -93,7 +93,7 @@
             yazılımlar için Linux(Core), Windows, Firefox, Adobe gibi örnekler verilebilir.
           </p>
           <p>
-            Ancak, bu özellikleri nedeniyle C++ diğer dillere göre daha karmaşık bir syntax yapısına sahip ve daha fazla düşük seviyeli donanım bilgisi gerektiren bir dildir. Performans ve verimlilik söz konusu olduğunda, <b>doğru şekilde yazılmış ve mimari olarak implemente 
+            Ancak bu özellikleri nedeniyle C++ diğer dillere göre daha karmaşık bir syntax yapısına sahip ve daha fazla düşük seviyeli donanım bilgisi gerektiren bir dildir. Performans ve verimlilik söz konusu olduğunda, <b>doğru şekilde yazılmış ve mimari olarak implemente 
             edilmiş bir C, C++ kodu</b> oldukça yararlı olabilir. Ancak bu konuda birçok noktaya dikkat edilmesi gerektiği için hataya daha fazla açık bir dil haline gelebilir. Şimdi genel bir bakış açısı sunduktan sonra konuyu daha da özelleştirebiliriz.
           </p>
           <h3>"New" Deyimini Kullandığımızda Neler Gerçekleşir?</h2>
@@ -110,7 +110,7 @@
                 </p>
                 <li><p><b>&emsp;-> Automatic Memory Allocation | Otomatik Bellek Ayırma</b></p></li>
                 <p>&emsp;&emsp;
-                  Lokal değişkenler ve fonksiyon/method tanımları, genellikle bir alanda başlatılır ve aynı alandan çıktıktan sonra bellekte iade edilir. Bu veriler <b>"Stack | Yığın"</b> olarak adlandırılan bir yapıda saklanır ve iadeleri de bu şekilde
+                  Lokal değişkenler ve fonksiyon/method tanımları genellikle bir alanda başlatılır ve aynı alandan çıktıktan sonra bellekte iade edilir. Bu veriler <b>"Stack | Yığın"</b> olarak adlandırılan bir yapıda saklanır ve iadeleri de bu şekilde
                   gerçekleştirilir. Bu bellek yönetim biçimi için daha güvenli olduğu düşüncesi hakimdir.
                 </p>
                 <li><p><b>&emsp;-> Dynamic Memory Allocation | Dinamik Bellek Ayırma</b></p></li>
@@ -131,7 +131,7 @@
               Şimdi bellek alanlarının tahsisinde gerçekleşen farklılıklarla birlikte performans ve güvenilirlik için oluşan durumlara göz atalım. Herhangi bir kod parçacağınız içerisinde yalnızca "new" deyimiyle çağrı yaptığınızda bellek üzerinden bir alan tahsisi
               gerçekleştirirsiniz, ayrıca bu alanın yönetimi ve idaresi (C, C++ gibi programlama dilleri için) sizlerin yönetimindedir. <b>Belleğe iadesi de öyle! Asla unutmamak gerekir. C ve C++ kaynak yönetimi için bir Garbage Collector'a sahip değildir.</b> Bu sebeple 
               kullanılmayan değişken ve değerleri otomatik olarak iade işlemi gerçekleştirmez, süreci yönetmez. Bunun sebebi ise yukarıda bahsetmiş olduğum eskiye dönük mimarisi, performans isteği gibi çeşitli sebeplerden kaynaklanmaktadır. Hatalı kullanım ile birlikte
-              bellek üzerinden tahsis ettiğiniz alanı iade etmememiz sonucunda "Memory Leak" adını verdiğimiz durum ile karşılaşabilir veya programınızı kullanılmayan bir hale getirebilirsiniz.
+              bellek üzerinden tahsis ettiğiniz alanı iade etmememiz sonucunda "Memory Leak" adını verdiğimiz durum ile karşılaşabilir veya programınızı kullanılamayan bir hale getirebilirsiniz.
               <div style="text-align: center;">
                 <img style="height: 40%; width: 40%;" src="../../images/blogs/C++_Ile_Gelistirme_Yap._Neden_new_En_Aza_Ind/Error.png" class="img-fluid" alt="Fail Case Robot">
               </div>
@@ -151,7 +151,8 @@
             <p>
               Örnek üzerinden gidecek olursak yukarıdaki kod parçacağında görüldüğü üzere bir "MyClass" adıyla bir sınıf tanımlı, bu sınıftan bir nesne oluşturuyoruz ve "delete" işlemi gerçekleştirilmeden if şartı içerisinde yer alan return ile programı sonlandırıyoruz. Görüldüğü üzere "MyClass"
               sınıfına ait "Destructor | Yıkıcı" herhangi bir şekilde çağrılmıyor. Son durumda tanımlamış olduğumuz class nesnesi halen bellekte yer almaya devam ediyor. Bu durum şu an için korkutucu gözükmeyebilir. Fakat eğer bu parçacığı çok fazla çalıştırırsam? Bir süre zarfı sonrasında 
-              belleğimde alan kalmayacak ve işletim sistemi üzerinden diğer programlar, süreçler hatalı davranmaya, belki de sonlanmaya başlayacaktır. Ayrıca kritik bir noktada bırakılan bu tip bir veri güvenlik ihlali de oluşturabilir.
+              belleğimde alan kalmayacak ve işletim sistemi üzerinden diğer programlar, süreçler hatalı davranmaya, belki de sonlanmaya başlayacaktır. Ayrıca kritik bir noktada bırakılan bu tip bir veri güvenlik ihlali de oluşturabilir. Örneğin bir kullanıcıya ait tanımlı bir veriyi bir class yapısından
+              oluşturdupğunuz obje yardımıyla tutuyorsunuz. Bu objeyi eğer doğru biçimde belleğe iade etmez veya içeriğini karartmazsanız bellek üzerinde okunabilir olarak kalacaktır.
             </p>
             <p>
               <b>! C ve C++ bellek yönetimi için sizlere farklı yollar sunuyor fakat "Garbage Collector" bulunmayışıyla birlikte yönetimin tüm sorumluluğunu da size devrediyor.</b>
@@ -184,12 +185,11 @@
 
             <h3>Sonuç</h3>
             <p>
-              "New" deyimini kullanmaktan her zaman kaçınmak zorunda değilsiniz. Bazı durumlarda "new" kullanmak gerekebilir, özellikle yığın boyutuna oranla daha fazla veri almanız gerektiğinde veya new ifadesinin iadesini iyi yönetebileceğiniz durumlarda. 
-              Ancak mümkün olduğunca "Smart Pointers | Akıllı İşaretçileri" kullanmanızı öneririm. "Smart Pointers | Akıllı İşaretçiler" bellek kaynaklarını daha iyi yönetmenize yardımcı olacak ve programınızın erken "return" etmesi veya bir exception durumu
-              oluşması durumunda size yardımcı olacaktır. Sınıf yapıları oluştururken akıllı işaretçiler ayrıca çok kullanışlı olabilirler. Çünkü birden fazla akıllı işaretçi türü var. Bu işaretçileri işinize özgü kullanabilirsiniz. TheCherno kanalına ait 
+              "New" deyimini kullanmaktan her zaman kaçınmak zorunda değilsiniz. Özellikle yığın boyutuna oranla daha fazla veri almanız gerektiğinde veya new ifadesinin iadesini iyi yönetebileceğiniz durumlarda "new" kullanabilirsiniz. 
+              Ancak mümkün olduğunca "Smart Pointers | Akıllı İşaretçileri" kullanmanız bellek kaynaklarını daha iyi yönetmenize yardımcı olarak programınızın erken "return" etmesi veya bir exception durumu
+              oluşması durumunda size yardımcı olacaktır. Sınıf yapıları oluştururken akıllı işaretçiler ayrıca çok kullanışlı olabilirler. Çünkü birden fazla akıllı işaretçi türü vardır. Bu işaretçileri işe ve duruma özgü kullanabilirsiniz. TheCherno kanalına ait 
               "<a href="https://www.youtube.com/watch?v=UOB7-B2MfwA">SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr, std::weak_ptr)</a>" videosunu izleyerek daha fazla bilgi edinebilirsiniz.
             </p>
-
             <p>
               <h3>Kaynakça</h3>
               <a href="https://stackoverflow.com/questions/6500313/why-should-c-programmers-minimize-use-of-new">Stackoverflow | Why should C++ programmers minimize use of 'new'?</a><br>
