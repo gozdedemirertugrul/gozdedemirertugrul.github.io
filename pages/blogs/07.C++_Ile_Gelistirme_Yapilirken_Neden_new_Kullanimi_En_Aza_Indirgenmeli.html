@@ -87,14 +87,14 @@
           <h2>C++ İle Geliştirme Yapılırken Neden "new" Kullanımı En Aza İndirgenmeli?</h2>
           <p><small>Mart 12, 2023</small></p>
           <p>
-            Merhaba, bugün C++ dilinde "new" kullanımının arkasında neler olduğuna dair bir bakış atacağız. C++ ve C, donanım tabanlı birçok amaç için kullanılabilen dillerdir ve bellek yönetimi konusunda biraz daha açık yazım yapısına sahiptirler. (pointer vb.)
-            Bu nedenle, geçmişten gelen düşük donanımları yönetmek için performansa dayalı bir teknoloji diline ihtiyaç duyulduğunda, C++ ve C tercih edilir. Bu diller, donanımın gücünü verimli bir şekilde kullanabilen kod parçaçcıkları oluşturma hedefi taşırlar. 
+            Merhaba, bugün C++ dilinde "new" kullanımının arkasında neler olduğuna dair bir bakış atacağız. C++ ve C donanım tabanlı birçok amaç için kullanılabilen dillerdir ve bellek yönetimi konusunda biraz daha açık yazım yapısına sahiptirler. (pointer vb.)
+            Bu nedenle, geçmişten gelen düşük donanımları yönetmek için performansa dayalı bir teknoloji diline ihtiyaç duyulduğunda C++ ve C tercih edilir. Bu diller donanımın gücünü verimli bir şekilde kullanabilen kod parçacıkları oluşturma hedefi taşırlar. 
             Bu nedenle, savunma sanayisi, oyun endüstrisi, otonom araç teknolojileri, işletim sistemleri, arama motorları, haberleşme gibi kilit alanlarda yaygın olarak kullanılmaktadırlar. Örnek vermek gerekirse aktif olarak C, C++ teknolojisi kullanan 
             yazılımlar için Linux(Core), Windows, Firefox, Adobe gibi örnekler verilebilir.
           </p>
           <p>
-            Ancak, bu özellikleri nedeniyle C++ diğer dillere göre daha karmaşık bir syntax'a ve daha fazla düşük seviyeli donanım bilgisi gerektiren bir dildir. Performans ve verimlilik söz konusu olduğunda, <b>doğru şekilde yazılmış ve mimari olarak implemente 
-            edilmiş bir C, C++ kodu</b> oldukça yararlı olabilir. Ancak, bu konuda birçok noktaya dikkat edilmesi gerektiği için, hataya daha fazla açık bir dil haline gelebilir. Şimdi, genel bir bakış açısı sunduktan sonra, konuyu daha da özelleştirebiliriz.
+            Ancak, bu özellikleri nedeniyle C++ diğer dillere göre daha karmaşık bir syntax yapısına sahip ve daha fazla düşük seviyeli donanım bilgisi gerektiren bir dildir. Performans ve verimlilik söz konusu olduğunda, <b>doğru şekilde yazılmış ve mimari olarak implemente 
+            edilmiş bir C, C++ kodu</b> oldukça yararlı olabilir. Ancak bu konuda birçok noktaya dikkat edilmesi gerektiği için hataya daha fazla açık bir dil haline gelebilir. Şimdi genel bir bakış açısı sunduktan sonra konuyu daha da özelleştirebiliriz.
           </p>
           <h3>"New" Deyimini Kullandığımızda Neler Gerçekleşir?</h2>
             <p>
