@@ -111,11 +111,11 @@
                 <li><p><b>&emsp;-> Automatic Memory Allocation | Otomatik Bellek Ayırma</b></p></li>
                 <p>&emsp;&emsp;
                   Lokal değişkenler ve fonksiyon/method tanımları, genellikle bir alanda başlatılır ve aynı alandan çıktıktan sonra bellekte iade edilir. Bu veriler <b>"Stack | Yığın"</b> olarak adlandırılan bir yapıda saklanır ve iadeleri de bu şekilde
-                  gerçekleştirilir. Bu bellek yönetimi biçimi daha güvenlidir.
+                  gerçekleştirilir. Bu bellek yönetim biçimi için daha güvenli olduğu düşüncesi hakimdir.
                 </p>
                 <li><p><b>&emsp;-> Dynamic Memory Allocation | Dinamik Bellek Ayırma</b></p></li>
                 <p>&emsp;&emsp;
-                  B"new, malloc, calloc" gibi çağrılar ile bellek üzerinden anlık olarak alan tahsisi yapılması söz konusudur. Belleğin tahsisi ve iadesi programcıya bağlıdır. Bu sebeple hataya açık ve dikkatli kullanılması gerekir. Tanımlanan değişkenler ve objeler
+                  "new, malloc, calloc" gibi çağrılar ile bellek üzerinden anlık olarak alan tahsisi yapılması söz konusudur. Belleğin tahsisi ve iadesi programcıya bağlıdır. Bu sebeple hataya açık ve dikkatli kullanılması gerekir. Tanımlanan değişkenler ve objeler
                   bellek üzerinde "heap" adını verdiğimiz alanda tutulur. Bu kısım program çalıştığı süre zarfında bellek alanından tahsis edilir ve kullanılır. Bu sebeple işletim adresi ve uzunluğu sabit değildir. Program işleyişinde istenen yer ve oluşan verinin büyüklüğü
                   ile değişicidir. 
                 </p>
@@ -150,7 +150,7 @@
             </p>
             <p>
               Örnek üzerinden gidecek olursak yukarıdaki kod parçacağında görüldüğü üzere bir "MyClass" adıyla bir sınıf tanımlı, bu sınıftan bir nesne oluşturuyoruz ve "delete" işlemi gerçekleştirilmeden if şartı içerisinde yer alan return ile programı sonlandırıyoruz. Görüldüğü üzere "MyClass"
-              sınıfına ait "Destructor | Yıkıcı" herhangi bir şekilde çağrılmıyor. Son durumda tanımlamış olduğumuz class nesnesi halen bellekte yer almaya devam ediyor. Bu durum şu an için korkutucu gözükmeyebilir. Fakat eğer bu parçacığı çok fazla çalıştırırsam? Bir süre zarfı sonrası 
+              sınıfına ait "Destructor | Yıkıcı" herhangi bir şekilde çağrılmıyor. Son durumda tanımlamış olduğumuz class nesnesi halen bellekte yer almaya devam ediyor. Bu durum şu an için korkutucu gözükmeyebilir. Fakat eğer bu parçacığı çok fazla çalıştırırsam? Bir süre zarfı sonrasında 
               belleğimde alan kalmayacak ve işletim sistemi üzerinden diğer programlar, süreçler hatalı davranmaya, belki de sonlanmaya başlayacaktır. Ayrıca kritik bir noktada bırakılan bu tip bir veri güvenlik ihlali de oluşturabilir.
             </p>
             <p>
@@ -161,7 +161,7 @@
             <h3>Peki! Çözüm Yolu Nedir?</h3>
             <p>
               C++ bizlere bu durum için <b>"Smart Pointers | Akıllı İşaretçiler"</b> gibi bir yol sunuyor. Yaptığımız "new" tanımlarının "Dynamic Memory Allocation | Dinamik Bellek Ayırma" yerine "Automatic Memory Allocation | Otomatik Bellek Ayırma" ile gerçekleşmesini 
-              sağlayabilirsiniz. Programınızın performansı ve kaynak yönetimi için bu yol sizlere daha iyi sonuçlar verecektir. Detaylandırmadan önce aynı örneği bir smart pointer yardımıyla gerçekleştirilim;
+              sağlayabilirsiniz. Programınızın performansı ve kaynak yönetimi için bu yol sizlere daha iyi sonuçlar verecektir. Detaylandırmadan önce aynı örneği bir smart pointer yardımıyla gerçekleştirelim;
             </p>
             <p>
               <video width="100%" height="100%" controls="controls">
@@ -171,7 +171,7 @@
               </video>
             </p>
             <p>
-              Bu örnek üzerinden baktığımızda ise if şartı içerisinde program return ettiğinde var olan değişken değeri için bellek alanı iade ediliyor. Çünkü "Destructor | Yıkıcı" çağrısının gerçekleştiğini görüyoruz. Ayrıca nesnenin bellek adresi boşlatılarak yeniden kullanılmak üzere tahsis ediliyor.
+              Bu örnek üzerinden baktığımızda ise if şartı içerisinde program return ettiğinde var olan değişken değeri için bellek alanı iade ediliyor. Çünkü "Destructor | Yıkıcı" çağrısının gerçekleştiğini görüyoruz. Ayrıca nesnenin bellek adresi boşaltılarak yeniden kullanılmak üzere tahsis ediliyor.
             </p>
 
             <h3>Neden Smart Pointer?</h3>
@@ -186,7 +186,7 @@
             <p>
               "New" deyimini kullanmaktan her zaman kaçınmak zorunda değilsiniz. Bazı durumlarda "new" kullanmak gerekebilir, özellikle yığın boyutuna oranla daha fazla veri almanız gerektiğinde veya new ifadesinin iadesini iyi yönetebileceğiniz durumlarda. 
               Ancak mümkün olduğunca "Smart Pointers | Akıllı İşaretçileri" kullanmanızı öneririm. "Smart Pointers | Akıllı İşaretçiler" bellek kaynaklarını daha iyi yönetmenize yardımcı olacak ve programınızın erken "return" etmesi veya bir exception durumu
-              oluşması durumunda size yardımcı olacaktır. Sınıf yapıları oluştururken akıllık işaretçiler ayrıca çok kullanışlı olabilirler. Çünkü birden fazla akıllı işaretçi türü var. Bu işaretçileri işinize özgü kullanabilirsiniz. TheCherno kanalına ait 
+              oluşması durumunda size yardımcı olacaktır. Sınıf yapıları oluştururken akıllı işaretçiler ayrıca çok kullanışlı olabilirler. Çünkü birden fazla akıllı işaretçi türü var. Bu işaretçileri işinize özgü kullanabilirsiniz. TheCherno kanalına ait 
               "<a href="https://www.youtube.com/watch?v=UOB7-B2MfwA">SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr, std::weak_ptr)</a>" videosunu izleyerek daha fazla bilgi edinebilirsiniz.
             </p>
 
