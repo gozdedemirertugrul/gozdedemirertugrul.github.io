@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function() {
     // Header Content Include
     var headerDiv = document.getElementById('site_header');
     var headerRequest = new XMLHttpRequest();
-    headerRequest.open('GET', '/_includes/header_blog.html', true);
+    headerRequest.open('GET', '/_includes/header_template.html', true);
     headerRequest.onreadystatechange = function() {
       if (headerRequest.readyState === 4 && headerRequest.status === 200) {
         headerDiv.innerHTML = headerRequest.responseText;
@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function() {
     //Footer Content Include
     var footerDiv = document.getElementById('site_footer');
     var footerRequest = new XMLHttpRequest();
-    footerRequest.open('GET', '/_includes/footer_blog.html', true);
+    footerRequest.open('GET', '/_includes/footer_template.html', true);
     footerRequest.onreadystatechange = function() {
       if (footerRequest.readyState === 4 && footerRequest.status === 200) {
         footerDiv.innerHTML = footerRequest.responseText;
