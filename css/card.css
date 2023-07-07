@@ -1,48 +1,48 @@
 .card {
-    max-width: 1920px;
-    box-shadow: 12px 12px 40px rgba(0,0,0,0.1);
-    padding: 12px 16px 12px 16px;
-    box-sizing: border-box;
-    margin: 14px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card__image {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
-    margin-bottom: 18px;
-  }
-  
-  .card__date {
-    display: block;
-    font-family: var(--font-family-secondary);
-    font-size: 14px;
-    line-height: var(--line-height-caption);
-    text-transform: uppercase;
-    color: var(--color-text);
-  }
+  max-width: 1920px;
+  box-shadow: 12px 12px 40px rgba(0, 0, 0, 0.1);
+  padding: 12px 16px;
+  box-sizing: border-box;
+  margin: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.card__date {
+  display: block;
+  font-family: var(--font-family-secondary);
+  font-size: 14px;
+  line-height: var(--line-height-caption);
+  text-transform: uppercase;
+  color: var(--color-text);
+}
 
 .card__date::before {
-    content: "📅 "; /* İstediğiniz ikonu veya simgeyi burada belirtebilirsiniz */
-    display: inline-block;
-    font-size: 14px;
+  content: "📅 "; /* İstediğiniz ikonu veya simgeyi burada belirtebilirsiniz */
+  display: inline-block;
+  font-size: 14px;
 }
-  
-  .card__title {
-    font-family: var(--font-family-primary);
-    font-size: 24px;
-    line-height: var(--line-height-title);
-    color: var(--color-text);
-    box-decoration-break: clone;
-    background-image: linear-gradient(90deg, var(--color-highlight-primary), var(--color-highlight-secondary));
-    background-size: 100% 42%;
-    background-repeat: no-repeat;
-    background-position: 0 85%;
-    padding: 0 4px;
-    margin-left: -4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.card__title {
+  font-family: var(--font-family-primary);
+  font-size: 24px;
+  line-height: var(--line-height-title);
+  color: var(--color-text);
+  box-decoration-break: clone;
+  background-image: linear-gradient(90deg, var(--color-highlight-primary), var(--color-highlight-secondary));
+  background-size: 100% 42%;
+  background-repeat: no-repeat;
+  background-position: 0 85%;
+  padding: 0 4px;
+  margin-left: -4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
