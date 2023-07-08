@@ -282,7 +282,8 @@ select {
 [type=reset],
 [type=submit],
 button {
-    -webkit-appearance: button
+    -webkit-appearance: button;
+    appearance: button
 }
 
 [type=button]:not(:disabled),
@@ -310,7 +311,8 @@ input[type=date],
 input[type=datetime-local],
 input[type=month],
 input[type=time] {
-    -webkit-appearance: listbox
+    -webkit-appearance: listbox;
+    appearance: listbox
 }
 
 textarea {
@@ -348,7 +350,8 @@ progress {
 
 [type=search] {
     outline-offset: -2px;
-    -webkit-appearance: none
+    -webkit-appearance: none;
+    appearance: none
 }
 
 [type=search]::-webkit-search-decoration {
@@ -11142,5 +11145,3 @@ a.text-dark:hover {
         border-color: #dee2e6
     }
 }
-
-/*# sourceMappingURL=bootstrap.min.css.map */
