@@ -99,24 +99,24 @@
             Ancak bu özellikleri nedeniyle C++ diğer dillere göre daha karmaşık bir syntax yapısına sahip ve daha fazla düşük seviyeli donanım bilgisi gerektiren bir dildir. Performans ve verimlilik söz konusu olduğunda, <b>doğru şekilde yazılmış ve mimari olarak implemente 
             edilmiş bir C, C++ kodu</b> oldukça yararlı olabilir. Ancak bu konuda birçok noktaya dikkat edilmesi gerektiği için hataya daha fazla açık bir dil haline gelebilir. Şimdi genel bir bakış açısı sunduktan sonra konuyu daha da özelleştirebiliriz.
           </p>
-          <h3>"New" Deyimini Kullandığımızda Neler Gerçekleşir?</h2>
+          <h3>"New" Deyimini Kullandığımızda Neler Gerçekleşir?</h3>
             <p>
               "Neden daha az kullanmalıyız?" sorusuna doğru bir cevap verebilmek için C++ dilinin genel yapısı hakkında bilgi sahibi olmak ve "new" kullanımı sonrası bellek olaylarının sonuçlarını bilmek önemlidir.
             </p>
             <p>
               Üç tip bellek yönetim tipi vardır: <br>
               <ul>
-                <li><p><b>&emsp;-> Static Memory Allocation | Statik Bellek Ayırma</b></p></li>
+                <li><p><b> - Static Memory Allocation | Statik Bellek Ayırma</b></p></li>
                 <p>&emsp;&emsp;
                   Programın başlatılmasından önce "static" olarak tanımlanmış değerler için bellek alanından yer tahsisi yapılır. Bu tahsis işlemi sadece bir kez gerçekleştirilir ve değerler sabit boyutludur. Program sonlanana kadar bellek içerisinde yer alırlar, 
                   programın sonlanmasıyla birlikte beraber belleğe iade edilirler.
                 </p>
-                <li><p><b>&emsp;-> Automatic Memory Allocation | Otomatik Bellek Ayırma</b></p></li>
+                <li><p><b> - Automatic Memory Allocation | Otomatik Bellek Ayırma</b></p></li>
                 <p>&emsp;&emsp;
                   Lokal değişkenler ve fonksiyon/method tanımları genellikle bir alanda başlatılır ve aynı alandan çıktıktan sonra bellekte iade edilir. Bu veriler <b>"Stack | Yığın"</b> olarak adlandırılan bir yapıda saklanır ve iadeleri de bu şekilde
                   gerçekleştirilir. Bu bellek yönetim biçimi için daha güvenli olduğu düşüncesi hakimdir.
                 </p>
-                <li><p><b>&emsp;-> Dynamic Memory Allocation | Dinamik Bellek Ayırma</b></p></li>
+                <li><p><b> - Dynamic Memory Allocation | Dinamik Bellek Ayırma</b></p></li>
                 <p>&emsp;&emsp;
                   "new, malloc, calloc" gibi çağrılar ile bellek üzerinden anlık olarak alan tahsisi yapılması söz konusudur. Belleğin tahsisi ve iadesi programcıya bağlıdır. Bu sebeple hataya açık ve dikkatli kullanılması gerekir. Tanımlanan değişkenler ve objeler
                   bellek üzerinde "heap" adını verdiğimiz alanda tutulur. Bu kısım program çalıştığı süre zarfında bellek alanından tahsis edilir ve kullanılır. Bu sebeple işletim adresi ve uzunluğu sabit değildir. Program işleyişinde istenen yer ve oluşan verinin büyüklüğü
@@ -179,7 +179,7 @@
             </p>
 
             <h3>Neden Smart Pointer?</h3>
-            <p>&emsp; -> Dynamic Memory Allocation | Dinamik Bellek Ayırma VS Automatic Memory Allocation | Otomatik Bellek Ayırma</b></p>
+            <p><b>Dynamic Memory Allocation | Dinamik Bellek Ayırma VS Automatic Memory Allocation | Otomatik Bellek Ayırma</b></p>
             <p>
               Otomatik Bellek Ayırma işlemi, Dinamik Bellek Ayırma işlemine kıyasla daha hızlı ve güvenlidir. "heap" yapısı için adresler değişicidir ve bellek alanında sıralı değildirler. Adresci kayıtlarının tutulması ve değerlere erişim maliyetlidir. Bu maliyetler beraberinde performans kaybına yol açar.
               Otomatik Bellek Ayırma işleminde yer alan "stack" yapısı için ise değerler "FILO (First In Last Out)" olarak tutulduğundan erişim hızlıdır ve kayıtlı adresci defteri boyutu azdır. Bellek üzerinden veriye erişme maliyeti düşüktür ve değişkenlerin adres tanımları bir yığın halinde tutulduğundan
@@ -266,3 +266,4 @@
   <script src="../../js/custom.js"></script>
 
 </body>
+</html>

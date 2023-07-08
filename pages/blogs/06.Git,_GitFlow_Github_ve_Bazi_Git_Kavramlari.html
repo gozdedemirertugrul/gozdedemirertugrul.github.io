@@ -384,7 +384,7 @@
                             saklanır.</p>
                         <p>Tek seferde bütün dosyaları eklemek için ise; git add . veya git add * , git — all veya git
                             add -A gibi komutlar kullanılabilir.</p>
-                        <p>git add -p > İnteraktif bir şekilde depoya eklenecek dosya içeriklerinin seçilmesini sağlar.
+                        <p>git add -p: İnteraktif bir şekilde depoya eklenecek dosya içeriklerinin seçilmesini sağlar.
                         </p>
                     </div>
 
@@ -442,15 +442,14 @@
 
                     <!-- Status Kısmı-->
                     <div>
-                        <p><b>git status:</b> Versiyonlar arası (etiketler) farklarını gösterir. Ya da genel
-                            commit ve işlev bilgelerini döndürür.</p>
-                        <p>On branch main -> Main branch’ınde olduğumuzu,</p>
-                        <p>Changes to be commited -> Commit’lenmeye hazır değişiklikler olduğunu,</p>
-                        <p>Modified: index.html -> index.html dosyasında değişiklik yaptığımızı,</p>
-                        <p>Deleted: styles.css -> styles.css dosyasını sildiğimizi,</p>
-                        <p>Changes not staged for commit -> Üzerinde değişiklik yapılan ama staged ortamına
+                        <p><b>git status:</b> Versiyonlar arası (etiketler) farklarını gösterir. Ya da genel commit ve işlev bilgelerini döndürür.</p>
+                        <p>On branch main:  Main branch’ınde olduğumuzu,</p>
+                        <p>Changes to be commited: Commit’lenmeye hazır değişiklikler olduğunu,</p>
+                        <p>Modified: index.html: index.html dosyasında değişiklik yaptığımızı,</p>
+                        <p>Deleted: styles.css: styles.css dosyasını sildiğimizi,</p>
+                        <p>Changes not staged for commit: Üzerinde değişiklik yapılan ama staged ortamına
                             gönderilmemiş dosyaları ifade eder.</p>
-                        <p>Untracked files -> Takibi yapılmayan dosyaları ifade eder.</p>
+                        <p>Untracked files: Takibi yapılmayan dosyaları ifade eder.</p>
                     </div><br>
 
                     <div>
@@ -550,7 +549,7 @@
                             id bilgisindeki commit üzerine giderek tag ile etiket de verilebilir. Örneğin
                             attığımız 2. komuta v1.0 demek gibi.</p>
                         <p>“git tag” ile var olan etiketleri görüntüleyebiliriz.</p>
-                        <p>Örnek kullanım > git tag -a v3.0.0 -m “3.0.0 version created” > -a parametresi verilen tag’ı
+                        <p>Örnek kullanım (git tag -a v3.0.0 -m “3.0.0 version created”) -a parametresi verilen tag’ı
                             belirtir. -m ise açıklama eklememizi sağlar.</p>
                     </div><br><br>
 
@@ -581,18 +580,12 @@
 
                     <div>
                         <p><b>Başlıca bilmemiz gereken bazı terimler;</b></p>
-                        <p><b>untracked (izlenmeyen):</b> Git tarafından henüz takip edilmeyen, yani yeni oluşturulmuş
-                            dosyaları ifade eder.</p>
-                        <p><b>unstaged (hazırlanmamış):</b> Güncellenmiş ancak commit’lenmek için hazırlanmamış
-                            dosyaları ifade eder.</p>
+                        <p><b>untracked (izlenmeyen):</b> Git tarafından henüz takip edilmeyen, yani yeni oluşturulmuş dosyaları ifade eder.</p>
+                        <p><b>unstaged (hazırlanmamış):</b> Güncellenmiş ancak commit’lenmek için hazırlanmamış dosyaları ifade eder.</p>
                         <p><b>staged (hazırlanmış):</b> Commit’lenmeye hazır olan dosyaları ifade eder. </p>
-                        <p><b>deleted (silinmiş):</b> Projeden silinmiş ama Git üzerinden kaldırılmamış dosyaları ifade
-                            eder.</li>
-                        <p> <b>branch (dal):</b> Geliştirme ortamı içerisinde bulunan dosyalama ve yönetim yapısı olarak
-                            düşünülebilir.
-                            Ağaç dalları ile aynı mantıkta değerlendirilebilir. Bir daldan üretilen ayrılan dal,
-                            üretildiği ağacın içeriğini barındırır.
-                            Ağaç mantığından farklı olarak birleştirme işlemi uygulanabilir.
+                        <p><b>deleted (silinmiş):</b> Projeden silinmiş ama Git üzerinden kaldırılmamış dosyaları ifade eder.</p>
+                        <p> <b>branch (dal):</b> Geliştirme ortamı içerisinde bulunan dosyalama ve yönetim yapısı olarak düşünülebilir. Ağaç dalları ile aynı mantıkta değerlendirilebilir. Bir daldan üretilen ayrılan dal,
+                            üretildiği ağacın içeriğini barındırır. Ağaç mantığından farklı olarak birleştirme işlemi uygulanabilir.
                         </p>
                         <p><b>flow:</b> Akış ve ilerleyiş anlamına gelir.</p>
                     </div><br><br>
@@ -601,10 +594,10 @@
                         <h3>Kaynakça</h3>
                         <p>
                             <a href="https://app.patika.dev/moduller/git/git-bash-ile-git-temel-komutlari">Git Bash Komutları</a><br>
-                            <a href="https://app.patika.dev/moduller/ileri-seviye-git">İleri Seviye Git</a></br>
-                            <a href="https://app.patika.dev/moduller/git/gitignore-dosyasi-ne-i̇se-yarar-nasil-kullaniriz">Git İgnore Dosyası Ne İşe Yarar?</a></br>
-                            <a href="https://www.mobilhanem.com/git-tag-ile-commit-etiketleme/">Git Tag İle Commit Etiketleme</a></br>
-                            <a href="https://developpaper.com/git-flow-workflow-summary/">Git Flow Workflow  Summary</a></br>
+                            <a href="https://app.patika.dev/moduller/ileri-seviye-git">İleri Seviye Git</a><br>
+                            <a href="https://app.patika.dev/moduller/git/gitignore-dosyasi-ne-i̇se-yarar-nasil-kullaniriz">Git İgnore Dosyası Ne İşe Yarar?</a><br>
+                            <a href="https://www.mobilhanem.com/git-tag-ile-commit-etiketleme/">Git Tag İle Commit Etiketleme</a><br>
+                            <a href="https://developpaper.com/git-flow-workflow-summary/">Git Flow Workflow  Summary</a><br>
                         </p>
                     </div>
                 </div>
@@ -645,7 +638,7 @@
                 <a href="https://github.com/KaganCanSit" class="fa fa-github" title="Github"></a> |
                 <a href="https://twitter.com/kagancansit" class="fa fa-twitter" title="Twitter"></a> |
                 <a href="https://www.linkedin.com/in/kagancansit/" class="fa fa-linkedin" title="Linkedin"></a> |
-                <a href="https://www.instagram.com/kagancansit/" class="fa fa-instagram" ntitle="Instagram"></a> |
+                <a href="https://www.instagram.com/kagancansit/" class="fa fa-instagram" title="Instagram"></a> |
                 <a href="mailto:kagancansit@hotmail.com" class="fa fa-send" title="Outlook"></a>
             </p>
         </div>
@@ -673,3 +666,4 @@
     <script src="../../js/custom.js"></script>
 
 </body>
+</html>
