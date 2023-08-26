@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const blogList = blogsArea.getElementsByClassName('card');
 
   // Display One Page Blog Number
-  const blogDisplayOnePage = 5;
+  const blogDisplayOnePage = 10;
   const totalPage = Math.ceil(blogList.length / blogDisplayOnePage);
 
   // Pagination link create
