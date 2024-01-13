@@ -59,10 +59,14 @@ footer,
 header,
 hgroup,
 main,
-nav,
 section {
-    display: block
+    display: block;
 }
+nav {
+    display: block;
+    background-color: #fff;
+}
+
 
 body {
     margin: 0;

@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="tr">
-<!-- This theme and css folders Tooplate 2115 Marvel -> https://www.tooplate.com/view/2115-marvel -->
 
 <head>
   <meta charset="utf-8">
@@ -36,7 +35,7 @@
   <!-- MENU -->
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="index.html"> Kağan Can Şit</a>
+      <a class="navbar-brand" href="index.html">Kağan Can Şit</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,16 +47,16 @@
       <div style="background-color: transparent;" class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a href="pages/main_blog_page.html" class="nav-link"><span data-hover="Blog">Blog</span></a>
+            <a href="pages/projects.html" class="nav-link"><span data-hover="Projeler">Projeler</span></a>
           </li>
           <li class="nav-item">
-            <a href="#project" class="nav-link"><span data-hover="Projeler">Projeler</span></a>
+            <a href="pages/main_blog_page.html" class="nav-link"><span data-hover="Blog">Blog</span></a>
           </li>
           <li class="nav-item">
             <a href="pages/design.html" class="nav-link"><span data-hover="Tasarım">Tasarım</span></a>
           </li>
           <li class="nav-item">
-            <a href="#resume" class="nav-link"><span data-hover="Hakkında">Hakkında</span></a>
+            <a href="pages/about_me.html" class="nav-link"><span data-hover="Hakkında">Hakkında</span></a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link"><span data-hover="İletişim">İletişim</span></a>
@@ -74,304 +73,195 @@
     </div>
   </nav>
 
-  <!-- ABOUT -->
-  <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+  <!-- Entry Content -->
+  <section class="full-screen d-lg-flex justify-content-center align-items-center"
+    style="background: url(images/base_site_images/mainPageImage_Bing.jpeg) center/cover no-repeat" id="entry">
+    <div class="container">
+      <div class="col-lg-12 text-center mx-auto">
+        <h1 style="color: white; font-size: 450%; margin-top: 40%;">Kağan Can Şit</h1>
+        <p style="color: white; font-size: 150%;"><b>Software Engineer</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hello Content -->
+  <section class="full-screen d-lg-flex justify-content-center align-items-center" id="hello">
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+        <div class="col-lg-7 mx-auto">
           <div class="about-text">
             <h1 class="animated animated-text">
-              <span class="mr-2">👋Merhabalar, ben</span>
-              <div class="animated-info">
-                <span class="animated-item">Kağan Can Şit</span>
-                <span class="animated-item">Yazılım Mühendisiyim</span>
-              </div>
+              <span class="mr-2">👋Merhabalar, Hoş Geldin!</span>
             </h1>
-            
-            <p>Öğrenmeye çalıştığım veya ilgilendiğim konulara dair birçok içeriği burada bulabilirsin. Umarım bir adım
-              daha ileri gitmek için sana yardımcı olur.🏹</p>
-            <p>Tanıştığımıza memnun oldum.</p>
 
-            <div class="custom-btn-group mt-4">
-              <a href="#resume" class="btn mr-lg-2 custom-btn"><i class="uil uil-file-alt"></i> Özgeçmiş</a>
-              <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Mail Gönder!</a>
-            </div>
+            <p>
+              Ben Kağan, yazılım içerikleri okumayı ve üretmeyi, teknolojik blogları takip etmeyi, tasarım araçlarıyla
+              vakit geçirmeyi, müzik dinlerken düşünmeyi ve sakinliği seven bir insanım.
+            </p>
+            <p>
+              Öğrendiklerimi ve tecrübelerimi paylaşmak için bu siteyi oluşturdum. Sitenin temel amacının yazılım
+              üzerine edindiğim bilgileri paylaşmak ve bu paylaşımlar neticesinde geri dönüşler almak olduğunu söyleyebilirim.
+            </p>
+            <p>
+              Benim hakkımda daha detaylı bilgiye "Hakkımda" sayfasından ulaşabilirsin. Konuşmak istersen bir mail
+              uzağındayım.
+            </p>
+            <p>Kendine iyi bak, tanıştığımıza memnun oldum. 🏹</p>
+          </div>
+          <div class="custom-btn-group mt-4">
+            <a href="pages/about_me.html" class="btn mr-lg-2 custom-btn"><i class="uil uil-file-alt"></i> Beni
+              "Hakkında" sayfasına götür!</a>
           </div>
         </div>
 
-        <div class="col-lg-5 col-md-12 col-12">
+        <div class="col-lg-5 mx-auto">
           <div class="about-image svg">
+            <br><br>
             <img src="images/base_site_images/potraitImage.png" class="img-fluid" alt="svg image">
           </div>
         </div>
       </div>
     </div>
   </section>
-  <br><br><br>
 
-  <!-- PROJECTS -->
-  <section class="project" id="project">
+  <!-- Project Content -->
+  <section class="full-screen d-lg-flex justify-content-center align-items-center" style="background-color: #edf2f4;"
+    id="project">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center mx-auto">
-          <h2>Projeler</h2>
-          <p>
-            Elimden geldiğince küçük, büyük fark etmeksizin çeşitli projeler geliştirmeye çalışıyorum. Bu projeleri
-            geliştirirken birçok insan ile görüşüyor. Youtube, Udemy gibi
-            platformlardan yeni bilgiler ediniyorum. Ayrıca açık kaynak projeleri inceliyor, yapabileceğim katkıları
-            iletmeye çalışıyorum. Katkıda bulunduğum projelerin logoları ise
-            aşağıda yer alıyor. Hacerrank, Codewars, Leetcode gibi sitelerde ise algoritma sorularıyla zaman geçirmeyi
-            sevdiğim söylenebilir.
-          </p>
-          <p>Ayrıntılı incelemek istersen seni <a href="https://github.com/KaganCanSit">Github </a> hesabıma bekliyorum.
-          </p>
 
-          <div class="owl-carousel owl-theme" title="Github ve Katılım Sağlanan Projelere Dair Resim">
-            <div class="item">
-              <div class="project-info">
-                <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
-              </div>
-            </div>
-
-            <div class="item" title="Github ve Katılım Sağlanan Projelere Dair Resim">
-              <div class="project-info">
-                <img src="images/project/project-image02.png" class="img-fluid" alt="project image">
-              </div>
-            </div>
-
-            <div class="item" title="Github ve Katılım Sağlanan Projelere Dair Resim">
-              <div class="project-info">
-                <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
-              </div>
-            </div>
-
-            <div class="item" title="Github ve Katılım Sağlanan Projelere Dair Resim">
-              <div class="project-info">
-                <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
-              </div>
-            </div>
+        <div class="col-lg-5 mx-auto">
+          <div class="about-image svg" style="text-align: center;">
+            <img src="images/base_site_images/mohammed-rahmani-unsplash.jpg" class="img-fluid" alt="svg image">
+            <a href="https://unsplash.com/photos/a-computer-screen-with-a-web-page-on-it-q1p2DrLBtko"
+              style="color: black;"><br><br>Fotoğrafçı: Mohammad Rahmani</a>
           </div>
+        </div>
 
-          <!-- Companys -->
-          <div class="col-lg-12 col-12">
-            <h2 class="mb-2 mobile-mt-2" style="text-align: center;">Katkıda Bulunduğum Açık Kaynak Projeler</h2>
-            <p>Açık kaynak projelerine bir metin içeriği yazılması, Türkçe çeviri eklenmesi gibi minimal katkılar olsa
-              da katkı sağlamaya, farklı kültür ve dilden insanlar ile yeni projeler geliştirmeye çalışıyorum.</p>
-            <div class="col-lg-8 mx-auto" style="text-align: center;">
-              <a href="https://muetab.com/"><img src="images/open_source_project/Mue.png" title="MueTab OpenSource Proje Logosu" style="width: 18%;"></a>
-            </div>
+        <div class="col-lg-7 mx-auto">
+          <div class="about-text">
+            <h1 class="animated animated-text">
+              <span class="mr-2" style="color: black;">Projeler</span>
+            </h1>
+            <p>
+              Mühendislik, problem çözme becerisi temelinde gelişen bir disiplin.
+            </p>
+            <p>
+              Bu problemleri çözebilmenin temelinde ise deneyim, emek ve pratik yer alıyor. Bu temelleri güçlendirmek
+              için elimden geldiğince küçük, büyük fark etmeksizin çeşitli projeler geliştirmeye çalışıyorum.
+              Bu projeleri geliştirirken birçok insanla görüşüyor, mailler atıyorum. Youtube, Udemy gibi platformlardan
+              yeni bilgiler ediniyorum.
+            </p>
+            <p>
+              Son zamanlarda kod okuma alışkanlığımı da arttırmaya çalışıyorum. Açık kaynak projeleri inceliyor,
+              yapabileceğim küçük bile olsa katkıları iletmeye çalışıyorum.
+              Örneğin Türkçe dil desteği, dokümantasyon, bug fix gibi. Elbette şu anlık küçük adımlar fakat zamanla daha
+              kapsamlı katkılar sağlayacağıma inanıyorum.
+            </p>
+            <p>Github hesabım, kullandığım teknolojiler, katkıda bulunduğum açık kaynak projeler ve daha fazlasını
+              "Projeler" sayfasında bulabilirsin.</p>
+          </div>
+          <div class="custom-btn-group mt-4">
+            <a href="pages/projects.html" class="btn custom-btn custom-btn-bg custom-btn-link"><i
+                class="uil uil-file-alt"></i>Beni "Projeler" sayfasına götür!</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Content -->
+  <section class="full-screen d-lg-flex justify-content-center align-items-center" id="blog">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-7 mx-auto">
+          <div class="about-text">
+            <h1 class="animated animated-text">
+              <span class="mr-2">Blog</span>
+            </h1>
+            <p>
+              Öğrenmek ve araştırmak bizler için en gerekli özellikler. Çözmeye çalıştığımız problemler her zaman yeni
+              yollar denememize, keşiflere çıkmamıza yol açıyor. Mevcut bilgimiz yetmediğinde hep bir sonraki patikaya ilerliyoruz.
+              İnsanlığın geldiği nokta ise birçok farklı patikanın bileşiminden oluşuyor.
+            </p>
+            <p>
+              Mühendislik, hiçbir zaman "Bu konuda yeterince bilgi kazandım. Artık öğrenmeye gerek yok." diyebileceğimiz bir
+              disiplin değil. Bu nedenle yazılımın doğasında olan bilgi paylaşımını
+              benimseyerek, kendi keşiflerimden ve öğrenimimden notlar alıp burada paylaşıyorum. Belki aynı yolda yürüyenlere rehberlik
+              edebilirim, belki de sizin deneyimlerinizden öğrenebilirim.
+            </p>
+            <p>
+              İçeriklerim genellikle yazılım odaklı fakat zaman zaman farklı konulara da değiniyorum.
+            </p>
+            <p>"Blog" sayfasından yazmış olduğum içerikleri keşfedebilirsin!</p>
+          </div>
+          <div class="custom-btn-group mt-4">
+            <a href="pages/main_blog_page.html" class="btn mr-lg-2 custom-btn"><i class="uil uil-file-alt"></i> Beni
+              "Blog" sayfasına götür!</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 mx-auto">
+          <div class="about-image svg" style="text-align: center;">
+            <img src="images/base_site_images/nikita-kachanovsky-unsplash.jpg" class="img-fluid" alt="svg image">
+            <a href="https://unsplash.com/photos/turned-on-macbook-on-table-beside-imac-g-YiX8ynmnY"><br><br>Fotoğrafçı:
+              Nikita Kachanovsky</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="background-color: var(--themeColor); height: 80px;">
-    <hr>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+  <!-- Design Content -->
+  <section class="full-screen d-lg-flex justify-content-center align-items-center" style="background-color: #edf2f4;"
+    id="design">
     <div class="container">
       <div class="row">
 
-        <!-- Open Paragraph -->
-        <div style="text-align: center;" class="col-lg-12 mx-auto">
-          <h2>Kısaca Hakkımda</h2>
-          <p>
-            İsmim Kağan, yazılım içerikleri okumayı ve üretmeyi, teknolojik blogları takip etmeyi, 
-            tasarım araçlarıyla (Photoshop, Illustrator) vakit geçirmeyi, müzik dinlerken düşünmeyi ve susmayı seven bir insanım.
-          </p>
-          <p>
-            Mesleğim ve karakterim gereği her zaman güncel bilgi ve içerikleri takip etmeye, öğrenmeye özen
-            gösterdiğim söylenebilir.
-            Boş zamanlarımda açık kaynak projelere Github üzerinden katılım sağlamaya, ayrıca çeşitli kütüphane ve
-            repository içerikleri okumaya çalışıyorum. Şu an için açık kaynak gerçekleştirilen projelerde Türkçe dil
-            desteği eklemek, bug bildirmek, feature önerisi gibi minimal kısımlarda görev alıyorum. Fakat ilerleyen
-            zaman için daha kapsamlı katılımlar sağlayacağıma inanıyorum.
-          </p><br><br>
-        </div>
-
-        <div class="col-lg-6 col-12">
-          <h2 class="mb-4">Deneyim</h2>
-
-        <div class="timeline">
-         <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>💻</span>
-              </div>
-              <div class="timeline-info">
-                <h3>Software Engineer</h3>
-                <small>TÜBİTAK BİLGEM | <i>Haziran 2023 - Halen</i></small>
-                <hr>
-                <p>UEKAE (Ulusal Elektronik ve Kriptoloji Araştırma Enstitüsü) - Tübitak bünyesinde MA3 (Milli Açık
-                  Anahtar Altyapısı)
-                  ekibinde C++ dili ağırlıklı olmak üzere geliştirici olarak dokümantasyon, sertifikasyon süreçleri,
-                  kriptolojik yazılım
-                  geliştirme konuları başta olmak üzere mesleğime devam etmekteyim.</p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2022</span>
-              </div>
-              <div class="timeline-info">
-                <h3>Junior Software Engineer</h3>
-                <small>TÜBİTAK BİLGEM | <i>Kasım 2022 - Haziran 2023</i></small>
-                <hr>
-                <p>UEKAE (Ulusal Elektronik ve Kriptoloji Araştırma Enstitüsü) - Tübitak bünyesinde MA3 (Milli Açık
-                  Anahtar Altyapısı)
-                  ekibinde öğrenciliğim son yılında mezuniyet tarihime kadar C++ dili ağırlıklı olmak üzere geliştirici
-                  olarak görev almış bulunuyorum.</p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2022</span>
-              </div>
-              <div class="timeline-info">
-                <h3>Candidate Software Engineer</h3>
-                <small>TÜBİTAK BİLGEM | <i>Eylül - Ekim 2022</i></small>
-                <hr>
-                <p>UEKAE (Ulusal Elektronik ve Kriptoloji Araştırma Enstitüsü) - Tübitak bünyesinde MA3 (Milli Açık
-                  Anahtar Altyapısı) ekibinde "Stajyer" olarak başladığım alanda "Aday Mühendis" olarak iki aylık süre
-                  zarfında görev almaya devam etmiş bulunuyorum.</p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2022</span>
-              </div>
-              <div class="timeline-info">
-                <h3>Software Engineer Summer Intern</h3>
-                <small>TÜBİTAK BİLGEM | <i>Temmuz - Eylül 2022</i></small>
-                <hr>
-                <p>UEKAE (Ulusal Elektronik ve Kriptoloji Araştırma Enstitüsü) - Tübitak bünyesinde MA3 ekibinde
-                  "Stajyer" olarak 40 iş günü görev almış bulunmaktayım.</p>
-              </div>
-            </div>
+        <div class="col-lg-5 mx-auto">
+          <div class="about-image svg" style="text-align: center;">
+            <img src="images/design/01.Dusuncelerinde_Kayip.png" class="img-fluid" alt="svg image">
+            <a href="pages/design.html" style="color: black;"><br><br>Tasarım: Kağan Can Şit</a>
           </div>
         </div>
 
-        <!-- EDUCATION -->
-        <div class="col-lg-6 col-12">
-          <h2 class="mb-4 mobile-mt-2">Eğitim</h2>
-
-          <div class="timeline">
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2023</span>
-              </div>
-              <div class="timeline-info">
-                <h3>Software Engineering</h3>
-                <small>Manisa Celal Bayar Üniversitesi | <i>Eylül 2020 - Haziran 2023</i></small>
-                <hr>
-                <p>Not: 3.69</p>
-                <p>
-                  Lisans eğitimimi Manisa Celal Bayar Üniversitesi, Yazılım Mühendisliği bölümünde tamamladım.
-                  Bu süre zarfında birçok yan proje geliştirmiş. E-posta ve sosyal medya gibi araçlar yardımıyla birçok
-                  deneyimli insanla tanışma fırsatı yakalamış bulunuyorum.
-                  Ayrıca aldığım eğitimin katkılarını ise yeni adımlarımı attığım meslek hayatımda tecrübe ettiğim
-                  söylenebilir.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2019</span>
-              </div>
-              <div class="timeline-info">
-                <h3>Mechatronics Engineering</h3>
-                <small>Düzce Üniversitesi | <i>Kasım 2019 - Haziran 2020</i></small>
-                <hr>
-                <p>Not: 3.60</p>
-                <p>Düzce Mekatek topluluğunda bir süre İHA takımında görev alarak python eğitimi, HAVELSAN tarafından
-                  verilen siber güvenlik eğitimi gibi birçok etkinliğe katıldım.</p>
-                <p>Düzce Üniversitesi, Mekatronik Mühendisliği 1.sınıfın ardından GNO 3.60 ortalama ile Manisa Celal
-                  Bayar Üniversitesi, Yazılım Mühendisliği bölümüne yatay geçiş yapmış bulunuyorum.</p>
-              </div>
-            </div>
-
+        <div class="col-lg-7 mx-auto">
+          <div class="about-text">
+            <h1 class="animated animated-text">
+              <span class="mr-2" style="color: black;">Tasarım</span>
+            </h1>
+            <p>
+              Bilgisayar ile tanıştığım ilk zamanlarda edindiğim güzel bir hobim tasarım. "Dijital Sürreal" ve katmanlama yönteminin 
+              çeşitli görseller aracılığılıyla kullanımı cidden ilgi çeken bir uğraş. Film sahnelerini kopyalamaya veya kitap
+              bölümlerini oluşturmaya çalıştığım çok zaman oldu.
+            </p>
+            <p>
+              Okul harçlıklarımı çıkarmak için çalıştığım zamanlarımda, Onedio'ya haber olduğum zamanlarımda oldu.
+            </p>
+            <p>
+              Tasarım yeteneğimi geliştirirken araştırma ve öğrenme konusunda da kendimi geliştirdiğime inanıyorum. İnternet üzerinde
+              bilgi edinmek, yabancı dillerde de kaynaklara bakmak, insanlara sorular sormak gibi birçok özelliği kazandırdı.
+            </p>
+            <p>
+              Şu an ise tüm enerjimi yazılıma verdiğimi söyleyebilirim.
+            </p>
+            <p>"Tasarım" sayfasından daha önce tasarladığım içerikleri görebilirsin!</p>
+          </div>
+          <div class="custom-btn-group mt-4">
+            <a href="pages/design.html" class="btn custom-btn custom-btn-bg custom-btn-link"><i
+                class="uil uil-file-alt"></i> Beni "Tasarım" sayfasına götür!</a>
           </div>
         </div>
 
-        <!-- TECHNOLOGY -->
-        <div class="col-lg-6 col-12">
-          <h2 class="mb-4 mobile-mt-2">Kullandığım Teknolojiler</h2>
-
-          <div class="timeline">
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>🚀</span>
-              </div>
-              <div class="timeline-info">
-                <p>
-                  Eğitimim sırasında ve yeni girmiş olduğum iş hayatımda birçok teknolojiyi öğrenmeye ve kullanmaya
-                  çalışıyorum.
-                  Fakat şu an en aktif kullandığım teknoloji C++ denebilir. Onun yanı sıra Linux işletim sistemi
-                  üzerinde de geliştirme ortamlarında çalışıyorum.
-                </p>
-                <p>
-                  C, C#, MSSQL, .Net, Git, Github gibi birçok araç ve teknolojiyi kullanmaktayım. Bu konuda kapsamlı
-                  bilgi almak için bana <a href="mailto:kagancansit@hotmail.com">mail</a>
-                  atabilir veya <a href="https://github.com/KaganCanSit">Github</a> profilimi ziyaret ederek, analiz
-                  edebilirsin.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- IDEA and TARGET -->
-        <div class="col-lg-6 col-12">
-          <h2 class="mb-4 mobile-mt-2">Yakın Zaman İçin Hedeflerim</h2>
-
-          <div class="timeline">
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>📌</span>
-              </div>
-              <div class="timeline-info">
-                <p>
-                  Kısaca birkaç noktaya değinmem gerekirse mesleki olarak yeni başladığım iş kariyerimde C++
-                  teknolojisinde daha kapsamlı bilgi edinmek ve üzerine kendimi geliştirmek,
-                  açık kaynak içeriklerde daha fazla yer almak ve temel olarak İngilizce dokümantasyon okuma becerimi
-                  geliştirmeyi hedeflediğim söylenebilir.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Companys -->
-        <div class="col-lg-12 col-12">
-          <h2 class="mb-2 mobile-mt-2" style="text-align: center;">Görev Alınan Kuruluşlar</h2>
-          <div class="col-lg-8 mx-auto" style="text-align: center;">
-            <a href="https://bilgem.tubitak.gov.tr/"><img src="images/resume/00.TUBITAK-BILGEM.png"  title="Tübitak Bilgem'in Logosu" style="width: 18%;"></a>
-          </div>
-        </div>
-
-        <div class="col-lg-8 mx-auto">
-          <br>
-          <p>Daha detaylı bilgi için <a href="https://www.linkedin.com/in/kagancansit/">Linkedin</a> profilimi
-            inceleyebilir veya bana <a href="mailto:kagancansit@hotmail.com">mail</a> gönderebilirsin.</p>
-        </div>
       </div>
     </div>
   </section>
-
-  <section style="background-color: var(--themeColor); height: 80px;">
-    <hr>
-  </section>
-  <br><br><br>
 
   <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <section class="d-lg-flex justify-content-center align-items-center" style="padding-top: 5%;" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 mr-lg-5 col-12">
@@ -384,7 +274,7 @@
           <div class="contact-form">
             <h2 class="mb-4">Tanışmak ister misiniz? Hadi konuşalım!</h2>
             <p>
-              Merak ettiklerin, aklına takılan soruların olabilir. Bende bazen günlerce bir problem üzerinde uğraşıyor
+              Merak ettiklerin, aklına takılan soruların olabilir. Ben de bazen günlerce bir problem üzerinde uğraşıyor
               ve düşünüyorum. Böyle durumlarda çekinmeden bana ulaşabilirsin. Sana yardımcı olabilmek için aşağıdaki
               kısıma sosyal medya linklerimi ekledim.
             </p>
@@ -403,21 +293,11 @@
         <a href="https://twitter.com/kagancansit" class="fa fa-twitter" title="Twitter"></a> |
         <a href="https://www.linkedin.com/in/kagancansit/" class="fa fa-linkedin" title="Linkedin"></a> |
         <a href="mailto:kagancansit@hotmail.com" class="fa fa-send" title="Outlook"></a>
+      <p class="copyright-text text-center">Kağan Can Şit | Umarım sana katkı sağlayan ve bilgi katan içerikler
+        bulmuşsundur.🏹</p>
       </p>
     </div>
   </section>
-
-  <!-- FOOTER -->
-  <footer class="footer py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-12">
-          <p class="copyright-text text-center">Copyright &copy; 2022 - Kağan Can Şit | Umarım sana katkı sağlayan ve
-            bilgi katan içerikler bulmuşsundur.🏹</p>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>

@@ -10,11 +10,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BLQV2M3JL"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-2BLQV2M3JL');
+        gtag('config', 'G-2BLQV2M3JL');
     </script>
 
     <!-- Tab Info -->
@@ -50,22 +50,23 @@
             <div style="background-color: transparent;" class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a href="../main_blog_page.html" class="nav-link"><span data-hover="Blog">Blog</span></a>
+                        <a href="../projects.html" class="nav-link"><span data-hover="Projeler">Projeler</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="../../index.html" class="nav-link"><span data-hover="Projeler">Projeler</span></a>
+                        <a href="../main_blog_page.html" class="nav-link"><span data-hover="Blog">Blog</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="../design.html" class="nav-link"><span data-hover="Tasarım">Tasarım</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="../../index.html" class="nav-link"><span data-hover="Hakkında">Hakkında</span></a>
+                        <a href="../about_me.html" class="nav-link"><span data-hover="Hakkında">Hakkında</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link"><span data-hover="İletişim">İletişim</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="../hayat_anlam_katanlar_manifestosu.html" class="nav-link"><span data-hover="🪁">🪁</span></a>
+                        <a href="../hayat_anlam_katanlar_manifestosu.html" class="nav-link"><span
+                                data-hover="🪁">🪁</span></a>
                     </li>
                 </ul>
 
@@ -442,8 +443,9 @@
 
                     <!-- Status Kısmı-->
                     <div>
-                        <p><b>git status:</b> Versiyonlar arası (etiketler) farklarını gösterir. Ya da genel commit ve işlev bilgelerini döndürür.</p>
-                        <p>On branch main:  Main branch’ınde olduğumuzu,</p>
+                        <p><b>git status:</b> Versiyonlar arası (etiketler) farklarını gösterir. Ya da genel commit ve
+                            işlev bilgelerini döndürür.</p>
+                        <p>On branch main: Main branch’ınde olduğumuzu,</p>
                         <p>Changes to be commited: Commit’lenmeye hazır değişiklikler olduğunu,</p>
                         <p>Modified: index.html: index.html dosyasında değişiklik yaptığımızı,</p>
                         <p>Deleted: styles.css: styles.css dosyasını sildiğimizi,</p>
@@ -522,7 +524,7 @@
 
                     <div>
                         <p><b>Var olan commit’lerin bazılarını geri alarak log içerisinde görünmesini istemiyorum. Nasıl
-                            yaparım?</b></p>
+                                yaparım?</b></p>
                         <p><b>git log</b> kullandıktan sonra silinmesini istediğimiz yerin bir öncesinde commit’in
                             HashID’sini alıyoruz.</p>
                         <p>Daha sonra <b>“git reset — hard HashID”</b> ile bu işlemi gerçekleştirebiliriz. Seçtiğimiz
@@ -530,7 +532,8 @@
                     </div><br><br>
 
                     <div>
-                        <p><b>Commit’ler arasındaki farklılıklara bakmak için iki commit’in HashID’sini aldıktan sonra;</b></p>
+                        <p><b>Commit’ler arasındaki farklılıklara bakmak için iki commit’in HashID’sini aldıktan
+                                sonra;</b></p>
                         <p>git diff HashID1 . . HashID2 index.md</p>
                         <p>git diff HashID1 . . HashID2: Daha az bilgi içeren kaba karşılaştırma.</p>
                     </div><br><br>
@@ -580,12 +583,18 @@
 
                     <div>
                         <p><b>Başlıca bilmemiz gereken bazı terimler;</b></p>
-                        <p><b>untracked (izlenmeyen):</b> Git tarafından henüz takip edilmeyen, yani yeni oluşturulmuş dosyaları ifade eder.</p>
-                        <p><b>unstaged (hazırlanmamış):</b> Güncellenmiş ancak commit’lenmek için hazırlanmamış dosyaları ifade eder.</p>
+                        <p><b>untracked (izlenmeyen):</b> Git tarafından henüz takip edilmeyen, yani yeni oluşturulmuş
+                            dosyaları ifade eder.</p>
+                        <p><b>unstaged (hazırlanmamış):</b> Güncellenmiş ancak commit’lenmek için hazırlanmamış
+                            dosyaları ifade eder.</p>
                         <p><b>staged (hazırlanmış):</b> Commit’lenmeye hazır olan dosyaları ifade eder. </p>
-                        <p><b>deleted (silinmiş):</b> Projeden silinmiş ama Git üzerinden kaldırılmamış dosyaları ifade eder.</p>
-                        <p> <b>branch (dal):</b> Geliştirme ortamı içerisinde bulunan dosyalama ve yönetim yapısı olarak düşünülebilir. Ağaç dalları ile aynı mantıkta değerlendirilebilir. Bir daldan üretilen ayrılan dal,
-                            üretildiği ağacın içeriğini barındırır. Ağaç mantığından farklı olarak birleştirme işlemi uygulanabilir.
+                        <p><b>deleted (silinmiş):</b> Projeden silinmiş ama Git üzerinden kaldırılmamış dosyaları ifade
+                            eder.</p>
+                        <p> <b>branch (dal):</b> Geliştirme ortamı içerisinde bulunan dosyalama ve yönetim yapısı olarak
+                            düşünülebilir. Ağaç dalları ile aynı mantıkta değerlendirilebilir. Bir daldan üretilen
+                            ayrılan dal,
+                            üretildiği ağacın içeriğini barındırır. Ağaç mantığından farklı olarak birleştirme işlemi
+                            uygulanabilir.
                         </p>
                         <p><b>flow:</b> Akış ve ilerleyiş anlamına gelir.</p>
                     </div><br><br>
@@ -593,11 +602,16 @@
                     <div>
                         <h3>Kaynakça</h3>
                         <p>
-                            <a href="https://app.patika.dev/moduller/git/git-bash-ile-git-temel-komutlari">Git Bash Komutları</a><br>
+                            <a href="https://app.patika.dev/moduller/git/git-bash-ile-git-temel-komutlari">Git Bash
+                                Komutları</a><br>
                             <a href="https://app.patika.dev/moduller/ileri-seviye-git">İleri Seviye Git</a><br>
-                            <a href="https://app.patika.dev/moduller/git/gitignore-dosyasi-ne-i̇se-yarar-nasil-kullaniriz">Git İgnore Dosyası Ne İşe Yarar?</a><br>
-                            <a href="https://www.mobilhanem.com/git-tag-ile-commit-etiketleme/">Git Tag İle Commit Etiketleme</a><br>
-                            <a href="https://developpaper.com/git-flow-workflow-summary/">Git Flow Workflow  Summary</a><br>
+                            <a
+                                href="https://app.patika.dev/moduller/git/gitignore-dosyasi-ne-i̇se-yarar-nasil-kullaniriz">Git
+                                İgnore Dosyası Ne İşe Yarar?</a><br>
+                            <a href="https://www.mobilhanem.com/git-tag-ile-commit-etiketleme/">Git Tag İle Commit
+                                Etiketleme</a><br>
+                            <a href="https://developpaper.com/git-flow-workflow-summary/">Git Flow Workflow
+                                Summary</a><br>
                         </p>
                     </div>
                 </div>
@@ -606,7 +620,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact" id="contact">
+    <section class="d-lg-flex justify-content-center align-items-center" style="padding-top: 5%;" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 mr-lg-5 col-12">
@@ -619,14 +633,16 @@
                     <div class="contact-form">
                         <h2 class="mb-4">Tanışmak ister misiniz? Hadi konuşalım!</h2>
                         <p>
-                            Merak ettiklerin, aklına takılan soruların olabilir. Bende bazen günlerce bir problem
-                            üzerinde uğraşıyor ve düşünüyorum. Böyle durumlarda çekinmeden bana ulaşabilirsin. Sana
-                            yardımcı olabilmek için aşağıdaki kısıma sosyal medya linklerimi ekledim.
+                            Merak ettiklerin, aklına takılan soruların olabilir. Ben de bazen günlerce bir problem
+                            üzerinde uğraşıyor
+                            ve düşünüyorum. Böyle durumlarda çekinmeden bana ulaşabilirsin. Sana yardımcı olabilmek için
+                            aşağıdaki
+                            kısıma sosyal medya linklerimi ekledim.
                         </p>
                         <p>
                             Gün içerisinde maalesef genellikle meşgulüm, projelerimle uğraşıyor veya işte olabiliyorum.
-                            O yüzden cevap alamazsan lütfen acele etme, en kısa sürede sana ulaşmaya ve sorunu
-                            cevaplamaya çalışacağım.
+                            O yüzden cevap
+                            alamazsan lütfen acele etme, en kısa sürede sana ulaşmaya ve sorunu cevaplamaya çalışacağım.
                         </p>
                         <p>
                             Tekrar görüşüne kadar kendine çok iyi bak. Sağlıcakla kal…
@@ -639,21 +655,11 @@
                 <a href="https://twitter.com/kagancansit" class="fa fa-twitter" title="Twitter"></a> |
                 <a href="https://www.linkedin.com/in/kagancansit/" class="fa fa-linkedin" title="Linkedin"></a> |
                 <a href="mailto:kagancansit@hotmail.com" class="fa fa-send" title="Outlook"></a>
+            <p class="copyright-text text-center">Kağan Can Şit | Umarım sana katkı sağlayan ve bilgi katan içerikler
+                bulmuşsundur.🏹</p>
             </p>
         </div>
     </section>
-
-    <!-- FOOTER -->
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-12">
-                    <p class="copyright-text text-center">Copyright &copy; 2022 - Kağan Can Şit | Umarım sana katkı
-                        sağlayan ve bilgi katan içerikler bulmuşsundur.🏹</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script src="../../js/jquery-3.3.1.min.js"></script>
     <script src="../../js/popper.min.js"></script>
@@ -665,4 +671,5 @@
     <script src="../../js/custom.js"></script>
 
 </body>
+
 </html>
