@@ -7,6 +7,11 @@
       {
         $('.color-mode-icon').toggleClass('active')
         $('body').toggleClass('dark-mode')
+
+        //Navbar color setting
+        if ($('body').hasClass('dark-mode')) {
+          $('.navbar').css('background-color', '#0c0c0d');
+        }
       }
     }
 
@@ -15,6 +20,13 @@
         $('.color-mode-icon').toggleClass('active')
         $('body').toggleClass('dark-mode')
          
+        //Navbar color setting
+        if ($('body').hasClass('dark-mode')) {
+          $('.navbar').css('background-color', '#0c0c0d');
+        } else {
+          $('.navbar').css('background-color', '#fff');
+        }
+
         if(localStorage.getItem('dark-mode-state') != null)
         {
           var colorModeTemp = (localStorage.getItem('dark-mode-state') == 1) ? 0 : 1;

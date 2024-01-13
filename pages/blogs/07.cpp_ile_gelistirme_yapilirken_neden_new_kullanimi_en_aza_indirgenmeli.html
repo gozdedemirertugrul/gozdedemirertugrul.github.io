@@ -50,16 +50,16 @@
       <div style="background-color: transparent;" class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
+            <a href="../projects.html" class="nav-link"><span data-hover="Projeler">Projeler</span></a>
+          </li>
+          <li class="nav-item">
             <a href="../main_blog_page.html" class="nav-link"><span data-hover="Blog">Blog</span></a>
           </li>
           <li class="nav-item">
-            <a href="../../index.html" class="nav-link"><span data-hover="Projeler">Projeler</span></a>
+            <a href="../design.html" class="nav-link"><span data-hover="Tasarım">Tasarım</span></a>
           </li>
           <li class="nav-item">
-            <a href="design.html" class="nav-link"><span data-hover="Tasarım">Tasarım</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="../../index.html" class="nav-link"><span data-hover="Hakkında">Hakkında</span></a>
+            <a href="../about_me.html" class="nav-link"><span data-hover="Hakkında">Hakkında</span></a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link"><span data-hover="İletişim">İletişim</span></a>
@@ -90,122 +90,202 @@
           <h2>C++ İle Geliştirme Yapılırken Neden "new" Kullanımı En Aza İndirgenmeli?</h2>
           <p><small>Mart 12, 2023</small></p>
           <p>
-            Merhaba, bugün C++ dilinde "new" kullanımının arkasında neler olduğuna dair bir bakış atacağız. C++ ve C donanım tabanlı birçok amaç için kullanılabilen dillerdir ve bellek yönetimi konusunda biraz daha açık yazım yapısına sahiptirler. (pointer vb.)
-            Bu nedenle, geçmişten gelen düşük donanımları yönetmek için performansa dayalı bir teknoloji diline ihtiyaç duyulduğunda C++ ve C tercih edilir. Bu diller donanımın gücünü verimli bir şekilde kullanabilen kod parçacıkları oluşturma hedefi taşırlar. 
-            Bu nedenle, savunma sanayisi, oyun endüstrisi, otonom araç teknolojileri, işletim sistemleri, arama motorları, haberleşme gibi kilit alanlarda yaygın olarak kullanılmaktadırlar. Örnek vermek gerekirse aktif olarak C, C++ teknolojisi kullanan 
+            Merhaba, bugün C++ dilinde "new" kullanımının arkasında neler olduğuna dair bir bakış atacağız. C++ ve C
+            donanım tabanlı birçok amaç için kullanılabilen dillerdir ve bellek yönetimi konusunda biraz daha açık yazım
+            yapısına sahiptirler. (pointer vb.)
+            Bu nedenle, geçmişten gelen düşük donanımları yönetmek için performansa dayalı bir teknoloji diline ihtiyaç
+            duyulduğunda C++ ve C tercih edilir. Bu diller donanımın gücünü verimli bir şekilde kullanabilen kod
+            parçacıkları oluşturma hedefi taşırlar.
+            Bu nedenle, savunma sanayisi, oyun endüstrisi, otonom araç teknolojileri, işletim sistemleri, arama
+            motorları, haberleşme gibi kilit alanlarda yaygın olarak kullanılmaktadırlar. Örnek vermek gerekirse aktif
+            olarak C, C++ teknolojisi kullanan
             yazılımlar için Linux(Core), Windows, Firefox, Adobe gibi örnekler verilebilir.
           </p>
           <p>
-            Ancak bu özellikleri nedeniyle C++ diğer dillere göre daha karmaşık bir syntax yapısına sahip ve daha fazla düşük seviyeli donanım bilgisi gerektiren bir dildir. Performans ve verimlilik söz konusu olduğunda, <b>doğru şekilde yazılmış ve mimari olarak implemente 
-            edilmiş bir C, C++ kodu</b> oldukça yararlı olabilir. Ancak bu konuda birçok noktaya dikkat edilmesi gerektiği için hataya daha fazla açık bir dil haline gelebilir. Şimdi genel bir bakış açısı sunduktan sonra konuyu daha da özelleştirebiliriz.
+            Ancak bu özellikleri nedeniyle C++ diğer dillere göre daha karmaşık bir syntax yapısına sahip ve daha fazla
+            düşük seviyeli donanım bilgisi gerektiren bir dildir. Performans ve verimlilik söz konusu olduğunda,
+            <b>doğru şekilde yazılmış ve mimari olarak implemente
+              edilmiş bir C, C++ kodu</b> oldukça yararlı olabilir. Ancak bu konuda birçok noktaya dikkat edilmesi
+            gerektiği için hataya daha fazla açık bir dil haline gelebilir. Şimdi genel bir bakış açısı sunduktan sonra
+            konuyu daha da özelleştirebiliriz.
           </p>
           <h3>"New" Deyimini Kullandığımızda Neler Gerçekleşir?</h3>
-            <p>
-              "Neden daha az kullanmalıyız?" sorusuna doğru bir cevap verebilmek için C++ dilinin genel yapısı hakkında bilgi sahibi olmak ve "new" kullanımı sonrası bellek olaylarının sonuçlarını bilmek önemlidir.
+          <p>
+            "Neden daha az kullanmalıyız?" sorusuna doğru bir cevap verebilmek için C++ dilinin genel yapısı hakkında
+            bilgi sahibi olmak ve "new" kullanımı sonrası bellek olaylarının sonuçlarını bilmek önemlidir.
+          </p>
+          <p>
+            Üç tip bellek yönetim tipi vardır: <br>
+          <ul>
+            <li>
+              <p><b> - Static Memory Allocation | Statik Bellek Ayırma</b></p>
+            </li>
+            <p>&emsp;&emsp;
+              Programın başlatılmasından önce "static" olarak tanımlanmış değerler için bellek alanından yer tahsisi
+              yapılır. Bu tahsis işlemi sadece bir kez gerçekleştirilir ve değerler sabit boyutludur. Program sonlanana
+              kadar bellek içerisinde yer alırlar,
+              programın sonlanmasıyla birlikte beraber belleğe iade edilirler.
             </p>
-            <p>
-              Üç tip bellek yönetim tipi vardır: <br>
-              <ul>
-                <li><p><b> - Static Memory Allocation | Statik Bellek Ayırma</b></p></li>
-                <p>&emsp;&emsp;
-                  Programın başlatılmasından önce "static" olarak tanımlanmış değerler için bellek alanından yer tahsisi yapılır. Bu tahsis işlemi sadece bir kez gerçekleştirilir ve değerler sabit boyutludur. Program sonlanana kadar bellek içerisinde yer alırlar, 
-                  programın sonlanmasıyla birlikte beraber belleğe iade edilirler.
-                </p>
-                <li><p><b> - Automatic Memory Allocation | Otomatik Bellek Ayırma</b></p></li>
-                <p>&emsp;&emsp;
-                  Lokal değişkenler ve fonksiyon/method tanımları genellikle bir alanda başlatılır ve aynı alandan çıktıktan sonra bellekte iade edilir. Bu veriler <b>"Stack | Yığın"</b> olarak adlandırılan bir yapıda saklanır ve iadeleri de bu şekilde
-                  gerçekleştirilir. Bu bellek yönetim biçimi için daha güvenli olduğu düşüncesi hakimdir.
-                </p>
-                <li><p><b> - Dynamic Memory Allocation | Dinamik Bellek Ayırma</b></p></li>
-                <p>&emsp;&emsp;
-                  "new, malloc, calloc" gibi çağrılar ile bellek üzerinden anlık olarak alan tahsisi yapılması söz konusudur. Belleğin tahsisi ve iadesi programcıya bağlıdır. Bu sebeple hataya açık ve dikkatli kullanılması gerekir. Tanımlanan değişkenler ve objeler
-                  bellek üzerinde "heap" adını verdiğimiz alanda tutulur. Bu kısım program çalıştığı süre zarfında bellek alanından tahsis edilir ve kullanılır. Bu sebeple işletim adresi ve uzunluğu sabit değildir. Program işleyişinde istenen yer ve oluşan verinin büyüklüğü
-                  ile değişicidir. 
-                </p>
-                <p><b>Bu yazının temel konusu ise tanımlama ve kullanım biçimi doğrultusunda gerçekleşen "Automatic Memory Allocation | Otomatik Bellek Ayırma" ve "Dynamic Memory Allocation | Dinamik Bellek Ayırma" biçimlerinin farklılıklarından oluşmaktadır.</b></p>
-              </ul>
-              <div style="text-align: center;">
-                <img src="../../images/blogs/C++_Ile_Gelistirme_Yap._Neden_new_En_Aza_Ind/MemoryAllocation.jpeg" class="img-fluid" alt="Memory Allocation">
-                <p style="text-align: center;">Kaynak: <a href="https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-4-memory-management/6d4dfcaa1ff84f57a2098da8e6401d9c">digiKey</a></p>
-              </div>
+            <li>
+              <p><b> - Automatic Memory Allocation | Otomatik Bellek Ayırma</b></p>
+            </li>
+            <p>&emsp;&emsp;
+              Lokal değişkenler ve fonksiyon/method tanımları genellikle bir alanda başlatılır ve aynı alandan çıktıktan
+              sonra bellekte iade edilir. Bu veriler <b>"Stack | Yığın"</b> olarak adlandırılan bir yapıda saklanır ve
+              iadeleri de bu şekilde
+              gerçekleştirilir. Bu bellek yönetim biçimi için daha güvenli olduğu düşüncesi hakimdir.
             </p>
-            
-            <p>
-              Şimdi bellek alanlarının tahsisinde gerçekleşen farklılıklarla birlikte performans ve güvenilirlik için oluşan durumlara göz atalım. Herhangi bir kod parçacağınız içerisinde yalnızca "new" deyimiyle çağrı yaptığınızda bellek üzerinden bir alan tahsisi
-              gerçekleştirirsiniz, ayrıca bu alanın yönetimi ve idaresi (C, C++ gibi programlama dilleri için) sizlerin yönetimindedir. <b>Belleğe iadesi de öyle! Asla unutmamak gerekir. C ve C++ kaynak yönetimi için bir Garbage Collector'a sahip değildir.</b> Bu sebeple 
-              kullanılmayan değişken ve değerleri otomatik olarak iade işlemi gerçekleştirmez, süreci yönetmez. Bunun sebebi ise yukarıda bahsetmiş olduğum eskiye dönük mimarisi, performans isteği gibi çeşitli sebeplerden kaynaklanmaktadır. Hatalı kullanım ile birlikte
-              bellek üzerinden tahsis ettiğiniz alanı iade etmememiz sonucunda "Memory Leak" adını verdiğimiz durum ile karşılaşabilir veya programınızı kullanılamayan bir hale getirebilirsiniz.
-              <div style="text-align: center;">
-                <img style="height: 40%; width: 40%;" src="../../images/blogs/C++_Ile_Gelistirme_Yap._Neden_new_En_Aza_Ind/Error.png" class="img-fluid" alt="Fail Case Robot">
-              </div>
+            <li>
+              <p><b> - Dynamic Memory Allocation | Dinamik Bellek Ayırma</b></p>
+            </li>
+            <p>&emsp;&emsp;
+              "new, malloc, calloc" gibi çağrılar ile bellek üzerinden anlık olarak alan tahsisi yapılması söz
+              konusudur. Belleğin tahsisi ve iadesi programcıya bağlıdır. Bu sebeple hataya açık ve dikkatli
+              kullanılması gerekir. Tanımlanan değişkenler ve objeler
+              bellek üzerinde "heap" adını verdiğimiz alanda tutulur. Bu kısım program çalıştığı süre zarfında bellek
+              alanından tahsis edilir ve kullanılır. Bu sebeple işletim adresi ve uzunluğu sabit değildir. Program
+              işleyişinde istenen yer ve oluşan verinin büyüklüğü
+              ile değişicidir.
             </p>
-            
-            <p>
-              <h3>Memory Leak | Bellek Sızıntısı İçin Basit Bir Örnek</h3>
-              <p><b>Şimdi bu durum için basit bir örnek üzerinden inceleyelim.</b></p>
+            <p><b>Bu yazının temel konusu ise tanımlama ve kullanım biçimi doğrultusunda gerçekleşen "Automatic Memory
+                Allocation | Otomatik Bellek Ayırma" ve "Dynamic Memory Allocation | Dinamik Bellek Ayırma" biçimlerinin
+                farklılıklarından oluşmaktadır.</b></p>
+          </ul>
+          <div style="text-align: center;">
+            <img src="../../images/blogs/C++_Ile_Gelistirme_Yap._Neden_new_En_Aza_Ind/MemoryAllocation.jpeg"
+              class="img-fluid" alt="Memory Allocation">
+            <p style="text-align: center;">Kaynak: <a
+                href="https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-4-memory-management/6d4dfcaa1ff84f57a2098da8e6401d9c">digiKey</a>
             </p>
-            <br>
-            <!-- Youtube Video Content -->
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-              <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/Rb3NqsrzMKo?si=6lM9Js3VZPIwVWcb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div><br>
-            
-            <p>
-              Örnek üzerinden gidecek olursak yukarıdaki kod parçacağında görüldüğü üzere bir "MyClass" adıyla bir sınıf tanımlı, bu sınıftan bir nesne oluşturuyoruz ve "delete" işlemi gerçekleştirilmeden if şartı içerisinde yer alan return ile programı sonlandırıyoruz. Görüldüğü üzere "MyClass"
-              sınıfına ait "Destructor | Yıkıcı" herhangi bir şekilde çağrılmıyor. Son durumda tanımlamış olduğumuz class nesnesi halen bellekte yer almaya devam ediyor. Bu durum şu an için korkutucu gözükmeyebilir. Fakat eğer bu parçacığı çok fazla çalıştırırsam? Bir süre zarfı sonrasında 
-              belleğimde alan kalmayacak ve işletim sistemi üzerinden diğer programlar, süreçler hatalı davranmaya, belki de sonlanmaya başlayacaktır. Ayrıca kritik bir noktada bırakılan bu tip bir veri güvenlik ihlali de oluşturabilir. Örneğin bir kullanıcıya ait tanımlı bir veriyi bir class yapısından
-              oluşturdupğunuz obje yardımıyla tutuyorsunuz. Bu objeyi eğer doğru biçimde belleğe iade etmez veya içeriğini karartmazsanız bellek üzerinde okunabilir olarak kalacaktır.
-            </p>
-            <p>
-              <b>! C ve C++ bellek yönetimi için sizlere farklı yollar sunuyor fakat "Garbage Collector" bulunmayışıyla birlikte yönetimin tüm sorumluluğunu da size devrediyor.</b>
-            </p>
-            
-            
-            <h3>Peki! Çözüm Yolu Nedir?</h3>
-            <p>
-              C++ bizlere bu durum için <b>"Smart Pointers | Akıllı İşaretçiler"</b> gibi bir yol sunuyor. Yaptığımız "new" tanımlarının "Dynamic Memory Allocation | Dinamik Bellek Ayırma" yerine "Automatic Memory Allocation | Otomatik Bellek Ayırma" ile gerçekleşmesini 
-              sağlayabilirsiniz. Programınızın performansı ve kaynak yönetimi için bu yol sizlere daha iyi sonuçlar verecektir. Detaylandırmadan önce aynı örneği bir smart pointer yardımıyla gerçekleştirelim;
-            </p>
-            <br>
-            <!-- Youtube Video Content -->
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-              <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/yFzypPU3Q4I?si=hwZozFSsMxmbFcQX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div><br>
+          </div>
+          </p>
 
-            <p>
-              Bu örnek üzerinden baktığımızda ise if şartı içerisinde program return ettiğinde var olan değişken değeri için bellek alanı iade ediliyor. Çünkü "Destructor | Yıkıcı" çağrısının gerçekleştiğini görüyoruz. Ayrıca nesnenin bellek adresi boşaltılarak yeniden kullanılmak üzere tahsis ediliyor.
-            </p>
+          <p>
+            Şimdi bellek alanlarının tahsisinde gerçekleşen farklılıklarla birlikte performans ve güvenilirlik için
+            oluşan durumlara göz atalım. Herhangi bir kod parçacağınız içerisinde yalnızca "new" deyimiyle çağrı
+            yaptığınızda bellek üzerinden bir alan tahsisi
+            gerçekleştirirsiniz, ayrıca bu alanın yönetimi ve idaresi (C, C++ gibi programlama dilleri için) sizlerin
+            yönetimindedir. <b>Belleğe iadesi de öyle! Asla unutmamak gerekir. C ve C++ kaynak yönetimi için bir Garbage
+              Collector'a sahip değildir.</b> Bu sebeple
+            kullanılmayan değişken ve değerleri otomatik olarak iade işlemi gerçekleştirmez, süreci yönetmez. Bunun
+            sebebi ise yukarıda bahsetmiş olduğum eskiye dönük mimarisi, performans isteği gibi çeşitli sebeplerden
+            kaynaklanmaktadır. Hatalı kullanım ile birlikte
+            bellek üzerinden tahsis ettiğiniz alanı iade etmememiz sonucunda "Memory Leak" adını verdiğimiz durum ile
+            karşılaşabilir veya programınızı kullanılamayan bir hale getirebilirsiniz.
+          <div style="text-align: center;">
+            <img style="height: 40%; width: 40%;"
+              src="../../images/blogs/C++_Ile_Gelistirme_Yap._Neden_new_En_Aza_Ind/Error.png" class="img-fluid"
+              alt="Fail Case Robot">
+          </div>
+          </p>
 
-            <h3>Neden Smart Pointer?</h3>
-            <p><b>Dynamic Memory Allocation | Dinamik Bellek Ayırma VS Automatic Memory Allocation | Otomatik Bellek Ayırma</b></p>
-            <p>
-              Otomatik Bellek Ayırma işlemi, Dinamik Bellek Ayırma işlemine kıyasla daha hızlı ve güvenlidir. "heap" yapısı için adresler değişicidir ve bellek alanında sıralı değildirler. Adresci kayıtlarının tutulması ve değerlere erişim maliyetlidir. Bu maliyetler beraberinde performans kaybına yol açar.
-              Otomatik Bellek Ayırma işleminde yer alan "stack" yapısı için ise değerler "FILO (First In Last Out)" olarak tutulduğundan erişim hızlıdır ve kayıtlı adresci defteri boyutu azdır. Bellek üzerinden veriye erişme maliyeti düşüktür ve değişkenlerin adres tanımları bir yığın halinde tutulduğundan
-              değişkenlerin, verilerin iadesinde "Memory Leak" hatalarının önüne geçer.
-            </p>
+          <p>
+          <h3>Memory Leak | Bellek Sızıntısı İçin Basit Bir Örnek</h3>
+          <p><b>Şimdi bu durum için basit bir örnek üzerinden inceleyelim.</b></p>
+          </p>
+          <br>
+          <!-- Youtube Video Content -->
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+              src="https://www.youtube-nocookie.com/embed/Rb3NqsrzMKo?si=6lM9Js3VZPIwVWcb" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div><br>
 
-            <h3>Sonuç</h3>
-            <p>
-              "New" deyimini kullanmaktan her zaman kaçınmak zorunda değilsiniz. Özellikle yığın boyutuna oranla daha fazla veri almanız gerektiğinde veya new ifadesinin iadesini iyi yönetebileceğiniz durumlarda "new" kullanabilirsiniz. 
-              Ancak mümkün olduğunca "Smart Pointers | Akıllı İşaretçileri" kullanmanız bellek kaynaklarını daha iyi yönetmenize yardımcı olarak programınızın erken "return" etmesi veya bir exception durumu
-              oluşması durumunda size yardımcı olacaktır. Sınıf yapıları oluştururken akıllı işaretçiler ayrıca çok kullanışlı olabilirler. Çünkü birden fazla akıllı işaretçi türü vardır. Bu işaretçileri işe ve duruma özgü kullanabilirsiniz. TheCherno kanalına ait 
-              "<a href="https://www.youtube.com/watch?v=UOB7-B2MfwA">SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr, std::weak_ptr)</a>" ve CoffeeBeforeArch kanalına ait <a href="https://youtu.be/LU62nNsigjs"> C++ Best Practices: RAII </a> içeriklerini izleyerek daha fazla bilgi edinebilirsiniz.
-            </p>
-            <p>
-              <h3>Kaynakça</h3>
-              <a href="https://stackoverflow.com/questions/6500313/why-should-c-programmers-minimize-use-of-new">Stackoverflow | Why should C++ programmers minimize use of 'new'?</a><br>
-              <a href="https://stackoverflow.com/questions/147130/why-doesnt-c-have-a-garbage-collector">Stackoverflow | Why doesn't C++ have a garbage collector?</a><br>
-              <a href="https://www.youtube.com/watch?v=UOB7-B2MfwA">SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr, std::weak_ptr)</a><br>
-              <a href="https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-4-memory-management/6d4dfcaa1ff84f57a2098da8e6401d9c">DigiKey | Introduction to RTOS - Solution to Part 4 (Memory Management)</a><br>
-              <a href="https://ptolemy.berkeley.edu/ptolemyclassic/almagest/docs/prog/html/ptlang.doc7.html#:~:text=Memory%20leaks%20occur%20when%20new,or%20the%20delete%20%5B%5D%20operator.">2.7 Preventing Memory Leaks in C++ Code</a><br>
-            </p>
+          <p>
+            Örnek üzerinden gidecek olursak yukarıdaki kod parçacağında görüldüğü üzere bir "MyClass" adıyla bir sınıf
+            tanımlı, bu sınıftan bir nesne oluşturuyoruz ve "delete" işlemi gerçekleştirilmeden if şartı içerisinde yer
+            alan return ile programı sonlandırıyoruz. Görüldüğü üzere "MyClass"
+            sınıfına ait "Destructor | Yıkıcı" herhangi bir şekilde çağrılmıyor. Son durumda tanımlamış olduğumuz class
+            nesnesi halen bellekte yer almaya devam ediyor. Bu durum şu an için korkutucu gözükmeyebilir. Fakat eğer bu
+            parçacığı çok fazla çalıştırırsam? Bir süre zarfı sonrasında
+            belleğimde alan kalmayacak ve işletim sistemi üzerinden diğer programlar, süreçler hatalı davranmaya, belki
+            de sonlanmaya başlayacaktır. Ayrıca kritik bir noktada bırakılan bu tip bir veri güvenlik ihlali de
+            oluşturabilir. Örneğin bir kullanıcıya ait tanımlı bir veriyi bir class yapısından
+            oluşturdupğunuz obje yardımıyla tutuyorsunuz. Bu objeyi eğer doğru biçimde belleğe iade etmez veya içeriğini
+            karartmazsanız bellek üzerinde okunabilir olarak kalacaktır.
+          </p>
+          <p>
+            <b>! C ve C++ bellek yönetimi için sizlere farklı yollar sunuyor fakat "Garbage Collector" bulunmayışıyla
+              birlikte yönetimin tüm sorumluluğunu da size devrediyor.</b>
+          </p>
+
+
+          <h3>Peki! Çözüm Yolu Nedir?</h3>
+          <p>
+            C++ bizlere bu durum için <b>"Smart Pointers | Akıllı İşaretçiler"</b> gibi bir yol sunuyor. Yaptığımız
+            "new" tanımlarının "Dynamic Memory Allocation | Dinamik Bellek Ayırma" yerine "Automatic Memory Allocation |
+            Otomatik Bellek Ayırma" ile gerçekleşmesini
+            sağlayabilirsiniz. Programınızın performansı ve kaynak yönetimi için bu yol sizlere daha iyi sonuçlar
+            verecektir. Detaylandırmadan önce aynı örneği bir smart pointer yardımıyla gerçekleştirelim;
+          </p>
+          <br>
+          <!-- Youtube Video Content -->
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+              src="https://www.youtube-nocookie.com/embed/yFzypPU3Q4I?si=hwZozFSsMxmbFcQX" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div><br>
+
+          <p>
+            Bu örnek üzerinden baktığımızda ise if şartı içerisinde program return ettiğinde var olan değişken değeri
+            için bellek alanı iade ediliyor. Çünkü "Destructor | Yıkıcı" çağrısının gerçekleştiğini görüyoruz. Ayrıca
+            nesnenin bellek adresi boşaltılarak yeniden kullanılmak üzere tahsis ediliyor.
+          </p>
+
+          <h3>Neden Smart Pointer?</h3>
+          <p><b>Dynamic Memory Allocation | Dinamik Bellek Ayırma VS Automatic Memory Allocation | Otomatik Bellek
+              Ayırma</b></p>
+          <p>
+            Otomatik Bellek Ayırma işlemi, Dinamik Bellek Ayırma işlemine kıyasla daha hızlı ve güvenlidir. "heap"
+            yapısı için adresler değişicidir ve bellek alanında sıralı değildirler. Adresci kayıtlarının tutulması ve
+            değerlere erişim maliyetlidir. Bu maliyetler beraberinde performans kaybına yol açar.
+            Otomatik Bellek Ayırma işleminde yer alan "stack" yapısı için ise değerler "FILO (First In Last Out)" olarak
+            tutulduğundan erişim hızlıdır ve kayıtlı adresci defteri boyutu azdır. Bellek üzerinden veriye erişme
+            maliyeti düşüktür ve değişkenlerin adres tanımları bir yığın halinde tutulduğundan
+            değişkenlerin, verilerin iadesinde "Memory Leak" hatalarının önüne geçer.
+          </p>
+
+          <h3>Sonuç</h3>
+          <p>
+            "New" deyimini kullanmaktan her zaman kaçınmak zorunda değilsiniz. Özellikle yığın boyutuna oranla daha
+            fazla veri almanız gerektiğinde veya new ifadesinin iadesini iyi yönetebileceğiniz durumlarda "new"
+            kullanabilirsiniz.
+            Ancak mümkün olduğunca "Smart Pointers | Akıllı İşaretçileri" kullanmanız bellek kaynaklarını daha iyi
+            yönetmenize yardımcı olarak programınızın erken "return" etmesi veya bir exception durumu
+            oluşması durumunda size yardımcı olacaktır. Sınıf yapıları oluştururken akıllı işaretçiler ayrıca çok
+            kullanışlı olabilirler. Çünkü birden fazla akıllı işaretçi türü vardır. Bu işaretçileri işe ve duruma özgü
+            kullanabilirsiniz. TheCherno kanalına ait
+            "<a href="https://www.youtube.com/watch?v=UOB7-B2MfwA">SMART POINTERS in C++ (std::unique_ptr,
+              std::shared_ptr, std::weak_ptr)</a>" ve CoffeeBeforeArch kanalına ait <a
+              href="https://youtu.be/LU62nNsigjs"> C++ Best Practices: RAII </a> içeriklerini izleyerek daha fazla bilgi
+            edinebilirsiniz.
+          </p>
+          <p>
+          <h3>Kaynakça</h3>
+          <a href="https://stackoverflow.com/questions/6500313/why-should-c-programmers-minimize-use-of-new">Stackoverflow
+            | Why should C++ programmers minimize use of 'new'?</a><br>
+          <a href="https://stackoverflow.com/questions/147130/why-doesnt-c-have-a-garbage-collector">Stackoverflow | Why
+            doesn't C++ have a garbage collector?</a><br>
+          <a href="https://www.youtube.com/watch?v=UOB7-B2MfwA">SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr,
+            std::weak_ptr)</a><br>
+          <a
+            href="https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-4-memory-management/6d4dfcaa1ff84f57a2098da8e6401d9c">DigiKey
+            | Introduction to RTOS - Solution to Part 4 (Memory Management)</a><br>
+          <a
+            href="https://ptolemy.berkeley.edu/ptolemyclassic/almagest/docs/prog/html/ptlang.doc7.html#:~:text=Memory%20leaks%20occur%20when%20new,or%20the%20delete%20%5B%5D%20operator.">2.7
+            Preventing Memory Leaks in C++ Code</a><br>
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <section class="d-lg-flex justify-content-center align-items-center" style="padding-top: 5%;" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 mr-lg-5 col-12">
@@ -218,12 +298,15 @@
           <div class="contact-form">
             <h2 class="mb-4">Tanışmak ister misiniz? Hadi konuşalım!</h2>
             <p>
-              Merak ettiklerin, aklına takılan soruların olabilir. Bende bazen günlerce bir problem üzerinde uğraşıyor
-              ve düşünüyorum. Böyle durumlarda çekinmeden bana ulaşabilirsin. Sana yardımcı olabilmek için aşağıdaki
+              Merak ettiklerin, aklına takılan soruların olabilir. Ben de bazen günlerce bir problem
+              üzerinde uğraşıyor
+              ve düşünüyorum. Böyle durumlarda çekinmeden bana ulaşabilirsin. Sana yardımcı olabilmek için
+              aşağıdaki
               kısıma sosyal medya linklerimi ekledim.
             </p>
             <p>
-              Gün içerisinde maalesef genellikle meşgulüm, projelerimle uğraşıyor veya işte olabiliyorum. O yüzden cevap
+              Gün içerisinde maalesef genellikle meşgulüm, projelerimle uğraşıyor veya işte olabiliyorum.
+              O yüzden cevap
               alamazsan lütfen acele etme, en kısa sürede sana ulaşmaya ve sorunu cevaplamaya çalışacağım.
             </p>
             <p>
@@ -237,21 +320,11 @@
         <a href="https://twitter.com/kagancansit" class="fa fa-twitter" title="Twitter"></a> |
         <a href="https://www.linkedin.com/in/kagancansit/" class="fa fa-linkedin" title="Linkedin"></a> |
         <a href="mailto:kagancansit@hotmail.com" class="fa fa-send" title="Outlook"></a>
+      <p class="copyright-text text-center">Kağan Can Şit | Umarım sana katkı sağlayan ve bilgi katan içerikler
+        bulmuşsundur.🏹</p>
       </p>
     </div>
   </section>
-
-  <!-- FOOTER -->
-  <footer class="footer py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-12">
-          <p class="copyright-text text-center">Copyright &copy; 2022 - Kağan Can Şit | Umarım sana katkı sağlayan ve
-            bilgi katan içerikler bulmuşsundur.🏹</p>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <script src="../../js/jquery-3.3.1.min.js"></script>
   <script src="../../js/popper.min.js"></script>
@@ -263,4 +336,5 @@
   <script src="../../js/custom.js"></script>
 
 </body>
+
 </html>
