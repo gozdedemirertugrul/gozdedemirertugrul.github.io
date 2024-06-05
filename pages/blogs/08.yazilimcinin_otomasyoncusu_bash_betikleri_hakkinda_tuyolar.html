@@ -123,7 +123,7 @@
         </p>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/shell-kernel.png" class="img-fluid" alt="Shell Kernel Input Image">
-        </div><br>
+        </div>
 
         <!-- Content -->
         <h3>Hangi Amaçlar İçin Geliştirilmiştir?</h3>
@@ -156,9 +156,8 @@
         <h3>Kabuk/Betik (Script) Dosyaları İçin Nelere Dikkat Edilmeli? Ne Tip Problemler İle Karşılaşılabilir?</h3>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/warning.png" class="img-fluid" alt="Warning">
-          <p style="text-align: center;">Kaynak: <a href="https://unsplash.com/photos/zkOg39koe80">T.H. Chia |
-              Unsplash</a></p>
-        </div><br>
+          <p style="text-align: center;">Kaynak: <a href="https://unsplash.com/photos/zkOg39koe80">T.H. Chia | Unsplash</a></p>
+        </div>
         <p>
           Komut/betik dosyaları, işleri otomatikleştirmek ve tekrar eden görevleri kolaylaştırmak için harika bir
           araç olabilir. Ancak, bu dosyaları yazarken ve kullanırken bazı potansiyel zorluklar ve hatalarla
@@ -171,42 +170,36 @@
         </p>
         <p>
           <b>
-            Ayrıca betik çağrıları genellikle diğer yazılım araçları üzerinden gerçekleştirilir. Bu sebeple betik
-            dosyasının dönüş değerleri
-            düzgün bir şekilde oluşturulmadıysa her zaman doğru çalıştığını bile düşünebilirsiniz. Terminal ekranında
-            olduğu gibi
-            hataları ekran üzerinde görüntüleyemeyeceğiniz için sizlere zaman kaybı oluşturacaktır.
-          </b><br>
-          Şimdi, hangi tür sorunlarla karşılaşabileceğimize ve nelere dikkat etmemiz gerektiğine yakından bakalım.
-        </p><br>
+            Ayrıca betik çağrıları genellikle diğer yazılım araçları üzerinden gerçekleştirilir. Bu sebeple betik dosyasının dönüş
+            değerleri düzgün bir şekilde oluşturulmadıysa her zaman doğru çalıştığını bile düşünebilirsiniz. Terminal ekranında
+            olduğu gibi hataları ekran üzerinde görüntüleyemeyeceğiniz için sizlere zaman kaybı oluşturacaktır.
+          </b>
+        </p>
+        <p>Şimdi, hangi tür sorunlarla karşılaşabileceğimize ve nelere dikkat etmemiz gerektiğine yakından bakalım.</p>
 
-        <h4>1. Sözdizimi Hataları ve Hata Ayıklama</h4>
+        <h4 style="margin-top: 3%;">1. Sözdizimi Hataları ve Hata Ayıklama</h4>
         <p>
-          Bash kodları yazarken doğru sözdizimini kullanmak oldukça önemlidir. Eksik veya yanlış tırnak işaretleri,
-          parantezler veya operatörleri kolay bir biçimde fark edemeyeceğiniz hatalara neden olabilir. Ayrıca, hata
-          ayıklama (debugging)
-          mümkün olmadığı için yazdığınız betiğin gidişatını ve doğrulunu log'lar aracılığıyla kontrol etmek
-          önemlidir.
+          Bash kodları yazarken doğru sözdizimini kullanmak oldukça önemlidir. Eksik veya yanlış tırnak işaretleri, parantezler
+          veya operatörleri kolay bir biçimde fark edemeyeceğiniz hatalara neden olabilir. Ayrıca, hata ayıklama (debugging)
+          mümkün olmadığı için yazdığınız betiğin gidişatını ve doğrulunu log'lar aracılığıyla kontrol etmek önemlidir.
           Aksi taktirde hata ayıklama sırasında, hangi satırda hata olduğunu bulmak ve düzeltmek için ekstra fazlaca
           çaba sarf etmelisiniz.
         </p>
         <p>
           Buradaki blog yazısı içerisinde kapsamlı olarak tüm sözdizimi hatalarını ele almak pek mümkün değil. Fakat
-          karşılaşılabilecek genel hataları
-          temel örnekler ile açıklamaya çalışacağım.
-        </p><br>
+          karşılaşılabilecek genel hataları temel örnekler ile açıklamaya çalışacağım.
+        </p>
+        <p><b> - Karşılaştırma ve if ifadelerinde boşluk bulunması gerekliliği;</b></p>
         <p>
-          <b> - Karşılaştırma ve if ifadelerinde boşluk bulunması gerekliliği;</b><br>
-          Bash'ta if ifadeleri, döngüler, koşullu ifadeler gibi yapılar karşılaştırma operatörleri kullanılarak
-          oluşturulur. Bu ifadeleri oluştururken, operatörlerin ve değişkenlerin
-          arasında boşluk bırakmak önemlidir. Aksi taktirde, beklenmedik sonuçlar elde edebilirsiniz. Bu tip hatalar
-          genellikle kolay bulunabilen terminal ekranından hata dönüşleriyle
+          Bash'ta if ifadeleri, döngüler, koşullu ifadeler gibi yapılar karşılaştırma operatörleri kullanılarak oluşturulur.
+          Bu ifadeleri oluştururken, operatörlerin ve değişkenlerin arasında boşluk bırakmak önemlidir. Aksi taktirde,
+          beklenmedik sonuçlar elde edebilirsiniz. Bu tip hatalar genellikle kolay bulunabilen terminal ekranından hata dönüşleriyle
           anlayabileceğiniz hatalardır. Bu konu için birkaç örnek ve tüyo vermek gerekirse şu şekilde açıklayabiliriz.
         </p>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/01.simple.PNG" class="img-fluid" alt="Space Simple">
           <p>Boşluklara dikkat edilmeden hatalı yazım örneği.</p>
-        </div><br>
+        </div>
         <p>
           Yukarıdaki basit örnek üzerinden de görüldüğü gibi if ifadesinin sağında ve solunda boşluk bulunmasıyla
           birlikte, içerisinde yer alan değişkenleri de boşluklarla ayrılması gereklidir.
@@ -214,7 +207,9 @@
           gereklidir. Aksi taktirde, değişkenlerin değerleri yerine değişken isimleri yazılacaktır.
           Sayısal ifadeleri karşılaştırmak için karşılaştırma operatörleri güncel programlama dillerinde sıkça
           kullanılsa da bir betik dosyası yazarken tanımlı olan operatörleri kullanmak daha güvenilir
-          olacaktır. Bu operatörler şu şekilder;<br>
+          olacaktır. Bu operatörler şu şekilder;
+        </p>
+        <p>
           <b>-eq:</b> Eşitse (equals)<br>
           <b>-ne:</b> Eşit değilse (not equals)<br>
           <b>-gt:</b> Büyükse (greater than)<br>
@@ -226,10 +221,9 @@
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/01.simple_result.PNG" class="img-fluid" alt="Space Simple Result">
           <p>Boşluk hataları düzeltilmiş yazım örneği.</p>
-        </div><br><br>
-
+        </div>
+        <p><b> - Atama yaparken boşluk kullanmamak;</b></p>
         <p>
-          <b> - Atama yaparken boşluk kullanmamak;</b><br>
           Yukarıdaki maddeden sonra biraz kafa karıştırdığını biliyorum fakat betik içerisinde yer alan
           değişkenlerinize atama yaparken boşluk kullanmamalısınız. Örneğin dosya yollarını belirli parametrelere
           göre değiştirdiğiniz bir betiğiniz varsa ve atamayı yanlış yaparsanız, hatayı bulmanız oldukça uzun
@@ -238,7 +232,7 @@
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/02.simple.PNG" class="img-fluid" alt="Veriable Simple">
           <p>Boşluk bırakılarak ve operatör hatalı yapılmış atama örneği.</p>
-        </div><br>
+        </div>
         <p>
           Bu tip hatayı terminal ekranından görmek kolay fakat başka bir kod parçaçığı ile betik dosyanızı çağırıp
           sadece dönüşüne bakarsanız hata almazsınız. Bu sebeple buradaki hataları incelerken bu yönden
@@ -247,20 +241,18 @@
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/02.simple_result.PNG" class="img-fluid" alt="Veriable Simple Result">
           <p>Boşluk bırakılmadan ve spesifik operatörlerle yapılmış doğru atama örneği.</p>
-        </div><br><br>
+        </div>
 
+        <p><b> - Çift tırnak ve tek tırnak kullanımının temel farkları;</b></p>
         <p>
-          <b> - Çift tırnak ve tek tırnak kullanımının temel farkları;</b><br>
-          Dalgınlık ile yapılabilecek hatalardan birisidir. Bu tip durumlarda cift tırnak içerisindeki değişken
-          değerlerinin koruyarak yazdırır fakat tek tırnak kullanımı için bu durum geçerli değildir.
-          Ayrıca çift tırnak kaçış karakterlerini desteklerken "\n vb.", tek tırnak desteklemez.
+          Dalgınlık ile yapılabilecek hatalardan birisidir. Bu tip durumlarda cift tırnak içerisindeki değişken değerlerinin
+          koruyarak yazdırır fakat tek tırnak kullanımı için bu durum geçerli değildir. Ayrıca çift tırnak kaçış karakterlerini
+          desteklerken "\n vb.", tek tırnak desteklemez.
         </p>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/03.simple.PNG" class="img-fluid" alt="Double Quotes and Single Quotes Simple">
-          <p>Çift tırnak ve tek tırnak farklarının gösterilmesi için değişkenlerin echo ile cümle içerisinde
-            yazılması.</p>
-        </div><br>
-
+          <p>Çift tırnak ve tek tırnak farklarının gösterilmesi için değişkenlerin echo ile cümle içerisinde yazılması.</p>
+        </div>
 
         <h4>2. Değişkenlerin Doğru Kullanımı</h4>
         <p>
@@ -273,39 +265,34 @@
           zaman karmaşık durumlara yol açarak değişken değerlerinizin hatalı olmasına yol açabiliyor. Bu durum ise
           bütün gidişatı etkiliyor. Bu gibi durumlara önlem almak için ise çeşitli kozlarınız var. Bunlar;
         </p>
+        <p><b>- Fonksiyonlar içinde kullanılan tüm değişkenlere atama yaparken, önlerine "local" anahtar kelimesini eklemeyi unutmayın.</b></p>
         <p>
-          <b>- Fonksiyonlar içinde kullanılan tüm değişkenlere atama yaparken, önlerine "local" anahtar kelimesini
-            eklemeyi unutmayın.</b><br>
-          Ayrıca lokal değişkenleri küçük harflerle, global değişkenleri ise büyük harflerle tanımlamaya özen
-          gösterin!
-          Aksi taktirde aynı isme sahip olduklarında ve fazla çağrı olması durumda global bir değişkene yaptığınız
-          atamayı lokal olarak tanımladığınız fonksiyon değişkeninizde görüntüleyebilirsiniz. Güncel programlama
-          dillerinde değişkeni fonksiyon
-          içeriside tanımladığınızda lokal olarak tanımlanır. Fakat Bash'te bu durum geçerli değildir.
+          Ayrıca lokal değişkenleri küçük harflerle, global değişkenleri ise büyük harflerle tanımlamaya özen gösterin! Aksi taktirde aynı isme sahip
+          olduklarında ve fazla çağrı olması durumda global bir değişkene yaptığınız atamayı lokal olarak tanımladığınız fonksiyon değişkeninizde
+          görüntüleyebilirsiniz. Güncel programlama dillerinde değişkeni fonksiyon içeriside tanımladığınızda lokal olarak tanımlanır. Fakat Bash'te
+          bu durum geçerli değildir.
         </p>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/04.simple.PNG" class="img-fluid" alt="Veriable Local Key Simple">
           <p>"Local" anahtar kelimesi ve büyük/küçük harf kuralına dikkat edilmeden yazılan hatalı örnek.</p>
-        </div><br>
+        </div>
         <p>
-          Görsel içerisinde her şey düzgün gibi görünüyor. Fakat "greetings" fonksiyonu içerisindeki "name" değişkeni
-          aslında bir lokal değişken olmalıydı. Bu yüzden "local"
-          anahtar kelimesi oldukça önemli veya ismi unique olarak tanımlamak gerekiyor. Bu örneğin çözümü aşağıdaki
-          gibi olacaktır. Ayrıca C++ dili yazılmış bir örneğini de bırakıyorum.
-          Kıyaslayarak ne demek istediğimi net şekilde anlayabilirsiniz.
+          Görsel içerisinde her şey düzgün gibi görünüyor. Fakat "greetings" fonksiyonu içerisindeki "name" değişkeni aslında bir lokal değişken olmalıydı.
+          Bu yüzden "local" anahtar kelimesi oldukça önemli veya ismi unique olarak tanımlamak gerekiyor. Bu örneğin çözümü aşağıdaki gibi olacaktır.
+          Ayrıca C++ dili yazılmış bir örneğini de bırakıyorum. Kıyaslayarak ne demek istediğimi net şekilde anlayabilirsiniz.
         </p>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/04.simple_result.PNG" class="img-fluid" alt="Veriable Local Key Simple Result">
           <p>"Local" anahtar kelimesinin kullanımı için yazılmış olan doğru kullanım örneği.</p>
-        </div><br>
+        </div>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/04.simple_result-1.PNG" class="img-fluid" alt="Veriable Local Key Simple Result C++">
           <p>Büyük/küçük harf kuralı için yazılmış olan doğru kullanım örneği.</p>
-        </div><br>
+        </div>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/04.simple_result-2.PNG" class="img-fluid" alt="Veriable Local Key Simple Result C++">
           <p>C++ dili aracılığıyla verilmiş olan eşlenik doğru örnek.</p>
-        </div><br>
+        </div>
         <p>
           Güncel programlama dillerinde değişken tanımlarının önünde tipi yer alması sebebiyle bu tip hata olmak çok
           güç. Fakat Bash betiklerinde dikkat edilmezse kolaylıkla gözden kaçabilecek bir hata.
@@ -318,49 +305,39 @@
           Bu konu hakkında StackOverflow üzerinde açılmış çeşitli konular ve blog girdileri bulabilirsiniz. Örnek
           olması adına <a href="https://stackoverflow.com/questions/41770139/variable-assignment-in-nested-function-call-unexpectedly-changes-local-variable">bu
             linki</a> okumanızı tavsiye ederim.
-        </p><br>
-
-        <p>
-          <b>- Fonksiyon tanımlamarında birçok internet üzerindeki örnek için tanımlama yapılırken "function" anahtar
-            kelimesinin kullanıldığını görebilirseniz. Fakat bu kullanım kaldırılmıştır ve önerilmez.</b><br>
-          Bunun için doğru örnek kullanım bir yukarıdaki görselde görüntülenebilir. Neden kaldırıldığına dair açıklama
-          ise
-          <a href="https://stackoverflow.com/questions/7917018/what-is-the-function-keyword-used-in-some-bash-scripts">şu
-            bağlantıda</a> yer alıyor. Kısaca açıklamak gerekirse "function" kelimesi tüm Unix işletim
-          sistemleri tarafından desteklenmemektedir. Bu sebeple yazılan betik içeriği taşınabilirlik için uygun
-          değildir.
-          <br>
-          <b>Not: Bu konuda net olarak emin olmamakla birlikte bilginiz varsa lütfen mail aracılıyla benimle
-            paylaşın!</b>
         </p>
 
         <p>
-          <b>- $1, $2 gibi değişken değerlerini sürekli kullanmaktan kaçının.</b><br> Bu tür değişkenler, her çağrı ve
-          dönüşte kullanıldığı için zaman zaman karışıklığa yol açabilir. Bu durumun sonucunda hatalı
-          değişken değerleriyle karşılaşma ihtimaliniz yüksektir. Betik dosyanızın dışarıdan parametre almasını
-          gerektiren durumlarla karşılaşabilirsiniz. Eğer bu parametreleri betik dosyasının
-          içerisinde kullanıyorsanız, $1, $2 gibi değişkenlerin değerleri değişebilir. Bu durumda, hata ayıklama
-          yaparken zorluk yaşayabilirsiniz. Parametreleri aldıktan sonra, bunları betik
-          dosyanızın başında global bir değişkene atayıp bu değerleri kontrol ederek kullanmak daha sağlıklı bir
-          yaklaşımdır. Aynı zamanda, dışarıdan geçilen parametrelerin sıraları veya değerleri
-          hatalı olabilir, bu da beklenmeyen sonuçlar doğurabilir.
+          <b>- Fonksiyon tanımlamarında birçok internet üzerindeki örnek için tanımlama yapılırken "function" anahtar kelimesinin kullanıldığını görebilirseniz.
+            Fakat bu kullanım kaldırılmıştır ve önerilmez.</b>
+        </p>
+        <p>
+          Bunun için doğru örnek kullanım bir yukarıdaki görselde görüntülenebilir. Neden kaldırıldığına dair açıklama ise
+          <a href="https://stackoverflow.com/questions/7917018/what-is-the-function-keyword-used-in-some-bash-scripts">şu bağlantıda</a> yer alıyor. Kısaca açıklamak
+          gerekirse "function" kelimesi tüm Unix işletim sistemleri tarafından desteklenmemektedir. Bu sebeple yazılan betik içeriği taşınabilirlik için uygun değildir.
+        </p>
+        <p><b>Not: Bu konuda net olarak emin olmamakla birlikte bilginiz varsa lütfen mail aracılıyla benimle paylaşın!</b></p>
+
+        <p><b>- $1, $2 gibi değişken değerlerini sürekli kullanmaktan kaçının.</b></p>
+        <p>
+          Bu tür değişkenler, her çağrı ve dönüşte kullanıldığı için zaman zaman karışıklığa yol açabilir. Bu durumun sonucunda hatalı değişken değerleriyle karşılaşma
+          ihtimaliniz yüksektir. Betik dosyanızın dışarıdan parametre almasını gerektiren durumlarla karşılaşabilirsiniz. Eğer bu parametreleri betik dosyasının
+          içerisinde kullanıyorsanız, $1, $2 gibi değişkenlerin değerleri değişebilir. Bu durumda, hata ayıklama yaparken zorluk yaşayabilirsiniz. Parametreleri
+          aldıktan sonra, bunları betik dosyanızın başında global bir değişkene atayıp bu değerleri kontrol ederek kullanmak daha sağlıklı bir yaklaşımdır. Aynı
+          zamanda, dışarıdan geçilen parametrelerin sıraları veya değerleri hatalı olabilir, bu da beklenmeyen sonuçlar doğurabilir.
         </p>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/05.simple.PNG" class="img-fluid" alt="Veriable Local Key Simple Result C++">
           <p>Kontrol olmadan dışarıdan parametre alımı için hatalı durum örneği.</p>
-        </div><br>
+        </div>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/05.simple_result.PNG" class="img-fluid" alt="Veriable Local Key Simple Result C++">
           <p>Dışarıdan alınan parametreler kontrol edilerek değişkenlere atanmış doğru kullanım örneği.</p>
         </div>
         <p>
-          Fonksiyonlarınızda parametre değerleri geçtiğinizde değişkenleri parametre olarak tanımlayarak kullanmak
-          isterseniz mutlaka fonksiyon
-          içerisinde $1, $2 gibi değişkenleriniz için bir lokal değişken oluşturarak atayın. Yukarıdaki görselde yer
-          alan "result" değişkenini
-          baz alabilirsiniz.
-        </p><br>
-
+          Fonksiyonlarınızda parametre değerleri geçtiğinizde değişkenleri parametre olarak tanımlayarak kullanmak isterseniz mutlaka fonksiyon içerisinde
+          $1, $2 gibi değişkenleriniz için bir lokal değişken oluşturarak atayın. Yukarıdaki görselde yer alan "result" değişkenini baz alabilirsiniz.
+        </p>
 
         <h4>3. Dosya ve Klasör Yollarının İşlenmesi</h4>
         <p>
@@ -371,144 +348,112 @@
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/06.simple.PNG" class="img-fluid" alt="Veriable Local Key Simple Result C++">
           <p>Boşluk karakteri için hatalı kullanım örneği.</p>
-        </div><br>
+        </div>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/06.simple_result.PNG" class="img-fluid" alt="Veriable Local Key Simple Result C++">
           <p>Boşluk karakteri için tırnak işaretleriyle birlikte kullanım örneği.</p>
-        </div><br>
+        </div>
         <p>
-          Yukarıdaki örneğin yanı sıra özel karakter içeren "&" gibi karakterler için de kaçış karakteri kullanmak
-          gerekiyor. Aksi taktirde hata alınacaktır. Bu tip hataların çözümü için de aynı
-          şekilde tırnak kullanıma dikkat edilmesi gerekmektedir.
+          Yukarıdaki örneğin yanı sıra özel karakter içeren "&" gibi karakterler için de kaçış karakteri kullanmak gerekiyor. Aksi taktirde hata alınacaktır.
+          Bu tip hataların çözümü için de aynı şekilde tırnak kullanıma dikkat edilmesi gerekmektedir.
         </p>
         <p>
-          Dosya yollarınızı tanımlarken ve kullanırken "/" ve "\" karakterleri gibi noktalarıda global olarak
-          tanımlarken ve kullanırken
-          dikkat etmeniz sizlere ek olarak avantaj sağlayacaktır.
-        </p><br>
+          Dosya yollarınızı tanımlarken ve kullanırken "/" ve "\" karakterleri gibi noktalarıda global olarak tanımlarken ve kullanırken dikkat etmeniz sizlere ek olarak avantaj sağlayacaktır.
+        </p>
 
         <h4>4. Hata Yönetimi ve Geri Dönüş Değerleri</h4>
         <p>
-          Bash betiklerinde hata yönetimi oldukça önemlidir. Komutlar başarısız olduğunda veya beklenmedik durumlar
-          ortaya çıktığında nasıl tepki verileceğini belirlemek gerekir. Ayrıca, komutların geri dönüş değerlerini
-          doğru bir şekilde kontrol etmek ve buna göre işlem yapmak, betiklerinizin güvenilirliğini artırabilir.
+          Bash betiklerinde hata yönetimi oldukça önemlidir. Komutlar başarısız olduğunda veya beklenmedik durumlar ortaya çıktığında nasıl tepki verileceğini belirlemek gerekir.
+          Ayrıca, komutların geri dönüş değerlerini doğru bir şekilde kontrol etmek ve buna göre işlem yapmak, betiklerinizin güvenilirliğini artırabilir.
         </p>
         <p>
-          Ayrıca çeşitli log seviyeleri ve hata kodları kullanarak başka diller üzerinden çağırdığınız betiklerin
-          dönüş değerlerini
-          doğru şekilde yönetebilirsiniz. Dosyalama işlemleri gibi durumlar için hata olduğunda oluşturduğunuz yedek
-          dosyaları geri yüklemek gibi
-          işlevlerini yerine getirebilirsiniz.
+          Ayrıca çeşitli log seviyeleri ve hata kodları kullanarak başka diller üzerinden çağırdığınız betiklerin dönüş değerlerini doğru şekilde yönetebilirsiniz. Dosyalama
+          işlemleri gibi durumlar için hata olduğunda oluşturduğunuz yedek dosyaları geri yüklemek gibi işlevlerini yerine getirebilirsiniz.
         </p>
         <p>
-          Burada dikkat edilmesi gereken husus çalıştırdığınız işlevlerin dönüş değerlerini doğru şekilde kontrol
-          etmek ve dosyaların vb. içeriklerin varlığını kontrol
-          etmektir.
+          Burada dikkat edilmesi gereken husus çalıştırdığınız işlevlerin dönüş değerlerini doğru şekilde kontrol etmek ve dosyaların vb. içeriklerin varlığını kontrol etmektir.
         </p>
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/07.simple.PNG" class="img-fluid" alt="Veriable Local Key Simple Result C++">
           <p>Log yazılması için örnek.</p>
-        </div><br>
+        </div>
         <p>
-          Burada yer alan temel bir örnek olmasıyla birlikte bir log dosyası belirterek loglarınızı bir dosyaya "cat"
-          komutu yardımıyla yazdırabilir. Ayrıca log seviyeleri
-          ve hata dönüşleri için özel dönüşler tanımlayarak, log fonksiyonunuza ek parametreler geçerek
-          anlaşılabilirliği arttırabilirsiniz. Örneğin logun tetiklendiği satır numarası
+          Burada yer alan temel bir örnek olmasıyla birlikte bir log dosyası belirterek loglarınızı bir dosyaya "cat" komutu yardımıyla yazdırabilir. Ayrıca log seviyeleri
+          ve hata dönüşleri için özel dönüşler tanımlayarak, log fonksiyonunuza ek parametreler geçerek anlaşılabilirliği arttırabilirsiniz. Örneğin logun tetiklendiği satır numarası
           veya fonksiyon ismi gibi.
-        </p><br>
-
+        </p>
 
         <h4>5. Güvenlik ve Zararlı Komutlar</h4>
         <p>
-          Kabuk betiklerini yazarken güvenlik hususunu göz ardı etmemek son derece önemlidir. Kötü niyetli kişilerin,
-          zarar verici komutlar veya enjeksiyon saldırıları aracılığıyla
-          sisteminize zarar verebileceği gerçeğini göz önünde bulundurarak, gerekli tüm önlemleri almanız
-          gerekmektedir. Bu tür saldırıları önlemek için kullanıcı girdilerini
+          Kabuk betiklerini yazarken güvenlik hususunu göz ardı etmemek son derece önemlidir. Kötü niyetli kişilerin, zarar verici komutlar veya enjeksiyon saldırıları aracılığıyla
+          sisteminize zarar verebileceği gerçeğini göz önünde bulundurarak, gerekli tüm önlemleri almanız gerekmektedir. Bu tür saldırıları önlemek için kullanıcı girdilerini
           titizlikle denetlemeli veya kaçış karakterlerini doğru bir şekilde kullanmalısınız.
         </p>
         <p>
-          Önemli bir diğer nokta betik dosyalarının işlevlerine bağlı olarak değişebilecek olan bu durumun, spesifik
-          örneklerle daha iyi anlaşılabilir olduğudur. Bununla birlikte,
-          betik dosyaları .exe gibi derlenmiş dosyalara nazaran daha okunabilir olduğu için hangi dizinde ve hangi
-          yetkilerle çalıştırıldığınızın bilincinde olmalısınız. Özellikle dosya
-          silme gibi işlemleri gerçekleştirirken, etki alanınız altındaki dosyaları dikkatlice değerlendirmeniz
-          gerekmektedir.
-        </p><br>
+          Önemli bir diğer nokta betik dosyalarının işlevlerine bağlı olarak değişebilecek olan bu durumun, spesifik örneklerle daha iyi anlaşılabilir olduğudur. Bununla birlikte,
+          betik dosyaları .exe gibi derlenmiş dosyalara nazaran daha okunabilir olduğu için hangi dizinde ve hangi yetkilerle çalıştırıldığınızın bilincinde olmalısınız. Özellikle dosya
+          silme gibi işlemleri gerçekleştirirken, etki alanınız altındaki dosyaları dikkatlice değerlendirmeniz gerekmektedir.
+        </p>
 
         <h4>6. Taşınabilirlik ve İşletim Sistemi Farklılıkları</h4>
         <p>
-          Bash betiklerinizi yazarken, işletim sistemi farklılıklarını ve taşınabilirliği göz önünde
-          bulundurmalısınız. Komutlar veya parametreler, farklı işletim sistemlerinde farklı sonuçlar verebilir. Bu
-          nedenle,
-          betiklerinizi mümkün olduğunca taşınabilir ve uyumlu hale getirmeye çalışmalısınız.
+          Bash betiklerinizi yazarken, işletim sistemi farklılıklarını ve taşınabilirliği göz önünde bulundurmalısınız. Komutlar veya parametreler, farklı işletim sistemlerinde farklı
+          sonuçlar verebilir. Bu nedenle, betiklerinizi mümkün olduğunca taşınabilir ve uyumlu hale getirmeye çalışmalısınız.
         </p>
         <p>
-          Bu madde için yukarıda birkaç noktaya değindik. (Örn; "function" anahtar kelimesi) Fakat kısaca üstünden
-          geçmek gerekirse kullanımı kaldırılmış veya çeşitli dağıtımlar arasında farklılık
-          gösteren komutları kullanmamak, dosya yolları gibi konularda farklılıklar olabileceğini göz önünde
-          bulundurmak ve değişkenlerin doğru şekilde tanımlanması ele almalısınız.
-        </p><br>
-
+          Bu madde için yukarıda birkaç noktaya değindik. (Örn; "function" anahtar kelimesi) Fakat kısaca üstünden geçmek gerekirse kullanımı kaldırılmış veya çeşitli dağıtımlar
+          arasında farklılık gösteren komutları kullanmamak, dosya yolları gibi konularda farklılıklar olabileceğini göz önünde bulundurmak ve değişkenlerin doğru şekilde tanımlanması
+          ele almalısınız.
+        </p>
 
         <h4>7. Yorumlar ve Belgeleme</h4>
         <p>
-          Tüm yazılımlarda olduğu gibi burada da geliştirdiğiniz betiğin sizden sonra da kullanılacağını göz önünde
-          bulundurmalısınız. Yapmak istediğiniz ve işletim sistemi özelinde bulunan geliştirmelerinizi
-          "#" karakteriyle başlayan yorum satırları le açıklamayı unutmayın. Özellikle işletim sisteminde çeşitli test
-          girdilerini parçalamak için regex kullanımı oldukça yaygındır. Fakat bir regex komutunu ilk seferde
-          anlamak genellikle güç bir durumdur. Yorum satırlarınız ile bu durumu değiştirebilirsiniz.
-        </p><br>
-
+          Tüm yazılımlarda olduğu gibi burada da geliştirdiğiniz betiğin sizden sonra da kullanılacağını göz önünde bulundurmalısınız. Yapmak istediğiniz ve işletim sistemi
+          özelinde bulunan geliştirmelerinizi "#" karakteriyle başlayan yorum satırları le açıklamayı unutmayın. Özellikle işletim sisteminde çeşitli test girdilerini
+          parçalamak için regex kullanımı oldukça yaygındır. Fakat bir regex komutunu ilk seferde anlamak genellikle güç bir durumdur. Yorum satırlarınız ile bu durumu değiştirebilirsiniz.
+        </p>
 
         <h4>8. Veri Kaybı ve Yanlışlıkla Silme</h4>
         <p>
-          İşletim sistemi ve geliştirdiğiniz sistem özelinde gerçekleştirdiğiniz işlemler içerisinde büyük hacimli
-          dosya işlemleri bulunabilir. (Database işlemleri, yedek alma). Bu gibi durumlarda işletim sistemi
-          üzerinde gerçekleştirdiğiniz "rm", "mv" gibi komutlar için dosya yollarını mutlaka kontrol edin. Betiğinizi
-          parça parça dışarıda çeşitli şartlar altında çalıştırarak birleştirin. Bu sayede
-          hata yapma ihtimaliniz azalacaktır. Dosyalarınız işlemlerden sonra işletim sistemi tarafından "sync"
-          komutuyla senkronize edilmesini bekleyin. Bu şekilde kopyaladığınız/taşıdığınız dosyalar üzerinde
-          işlem yapmak isterseniz. Sağlıklı bir biçimde gerçekleştirebilirsiniz. Ayrıca 3. madde olan "Dosya ve Klasör
-          Yollarının İşlenmesi"nde anlatılanları mutlaka ön planda tutun.
-        </p><br><br>
+          İşletim sistemi ve geliştirdiğiniz sistem özelinde gerçekleştirdiğiniz işlemler içerisinde büyük hacimli dosya işlemleri bulunabilir. (Database işlemleri, yedek alma).
+          Bu gibi durumlarda işletim sistemi üzerinde gerçekleştirdiğiniz "rm", "mv" gibi komutlar için dosya yollarını mutlaka kontrol edin. Betiğinizi parça parça dışarıda
+          çeşitli şartlar altında çalıştırarak birleştirin. Bu sayede hata yapma ihtimaliniz azalacaktır. Dosyalarınız işlemlerden sonra işletim sistemi tarafından "sync"
+          komutuyla senkronize edilmesini bekleyin. Bu şekilde kopyaladığınız/taşıdığınız dosyalar üzerinde işlem yapmak isterseniz. Sağlıklı bir biçimde gerçekleştirebilirsiniz.
+          Ayrıca 3. madde olan "Dosya ve Klasör Yollarının İşlenmesi"nde anlatılanları mutlaka ön planda tutun.
+        </p>
 
         <!-- Content -->
         <h3>Peki! Yazdığım Bir Kabuk/Betik(Script)'i Nasıl Kontrol Edebilirim?</h3>
         <p>
-          Yazmış olduğumuz betik dosyalarının kontrolü için kullanabilir birçok eklenti ve yazılım mevcut. Fakat benim
-          şu an bilgim olan ve aktif olarak kullandığım, çeşitli dağıtımlar için paket olarak
-          indirilebilen ve kullanılabilen <a href="https://www.shellcheck.net/">"ShellCheck"</a> olduğundan dolayı,
-          örneklerimi ShellCheck üzerinden vereceğim. Bu arada incelemek istersen projenin
-          <a href="https://github.com/koalaman/shellcheck">Github</a> adresi de burada!
-          <br><br>
+          Yazmış olduğumuz betik dosyalarının kontrolü için kullanabilir birçok eklenti ve yazılım mevcut. Fakat benim şu an bilgim olan ve aktif olarak kullandığım, çeşitli dağıtımlar
+          için paket olarak indirilebilen ve kullanılabilen <a href="https://www.shellcheck.net/">"ShellCheck"</a> olduğundan dolayı, örneklerimi ShellCheck üzerinden vereceğim.
+          Bu arada incelemek istersen projenin <a href="https://github.com/koalaman/shellcheck">Github</a> adresi de burada!
         </p>
         <p>
-          Yazmış olduğunuz betik içeriklerini kontrol edebilmek için <a href="https://www.shellcheck.net/"> ShellCheck
-            websitesini</a> kullanabilir veya dağıtım paketini indirerek
+          Yazmış olduğunuz betik içeriklerini kontrol edebilmek için <a href="https://www.shellcheck.net/"> ShellCheck websitesini</a> kullanabilir veya dağıtım paketini indirerek
           terminal üzerinden kullanabilirsiniz.
         </p>
 
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/shellCheck_Website.PNG" class="img-fluid" alt="ShellCheck Website">
           <p style="text-align: center;">ShellCheck websitesi üzerinden örnek</p>
-        </div><br>
+        </div>
 
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/shellcheck_install.PNG" class="img-fluid" alt="ShellCheck Terminal Install">
           <p style="text-align: center;"><b><i>apt-get install shellcheck</i></b> komutuyla shellCheck paketi kurulumu
           </p>
-        </div><br>
+        </div>
 
         <div style="text-align: center;">
           <img src="../../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/shellcheck_terminal.PNG" class="img-fluid" alt="ShellCheck Terminal Uasge">
           <p style="text-align: center;">ShellCheck için hatalı bir script dosyasının kontrolü örneği</p>
-        </div><br>
+        </div>
 
         <p>
-          Betik dosyasınızı kontrol etmenizin ardından çeşitli seviyelerde uyarı veya error mesajları
-          görüntüleyebilirsiniz. Hata durumu ihtimali barındıran kısımlar satır numarası ile belirtilir, eğer neden
-          hataya
-          yol açabileceğine dair daha çok bilgiye ihtiyaç duyarsanız shellCheck'in size sağladığı bağlantı üzerindeki
+          Betik dosyasınızı kontrol etmenizin ardından çeşitli seviyelerde uyarı veya error mesajları görüntüleyebilirsiniz. Hata durumu ihtimali
+          barındıran kısımlar satır numarası ile belirtilir, eğer neden hataya yol açabileceğine dair daha çok bilgiye ihtiyaç duyarsanız shellCheck'in
+          size sağladığı bağlantı üzerindeki
           örnekleri, doğru kullanımını ve hata açıklamasını mutalaka inceleyin. Anlamınza ve önlem almanıza
           kesinlikle yardımcı olacaktır. Ayrıca sahip olduğu hata kodları için genel tanımlar Github reposu içerisinde
           yer alıyor. <a href="https://gist.github.com/nicerobot/53cee11ee0abbdc997661e65b348f375">Buradaki</a>
@@ -522,7 +467,7 @@
           hata mesajlarını loglamak sizlere büyük yardım sağlayacaktır. IDE ortamında bulunduğu gibi bir
           debug ortamı bulunmadığı için değişkenlerin takibi ve kontrolü betik büyüdükçe olabildiğince zor hale
           gelebiliyor.
-        </p><br><br>
+        </p>
 
         <h3>Sonuç</h3>
         <p>
@@ -543,21 +488,15 @@
         <p>
         <h3>Kaynakça</h3>
         <a href="https://opensource.com/resources/what-bash">What is Bash?| Opensource.com</a><br>
-        <a href="https://www.gnu.org/software/bash/manual/html_node/Introduction.html">What Is The Bash/Shell? |
-          GNU.org</a><br>
-        <a href="https://stackoverflow.com/questions/69252733/bash-local-variable-scope-best-practice">Bash Local
-          Variable Scope Best Practice | StackOverflow</a><br>
-        <a href="https://stackoverflow.com/questions/41770139/variable-assignment-in-nested-function-call-unexpectedly-changes-local-variable">Variable
-          Assignment In Nested Function Call Unexpectedly Changes Local Variable In The Caller's Scope |
-          StackOverflow</a><br>
+        <a href="https://www.gnu.org/software/bash/manual/html_node/Introduction.html">What Is The Bash/Shell? | GNU.org</a><br>
+        <a href="https://stackoverflow.com/questions/69252733/bash-local-variable-scope-best-practice">Bash Local Variable Scope Best Practice | StackOverflow</a><br>
+        <a href="https://stackoverflow.com/questions/41770139/variable-assignment-in-nested-function-call-unexpectedly-changes-local-variable">Variable Assignment In Nested Function Call Unexpectedly
+          Changes Local Variable In The Caller's Scope | StackOverflow</a><br>
         <a href="https://www.linuxjournal.com/content/bash-trap-command">The Bash Trap Command | Linux Journal</a><br>
-        <a href="https://askubuntu.com/questions/161511/are-the-linux-utilities-parts-of-the-kernel-shell">Are the
-          Linux utilities parts of the kernel/shell? | askUbuntu</a><br>
+        <a href="https://askubuntu.com/questions/161511/are-the-linux-utilities-parts-of-the-kernel-shell">Are the Linux utilities parts of the kernel/shell? | askUbuntu</a><br>
         <a href="https://www.shellcheck.net/"> shellCheck Main Page | shellCheck.net</a><br>
-        <a href="https://gist.github.com/nicerobot/53cee11ee0abbdc997661e65b348f375"> shellCheck Return Codes | Github
-        </a><br>
-        <a href="https://stackoverflow.com/questions/7917018/what-is-the-function-keyword-used-in-some-bash-scripts">
-          What is the 'function' keyword used in some bash scripts? | StackOverflow</a>
+        <a href="https://gist.github.com/nicerobot/53cee11ee0abbdc997661e65b348f375"> shellCheck Return Codes | Github</a><br>
+        <a href="https://stackoverflow.com/questions/7917018/what-is-the-function-keyword-used-in-some-bash-scripts"> What is the 'function' keyword used in some bash scripts? | StackOverflow</a>
         </p>
       </div>
     </div>

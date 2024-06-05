@@ -104,9 +104,9 @@
           "Neden daha az kullanmalıyız?" sorusuna doğru bir cevap verebilmek için C++ dilinin genel yapısı hakkında
           bilgi sahibi olmak ve "new" kullanımı sonrası bellek olaylarının sonuçlarını bilmek önemlidir.
         </p>
-        <p>
-          Üç tip bellek yönetim tipi vardır: <br>
+
         <ul>
+          <p>Üç tip bellek yönetim tipi vardır:</p>
           <li>
             <p><b> - Static Memory Allocation | Statik Bellek Ayırma</b></p>
           </li>
@@ -137,15 +137,16 @@
             işleyişinde istenen yer ve oluşan verinin büyüklüğü
             ile değişicidir.
           </p>
-          <p><b>Bu yazının temel konusu ise tanımlama ve kullanım biçimi doğrultusunda gerçekleşen "Automatic Memory
+          <p><b>
+              Bu yazının temel konusu ise tanımlama ve kullanım biçimi doğrultusunda gerçekleşen "Automatic Memory
               Allocation | Otomatik Bellek Ayırma" ve "Dynamic Memory Allocation | Dinamik Bellek Ayırma" biçimlerinin
-              farklılıklarından oluşmaktadır.</b></p>
+              farklılıklarından oluşmaktadır.
+            </b></p>
         </ul>
         <img src="../../images/blogs/C++_Ile_Gelistirme_Yap._Neden_new_En_Aza_Ind/MemoryAllocation.jpeg" class="img-fluid" alt="Memory Allocation">
-        <p style="text-align: center;">Kaynak: <a href="https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-4-memory-management/6d4dfcaa1ff84f57a2098da8e6401d9c">digiKey</a>
+        <p style="text-align: center;">Kaynak: <a
+            href="https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-4-memory-management/6d4dfcaa1ff84f57a2098da8e6401d9c">digiKey</a>
         </p>
-        </p>
-
         <p>
           Şimdi bellek alanlarının tahsisinde gerçekleşen farklılıklarla birlikte performans ve güvenilirlik için
           oluşan durumlara göz atalım. Herhangi bir kod parçacağınız içerisinde yalnızca "new" deyimiyle çağrı
@@ -163,16 +164,14 @@
         </div>
         </p>
 
-        <p>
         <h3>Memory Leak | Bellek Sızıntısı İçin Basit Bir Örnek</h3>
         <p><b>Şimdi bu durum için basit bir örnek üzerinden inceleyelim.</b></p>
-        </p>
-        <br>
+
         <!-- Youtube Video Content -->
-        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 3%;">
           <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/Rb3NqsrzMKo?si=6lM9Js3VZPIwVWcb" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div><br>
+        </div>
 
         <p>
           Örnek üzerinden gidecek olursak yukarıdaki kod parçacağında görüldüğü üzere bir "MyClass" adıyla bir sınıf
@@ -201,12 +200,12 @@
           sağlayabilirsiniz. Programınızın performansı ve kaynak yönetimi için bu yol sizlere daha iyi sonuçlar
           verecektir. Detaylandırmadan önce aynı örneği bir smart pointer yardımıyla gerçekleştirelim;
         </p>
-        <br>
+
         <!-- Youtube Video Content -->
-        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 3%;">
           <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/yFzypPU3Q4I?si=hwZozFSsMxmbFcQX" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div><br>
+        </div>
 
         <p>
           Bu örnek üzerinden baktığımızda ise if şartı içerisinde program return ettiğinde var olan değişken değeri
@@ -243,16 +242,13 @@
         </p>
         <p>
         <h3>Kaynakça</h3>
-        <a href="https://stackoverflow.com/questions/6500313/why-should-c-programmers-minimize-use-of-new">Stackoverflow
-          | Why should C++ programmers minimize use of 'new'?</a><br>
-        <a href="https://stackoverflow.com/questions/147130/why-doesnt-c-have-a-garbage-collector">Stackoverflow | Why
-          doesn't C++ have a garbage collector?</a><br>
-        <a href="https://www.youtube.com/watch?v=UOB7-B2MfwA">SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr,
-          std::weak_ptr)</a><br>
-        <a href="https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-4-memory-management/6d4dfcaa1ff84f57a2098da8e6401d9c">DigiKey
-          | Introduction to RTOS - Solution to Part 4 (Memory Management)</a><br>
-        <a href="https://ptolemy.berkeley.edu/ptolemyclassic/almagest/docs/prog/html/ptlang.doc7.html#:~:text=Memory%20leaks%20occur%20when%20new,or%20the%20delete%20%5B%5D%20operator.">2.7
-          Preventing Memory Leaks in C++ Code</a><br>
+        <a href="https://stackoverflow.com/questions/6500313/why-should-c-programmers-minimize-use-of-new">Stackoverflow | Why should C++ programmers minimize use of 'new'?</a><br>
+        <a href="https://stackoverflow.com/questions/147130/why-doesnt-c-have-a-garbage-collector">Stackoverflow | Why doesn't C++ have a garbage collector?</a><br>
+        <a href="https://www.youtube.com/watch?v=UOB7-B2MfwA">SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr, std::weak_ptr)</a><br>
+        <a href="https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-4-memory-management/6d4dfcaa1ff84f57a2098da8e6401d9c">DigiKey | Introduction to RTOS - Solution to Part
+          4 (Memory Management)</a><br>
+        <a href="https://ptolemy.berkeley.edu/ptolemyclassic/almagest/docs/prog/html/ptlang.doc7.html#:~:text=Memory%20leaks%20occur%20when%20new,or%20the%20delete%20%5B%5D%20operator.">2.7 Preventing
+          Memory Leaks in C++ Code</a><br>
         </p>
       </div>
     </div>
