@@ -6,6 +6,8 @@
   flex-direction: column;
   border-radius: 3%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border: none;
 }
 
 .card:hover {
@@ -19,6 +21,7 @@
   object-fit: cover;
   border-radius: 3%;
   margin-bottom: 2%;
+  overflow: hidden;
 }
 
 .card__title {
@@ -51,17 +54,12 @@
   text-decoration: none;
 }
 
-.card hr {
-  border: 0;
-  border-top: 1px solid #eee;
-}
-
 #blog_content_area {
   display: flex;
   flex-wrap: wrap;
 }
 
-.col-lg-6, .col-md-6, .col-sm-12 {
+.col-lg-6 {
   margin-bottom: 3%;
   display: flex;
 }
