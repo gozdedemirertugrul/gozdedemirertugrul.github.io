@@ -3,23 +3,19 @@
 <script src="../js/blogPagination.js"></script>
 
 <head>
+  <!-- Tab Info -->
+  <title>Kağan Can Şit</title>
+  <link rel="icon" href="/images/base_site_images/designPng.png" type="image/x-icon" />
 
-  <head>
-    <!-- Tab Info -->
-    <title>Kağan Can Şit</title>
-    <link rel="icon" href="/images/base_site_images/designPng.png" type="image/x-icon" />
-
-    <section id="head-container"></section>
-    <script>
-      fetch('/pages/page_partial/head_info.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('head-container').innerHTML = data;
-        });
-    </script>
-    <link rel="stylesheet" href="/css/card.css" />
-  </head>
-
+  <section id="head-container"></section>
+  <script>
+    fetch('/pages/page_partial/head_info.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('head-container').innerHTML = data;
+      });
+  </script>
+  <link rel="stylesheet" href="/css/card.css" />
 </head>
 
 <body>
