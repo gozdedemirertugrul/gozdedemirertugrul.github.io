@@ -2,30 +2,18 @@
 <html lang="tr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Kağan Can Şit Portfolyo and Blog Site">
-    <meta name="author" content="Kağan Can Şit">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BLQV2M3JL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-2BLQV2M3JL');
-    </script>
-
     <!-- Tab Info -->
-    <title>Kağan Can Şit</title>
-    <link rel="icon" href="../images/base_site_images/designPng.png" type="image/x-icon" />
+    <title>Kağan Can Şit | Hakkında</title>
+    <link rel="icon" href="/images/base_site_images/designPng.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/unicons.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/tooplate-style.css">
+    <section id="head-container"></section>
+    <script>
+        fetch('/pages/page_partial/head_info.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('head-container').innerHTML = data;
+            });
+    </script>
 </head>
 
 <body>
