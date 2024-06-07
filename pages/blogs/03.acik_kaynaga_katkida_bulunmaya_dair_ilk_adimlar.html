@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../../css/card.css">
-    <link rel="stylesheet" href="../../css/tooplate-style.css">  
+    <link rel="stylesheet" href="../../css/tooplate-style.css">
 </head>
 
 <body>
@@ -233,7 +233,7 @@
                     - Sabır ve sürekli iletişim
                 </p>
                 </p>
-                <div style="text-align: center;"><img src="/images/blogs/acik_kaynaga_katikida_bulunmak/04.AcikKaynagaKatki.png" class="img-fluid" width="65%" height="65%"/></div>
+                <div style="text-align: center;"><img src="/images/blogs/acik_kaynaga_katikida_bulunmak/04.AcikKaynagaKatki.png" class="img-fluid" width="65%" height="65%" /></div>
                 <p>Bu kısımda bahsetmiş olduğum bu maddeleri daha kapsamlı olarak buradaki <a href="https://opensource.guide/tr/how-to-contribute/">doküman</a> içerisinde bulabilirsiniz.</p>
 
                 <h3>Katkı Sağlayabileceğiniz Bir Proje Bulmak</h3>
@@ -249,7 +249,7 @@
                 <p>
                     Bunun için Erhan Yakut ve Uğur Mumcuoğlu’nun bu keyifli muhabbetine bir kulak kabartmanızı
                     öneririm <a href="https://www.youtube.com/watch?v=lYJKqF2uwdA">(Açık Kaynak Projeleri Yönetmek ve Katkı Sağlamak
-                    (Erhan Yakut) — YouTube)</a>. Bu video içerisinde de yer verilen “good-first-issue” etiketine dair aramalar yapabilirsiniz.
+                        (Erhan Yakut) — YouTube)</a>. Bu video içerisinde de yer verilen “good-first-issue” etiketine dair aramalar yapabilirsiniz.
                 </p>
                 <p>
                     “good-first-issue” geliştiricilerin diğer yeni başlayan veya açık kaynağa giriş amacıyla geliştiriciler için katkıda
@@ -334,7 +334,7 @@
                         GitHub ile açık kaynak projelere katkıda bulunmak | by Cengizhan Çalışkan | Medium </a><br>
                     <a href="https://opensource.com/resources/what-open-source"> What is open source? | Opensource.com </a><br>
                     <a href="https://opensourcefriday.com/"> Open Source Friday | This Friday, invest a few hours contributing to the software you use and love. </a><br>
-                    <a href="https://gelecegiyazanlar.turkcell.com.tr/blog/acik-kaynak-kodlu-yazilim-open-source-software"> 
+                    <a href="https://gelecegiyazanlar.turkcell.com.tr/blog/acik-kaynak-kodlu-yazilim-open-source-software">
                         Açık Kaynak Kodlu Yazılım (Open Source Software) Geleceği Yazanlar (turkcell.com.tr) </a><br>
                     <a href="https://github.com/torvalds/linux">torvalds/linux: Linux kernel source tree (github.com)</a><br>
                 </p>
@@ -344,36 +344,14 @@
     </section>
 
     <!-- Contact -->
-    <section style="padding-top: 5%;" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 mr-lg-5 col-12 mb-3">
-                    <img src="../../images/base_site_images/designGIF.gif" class="img-fluid">
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="contact-form">
-                        <h2 class="mb-4">Tanışmak ister misiniz? Hadi konuşalım!</h2>
-                        <p>
-                            Merak ettikleriniz veya aklınıza takılan sorularınız olabilir. Ben de bazen günlerce bir problem üzerinde çalışıyor ve düşünüyorum.
-                            Böyle durumlarda çekinmeden bana ulaşabilirsiniz. Size yardımcı olabilmek için sosyal medya bağlantılarımı ekledim.
-                        </p>
-                        <p>
-                            Gün içerisinde maalesef genellikle meşgulüm, projelerimle uğraşıyor veya işte olabiliyorum. Bu yüzden hemen cevap alamazsanız,
-                            lütfen acele etmeyin. En kısa sürede size ulaşmaya ve sorunuzu cevaplamaya çalışacağım.
-                        </p>
-                        <p>Tekrar görüşene kadar kendinize çok iyi bakın. Sağlıcakla kalın.</p>
-                    </div>
-                </div>
-            </div>
-            <p class="social-links text-center" style="font-size: 155%;">
-                <a href="https://github.com/KaganCanSit" class="fa fa-github" title="Github"></a> |
-                <a href="https://x.com/kagancansit" class="fa fa-twitter" title="Twitter"></a> |
-                <a href="https://www.linkedin.com/in/kagancansit/" class="fa fa-linkedin" title="Linkedin"></a> |
-                <a href="mailto:kagancansit@hotmail.com" class="fa fa-send" title="Outlook"></a>
-            </p>
-            <p class="copyright-text text-center">Kağan Can Şit | Umarım sana katkı sağlayan ve bilgi katan içerikler bulmuşsundur.🏹</p>
-        </div>
-    </section>
+    <section id="contact-container"></section>
+    <script>
+        fetch('/pages/page_partial/contact.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('contact-container').innerHTML = data;
+            });
+    </script>
 
     <script src="../../js/jquery-3.3.1.min.js"></script>
     <script src="../../js/popper.min.js"></script>

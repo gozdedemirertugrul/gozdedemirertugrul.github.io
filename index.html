@@ -171,7 +171,7 @@
   <!-- Contact -->
   <section id="contact-container"></section>
   <script>
-    fetch('pages/page_partial/contact.html')
+    fetch('/pages/page_partial/contact.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('contact-container').innerHTML = data;

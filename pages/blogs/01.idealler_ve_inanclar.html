@@ -98,13 +98,13 @@
         </p>
         <p>
           Fakat hayatı anlamlı kılmak, yine bizlerin elindedir. Bu durum sadece bir kişinin, bir grubun ideali
-          değildir. Olmamalıdır. Tüm insanlığın ideali olmalıdır. Yaşantısını, yaşam şartlarını, geleceği 
+          değildir. Olmamalıdır. Tüm insanlığın ideali olmalıdır. Yaşantısını, yaşam şartlarını, geleceği
           geliştirmek ve güzelleştirmek. Kısa ömründe bir ideal ile birlikte bu dünyaya yapıcı eserler bırakmak.
           Kiminin düşlerini, kiminin ideallerini gerçekleştirmesine yardımcı olmak.
         </p>
         <p>
           Akıl almaz teknolojilerin çağında yaşıyoruz. Üretiyoruz, geliştiriyoruz, tüketiyoruz. Ama yaşantımıza etkisi
-          ne için bu kadar az? Bir kısım açlıktan ölürken, bir kısım neden gözleri kapalı. Tarımı ve üretimi 
+          ne için bu kadar az? Bir kısım açlıktan ölürken, bir kısım neden gözleri kapalı. Tarımı ve üretimi
           otomasyonel olarak dönüştürebilecek ve doğru adımlarla yaşantımızı, kaynaklarımızı verimli kullanabilecek
           iken neden savaş araçlarımızı geliştirmeye öncelik veriyoruz? Neden kara düzen devam ediyoruz?
         </p>
@@ -121,36 +121,14 @@
   </section>
 
   <!-- Contact -->
-  <section style="padding-top: 5%;" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 mr-lg-5 col-12 mb-3">
-          <img src="../../images/base_site_images/designGIF.gif" class="img-fluid">
-        </div>
-        <div class="col-lg-6 col-12">
-          <div class="contact-form">
-            <h2 class="mb-4">Tanışmak ister misiniz? Hadi konuşalım!</h2>
-            <p>
-              Merak ettikleriniz veya aklınıza takılan sorularınız olabilir. Ben de bazen günlerce bir problem üzerinde çalışıyor ve düşünüyorum.
-              Böyle durumlarda çekinmeden bana ulaşabilirsiniz. Size yardımcı olabilmek için sosyal medya bağlantılarımı ekledim.
-            </p>
-            <p>
-              Gün içerisinde maalesef genellikle meşgulüm, projelerimle uğraşıyor veya işte olabiliyorum. Bu yüzden hemen cevap alamazsanız,
-              lütfen acele etmeyin. En kısa sürede size ulaşmaya ve sorunuzu cevaplamaya çalışacağım.
-            </p>
-            <p>Tekrar görüşene kadar kendinize çok iyi bakın. Sağlıcakla kalın.</p>
-          </div>
-        </div>
-      </div>
-      <p class="social-links text-center" style="font-size: 155%;">
-        <a href="https://github.com/KaganCanSit" class="fa fa-github" title="Github"></a> |
-        <a href="https://x.com/kagancansit" class="fa fa-twitter" title="Twitter"></a> |
-        <a href="https://www.linkedin.com/in/kagancansit/" class="fa fa-linkedin" title="Linkedin"></a> |
-        <a href="mailto:kagancansit@hotmail.com" class="fa fa-send" title="Outlook"></a>
-      </p>
-      <p class="copyright-text text-center">Kağan Can Şit | Umarım sana katkı sağlayan ve bilgi katan içerikler bulmuşsundur.🏹</p>
-    </div>
-  </section>
+  <section id="contact-container"></section>
+  <script>
+    fetch('/pages/page_partial/contact.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('contact-container').innerHTML = data;
+      });
+  </script>
 
   <script src="../../js/jquery-3.3.1.min.js"></script>
   <script src="../../js/popper.min.js"></script>
