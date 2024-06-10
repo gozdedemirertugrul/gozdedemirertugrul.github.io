@@ -302,33 +302,6 @@ b, strong {
 	display: block;
 }
 
-
-// COLOR MODE
-.color-mode {
-	font-weight: $font-weight-bold;
-	cursor: pointer;
-}
-
-.color-mode-icon {
-	position: relative;
-	right: 6px;
-  &:after {
-  	font-family: 'unicons';
-  	content: '\ea9f';
-  	font-size: 30px;
-  	font-weight: 300;
-  	font-style: normal;
-  }
-  &.active {
-  	&:after {
-  		font-family: 'unicons';
-  		content: '\eb65';
-  		font-size: 30px;
-  		color: $text-white;
-  	}
-  }
-}
-
 .dark-mode {
 	background: $dark-mode-color;
 	.navbar-light .navbar-nav .nav-link {

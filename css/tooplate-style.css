@@ -1,9 +1,6 @@
 /*
-
 Tooplate 2115 Marvel
-
 https://www.tooplate.com/view/2115-marvel
-
 */
 
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
@@ -272,24 +269,21 @@ b, strong {
 .color-mode {
   font-weight: bold;
   cursor: pointer;
+  display: inline-block;
+}
+.color-mode-icon {
+  font-size: 22px;
+  display: inline-block;
 }
 
-.color-mode-icon {
-  position: relative;
-  right: 6px;
-}
 .color-mode-icon:after {
-  font-family: 'unicons';
-  content: '\ea9f';
-  font-size: 30px;
-  font-weight: 300;
+  font-family: 'Font Awesome 6 Free';
+  content: '\f186';
   font-style: normal;
 }
+
 .color-mode-icon.active:after {
-  font-family: 'unicons';
-  content: '\eb65';
-  font-size: 30px;
-  color: #ffffff;
+  content: '\f185';
 }
 
 .dark-mode {
