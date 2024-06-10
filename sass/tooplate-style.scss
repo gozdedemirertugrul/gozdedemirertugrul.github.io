@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700');
 
 // VARIABLES
@@ -42,17 +41,18 @@ body {
 }
 
 .small-text {
-    color: $body-font-color;
-    font-size: $small-font-size;
-    font-weight: $font-weight-bold;
-    padding: 8px 16px;
-    border-radius: 50px;
-    letter-spacing: 0.2px;
+	color: $body-font-color;
+	font-size: $small-font-size;
+	font-weight: $font-weight-bold;
+	padding: 8px 16px;
+	border-radius: 50px;
+	letter-spacing: 0.2px;
 }
 
 ul {
 	margin: 0;
 	padding: 0;
+
 	li {
 		list-style: none;
 	}
@@ -63,6 +63,7 @@ a {
 	font-weight: $font-weight-normal;
 	text-decoration: none !important;
 	@include transition-effect;
+
 	&:hover {
 		color: $main-color !important;
 	}
@@ -83,7 +84,12 @@ p {
 	color: $body-font-color;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-weight: $font-weight-bold;
 	letter-spacing: -1px;
 }
@@ -105,7 +111,8 @@ h3 {
 }
 
 h3,
-b, strong {
+b,
+strong {
 	font-weight: $font-weight-bold;
 }
 
@@ -114,37 +121,40 @@ b, strong {
 .custom-btn {
 	color: $body-font-color;
 	font-weight: $font-weight-bold;
-    border-radius: 50px;
-    padding: 13px 29px;
-    font-size: $small-font-size;
-    line-height: normal;
-    overflow: hidden;
-    @include transition-effect;
-    &:hover {
-    	color: $main-color;
-    }
-    &.custom-btn-bg {
-    	background: $button-color;
+	border-radius: 50px;
+	padding: 13px 29px;
+	font-size: $small-font-size;
+	line-height: normal;
+	overflow: hidden;
+	@include transition-effect;
+
+	&:hover {
+		color: $main-color;
+	}
+
+	&.custom-btn-bg {
+		background: $button-color;
 		color: $text-white;
+
 		&:hover {
-	    	background: $main-color;
-	    	color: $text-white !important;
-	    }
-    }
+			background: $main-color;
+			color: $text-white !important;
+		}
+	}
 }
 
 
 // ANIMATED TEXT
 .animated {
-    position: relative;
+	position: relative;
 }
 
 .animated-info {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 10px;
-    width: 250px;
-    position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	width: 250px;
+	position: relative;
 }
 
 .animated-item {
@@ -152,58 +162,86 @@ b, strong {
 }
 
 .animated-item {
-    font-size: 32px;
-    line-height: inherit;
-    display: block;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    animation: BottomTotop 6s linear infinite 0s;
-    &:nth-child(2n+2) {
-        animation-delay: 2s;
-    }
-    &:nth-child(3n+3) {
-        animation-delay: 4s;
-    }
+	font-size: 32px;
+	line-height: inherit;
+	display: block;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	animation: BottomTotop 6s linear infinite 0s;
+
+	&:nth-child(2n+2) {
+		animation-delay: 2s;
+	}
+
+	&:nth-child(3n+3) {
+		animation-delay: 4s;
+	}
 }
 
 @keyframes BottomTotop {
-    0% { opacity: 0; }
-    5% { opacity: 0; transform: translateY(5px); }
-    10% { opacity: 1; transform: translateY(0px); }
-    25% { opacity: 1; transform: translateY(0px); }
-    30% { opacity: 0; transform: translateY(5px); }
-    80% { opacity: 0; }
-    100% { opacity: 0; }
+	0% {
+		opacity: 0;
+	}
+
+	5% {
+		opacity: 0;
+		transform: translateY(5px);
+	}
+
+	10% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	25% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	30% {
+		opacity: 0;
+		transform: translateY(5px);
+	}
+
+	80% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
 }
 
 
 // MENU
 .navbar {
 	position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 999999;
-    will-change: transform;
-    transition: transform 200ms linear;
-	&[class*="-unpinned"] {
-      transform: translate(0, -150%);
-    }
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 999999;
+	will-change: transform;
+	transition: transform 200ms linear;
 
-    &[class*="-pinned"] {
-      transform: translate(0, 0);
-    }
-    &[class*="headroom--not-top"] {
-    	background: $text-white;
-    	// box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.09);
-    	border-bottom: 1px solid #f0f0f0;
-    	padding-top: 0;
-    	padding-bottom: 0;
-    }
+	&[class*="-unpinned"] {
+		transform: translate(0, -150%);
+	}
+
+	&[class*="-pinned"] {
+		transform: translate(0, 0);
+	}
+
+	&[class*="headroom--not-top"] {
+		background: $text-white;
+		// box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.09);
+		border-bottom: 1px solid #f0f0f0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
 
 .navbar-brand {
@@ -222,31 +260,35 @@ b, strong {
 	font-weight: $font-weight-bold;
 	font-size: 16px;
 	overflow: hidden;
+
 	span {
-    	position: relative;
+		position: relative;
 		display: inline-block;
 		transition: transform 0.3s;
+
 		&:before {
 			position: absolute;
 			top: 100%;
 			content: attr(data-hover);
-			transform: translate3d(0,0,0);
+			transform: translate3d(0, 0, 0);
 		}
-    }
+	}
 }
 
 .navbar-light {
 	.navbar-nav {
+
 		.nav-link:focus,
 		.nav-link:hover {
 			color: $main-color;
 			font-weight: $font-weight-bold;
+
 			span {
-	    		transform: translateY(-100%);
-	    	}
+				transform: translateY(-100%);
+			}
 		}
 	}
-} 
+}
 
 
 // HAMBURGER MENU
@@ -265,24 +307,29 @@ b, strong {
 	outline: none;
 	cursor: pointer;
 	margin-right: 10px;
+
 	&:focus {
 		outline: none;
 	}
+
 	&[aria-expanded="true"] {
 		.navbar-toggler-icon {
 			&:first-child {
 				transform: rotate(45deg);
 				top: 6px;
 			}
+
 			&:nth-child(2) {
 				display: none;
 			}
+
 			&:last-child {
 				transform: rotate(-45deg);
 				bottom: 1px;
 			}
 		}
 	}
+
 	.navbar-toggler-icon {
 		background: $h1-font-color;
 		display: block;
@@ -304,29 +351,41 @@ b, strong {
 
 .dark-mode {
 	background: $dark-mode-color;
+
 	.navbar-light .navbar-nav .nav-link {
 		color: #ffffff;
+
 		&:hover {
 			color: $main-color;
 		}
 	}
+
 	.navbar {
 		&[class*="headroom--not-top"] {
 			background: $dark-mode-color;
 			border-bottom: 1px solid #1f1f1f;
-	    }
+		}
 	}
+
 	.small-text {
 		background: #0d0c15;
 		color: $text-white;
 	}
+
 	.feature-card .uil,
 	.navbar-light .navbar-brand,
-	h1, h2, h3, h4, h5, h6,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
 	.color-mode {
 		color: $text-white;
 	}
+
 	.owl-carousel {
+
 		.owl-nav button.owl-next,
 		.owl-nav button.owl-prev,
 		button.owl-dot {
@@ -340,18 +399,20 @@ b, strong {
 .timeline-wrapper {
 	position: relative;
 	padding-bottom: 10px;
+
 	&:last-child {
 		&:before {
 			height: 0;
 		}
 	}
+
 	&:before {
 		content: "";
-    	background: $button-color;
-    	width: 3px;
-    	height: 100%;
-    	position: absolute;
-    	left: 38px; 
+		background: $button-color;
+		width: 3px;
+		height: 100%;
+		position: absolute;
+		left: 38px;
 	}
 }
 
@@ -363,12 +424,13 @@ b, strong {
 	height: 75px;
 	line-height: 75px;
 	text-align: center;
+
 	span {
 		color: $text-white;
-    	font-size: $link-font-size;
-    	font-weight: $font-weight-bold;
-    	display: block;
-    	line-height: 75px;
+		font-size: $link-font-size;
+		font-weight: $font-weight-bold;
+		display: block;
+		line-height: 75px;
 	}
 }
 
@@ -377,92 +439,53 @@ b, strong {
 	vertical-align: top;
 	max-width: 432px;
 	margin-left: 6em;
+
 	small {
 		color: $button-color;
-    	font-size: $link-font-size;
-    	font-weight: $font-weight-bold;
-    	display: inline-block;
-    	vertical-align: middle;
-    	margin-left: 15px;
-	}
-}
-
-
-// OWL CAROUSEL
-.owl-carousel {
-	.owl-nav {
-		span {
-			display: none;
-		}
-		.owl-prev,
-		.owl-next {
-			&:before {
-				background: none;
-				padding: 0;
-				display: block;
-				position: absolute;
-				top: 50%;
-				transform: translate(0, -50%); 
-				font-family: 'unicons';
-				font-size: 100px;
-				line-height: normal;
-			}
-		}
-		.owl-prev {
-			&:before {
-				content: '\e833';
-  				left: -45px; 
-			}
-		}
-		.owl-next {
-			&:before {
-				content: '\e836';
-  				right: -45px; 
-			}
-		}
+		font-size: $link-font-size;
+		font-weight: $font-weight-bold;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 15px;
 	}
 }
 
 .owl-theme {
 	.owl-nav [class*=owl-] {
 		background: none;
-  		border-radius: 0;
-  		margin: 0;
-  		padding: 0;
-  		font-size: inherit; 
-  		&:hover {
-  			color: $main-color;
-  		}
+		border-radius: 0;
+		margin: 0;
+		padding: 0;
+		font-size: inherit;
+
+		&:hover {
+			color: $main-color;
+		}
 	}
-  	.owl-dots {
-  		.owl-dot {
-  			outline: none;
-  			span {
-  				width: 8px;
-  				height: 8px;
-  			}
-  			&.active,
-  			&:hover {
-  				span {
-  					background: $body-font-color;
-  				}
-  			}
-  		}
-  	}
-}
 
+	.owl-dots {
+		.owl-dot {
+			outline: none;
 
-// GOOGLE MAP
-.google-map {
-	iframe {
-		width: 100%;
+			span {
+				width: 8px;
+				height: 8px;
+			}
+
+			&.active,
+			&:hover {
+				span {
+					background: $body-font-color;
+				}
+			}
+		}
 	}
 }
-
 
 // CONTACT FORM
 .contact-form {
 	position: relative;
+
 	.form-control {
 		background: transparent;
 		border-radius: 2px;
@@ -470,14 +493,17 @@ b, strong {
 		box-shadow: none;
 		font-weight: $font-weight-bold;
 		margin: 16px 0;
+
 		&:not(textarea) {
 			height: 48px;
 		}
+
 		&:hover,
 		&:focus {
 			border-color: $main-color;
 		}
 	}
+
 	.submit-btn {
 		background: $main-color;
 		border-radius: 50px;
@@ -486,6 +512,7 @@ b, strong {
 		border: 0;
 		cursor: pointer;
 		@include transition-effect;
+
 		&:hover {
 			background: $button-color;
 		}
@@ -497,7 +524,9 @@ b, strong {
 	border-radius: 0 0 3px 3px;
 	position: relative;
 	bottom: 8px;
-	p, a {
+
+	p,
+	a {
 		color: #f7f3f3;
 	}
 }
@@ -510,6 +539,7 @@ b, strong {
 		font-size: 20px;
 		display: block;
 		margin: 5px 0;
+
 		&:hover {
 			color: $main-color;
 		}
