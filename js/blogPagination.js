@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const paginationDiv = document.getElementById('pagination');
   const blogList = Array.from(blogsArea.getElementsByClassName('card'));
 
-  const blogDisplayOnePage = 6;
+  const blogDisplayOnePage = 10;
   const totalPage = Math.ceil(blogList.length / blogDisplayOnePage);
 
   for (let page = 1; page <= totalPage; page++) {
@@ -26,24 +26,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const firstIndex = (page - 1) * blogDisplayOnePage;
     const lastIndex = firstIndex + blogDisplayOnePage;
 
-    blogsArea.classList.add('fade-out');
-    setTimeout(() => {
-      for (let i = 0; i < blogList.length; i++) {
-        const parentDiv = blogList[i].parentElement;
-        parentDiv.style.visibility = 'hidden';
-        parentDiv.style.position = 'absolute';
-        parentDiv.style.height = '0';
+    for (let i = 0; i < blogList.length; i++) {
+      const parentDiv = blogList[i].parentElement;
+      if (i >= firstIndex && i < lastIndex) {
+        parentDiv.style.display = 'block';
+      } else {
+        parentDiv.style.display = 'none';
       }
-
-      for (let i = firstIndex; i < lastIndex && i < blogList.length; i++) {
-        const parentDiv = blogList[i].parentElement;
-        parentDiv.style.visibility = 'visible';
-        parentDiv.style.position = 'static';
-        parentDiv.style.height = 'auto';
-      }
-
-      blogsArea.classList.remove('fade-out');
-      blogsArea.classList.add('fade-in');
-    }, 300);
+    }
   }
 });

@@ -3,18 +3,20 @@
 <script src="../js/blogPagination.js"></script>
 
 <head>
-  <!-- Site Info -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description"
     content="Kağan Can Şit'in portföy sitesi. Projeler, blog yazıları, tasarımlar ve daha fazlası...">
   <meta name="author" content="Kağan Can Şit">
 
-  <!-- Tab Info -->
   <title>Kağan Can Şit</title>
   <link rel="icon" href="/images/base_site_images/designPng.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/tooplate-style.css">
+  <link rel="stylesheet" href="/css/card.css" />
 
-  <!-- Google Tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BLQV2M3JL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -22,13 +24,6 @@
     gtag('js', new Date());
     gtag('config', 'G-2BLQV2M3JL');
   </script>
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="/css/tooplate-style.css">
-  <link rel="stylesheet" href="/css/card.css" />
 </head>
 
 <body>
@@ -105,20 +100,13 @@
         <div class="col-lg-6">
           <div class="card">
             <a href="blogs/09.dahi_yazilimci_efsanesi&&yetersizlik_hissi.html">
-              <img src="../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/header_image.webp" loading="lazy"
-                class="card__image" alt="Albert Einsten Image | Dahi Yazılımcısı Efsanesi" />
-              <div class="card__content">
-                <h4 class="card__title">Dahi Programcı Efsanesi ve Yetersizlik Hissi</h4>
-                <time datetime="2023-09-16" class="card__date"> | Eylül 24, 2023</time>
-                <hr />
-                <span>
-                  Çağımızda teknolojinin gelişme hızını göz önünde bulundurduğumuzda hata yapmadan ilerlemek mümkün mü?
-                  Peki, geçmişten gelen bilgi birikimlerimiz olmasa teknoloji bu kadar ilerler miydi? İnsan, hata
-                  yapmamak için neden temkinlidir? Gelişmek ve ilerlemenin getirdiği yetersizlik hissi neden oluşur?
-                  Daha nice çeşitli sorularımızın cevabını Brian Fitzpatrick ve Collins Sussman'ın 2009'da
-                  gerçekleştirdiği "Google I/O 2009 - The Myth of the Genius Programmer" konuşması başta olmak üzere
-                  çeşitli kaynaklara dayandırarak beraber arıyoruz.
-                </span>
+              <div class="card__image-container">
+                <img src="../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/header_image.webp"
+                  class="card__image" alt="Albert Einsten Image | Dahi Yazılımcısı Efsanesi" />
+                <div class="card__overlay">
+                  <h4 class="card__title">Dahi Programcı Efsanesi ve Yetersizlik Hissi</h4>
+                  <time class="card__date">Eylül 24, 2023</time>
+                </div>
               </div>
             </a>
           </div>
@@ -128,20 +116,13 @@
         <div class="col-lg-6">
           <div class="card">
             <a href="blogs/08.yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar.html">
-              <img src="../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/header_image.webp"
-                loading="lazy" class="card__image" alt="Yazilimcinin Otomasyoncusu Bash" />
-              <div class="card__content">
-                <h4 class="card__title">Yazılımcının Otomasyoncusu Bash Betikleri Hakkında Tüyolar</h4>
-                <time datetime="2023-08-26" class="card__date"> | Ağustos 26, 2023</time>
-                <hr />
-                <span>
-                  Yazılım geliştirmenin en temel prensiplerinden biri, tekrarlayan işleri otomatikleştirerek zaman ve
-                  maliyet tasarrufu sağlamaktır. Bu amaçla "Bash" ile yazılmış betik dosyaları, geliştiriciler
-                  tarafından sıklıkla kullanılır. Bu blog yazısının ana amacı ise betik dosyası yazılırken ve
-                  kullanırken karşılaşılabilicek hatalar, nasıl daha güvenli geliştirme yapılabileceği, kabuk dosyası
-                  yazılırken nelere dikkat edilmesi gerektiği noktaları üzerinden kısa bir bilgilendirme şeklinde.
-                  Ayrıca bu blog içeriğinde "Bash" ile ilgili birçok kaynak ve örnekler bulabilirsiniz.
-                </span>
+              <div class="card__image-container">
+                <img src="../images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/header_image.webp"
+                  loading="lazy" class="card__image" alt="Yazilimcinin Otomasyoncusu Bash" />
+                <div class="card__overlay">
+                  <h4 class="card__title">Yazılımcının Otomasyoncusu Bash Betikleri Hakkında Tüyolar</h4>
+                  <time class="card__date">Ağustos 26, 2023</time>
+                </div>
               </div>
             </a>
           </div>
@@ -151,19 +132,13 @@
         <div class="col-lg-6">
           <div class="card">
             <a href="blogs/07.cpp_ile_gelistirme_yapilirken_neden_new_kullanimi_en_aza_indirgenmeli.html">
-              <img src="../images/blogs/C++_Ile_Gelistirme_Yap._Neden_new_En_Aza_Ind/header_image.webp" loading="lazy"
-                class="card__image" alt="C++ İle Geliştirme Yapılırken Neden new Kullanımı En Aza İndirgenmeli?" />
-              <div class="card__content">
-                <h4 class="card__title">C++ İle Geliştirme Yapılırken Neden "new" Kullanımı En Aza İndirgenmeli?</h4>
-                <time datetime="2021-03-30" class="card__date"> | Mart 12, 2023</time>
-                <hr />
-                <span>
-                  Adobe ürünlerinden, uzay araçlarının fırlatma ve kontrol modüllerine kadar her alanda yer alan C++
-                  teknolojisi performans odaklı bir dildir. Geliştirme süreci ise ise low-level olması sebebiyle diğer
-                  dillere oranlara biraz daha dikkat ve emek gerektirir. Bu blog içeriğinde C++ kullanarak geliştirilen
-                  yazılımlarda "new" anahtar kelimesinin kullanımının neden en aza indirgenmesi gerektiği, ayrıca smart
-                  pointer yapılarının avantajlarından bahsetmeye çalıştım.
-                </span>
+              <div class="card__image-container">
+                <img src="../images/blogs/C++_Ile_Gelistirme_Yap._Neden_new_En_Aza_Ind/header_image.webp" loading="lazy"
+                  class="card__image" alt="C++ İle Geliştirme Yapılırken Neden new Kullanımı En Aza İndirgenmeli?" />
+                <div class="card__overlay">
+                  <h4 class="card__title">C++ İle Geliştirme Yapılırken Neden "new" Kullanımı En Aza İndirgenmeli?</h4>
+                  <time class="card__date">Mart 12, 2023</time>
+                </div>
               </div>
             </a>
           </div>
@@ -173,156 +148,116 @@
         <div class="col-lg-6">
           <div class="card">
             <a href="blogs/06.git_gitflow_github_ve_bazi_git_kavramlari.html">
-              <img src="../images/blogs/git_gitflow_github_kavramlari_ve_bazi_git_komutlari/header_image.webp"
-                loading="lazy" class="card__image" alt="git_gitflow_github_kavramlari_ve_bazi_git_komutlari" />
-              <div class="card__content">
-                <h4 class="card__title">Git, Git Flow, Github Kavramları ve Bazı Git Komutları</h4>
-                <time datetime="2021-03-30" class="card__date"> | Temmuz 30, 2022</time>
-                <hr />
-                <span>
-                  Yazılım başlı başına ekip olarak gerçekleştirilmesi gereken bir iştir. Kendi içerisinde kapsadığı
-                  alanın her bir noktasında uzman olmanız maalesef söz konusu bile olamaz. Bu yüzden beraber çalışma,
-                  ekip anlayışı, kademeli geliştirme her büyük projenin vazgeçilmezidir. Git, bu çalışma karmaşısını
-                  engellemek, ekip olarak geliştirmenizi desteklemek ve ayrıca size güvenilir, gelişime açık bir
-                  geliştirme ortamı sunar. Git’e dair birçok içerik anlatılabilir. Bu yüzden genel kapsamı bir miktar
-                  büyük blog içeriği seni bekliyor.
-                </span>
+              <div class="card__image-container">
+                <img src="../images/blogs/git_gitflow_github_kavramlari_ve_bazi_git_komutlari/header_image.webp"
+                  loading="lazy" class="card__image" alt="git_gitflow_github_kavramlari_ve_bazi_git_komutlari" />
+                <div class="card__overlay">
+                  <h4 class="card__title">Git, Git Flow, Github Kavramları ve Bazı Git Komutları</h4>
+                  <time class="card__date">Temmuz 30, 2022</time>
+                </div>
               </div>
             </a>
           </div>
         </div>
 
         <!-- Blog Card -->
-        <div class="col-lg-6">
+        <div class="col-lg-4">
           <div class="card">
             <a href="blogs/05.linux_kavrami_ve_temel_linux_terminal_komutlari.html">
-              <img src="../images/blogs/linux_kavramı_ve_temel_linux_komutları/header_image.webp" loading="lazy"
-                class="card__image" alt="linux_kavramı_ve_temel_linux_komutları" />
-              <div class="card__content">
-                <h4 class="card__title"> Linux Kavramı ve Temel Linux Terminal Komutları </h4>
-                <time datetime="2021-03-30" class="card__date"> | Temmuz 23, 2022</time>
-                <hr />
-                <span>
-                  Merhabalar, son dönemlerde Linux ile yolum kesişti ve yeni yeni öğrenmeye, kavramaya çalışıyorum. Bu
-                  öğrenme yolcuğuluğumda keşfettiğim bilgileri hem sizlerle paylaşmak, hem unuttukça dönüp bakabilmek
-                  adına bir blog içeriği olarak burada yayınlamak istedim. Linux bilindiği üzere her alanda kullanılan,
-                  özellikle yazılım geliştirme alanında sıklıkla tercih edilen bir işletim sistemidir. Bu yüzden Linux
-                  ile ilgili bilgi sahibi olmak bizlerin ufkunu büyütürken ayrıca işlerimizi kolaylaştıracaktır.
-                </span>
+              <div class="card__image-container">
+                <img src="../images/blogs/linux_kavramı_ve_temel_linux_komutları/header_image.webp" loading="lazy"
+                  class="card__image" alt="linux_kavramı_ve_temel_linux_komutları" />
+                <div class="card__overlay">
+                  <h4 class="card__title"> Linux Kavramı ve Temel Linux Terminal Komutları </h4>
+                  <time class="card__date">Temmuz 23, 2022</time>
+                </div>
               </div>
             </a>
           </div>
         </div>
 
         <!-- Blog Card -->
-        <div class="col-lg-6">
+        <div class="col-lg-4">
           <div class="card">
             <a href="blogs/04.github_profili_icin_readme_dosyasi_olusturma_ve_ozellestirme.html">
-              <img src="../images/blogs/github_profili_icin_readme_olusturma/header_image.webp" loading="lazy"
-                class="card__image" alt="github_profili_icin_readme_olusturma" />
-              <div class="card__content">
-                <h4 class="card__title">Github Profili İçin Readme Dosyası Oluşturma ve Özelleştirme</h4>
-                <time datetime="2021-03-30" class="card__date"> | Temmuz 6, 2022</time>
-                <hr />
-                <span>
-                  Merhabalar, bugün sizleri biraz kodlamadan uzak olan özelleştirme ve tasarıma yakın bir gezintiye
-                  çıkarmak istiyorum. Kişisel olarak günlük yaşamımız içerisinde sevdiğimiz renkler, sanatçılar,
-                  tasarımlar, filmler nasıl değişiyorsa “Neden bizi anlatan bir yazı içeriği bize özel tasarlanmasın?”.
-                  Nasıl olsa birbirimizden bizleri farklı kılan durumlardan biri de taşıdığımız estetik kaygımız.
-                </span>
+              <div class="card__image-container">
+                <img src="../images/blogs/github_profili_icin_readme_olusturma/header_image.webp" loading="lazy"
+                  class="card__image" alt="github_profili_icin_readme_olusturma" />
+                <div class="card__overlay">
+                  <h4 class="card__title">Github Profili İçin Readme Dosyası Oluşturma ve Özelleştirme</h4>
+                  <time class="card__date">Temmuz 6, 2022</time>
+                </div>
               </div>
             </a>
           </div>
         </div>
 
         <!-- Blog Card -->
-        <div class="col-lg-6">
+        <div class="col-lg-4  ">
           <div class="card">
             <a href="blogs/03.acik_kaynaga_katkida_bulunmaya_dair_ilk_adimlar.html">
-              <img src="../images/blogs/acik_kaynaga_katikida_bulunmak/header_iamge.webp" loading="lazy"
-                class="card__image" alt="acik_kaynaga_katikida_bulunmak" />
-              <div class="card__content">
-                <h4 class="card__title"> Açık Kaynak Kavramı ve Açık Kaynağa Katkıda Bulunmaya Dair İlk Adımlar </h4>
-                <time datetime="2021-03-30" class="card__date"> | Temmuz 4, 2022</time>
-                <hr />
-                <span>
-                  Merhabalar, bir öğrenci ve mühendis adayı olarak açık kaynağa ve açık kaynağa katkıda bulunmaya dair
-                  araştırdığım ve edindiğim bilgiler üzerine “Açık kaynak nedir?”, “Neden katkıda bulunmalıyız?”,
-                  “Gelişmimize katkısı nedir?” gibi noktalara değinmeye ve kendi adıma yeni yeni adımlarımı atmaya
-                  çalıştığım bu süreç içerisinde yardımınızı almak amacıyla bu blog içeriğini hazırlamaya karar verdim.
-                </span>
+              <div class="card__image-container">
+                <img src="../images/blogs/acik_kaynaga_katikida_bulunmak/header_iamge.webp" loading="lazy"
+                  class="card__image" alt="acik_kaynaga_katikida_bulunmak" />
+                <div class="card__overlay">
+                  <h4 class="card__title"> Açık Kaynak Kavramı ve Açık Kaynağa Katkıda Bulunmaya Dair İlk Adımlar </h4>
+                  <time class="card__date">Temmuz 4, 2022</time>
+                </div>
               </div>
             </a>
           </div>
         </div>
 
         <!-- Blog Card -->
-        <div class="col-lg-6">
+        <div class="col-lg-4">
           <div class="card">
             <a href="blogs/02.notion_ile_markdown_dosyasi_olusturmak.html">
-              <img src="../images/blogs/notion_ile_markdawn_dosyası_olusturmak/header_image.webp" loading="lazy"
-                class="card__image" alt="notion_ile_markdawn_dosyası_olusturmak" />
-              <div class="card__content">
-                <h4 class="card__title"> Notion İle Markdown Dosyası Oluşturmak</h4>
-                <time datetime="2021-03-30" class="card__date"> | Haziran 15, 2022</time>
-                <hr />
-                <span>
-                  Notion kullanarak çalışmalarına dair not almayı seven, bu notlarını kolayca GitHub (repository)
-                  deposunda sergilemek isteyenler için pratik bir yoldan bahsedeceğim. GitHub üzerinde (repository) depo
-                  açıklamınızı “Markdown&CSV” veya “HTML” yardımıyla yazabilirsiniz. Fakat aldığınız notları herhangi
-                  bir tarayıcı üzerinden çevirmek veya elle yeniden düzenlemektense Notion bunun için bir çözüm sunuyor.
-                </span>
+              <div class="card__image-container">
+                <img src="../images/blogs/notion_ile_markdawn_dosyası_olusturmak/header_image.webp" loading="lazy"
+                  class="card__image" alt="notion_ile_markdawn_dosyası_olusturmak" />
+                <div class="card__overlay">
+                  <h4 class="card__title"> Notion İle Markdown Dosyası Oluşturmak</h4>
+                  <time class="card__date">Haziran 15, 2022</time>
+                </div>
               </div>
             </a>
           </div>
         </div>
 
         <!-- Blog Card -->
-        <div class="col-lg-6">
+        <div class="col-lg-4">
           <div class="card">
             <a href="blogs/01.idealler_ve_inanclar.html">
-              <img src="../images/blogs/idealler_ve_inanclar/headerImage.webp" loading="lazy" class="card__image"
-                alt="idealler_ve_inanclar" />
-              <div class="card__content">
-                <h4 class="card__title">İdealler ve İnançlar</h4>
-                <time datetime="2021-03-30" class="card__date"> | Eylül 15, 2021</time>
-                <hr />
-                <span>
-                  Her hayatın birbirinden farkı olmaksızın değerli olduğunu düşündünüz mü? Bence bir düşünün. Bir
-                  ressamın hayal dünyasında kuramadığını küçük bir çocuk sanki bir film izlercesine kafasında inşa
-                  edebilir. Bir askerin kararlı ve soğuk kanlı planlamasını sevdiklerini kaybetmiş her insan hayatında
-                  gösterebilir. Kimi zaman zorluklarla, kimi zaman sevdikleriyle beraber bir insan nice büyük
-                  farklılıklar yaratabilir.
-                </span>
+              <div class="card__image-container">
+                <img src="../images/blogs/idealler_ve_inanclar/headerImage.webp" loading="lazy" class="card__image"
+                  alt="idealler_ve_inanclar" />
+                <div class="card__overlay">
+                  <h4 class="card__title">İdealler ve İnançlar</h4>
+                  <time class="card__date">Eylül 15, 2021</time>
+                </div>
               </div>
             </a>
           </div>
         </div>
 
         <!-- Blog Card -->
-        <div class="col-lg-6">
+        <div class="col-lg-4">
           <div class="card">
             <a href="blogs/00.youtube_kanal_onerileri.html">
-              <img src="../images/blogs/youtube_kanal_onerileri/headerImage.webp" loading="lazy" class="card__image"
-                alt="youtube_kanal_onerileri" />
-              <div class="card__content">
-                <h4 class="card__title"> Yeni Bilgiler Edinmek İçin YouTube Kanal Önerileri </h4>
-                <time datetime="2021-03-30" class="card__date"> | Ağustos 12, 2020</time>
-                <hr />
-                <span>
-                  Her zaman bilgi ve tecrübe sahibi insanların önemli bir faktör olduğunu düşünmüşümdür. Kendi bilgi ve
-                  deneyimlerini başkalarına aktaran, yeni dünyalar için karanlığa ışık tutan insanlar. Bunların yanı
-                  sıra az ve öz küçük bir ekiple bile her zorluğa karşı gelerek yeni bir şeyler üretmek için
-                  çabalayanlara ise ayrıca imrenmişimdir. Bende kendimce en azından önemsediğim ve bilgi edindiğim
-                  alanları sizlerle paylaşmak istedim.
-                </span>
+              <div class="card__image-container">
+                <img src="../images/blogs/youtube_kanal_onerileri/headerImage.webp" loading="lazy" class="card__image"
+                  alt="youtube_kanal_onerileri" />
+                <div class="card__overlay">
+                  <h4 class="card__title"> Yeni Bilgiler Edinmek İçin YouTube Kanal Önerileri </h4>
+                  <time class="card__date">Ağustos 12, 2020</time>
+                </div>
               </div>
             </a>
           </div>
         </div>
       </div>
       <!-- Pagination Link -->
-    <div style="text-align: center;" id="pagination"></div>
+      <div style="text-align: center;" id="pagination"></div>
     </div>
   </section>
 
