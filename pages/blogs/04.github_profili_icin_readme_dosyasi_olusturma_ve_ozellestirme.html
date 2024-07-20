@@ -2,6 +2,13 @@
 <html lang="tr">
 
 <head>
+    <!-- Site Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Kağan Can Şit'in portföy sitesi. Projeler, blog yazıları, tasarımlar ve daha fazlası...">
+    <meta name="author" content="Kağan Can Şit">
+
     <!-- Tab Info -->
     <title>Kağan Can Şit</title>
     <link rel="icon" href="/images/base_site_images/designPng.webp" type="image/x-icon" />
@@ -15,14 +22,11 @@
         gtag('config', 'G-2BLQV2M3JL');
     </script>
 
-    <section id="head-container"></section>
-    <script>
-        fetch('/pages/page_partial/head_info.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('head-container').innerHTML = data;
-            });
-    </script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/tooplate-style.css">
 </head>
 
 <body>
@@ -31,7 +35,8 @@
         <div class="container">
             <a class="navbar-brand" href="../../index.html"> Kağan Can Şit</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +60,8 @@
                         <a href="#contact" class="nav-link"><span data-hover="İletişim">İletişim</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="../hayat_anlam_katanlar_manifestosu.html" class="nav-link"><span data-hover="🪁">🪁</span></a>
+                        <a href="../hayat_anlam_katanlar_manifestosu.html" class="nav-link"><span
+                                data-hover="🪁">🪁</span></a>
                     </li>
                 </ul>
 
@@ -76,13 +82,17 @@
                 <h2>Github Profili İçin Readme Dosyası Oluşturma ve Özelleştirme</h2>
                 <p><small>Temmuz 6, 2022</small></p>
                 <p>
-                    Merhabalar, bugün sizleri biraz kodlamadan uzak olan özelleştirme ve tasarıma yakın bir gezintiye çıkarmak istiyorum.
-                    Kişisel olarak günlük yaşamımız içerisinde sevdiğimiz renkler, sanatçılar, tasarımlar, filmler nasıl değişiyorsa
-                    “Neden bizi anlatan bir yazı içeriği bize özel tasarlanmasın?”. Nasıl olsa birbirimizden bizleri farklı kılan
+                    Merhabalar, bugün sizleri biraz kodlamadan uzak olan özelleştirme ve tasarıma yakın bir gezintiye
+                    çıkarmak istiyorum.
+                    Kişisel olarak günlük yaşamımız içerisinde sevdiğimiz renkler, sanatçılar, tasarımlar, filmler nasıl
+                    değişiyorsa
+                    “Neden bizi anlatan bir yazı içeriği bize özel tasarlanmasın?”. Nasıl olsa birbirimizden bizleri
+                    farklı kılan
                     durumlardan biri de taşıdığımız estetik kaygımız.
                 </p>
                 <p>
-                    Şimdi belki tesadüfen burada buluşmuş olabiliriz. Fakat önemli değil, merak etme. Başından itibaren olabildiğince
+                    Şimdi belki tesadüfen burada buluşmuş olabiliriz. Fakat önemli değil, merak etme. Başından itibaren
+                    olabildiğince
                     sade ve anlaşılabilir anlatmaya çalışacağım.
                 </p>
                 <p>Boyaları kap gel, bakalım gün sonunda neler olacak?</p>
@@ -90,27 +100,38 @@
                 <div class="Readme Dosyası Nedir?">
                     <h3>Readme Dosyası Nedir?</h3>
                     <p>
-                        Readme dosyası aslında Github üzerinde yer alan ve proje depolarının (Repository) yanına eklediğimiz genellikle
-                        kurulum, kullanım, geliştirme safhalarına dair bilgiler verdiğimiz bir açıklama dosyasıdır. Burada bahsettiğim
+                        Readme dosyası aslında Github üzerinde yer alan ve proje depolarının (Repository) yanına
+                        eklediğimiz genellikle
+                        kurulum, kullanım, geliştirme safhalarına dair bilgiler verdiğimiz bir açıklama dosyasıdır.
+                        Burada bahsettiğim
                         teknik kullanım için
-                        <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">bu
-                            adrese</a> ve buradaki <a href="https://medium.com/kodcular/neden-readme-dosyas%C4%B1n%C4%B1-eklemeliyiz-b9dce0adf34c">Medium makale
+                        <a
+                            href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">bu
+                            adrese</a> ve buradaki <a
+                            href="https://medium.com/kodcular/neden-readme-dosyas%C4%B1n%C4%B1-eklemeliyiz-b9dce0adf34c">Medium
+                            makale
                             içeriğine</a> bir bakabilirsin.
                     </p>
                     <p>
-                        Fakat belirli bir süre önce Github herkese açık olarak profil oluşturmamızı ve paylaşmamızı sağlayan Readme özelliğini duyurdu.
-                        Kısacası burada anlatacağım Readme dosyasının amacı herkese açık özelleştirilmiş bir profil sağlayan bir tasarım dosyası.
+                        Fakat belirli bir süre önce Github herkese açık olarak profil oluşturmamızı ve paylaşmamızı
+                        sağlayan Readme özelliğini duyurdu.
+                        Kısacası burada anlatacağım Readme dosyasının amacı herkese açık özelleştirilmiş bir profil
+                        sağlayan bir tasarım dosyası.
                     </p>
                     <p>
-                        Örnek olarak benim oluşturmuş olduğum <a href="https://github.com/KaganCanSit/KaganCanSit/blob/master/README.md">Readme dosyama</a>
+                        Örnek olarak benim oluşturmuş olduğum <a
+                            href="https://github.com/KaganCanSit/KaganCanSit/blob/master/README.md">Readme dosyama</a>
                         bir göz atabilirsin.
                     </p>
                     <div style="text-align: center;">
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/01.Github_Icin_Readme.webp" class="img-fluid" width="85%" height="85%" />
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/01.Github_Icin_Readme.webp"
+                            class="img-fluid" width="85%" height="85%" />
                     </div>
                     <p>
-                        Şimdi dokümantasyona dayalı olmayan ve profil oluşturma amacı taşıyan bu Readme dosyası hakkında “Nasıl oluşturulur?”, “Nasıl özelleştirilebilir?”,
-                        “Hangi kaynaklardan yararlanılabilir?” gibi birçok soruyu duyar gibiyim. Sakin ol! Arkana yaslan, beraber bir bakalım.
+                        Şimdi dokümantasyona dayalı olmayan ve profil oluşturma amacı taşıyan bu Readme dosyası hakkında
+                        “Nasıl oluşturulur?”, “Nasıl özelleştirilebilir?”,
+                        “Hangi kaynaklardan yararlanılabilir?” gibi birçok soruyu duyar gibiyim. Sakin ol! Arkana
+                        yaslan, beraber bir bakalım.
                     </p>
                 </div>
 
@@ -118,121 +139,168 @@
                 <div class="Profil Özelliği İçin Readme Dosyası Nasıl Oluşturulur?">
                     <h3>Profil Özelliği İçin Readme Dosyası Nasıl Oluşturulur?</h3>
                     <p>
-                        İlk olarak profil sayfamızda görüntülenmesi için Readme dosyamızı oluşturmalıyız. Bunun için kullanıcı adımız ile aynı ada sahip özel bir
-                        depo (Repsoitory) ve bir adet Markdown (.md) uzantılı bir Readme dosyası oluşturmalıyız. Adım adım göstermek gerekirse;
+                        İlk olarak profil sayfamızda görüntülenmesi için Readme dosyamızı oluşturmalıyız. Bunun için
+                        kullanıcı adımız ile aynı ada sahip özel bir
+                        depo (Repsoitory) ve bir adet Markdown (.md) uzantılı bir Readme dosyası oluşturmalıyız. Adım
+                        adım göstermek gerekirse;
                     </p>
                     <p>
                         Github hesabınıza giriş yaptıktan ve ana sayfanıza geldikten sonra orta kısmın üstünde yer
                         alan menü içerisinden “Repositories” kısmına tıklayın.
                     </p>
                     <div style="text-align: center;">
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/02.Github_Icin_Readme.webp" class="img-fluid" width="65%" height="65%" />
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/02.Github_Icin_Readme.webp"
+                            class="img-fluid" width="65%" height="65%" />
                     </div>
                     <p>
                         Açılan sayfa üzerinden yeni bir depo (Repository) oluşturma işlemini gerçekleştirmeliyiz. Bu
                         sebeple yukarıda bulunan menünün altında yer alan “New” kısmına tıklıyoruz.
                     </p>
                     <div style="text-align: center;">
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/03.Github_Icin_Readme.webp" class="img-fluid" width="65%" height="65%" />
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/03.Github_Icin_Readme.webp"
+                            class="img-fluid" width="65%" height="65%" />
                     </div>
-                    <p>Şimdi açılan kısım içerisinde önemli tercihler yapmalıyız. İlk olarak Github sizlere yeni oluşturmak istediğiniz deponuz (Repository) için
-                        isim soracaktır. Buraya kendi kullanıcı adınızı girmelisiniz. Örnek vermek gerekirse benim kullanıcı adım “KaganCanSit” bu sebeple şu
+                    <p>Şimdi açılan kısım içerisinde önemli tercihler yapmalıyız. İlk olarak Github sizlere yeni
+                        oluşturmak istediğiniz deponuz (Repository) için
+                        isim soracaktır. Buraya kendi kullanıcı adınızı girmelisiniz. Örnek vermek gerekirse benim
+                        kullanıcı adım “KaganCanSit” bu sebeple şu
                         şekilde giriş yapıyorum;
                     </p>
                     <div style="text-align: center;">
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/04.Github_Icin_Readme.webp" class="img-fluid" width="65%" height="65%" />
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/04.Github_Icin_Readme.webp"
+                            class="img-fluid" width="65%" height="65%" />
                     </div>
                     <p>
-                        <b>!Not:</b> Burada kırmızı gözükmesinin sebebi zaten benim hazır ve aynı ada sahip olan bir tasarım dosyam bulunması. Fakat siz böyle
+                        <b>!Not:</b> Burada kırmızı gözükmesinin sebebi zaten benim hazır ve aynı ada sahip olan bir
+                        tasarım dosyam bulunması. Fakat siz böyle
                         bir hata almayacaksınız.
                     </p>
                     <p>
-                        <b>!Not 2:</b> Profilinizde tasarım dosyanızın gözükebilmesi için bu kısım içerisine kullanıcı adınızı kesinlikle girmelisiniz. Diğer
-                        durumlarda bu dosya profil dosyanız olarak Github tarafından işleme alınmayacaktır. Ayrıca alt kısımda göreceğiniz gibi Github sizlere
+                        <b>!Not 2:</b> Profilinizde tasarım dosyanızın gözükebilmesi için bu kısım içerisine kullanıcı
+                        adınızı kesinlikle girmelisiniz. Diğer
+                        durumlarda bu dosya profil dosyanız olarak Github tarafından işleme alınmayacaktır. Ayrıca alt
+                        kısımda göreceğiniz gibi Github sizlere
                         bu konuda bildirim verecektir.
                     </p>
                     <p>
-                        Daha sonrasında ise profil dosyanızın erişim özelliği herkese açık anlamına gelen “Public” seçeneği olmalıdır. Bunun sebebi eğer “Private”
-                        özel seçeneği seçerseniz dosyayı sadece siz görüntüleyebilirsiniz ve bu durumda profil dosyası oluşturmanız bir anlam ifade etmeyecektir.
+                        Daha sonrasında ise profil dosyanızın erişim özelliği herkese açık anlamına gelen “Public”
+                        seçeneği olmalıdır. Bunun sebebi eğer “Private”
+                        özel seçeneği seçerseniz dosyayı sadece siz görüntüleyebilirsiniz ve bu durumda profil dosyası
+                        oluşturmanız bir anlam ifade etmeyecektir.
                     </p>
                     <div style="text-align: center;">
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/05.Github_Icin_Readme.webp" class="img-fluid" width="65%" height="65%" />
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/05.Github_Icin_Readme.webp"
+                            class="img-fluid" width="65%" height="65%" />
                     </div>
                     <p>
-                        Son adım olarak yukarıda da bahsettiğim Markdown uzantısına sahip olan ve bizlerin içerisine bilgilerimizi, tasarımlarımızı, görsel
-                        içeriklerimizi koyacak olduğumuz Readme dosyamızı eklemek. Bunun için “Readme dosyası ekle” (Add a README file) seçeneğini seçmeliyiz.
+                        Son adım olarak yukarıda da bahsettiğim Markdown uzantısına sahip olan ve bizlerin içerisine
+                        bilgilerimizi, tasarımlarımızı, görsel
+                        içeriklerimizi koyacak olduğumuz Readme dosyamızı eklemek. Bunun için “Readme dosyası ekle” (Add
+                        a README file) seçeneğini seçmeliyiz.
                     </p>
                     <div style="text-align: center;">
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/06.Github_Icin_Readme.webp" class="img-fluid" width="65%" height="65%" />
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/06.Github_Icin_Readme.webp"
+                            class="img-fluid" width="65%" height="65%" />
                     </div>
                     <p>
-                        <b>!Not:</b> Eğer unutursanız üzülmeyin. Sadece açmış olduğunuz kod deposuna gidin. “New File” diyerek README.md adıyla yeni bir dosya oluşturun.
-                        Tüm aşamaları tamamladıysak “Create New Repository” diyerek işlemi tamamlayın. Burada anlatmış olduğum adımları
-                        <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">Github
+                        <b>!Not:</b> Eğer unutursanız üzülmeyin. Sadece açmış olduğunuz kod deposuna gidin. “New File”
+                        diyerek README.md adıyla yeni bir dosya oluşturun.
+                        Tüm aşamaları tamamladıysak “Create New Repository” diyerek işlemi tamamlayın. Burada anlatmış
+                        olduğum adımları
+                        <a
+                            href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">Github
                             Docs</a> içerisinden ayrıca inceleyebilirsin!
                     </p>
-                    <p>Şimdi özelleştirmek için Readme dosyamız hazır. İlk olarak sizleri küçük hazır bir taslak ile karşılayacaktır. Biraz kurcalamanız yeterli.</p>
+                    <p>Şimdi özelleştirmek için Readme dosyamız hazır. İlk olarak sizleri küçük hazır bir taslak ile
+                        karşılayacaktır. Biraz kurcalamanız yeterli.</p>
                 </div>
 
                 <div class="Readme Dosyasını Özelleştirmek">
                     <h3>Readme Dosyasını Özelleştirmek</h3>
                     <p>
-                        Şimdi, her şey hazır olduğuna göre özelleştirmelerimize başlayabiliriz. Burada sizlerin kişisel tercihleri farklı yönlerde olacaktır.
+                        Şimdi, her şey hazır olduğuna göre özelleştirmelerimize başlayabiliriz. Burada sizlerin kişisel
+                        tercihleri farklı yönlerde olacaktır.
                         Bu yüzden daha çok tasarım araçları ve kaynakları üzerinden ilerleyeceğim.
                     </p>
                     <p>
-                        Kendi adıma uğraştırıcı olsa da kişisel olarak kendi isteğim doğrultusunda özelleştirmeyi seviyorum. Fakat “O kadar zaman ayırmak
-                        istemiyorum.” derseniz. Hazır site araçları sayesinde de tasarım yapabilirsiniz. Bunun için bir sonraki başlık olan “Hazır Site
+                        Kendi adıma uğraştırıcı olsa da kişisel olarak kendi isteğim doğrultusunda özelleştirmeyi
+                        seviyorum. Fakat “O kadar zaman ayırmak
+                        istemiyorum.” derseniz. Hazır site araçları sayesinde de tasarım yapabilirsiniz. Bunun için bir
+                        sonraki başlık olan “Hazır Site
                         Üzerinden Tasarım” kısmına geçebilirsiniz.
                     </p>
                     <h3>Biraz İlham</h3>
                     <p>
-                        Profilinizi özelleştirmeye başlamadan önce biraz ilham ve fikre ihtiyaç duyabilirsiniz. Bu durum elbette çok normal bunun için sizlere
-                        <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme">şu Github deposunu</a> ve
+                        Profilinizi özelleştirmeye başlamadan önce biraz ilham ve fikre ihtiyaç duyabilirsiniz. Bu durum
+                        elbette çok normal bunun için sizlere
+                        <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme">şu Github deposunu</a>
+                        ve
                         <a href="https://zzetao.github.io/awesome-github-profile/">bu web sayfasını</a> öneriyorum.
-                        Bu iki link üzerinden diğer geliştiricilerin daha önce oluşturmuş olduğu Github Readme dosyalarını görüntüleyebilir, inceleyebilirsiniz.
+                        Bu iki link üzerinden diğer geliştiricilerin daha önce oluşturmuş olduğu Github Readme
+                        dosyalarını görüntüleyebilir, inceleyebilirsiniz.
 
-                        İkonlara dayalı, oyun, minimal, dynamic, gif gibi birçok çeşit mevcut. Burada bulunan örnek tasarımlar ile uygun kombinasyonlar
-                        ve içerikler oluşturmanız mümkün. Tek yapmanız gereken beğendiğiniz Readme dosyalarına erişmek ve açılan dosya içerisinden
-                        “Blame” tıklayarak beğindiğiniz kısmın yazılış biçimine bakmak. Bu biçimi kendinize özgü güncellemek ve geliştirmek.
+                        İkonlara dayalı, oyun, minimal, dynamic, gif gibi birçok çeşit mevcut. Burada bulunan örnek
+                        tasarımlar ile uygun kombinasyonlar
+                        ve içerikler oluşturmanız mümkün. Tek yapmanız gereken beğendiğiniz Readme dosyalarına erişmek
+                        ve açılan dosya içerisinden
+                        “Blame” tıklayarak beğindiğiniz kısmın yazılış biçimine bakmak. Bu biçimi kendinize özgü
+                        güncellemek ve geliştirmek.
 
-                        Elbette burada tüm içeriği birebir aynı şekilde almak doğru olmayacaktır. Ayrıca zaten kişiselleştirmek için özelleştirmelisiniz.
-                        Kendi kullanmak istediğiniz görselleri, gifleri kolayca ekleyebilir, düzenleyebilirsiniz. Bu sebeple sadece buradan Markdown
+                        Elbette burada tüm içeriği birebir aynı şekilde almak doğru olmayacaktır. Ayrıca zaten
+                        kişiselleştirmek için özelleştirmelisiniz.
+                        Kendi kullanmak istediğiniz görselleri, gifleri kolayca ekleyebilir, düzenleyebilirsiniz. Bu
+                        sebeple sadece buradan Markdown
                         kullanıma dair ipuçları almanız yeterli.
                     <div style="text-align: center;">
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/07.Github_Icin_Readme.webp" class="img-fluid" width="75%" height="75%" /><br><br>
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/08.Github_Icin_Readme.webp" class="img-fluid" width="75%" height="75%" />
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/07.Github_Icin_Readme.webp"
+                            class="img-fluid" width="75%" height="75%" /><br><br>
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/08.Github_Icin_Readme.webp"
+                            class="img-fluid" width="75%" height="75%" />
                     </div>
                     </p>
 
                     <h3>Profil İstatistiklerim Neler, Kaç Adet Kod Depom Var?</h3>
                     <p>
-                        Bu sorulara dair görsel olarak araçları Markdown dosyanızın içerisine yerleştirebilirsiniz. Bunun için güzel bir depo önerim var.
-                        <a href="https://github.com/anuraghazra/github-readme-stats">Şu adrese</a> ilk olarak bir göz atın.
+                        Bu sorulara dair görsel olarak araçları Markdown dosyanızın içerisine yerleştirebilirsiniz.
+                        Bunun için güzel bir depo önerim var.
+                        <a href="https://github.com/anuraghazra/github-readme-stats">Şu adrese</a> ilk olarak bir göz
+                        atın.
                     </p>
                     <div style="text-align: center;">
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/09.Github_Icin_Readme.webp" class="img-fluid" width="75%" height="75%" />
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/09.Github_Icin_Readme.webp"
+                            class="img-fluid" width="75%" height="75%" />
                     </div>
                     <p>
-                        Bu depo (Repository) içerisinde sizlerin Github içerisinde aktifliğinize, dil tercihlerinize ve araçlarınıza dair metrikleri görsel olarak
-                        sunan birçok araç bulacaksınız. Bu araçları Markdown dosyasına kolaylıkla ekleyebilir. Renk, tema ve boyutlarını özelleştirebilirsiniz.
-                        Sadece kısaca göz atarak kullanım biçimini dikkatlice okumanız yeterli. Örneğin yukarıdaki stat eklentisinin eklenmesi için şöyle bir
+                        Bu depo (Repository) içerisinde sizlerin Github içerisinde aktifliğinize, dil tercihlerinize ve
+                        araçlarınıza dair metrikleri görsel olarak
+                        sunan birçok araç bulacaksınız. Bu araçları Markdown dosyasına kolaylıkla ekleyebilir. Renk,
+                        tema ve boyutlarını özelleştirebilirsiniz.
+                        Sadece kısaca göz atarak kullanım biçimini dikkatlice okumanız yeterli. Örneğin yukarıdaki stat
+                        eklentisinin eklenmesi için şöyle bir
                         alıntı yeterli olacaktır.
                     </p>
-                    <p>![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KullaniciAdiniziGirin&show_icons=true&theme=radical)</p>
-                    <p><b>Benim Profil İstatistiğimi Gösteren Örnek:</b> ![Stat](https://github-readme-stats.vercel.app/api?username=kagancansit&show_icons=true&theme=radical)</p>
+                    <p>![Anurag's GitHub
+                        stats](https://github-readme-stats.vercel.app/api?username=KullaniciAdiniziGirin&show_icons=true&theme=radical)
+                    </p>
+                    <p><b>Benim Profil İstatistiğimi Gösteren Örnek:</b>
+                        ![Stat](https://github-readme-stats.vercel.app/api?username=kagancansit&show_icons=true&theme=radical)
+                    </p>
                 </div>
 
 
                 <div class="Profilim Kaç Kez Ziyaret Edildi? Özel Bildiri Butonları Oluşturabilir Miyim?">
                     <h3>Profilim Kaç Kez Ziyaret Edildi? Özel Bildiri Butonları Oluşturabilir Miyim?</h3>
                     <p>
-                        Bu gibi soruların cevaplarını vermek ve herkese gösterebilmek için ise <a href="https://github.com/pujux/badge-it">git-badges</a> ve
-                        <a href="https://github.com/badges/shields">Shields.io</a> adlı siteler sizlere yol gösterecektir.
-                        Bir buton içerisinde bu bilgileri kapsayan küçük görsel eklentileri basit linkler aracılığıyla Markdown dosyanıza ekleyebilirsiniz.
+                        Bu gibi soruların cevaplarını vermek ve herkese gösterebilmek için ise <a
+                            href="https://github.com/pujux/badge-it">git-badges</a> ve
+                        <a href="https://github.com/badges/shields">Shields.io</a> adlı siteler sizlere yol
+                        gösterecektir.
+                        Bir buton içerisinde bu bilgileri kapsayan küçük görsel eklentileri basit linkler aracılığıyla
+                        Markdown dosyanıza ekleyebilirsiniz.
                     </p>
                     <div style="text-align: center;">
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/10.Github_Icin_Readme.webp" width="75%" height="75%" />
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/10.Github_Icin_Readme.webp"
+                            width="75%" height="75%" />
                     </div>
                 </div>
 
@@ -256,27 +324,34 @@
                 <div clas="Hazır Site Üzerinden Tasarım">
                     <h3>Hazır Site Üzerinden Tasarım</h3>
                     <div style="text-align: center;">
-                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/11.Github_Icin_Readme.webp" class="img-fluid" width="75%" height="75%" />
+                        <img src="../../images/blogs/github_profili_icin_readme_olusturma/11.Github_Icin_Readme.webp"
+                            class="img-fluid" width="75%" height="75%" />
                     </div>
                     <p>
-                        README dosyanız içerisinde yer almasını istediğiniz kısımları doldurarak ve kullandığınız araçları seçerek yavaşça ilerleyin.
-                        Sosyal medya iletişim bilgilerinizi ve diğer bilgilerinizi paylaşmak isterseniz var olan kısımlara kullanıcı adınızı doldurmanızı
+                        README dosyanız içerisinde yer almasını istediğiniz kısımları doldurarak ve kullandığınız
+                        araçları seçerek yavaşça ilerleyin.
+                        Sosyal medya iletişim bilgilerinizi ve diğer bilgilerinizi paylaşmak isterseniz var olan
+                        kısımlara kullanıcı adınızı doldurmanızı
                         yeterli.
                     </p>
                     <p>
                         Son olarak sayfanın sonunda yer alan “Generete README” butonuna tıklayarak Markdown dosyası
-                        içeriğini alın, ardından kendi kod deponuzun içerisinde yer alan Readme dosyası içerisine yapıştırın.
+                        içeriğini alın, ardından kendi kod deponuzun içerisinde yer alan Readme dosyası içerisine
+                        yapıştırın.
                     </p>
                 </div>
 
                 <div class="end">
                     <p>
-                        Yukarıda yer vermiş olduğum siteler, araçların yardımıyla ve basit düzeyde Markdown bilgisiyle rahatlıkla güzel bir Readme dosyası
+                        Yukarıda yer vermiş olduğum siteler, araçların yardımıyla ve basit düzeyde Markdown bilgisiyle
+                        rahatlıkla güzel bir Readme dosyası
                         oluşturabilirsiniz.
                     </p>
                     <p>
-                        <b>Buraya kadar okuduğunuz ve incelediğiniz için teşekkür ederim. Umarın tasarımlarınıza ilham verebilmiş, sizlere yardımcı
-                            olabilmişimdir. Yazım hataları vb. durumlar ve sorularınız için lütfen bana ulaşmaktan çekinmeyin.</b>
+                        <b>Buraya kadar okuduğunuz ve incelediğiniz için teşekkür ederim. Umarın tasarımlarınıza ilham
+                            verebilmiş, sizlere yardımcı
+                            olabilmişimdir. Yazım hataları vb. durumlar ve sorularınız için lütfen bana ulaşmaktan
+                            çekinmeyin.</b>
                     </p>
                     <p><b>Sağlıcakla kalın…</b></p>
                 </div>
@@ -284,19 +359,24 @@
                 <div class="kaynakça">
                     <h3>Kaynakça</h3>
                     <p>
-                        <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">About
+                        <a
+                            href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">About
                             READMEs — GitHub Docs</a><br>
                         <a href="https://medium.com/kodcular/neden-readme-dosyas%C4%B1n%C4%B1-eklemeliyiz-b9dce0adf34c">Neden
                             README dosyasını eklemeliyiz ! | by nafi durmuş | Kodcular | Medium</a><br>
                         <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme">abhisheknaiidu/awesome-github-profile-readme:
                             😎 A curated list of awesome GitHub Profile READMEs 📝</a><br>
-                        <a href="https://zzetao.github.io/awesome-github-profile/">Awesome Github Profile (zzetao.github.io)</a><br>
-                        <a href="https://github.com/badges/shields">Shields.io: Quality metadata badges for open source projects</a><br>
-                        <a href="https://github.com/anuraghazra/github-readme-stats">anuraghazra/github-readme-stats: Dynamically generated stats for your github readmes</a><br>
+                        <a href="https://zzetao.github.io/awesome-github-profile/">Awesome Github Profile
+                            (zzetao.github.io)</a><br>
+                        <a href="https://github.com/badges/shields">Shields.io: Quality metadata badges for open source
+                            projects</a><br>
+                        <a href="https://github.com/anuraghazra/github-readme-stats">anuraghazra/github-readme-stats:
+                            Dynamically generated stats for your github readmes</a><br>
                         <a href="https://github.com/pujux/badge-it">git-badges 🎉 | git-badges (pufler.dev)</a><br>
                         <a href="https://rahuldkjain.github.io/gh-profile-readme-generator/">GitHub Profile Readme
                             Generator | GitHub Profile Readme Generator (rahuldkjain.github.io)</a><br>
-                        <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">Github
+                        <a
+                            href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">Github
                             Bilgilendirme Sayfası</a>
                     </p>
                 </div>

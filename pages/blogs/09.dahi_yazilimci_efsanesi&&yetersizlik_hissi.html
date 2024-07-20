@@ -2,6 +2,13 @@
 <html lang="tr">
 
 <head>
+    <!-- Site Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Kağan Can Şit'in portföy sitesi. Projeler, blog yazıları, tasarımlar ve daha fazlası...">
+    <meta name="author" content="Kağan Can Şit">
+
     <!-- Tab Info -->
     <title>Kağan Can Şit</title>
     <link rel="icon" href="/images/base_site_images/designPng.webp" type="image/x-icon" />
@@ -15,14 +22,11 @@
         gtag('config', 'G-2BLQV2M3JL');
     </script>
 
-    <section id="head-container"></section>
-    <script>
-        fetch('/pages/page_partial/head_info.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('head-container').innerHTML = data;
-            });
-    </script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/tooplate-style.css">
 </head>
 
 <body>
@@ -31,7 +35,8 @@
         <div class="container">
             <a class="navbar-brand" href="../../index.html"> Kağan Can Şit</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +60,8 @@
                         <a href="#contact" class="nav-link"><span data-hover="İletişim">İletişim</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="../hayat_anlam_katanlar_manifestosu.html" class="nav-link"><span data-hover="🪁">🪁</span></a>
+                        <a href="../hayat_anlam_katanlar_manifestosu.html" class="nav-link"><span
+                                data-hover="🪁">🪁</span></a>
                     </li>
                 </ul>
 
@@ -70,7 +76,8 @@
     <section class="full-screen" id="project">
         <div class="container row">
             <div class="col-lg-11 mx-auto col-12">
-                <img src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/header_image.webp" class="img-fluid">
+                <img src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/header_image.webp"
+                    class="img-fluid">
                 <p style="text-align: center;"> Arka Plan Görseli:
                     <a href="https://unsplash.com/photos/g5wo-_XOzJI">Unsplash / Collab Media</a>
                 </p>
@@ -143,9 +150,13 @@
                     sunmak istiyorum. Video içeriği hemen aşağıda yer alıyor.
                 </p>
                 <!-- Youtube Video Content -->
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 3%; margin-bottom: 3%;">
-                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/0SARbwvhupQ?si=T0SIIWo_GPuN-9rI" title="YouTube video player"
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div
+                    style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 3%; margin-bottom: 3%;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                        src="https://www.youtube.com/embed/0SARbwvhupQ?si=T0SIIWo_GPuN-9rI" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
 
                 <h3>Temel</h3>
@@ -155,12 +166,15 @@
                 </p>
                 <p><b>1. Odada bulunan kaç kişi tamamen (ekip olmadan vb.) yalnız başına kod yazıyor?</b></p>
                 <p>
-                    Bu soru için kimsenin el kaldırmadığını fark etmişsinizdir. Çünkü kapsamlı olarak geliştirilen yazılım projeleri
-                    başta da belirttiğim gibi bir ekip işidir. Ardından "Yalnız kod geliştirmeyi kimler seviyor?" (Ekip var ama bir
+                    Bu soru için kimsenin el kaldırmadığını fark etmişsinizdir. Çünkü kapsamlı olarak geliştirilen
+                    yazılım projeleri
+                    başta da belirttiğim gibi bir ekip işidir. Ardından "Yalnız kod geliştirmeyi kimler seviyor?" (Ekip
+                    var ama bir
                     kısım üzerinde yalnız çalışmak.) sorusuyla katılımcılar artıyor.
                 </p>
                 <p><b>2. Takımlarda kaç kişi çalışıyor?</b></p>
-                <p><b>3. Bu odada kaç kişi geliştirme süreçlerinin bir parçası olarak kod analizi (code review) yapıyor?</b></p>
+                <p><b>3. Bu odada kaç kişi geliştirme süreçlerinin bir parçası olarak kod analizi (code review)
+                        yapıyor?</b></p>
                 <p><b>4. Başkalarının önünde aptal gibi görünmekten kim korkuyor?</b></p>
                 <p>
                     Aslında soruların gidişatı bizler için düşünce sistemini ifade ediyor. Temel olarak toplum
@@ -172,9 +186,12 @@
                 </p>
                 <p>
                     Ardından isim verilmeden iş yerinde yapılmış olan çeşitli istek alıntılarını görüyoruz;<br>
-                    <b>- "Lütfen Google Code'da Subversion'a belirli dalları gizleme yeteneği verebilir misiniz?"</b><br>
-                    <b>- "Başlangıçta gizli olan ve hazır olduklarında 'ortaya çıkan' açık kaynaklı projeler yaratmayı mümkün kılabilir misiniz?"</b><br>
-                    <b>- "Merhaba tüm kodlarımı sıfırdan yeniden yazmak istiyorum, lütfen tüm geçmişi silebilir misiniz?"</b><br>
+                    <b>- "Lütfen Google Code'da Subversion'a belirli dalları gizleme yeteneği verebilir
+                        misiniz?"</b><br>
+                    <b>- "Başlangıçta gizli olan ve hazır olduklarında 'ortaya çıkan' açık kaynaklı projeler yaratmayı
+                        mümkün kılabilir misiniz?"</b><br>
+                    <b>- "Merhaba tüm kodlarımı sıfırdan yeniden yazmak istiyorum, lütfen tüm geçmişi silebilir
+                        misiniz?"</b><br>
                 </p>
                 <p>
                     Tüm alıntıların ardından ise <b>"Bunların hepsinin ortak noktası nedir?" </b> sorusu ve Collins
@@ -211,7 +228,8 @@
                 </p>
 
                 <div class="col-lg-11 mx-auto col-12">
-                    <img src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/society.webp" class="img-fluid">
+                    <img src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/society.webp"
+                        class="img-fluid">
                     <p style="text-align: center;"> Arka Plan Görseli:
                         <a href="https://unsplash.com/photos/_vkztdUDhvY">Unsplash / Alexander Grey</a>
                     </p>
@@ -254,7 +272,8 @@
                     sürecinde hataların olması kaçınılmazdır.
                 </p>
                 <div class="col-lg-11 mx-auto col-12">
-                    <img src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/live_love_learn.webp" class="img-fluid">
+                    <img src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/live_love_learn.webp"
+                        class="img-fluid">
                     <p style="text-align: center;"> Arka Plan Görseli:
                         <a href="https://unsplash.com/photos/NDjaUqvB7uE">Unsplash / Brett Jordan</a>
                     </p>
@@ -281,8 +300,11 @@
                     Belki işin sonunda pes edecek ve belirlenen kısmı yeniden inşa edeceksiniz.
                 </p>
                 <div style="text-align: center;">
-                    <img width="50%" height="50%" src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/bus_factor.webp" class="img-fluid" />
-                    <p style="text-align: center;"> Arka Plan Görseli: <a href="https://sketchplanations.com/bus-factor">sketchplanations.com / Bus Factor</a></p>
+                    <img width="50%" height="50%"
+                        src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/bus_factor.webp"
+                        class="img-fluid" />
+                    <p style="text-align: center;"> Arka Plan Görseli: <a
+                            href="https://sketchplanations.com/bus-factor">sketchplanations.com / Bus Factor</a></p>
                 </div>
                 <p>
                     Bu yüzden paylaşıma açık olmak, yapılan hataları da paylaşmak bir ekip için çok önemlidir.
@@ -324,7 +346,8 @@
                     Günümüzde Open Source projeler, Github gibi platformlar sayesinde çok daha kolay bir şekilde
                     sahip olduğumuz gelişim eğrilerini daha da yükseklere taşıyabiliriz.
                 </p>
-                <p><b>"Başkalarının hatalarından öğrenmek, yaşamınızı daha kolay ve daha verimli hale getirebilir." - Bill Gates</b></p>
+                <p><b>"Başkalarının hatalarından öğrenmek, yaşamınızı daha kolay ve daha verimli hale getirebilir." -
+                        Bill Gates</b></p>
 
                 <h3 style="margin-top: 3%;">Bu 'dahi' yazılımcıları 'dahi' kabul etmemizi sağlayan ne?</h3>
                 <p>
@@ -341,12 +364,14 @@
                 <p>
                     Linus Torvalds, Linux çekirdeğini Open Source olarak geliştirmiştir. Ayrıca IBM, Intel gibi
                     firmaların birçok geliştiricisi de desteklemiştir. Linux için Red Hat, Linux Foundation gibi
-                    kurumlar ve topluluklar oluşturulmuştur. Github üzerinde <a href="https://github.com/torvalds/linux">Linus Torvalds</a>'ın profilini ziyaret eder ve
+                    kurumlar ve topluluklar oluşturulmuştur. Github üzerinde <a
+                        href="https://github.com/torvalds/linux">Linus Torvalds</a>'ın profilini ziyaret eder ve
                     Linux reposunu incelerseniz. 5000'den
                     fazla katılımcı olduğunu göreceksiniz.
                 </p>
                 <div style="text-align: center;">
-                    <img src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/Linux_Contributors.webp" class="img-fluid" alt="Warning">
+                    <img src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/Linux_Contributors.webp"
+                        class="img-fluid" alt="Warning">
                 </div>
                 <p>
                     Ayrıca Open Source dediğimiz kültürün de temellerini atan insanlardan birisidir. Açık kaynak
@@ -359,8 +384,11 @@
                     topluluğuyla birlikte büyüyen bir yapıya sahiptir.
                 </p>
                 <div style="text-align: center;">
-                    <img style="height: 50½; width: 50%;" src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/LinuxMeme.webp" class="img-fluid" alt="Warning">
-                    <p>Source: <a href="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fpy9zhj2wkw2b1.webp">Reddit</a>
+                    <img style="height: 50½; width: 50%;"
+                        src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/LinuxMeme.webp"
+                        class="img-fluid" alt="Warning">
+                    <p>Source: <a
+                            href="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fpy9zhj2wkw2b1.webp">Reddit</a>
                     </p>
                 </div>
                 <p>
@@ -429,62 +457,91 @@
                     performanslı ve güvenilir bir şekilde hizmet edebilecek yazılım ürünleri oluşturmayı amaçlamak
                     sizin ve projenizin gelişimi için daha faydalı olacaktır.
                 </p>
-                <p>Bu durum için bir örnek olması adına <a href="https://github.com/elastic/elasticsearch">Elastic Search</a> reposu incelenebilir.</p>
+                <p>Bu durum için bir örnek olması adına <a href="https://github.com/elastic/elasticsearch">Elastic
+                        Search</a> reposu incelenebilir.</p>
                 <div style="text-align: center;">
-                    <img style="height: 50½; width: 50%;" src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/ElasticSearch_Issue.webp" class="img-fluid">
+                    <img style="height: 50½; width: 50%;"
+                        src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/ElasticSearch_Issue.webp"
+                        class="img-fluid">
                     <p>Elastic Search Issues</p>
                 </div>
                 <div style="text-align: center;">
-                    <img style="height: 50½; width: 50%;" src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/ElasticSearch_PullRequest.webp" class="img-fluid">
+                    <img style="height: 50½; width: 50%;"
+                        src="../../images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/ElasticSearch_PullRequest.webp"
+                        class="img-fluid">
                     <p>Elastic Search Pull Requests</p>
                 </div>
 
                 <h5>Başarısızlığı Kucaklamayı Öğrenmek, Hızla Yenilenmek</h5>
                 <p>
-                    Her zaman her durum yolunda gitmez. Başarısızlık durumu oluştuğunda ise yapılması gereken bazı adımlar
+                    Her zaman her durum yolunda gitmez. Başarısızlık durumu oluştuğunda ise yapılması gereken bazı
+                    adımlar
                     vardır. Öncelikle başarısızlığı kabullenmek ve nedenlerini araştırmak gerekir. Aksi halde her zaman
                     "Yapamıyorum" düşüncesini benimsemek, olağan akışımızı bozmakla kalmaz aynı zamanda bırakmamıza
                     da sebep olabilir.
                 </p>
                 <p>
-                    Hatayı anlamak, nedenlerini araştırmak ve çözüm üretmek için hızlı bir şekilde yeniden denemek gerekir.
+                    Hatayı anlamak, nedenlerini araştırmak ve çözüm üretmek için hızlı bir şekilde yeniden denemek
+                    gerekir.
                     Bu şekilde bizlerden tecrübeli olan ve "dahi" sıfatıyla yaklaştığımız insanlara yaklaşabiliriz.
                     <b>
-                        Hiç fark ettiniz mi bilmiyorum ama yazılım üzerinde oluşturulan içeriklerin büyük bir paydası hatalar üzerine
-                        inşa edilir. Hiçbir problemi çözdüğünüzde arama yaptığınızı hatırlıyor musunuz? Stackoverflow, Medium,
-                        Github gibi kanallar genel olarak bir hata süreciyle başlatılır. İnternet üzerinde arama isteğini bir
-                        hata sonrasında yaparız. Bu hataların çözümleri ise sizin için birçok kişi tarafından paylaşılmıştır.
+                        Hiç fark ettiniz mi bilmiyorum ama yazılım üzerinde oluşturulan içeriklerin büyük bir paydası
+                        hatalar üzerine
+                        inşa edilir. Hiçbir problemi çözdüğünüzde arama yaptığınızı hatırlıyor musunuz? Stackoverflow,
+                        Medium,
+                        Github gibi kanallar genel olarak bir hata süreciyle başlatılır. İnternet üzerinde arama
+                        isteğini bir
+                        hata sonrasında yaparız. Bu hataların çözümleri ise sizin için birçok kişi tarafından
+                        paylaşılmıştır.
                     </b>
-                    Ayrıca yazılımın ana amacı belirli olan süreç ve işleri kolaylaştırmaktır. Hata çözmek, otomatikleştirmektir.
+                    Ayrıca yazılımın ana amacı belirli olan süreç ve işleri kolaylaştırmaktır. Hata çözmek,
+                    otomatikleştirmektir.
                 </p>
                 <p>
-                    Burada "yetersizlik" hissi de ayrıca baskındır. Instagram, Twitter, Youtube gibi platformlar gibi Github,
-                    Stackoverflow, RedHat platformlarında da çeşitli insanlar popülariteye sahiptir. Bizler ise onların yaptıkları,
-                    yaşadıkları, çalıştıkları şartlar kapsamında kıyaslama yaparız. Burada psikolojik, ekonomik birçok faktör etkilidir.
+                    Burada "yetersizlik" hissi de ayrıca baskındır. Instagram, Twitter, Youtube gibi platformlar gibi
+                    Github,
+                    Stackoverflow, RedHat platformlarında da çeşitli insanlar popülariteye sahiptir. Bizler ise onların
+                    yaptıkları,
+                    yaşadıkları, çalıştıkları şartlar kapsamında kıyaslama yaparız. Burada psikolojik, ekonomik birçok
+                    faktör etkilidir.
                 </p>
                 <p>
-                    Fakat temel olarak benim ele almak istediğim kısım <b>Iceberg illüzyonu 'u.</b> Bu illüzyonu günümüzde sosyal
-                    medyanın ve çeşitli araçların aracılığıyla bol bol yaşıyoruz. Belirli başarıya sahip insanların yaptıklarını,
+                    Fakat temel olarak benim ele almak istediğim kısım <b>Iceberg illüzyonu 'u.</b> Bu illüzyonu
+                    günümüzde sosyal
+                    medyanın ve çeşitli araçların aracılığıyla bol bol yaşıyoruz. Belirli başarıya sahip insanların
+                    yaptıklarını,
                     emek verdiklerini, tecrübe edindiklerini, harcadıkları zamanları görmeden sonuca odaklanarak
                     paylaşılan içeriklerin şartlarıyla sahip olduklarımızı kıyaslıyoruz.
                 </p>
                 <p>
-                    Mühendislik için ise bunu bizden yıllarca fazla deneyimli insanları takip ederken, onların yaptıklarını incelerken
-                    yaşıyoruz. Burada dediğim gibi birden çok parametre var. Alınan eğitim, doğduğu aile, mesleki tercihler, yaşadığı
-                    şartlar, ekonomik durum, sosyal çevre gibi birçok faktör var. Yapmamız gereken ise bu faktörleri ve yaşanılan hayatları
-                    kıyaslamak yerine bu kişinin bilgi ve tecrübesinden ne edinebilirim, hangi kararları alabilirim, hangi yolları
+                    Mühendislik için ise bunu bizden yıllarca fazla deneyimli insanları takip ederken, onların
+                    yaptıklarını incelerken
+                    yaşıyoruz. Burada dediğim gibi birden çok parametre var. Alınan eğitim, doğduğu aile, mesleki
+                    tercihler, yaşadığı
+                    şartlar, ekonomik durum, sosyal çevre gibi birçok faktör var. Yapmamız gereken ise bu faktörleri ve
+                    yaşanılan hayatları
+                    kıyaslamak yerine bu kişinin bilgi ve tecrübesinden ne edinebilirim, hangi kararları alabilirim,
+                    hangi yolları
                     seçebilirim gibi sorulara odaklanmak olmalıdır.
                 </p>
                 <p>
-                    Yazıldığı kadar basit olmadığının bende farkındayım. Fakat örnek aldığımız kişileri kahraman olarak görmektense kendi
-                    düşüncülerimiz ile değerlendirerek öğretmen olarak görmek gerekir. Bu kişilerinde geçmişte hatalar yaptığını bilmek,
-                    önerilerini dinlemek ve onlardan öğrenmek değerlidir. Kaybolduğunuzda haritanızı geliştirmenizi sağlayan rehberler
-                    edinmek gibi düşünülebilir. Kendi adıma bu konuda en çok etkilendiğim kişilerden birisi de <a href="https://www.youtube.com/@YalinKod">Bilgem Çakır</a>'dır.
+                    Yazıldığı kadar basit olmadığının bende farkındayım. Fakat örnek aldığımız kişileri kahraman olarak
+                    görmektense kendi
+                    düşüncülerimiz ile değerlendirerek öğretmen olarak görmek gerekir. Bu kişilerinde geçmişte hatalar
+                    yaptığını bilmek,
+                    önerilerini dinlemek ve onlardan öğrenmek değerlidir. Kaybolduğunuzda haritanızı geliştirmenizi
+                    sağlayan rehberler
+                    edinmek gibi düşünülebilir. Kendi adıma bu konuda en çok etkilendiğim kişilerden birisi de <a
+                        href="https://www.youtube.com/@YalinKod">Bilgem Çakır</a>'dır.
                 </p>
                 <!-- Youtube Video Content -->
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 3%;">
-                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/EeGpwC5zr4o?si=z_EmZyWg8Hp9_lac" title="YouTube video player"
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div
+                    style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 3%;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                        src="https://www.youtube.com/embed/EeGpwC5zr4o?si=z_EmZyWg8Hp9_lac" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
 
                 <h5>Pratik Anahtardır</h5>

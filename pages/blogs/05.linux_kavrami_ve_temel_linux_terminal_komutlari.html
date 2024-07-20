@@ -2,6 +2,13 @@
 <html lang="tr">
 
 <head>
+    <!-- Site Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Kağan Can Şit'in portföy sitesi. Projeler, blog yazıları, tasarımlar ve daha fazlası...">
+    <meta name="author" content="Kağan Can Şit">
+
     <!-- Tab Info -->
     <title>Kağan Can Şit</title>
     <link rel="icon" href="/images/base_site_images/designPng.webp" type="image/x-icon" />
@@ -15,14 +22,11 @@
         gtag('config', 'G-2BLQV2M3JL');
     </script>
 
-    <section id="head-container"></section>
-    <script>
-        fetch('/pages/page_partial/head_info.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('head-container').innerHTML = data;
-            });
-    </script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/tooplate-style.css">
 </head>
 
 <body>
@@ -31,7 +35,8 @@
         <div class="container">
             <a class="navbar-brand" href="../../index.html"> Kağan Can Şit</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +60,8 @@
                         <a href="#contact" class="nav-link"><span data-hover="İletişim">İletişim</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="../hayat_anlam_katanlar_manifestosu.html" class="nav-link"><span data-hover="🪁">🪁</span></a>
+                        <a href="../hayat_anlam_katanlar_manifestosu.html" class="nav-link"><span
+                                data-hover="🪁">🪁</span></a>
                     </li>
                 </ul>
 
@@ -70,7 +76,8 @@
     <section class="full-screen" id="project">
         <div class="container row">
             <div class="col-lg-11 mx-auto col-12">
-                <img src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/header_image.webp" class="img-fluid">
+                <img src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/header_image.webp"
+                    class="img-fluid">
             </div>
             <div class="col-lg-12 mx-auto">
                 <h2>Linux Kavramı ve Temel Linux Terminal Komutları</h2>
@@ -81,56 +88,73 @@
                     mutlaka hatalarım bulunabilir. Lütfen bana bildirin, beraber düzeltelim. Keyifli okumalar!
                 </p>
                 <div style="text-align: center;">
-                    <img width="100%" height="100%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/00.webp" class="img-fluid" />
+                    <img width="100%" height="100%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/00.webp" class="img-fluid" />
                 </div>
 
 
                 <h3>Linux Nedir?</h3>
                 <p>
-                    İlk olarak Linux bir işletim sistemi değildir. Zaman içerisinde günlük konuşma dilinde “Linux kullanıyorum.”
-                    deyiminin fazlaca kullanılması ile birlikte bu şekilde bir söylem yer edinmiştir. Fakat Linux bir işletim
-                    sistemi çekirdeğidir. Daha kapsamlı bu konu hakkında bilgi vereceğim. Ama şimdi Linux çekirdeği hakkında biraz
+                    İlk olarak Linux bir işletim sistemi değildir. Zaman içerisinde günlük konuşma dilinde “Linux
+                    kullanıyorum.”
+                    deyiminin fazlaca kullanılması ile birlikte bu şekilde bir söylem yer edinmiştir. Fakat Linux bir
+                    işletim
+                    sistemi çekirdeğidir. Daha kapsamlı bu konu hakkında bilgi vereceğim. Ama şimdi Linux çekirdeği
+                    hakkında biraz
                     tartışalım.
                 </p>
                 <p>
-                    Linux, Unix çekirdeğinin tamamıyla açık kaynak olmaması sebebiyle ona karşı bir atıf olarak ortaya çıkmıştır.
-                    Unix çekirdeği herkesin aktif olarak kullanamayacağı ve geliştirmeye açık olmaması üzerine “Linus Tornvalds”
-                    ilk başta başka isimler verse de “Linux” ismi ile Unix sistem çekirdeğine karşı kendi çekirdiğini geliştirmiştir.
+                    Linux, Unix çekirdeğinin tamamıyla açık kaynak olmaması sebebiyle ona karşı bir atıf olarak ortaya
+                    çıkmıştır.
+                    Unix çekirdeği herkesin aktif olarak kullanamayacağı ve geliştirmeye açık olmaması üzerine “Linus
+                    Tornvalds”
+                    ilk başta başka isimler verse de “Linux” ismi ile Unix sistem çekirdeğine karşı kendi çekirdiğini
+                    geliştirmiştir.
                     Linux, GNU prensibinin bir ürünüdür. GNU, GNU’s Not Unix kısaltmasıdır.
                 </p>
                 <p>
-                    <b>!Not:</b> Linux Tornvalds, Linux çekirdeğini geliştirirken, proje gerekliliklerini ve gelişimini kontrol
+                    <b>!Not:</b> Linux Tornvalds, Linux çekirdeğini geliştirirken, proje gerekliliklerini ve gelişimini
+                    kontrol
                     edebilmek için GİT sistemini de geliştirmiştir. Doğru okudun! Vazgeçilmezimiz GİT.
                 </p>
                 <p>
-                    “Burada açık kaynak nedir?” gibi soruları bu konu içerisinde derinlemesine dahil etmek istemiyorum. Fakat
+                    “Burada açık kaynak nedir?” gibi soruları bu konu içerisinde derinlemesine dahil etmek istemiyorum.
+                    Fakat
                     buradan okuyabilirsiniz.
                 </p>
                 <p>
-                    <a href="03.acik_kaynaga_katkida_bulunmaya_dair_ilk_adimlar.html">Açık Kaynak Kavramı ve Açık Kaynağa Katkıda
+                    <a href="03.acik_kaynaga_katkida_bulunmaya_dair_ilk_adimlar.html">Açık Kaynak Kavramı ve Açık
+                        Kaynağa Katkıda
                         Bulunmaya Dair İlk Adımlar | by Kağan Can Şit | Jul, 2022 </a>
                 </p>
                 <p>
-                    Kabaca “Açık Kaynak Yazılım”, geliştirilmekte olan veya yeni başlayan bir yazılım içeriğinin herkesin erişimine
-                    açılarak doğrudan katkıda bulunabileceği, ücretsiz olarak kullanabileceği bir yazılım felsefesi denebilir.
+                    Kabaca “Açık Kaynak Yazılım”, geliştirilmekte olan veya yeni başlayan bir yazılım içeriğinin
+                    herkesin erişimine
+                    açılarak doğrudan katkıda bulunabileceği, ücretsiz olarak kullanabileceği bir yazılım felsefesi
+                    denebilir.
                 </p>
 
                 <h3>Linux Çekirdeğinin İşlevi Nedir?</h3>
                 <p>
-                    Linux çekirdeği donanım ile işletim sistemi arasında bir köprü görevi görür. Linux çekirdeğine sahip olan ve
-                    üzerine görsel arayüz, işlev ve paketler oluşturularak kullanıma sunulan işletim sistemleri paketleri Linux
-                    çekirdeği sayesinde basitçe donanıma emir verir, yönetir. Bu çekirdeğin üzerine inşa edilmiş olan ve işletim
+                    Linux çekirdeği donanım ile işletim sistemi arasında bir köprü görevi görür. Linux çekirdeğine sahip
+                    olan ve
+                    üzerine görsel arayüz, işlev ve paketler oluşturularak kullanıma sunulan işletim sistemleri
+                    paketleri Linux
+                    çekirdeği sayesinde basitçe donanıma emir verir, yönetir. Bu çekirdeğin üzerine inşa edilmiş olan ve
+                    işletim
                     sistemi olarak kullanılan yazılımlara “Linux Dağıtımı” adı verilir.
                 </p>
 
                 <h3>Peki Biz İşletim Sistemi Olarak Neyi Kullanıyoruz? / Linux Dağıtımları</h3>
                 <p>
-                    Linux çekirdeği üzerine amaca uygun bir biçimde özelleştirme, arayüz, yazılım paketleri eklenerek son kullanıcıya
+                    Linux çekirdeği üzerine amaca uygun bir biçimde özelleştirme, arayüz, yazılım paketleri eklenerek
+                    son kullanıcıya
                     sunulan yazılım ürünlerine “Linux Dağıtımı” adı verilir.
                 </p>
                 <p>
                     Hatta sizler de açık kaynak olarak yayınlanan Linux çekirdeğini baz alarak kendi işletim sisteminizi
-                    oluşturabilirsiniz. Fakat bu düzeyde bir bilgi birikimi ve geliştirme herkes tarafından yapılamayacağı
+                    oluşturabilirsiniz. Fakat bu düzeyde bir bilgi birikimi ve geliştirme herkes tarafından
+                    yapılamayacağı
                     için birçok paket yapısına sahip, dağıtıcılar aracılığıyla oluşturulmuş Linux dağıtımları bulunur.
                     Bu durum sizlere istediğiniz gibi işe göre çeşitlilik, performans ve alana özgü özelleştirme sunar.
                 </p>
@@ -139,118 +163,155 @@
                     Hat Package Manager) ve packman gibi paket yöneticileri bulunur.
                 </p>
                 <div style="text-align: center;">
-                    <img width="100%" height="100%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/header_image.webp" class="img-fluid" />
+                    <img width="100%" height="100%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/header_image.webp"
+                        class="img-fluid" />
                 </div>
                 <p>
-                    Çok fazla sizleri de sıkmadan kısaca tanımlamak gerekirse “Linux çekirdiği ve belirli paket yöneticisi
-                    üzerine arayüzler, çeşitli gündelik araçlar eklenerek ve yazılımsal düzenleme yapılarak sunulan Linux
-                    dağıtımları bizlerin işletim sistemi olarak kullanıdığı yazılımlardır.” Örneğin Arch, Kali, Ubuntu, Mint gibi.
+                    Çok fazla sizleri de sıkmadan kısaca tanımlamak gerekirse “Linux çekirdiği ve belirli paket
+                    yöneticisi
+                    üzerine arayüzler, çeşitli gündelik araçlar eklenerek ve yazılımsal düzenleme yapılarak sunulan
+                    Linux
+                    dağıtımları bizlerin işletim sistemi olarak kullanıdığı yazılımlardır.” Örneğin Arch, Kali, Ubuntu,
+                    Mint gibi.
                 </p>
                 <p>
-                    <b>“GNU/Linux dağıtımı(kısaca dağıtım);</b> Linux çekirdeği , GNU araçları ve bir masaüstü ortamının bir araya
-                    gelmesiyle, bu birlikteliği sürdürülebilir şekilde yönetecek bir yapılandırma araçları seti, yazılım güncelleme
-                    araçları vb. ile oluşturularak tam teşekküllü bir işletim sistemi haline gelen uygulamalar bütününü ifade eder.”
+                    <b>“GNU/Linux dağıtımı(kısaca dağıtım);</b> Linux çekirdeği , GNU araçları ve bir masaüstü ortamının
+                    bir araya
+                    gelmesiyle, bu birlikteliği sürdürülebilir şekilde yönetecek bir yapılandırma araçları seti, yazılım
+                    güncelleme
+                    araçları vb. ile oluşturularak tam teşekküllü bir işletim sistemi haline gelen uygulamalar bütününü
+                    ifade eder.”
                 </p>
                 <p>
-                    Kaynak: <a href="https://tr.wikipedia.org/wiki/Linux_da%C4%9F%C4%B1t%C4%B1m%C4%B1">Linux dağıtımı — Vikipedi (wikipedia.org)</a>
+                    Kaynak: <a href="https://tr.wikipedia.org/wiki/Linux_da%C4%9F%C4%B1t%C4%B1m%C4%B1">Linux dağıtımı —
+                        Vikipedi (wikipedia.org)</a>
                 </p>
-                <p> Linux’a dair daha kapsamlı ve iyi bilgi almak için en aşağıdaki kısmında yer alan kaynakları inceleyebilirsiniz.</p>
+                <p> Linux’a dair daha kapsamlı ve iyi bilgi almak için en aşağıdaki kısmında yer alan kaynakları
+                    inceleyebilirsiniz.</p>
 
                 <h3>Terminal Nedir?</h3>
                 <p>
-                    Terminal kısaca kullanıcıların belirli komutlar aracılığıyla işletim sistemine emir vermelerini, programlarını
+                    Terminal kısaca kullanıcıların belirli komutlar aracılığıyla işletim sistemine emir vermelerini,
+                    programlarını
                     yönetmelerini sağlayan komut ekranıdır.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/02.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/02.webp" class="img-fluid" />
                 </div>
 
                 <h3>Temel Linux Terminal Komutları</h3>
                 <h3>Yardım Dokümantasyonu</h3>
                 <p><b>man man: </b> Temel kullanıcı el kitapçığını açar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/03.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/03.webp" class="img-fluid" />
                 </div>
                 <p>
-                    Burada bulunan “man” komutu herhangi bir merak edilen komut için arama yapmak amacıyla kullanılabilir.
-                    Örnek vermek gerekirse ping komutu hakkındaa çıklayıcı bilgi almak için “man ping” komut satırına yazılabilir.
-                    Çıkan ek ekran içerisinde ping komutunu açılımı ve ek özellikleri bulunur. Bilgilendirme ekranından çıkış
+                    Burada bulunan “man” komutu herhangi bir merak edilen komut için arama yapmak amacıyla
+                    kullanılabilir.
+                    Örnek vermek gerekirse ping komutu hakkındaa çıklayıcı bilgi almak için “man ping” komut satırına
+                    yazılabilir.
+                    Çıkan ek ekran içerisinde ping komutunu açılımı ve ek özellikleri bulunur. Bilgilendirme ekranından
+                    çıkış
                     yapmak için “q” tuşuna basılması yeterlidir.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/04.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/04.webp" class="img-fluid" />
                 </div>
 
                 <h3>Genel ve Terminale Dair</h3>
                 <p><b>clear: </b> Terminal ekranını temizler.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/05.webp" class="img-fluid" />
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/06.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/05.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/06.webp" class="img-fluid" />
                 </div>
 
                 <p><b>pwd: (print name of current/working directory)</b> Bulunduğumuz komut satırını döndürür.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/07.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/07.webp" class="img-fluid" />
                 </div>
 
                 <p><b>echo / printf: </b> Temel olarak terminal ekranına istenilen bilgileri çıktı olarak gönderir.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/08.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/08.webp" class="img-fluid" />
                 </div>
 
-                <p><b>yes: </b> while(1) gibi düşünülebilir. Girilen parametreyi sonlandırana kadar düzenli olarak console’a basar.</p>
+                <p><b>yes: </b> while(1) gibi düşünülebilir. Girilen parametreyi sonlandırana kadar düzenli olarak
+                    console’a basar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/09.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/09.webp" class="img-fluid" />
                 </div>
 
                 <p><b>seq: </b> Parametre olarak verilen sayı değerine kadar console ekranına yazdırır.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/10.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/10.webp" class="img-fluid" />
                 </div>
 
                 <p>
-                    <b>head / tall: </b> Dosyaya dair ilk veya son on içeriği listele. Örnek: İçerisine 1'den 12'ye kadar yazılmış .txt dosyasının head ile yazdırılması.
+                    <b>head / tall: </b> Dosyaya dair ilk veya son on içeriği listele. Örnek: İçerisine 1'den 12'ye
+                    kadar yazılmış .txt dosyasının head ile yazdırılması.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/11.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/11.webp" class="img-fluid" />
                 </div>
 
                 <p><b>history:</b> Terminal üzerinde girilen komutların geçmişini gösterir.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/12.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/12.webp" class="img-fluid" />
                 </div>
 
                 <p><b>free:</b> RAM kullanımı için boş alan bilgilerini döndürür.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/13.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/13.webp" class="img-fluid" />
                 </div>
 
-                <p><b>ls (list directory contents):</b> Bulunduğumuz komut satırı içerisinde var olan tüm dosya içeriklerini listeler.</p>
+                <p><b>ls (list directory contents):</b> Bulunduğumuz komut satırı içerisinde var olan tüm dosya
+                    içeriklerini listeler.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/14.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/14.webp" class="img-fluid" />
                 </div>
 
                 <p>
-                    <b>ls -l:</b> Bulunan dizin içerisinde yetkileri görüntüler. “-l” parameterisinin ardına dosya ismini parametre olarak
+                    <b>ls -l:</b> Bulunan dizin içerisinde yetkileri görüntüler. “-l” parameterisinin ardına dosya
+                    ismini parametre olarak
                     vererek sadece belirlenen dosya yetkilerine de bakılabilir.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/15.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/15.webp" class="img-fluid" />
                 </div>
 
                 <p>
-                    <b>ls --color:</b> Komutu listelenen içeriklerin biçimi ve executable olmasına göre renklendirme sağlar. Yukarıdaki görselde
-                    bu durumda gösteriliyor. “denemeDosya” mavi olmasının sebebi onun bir dizin/klasör olmasından kaynaklanıyor.
+                    <b>ls --color:</b> Komutu listelenen içeriklerin biçimi ve executable olmasına göre renklendirme
+                    sağlar. Yukarıdaki görselde
+                    bu durumda gösteriliyor. “denemeDosya” mavi olmasının sebebi onun bir dizin/klasör olmasından
+                    kaynaklanıyor.
                 </p>
-                <p><b>ls -all</b>: Tüm içerikleri yetkileri ve ek özellikleri ile listeler. Burada “..” bir üst dizini, “.” ise bulunduğunuz
+                <p><b>ls -all</b>: Tüm içerikleri yetkileri ve ek özellikleri ile listeler. Burada “..” bir üst dizini,
+                    “.” ise bulunduğunuz
                     dizini gösteren bir pointer’dır.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/16.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/16.webp" class="img-fluid" />
                 </div>
 
                 <p>
-                    <b>ls -ah:</b> Dizin içerisinde gizli dosyaları gösterir. Bunun içinde örnek yukarıdaki görsel içerisinde yer almaktadır.
+                    <b>ls -ah:</b> Dizin içerisinde gizli dosyaları gösterir. Bunun içinde örnek yukarıdaki görsel
+                    içerisinde yer almaktadır.
                     Normalde dizin içerisinde bizler “.” ve “..” ikilisini göremeyiz.
                 </p>
 
@@ -260,27 +321,33 @@
                     Örneğin açılan terminal içerisinde “cd Desktop” masaüstü dizinine ulaşmamızı sağlar.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/17.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/17.webp" class="img-fluid" />
                 </div>
                 <p>
-                    <b>cd:</b> Home komutu olan ilk terminal dizinine döndürür. Yukarıdaki görselde gördüğümüz ilk duruma
-                    geri dönmüş oluruz. Mavi ile gösterilen masaüstü dizini içerisinde daha önce yer aldığımız (üstü satır)
+                    <b>cd:</b> Home komutu olan ilk terminal dizinine döndürür. Yukarıdaki görselde gördüğümüz ilk
+                    duruma
+                    geri dönmüş oluruz. Mavi ile gösterilen masaüstü dizini içerisinde daha önce yer aldığımız (üstü
+                    satır)
                     home konumuna geri döneriz.
                 </p>
 
                 <p><b>cd ..:</b> Bir üst dizine çıkmamızı sağlar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/18.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/18.webp" class="img-fluid" />
                 </div>
 
                 <p><b>cd /:</b> Komutu root dizinine ulaştırır.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/19.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/19.webp" class="img-fluid" />
                 </div>
 
                 <p><b>mkdir “dosya ismi”|(make directories):</b> Dizin oluşturmamızı sağlar. (Klasör)</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/20.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/20.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -291,12 +358,14 @@
 
                 <p><b>rmdir:</b> Boş olarak bulunan klasörü kaldırır.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/21.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/21.webp" class="img-fluid" />
                 </div>
 
                 <p><b>touch:</b> Herhangi bir dosya oluşturmak amacıyla kullanılabilir. (touch deneme.txt)</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/22.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/22.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -307,17 +376,20 @@
                     çağrıda bulunduğumuzda içerik console ekranında düzenlenebilir ve bastırılabilir.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/23.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/23.webp" class="img-fluid" />
                 </div>
 
                 <p><b>less:</b> Cat ile aynı işlevi barındırır. Tek bir sayfa içerisinde görüntülenir.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/24.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/24.webp" class="img-fluid" />
                 </div>
 
                 <p><b>nl:</b> Numaralandırmış bir şekilde içeriği console üzerinde görüntüler.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/25.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/25.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -328,7 +400,8 @@
                     oluşturulmuştur.)
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/26.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/26.webp" class="img-fluid" />
                 </div>
 
                 <p><b>mv:</b> Taşıma İşlemi (move). Yukarıdaki örnek ile aynı şekilde kullanılabilir.</p>
@@ -339,7 +412,8 @@
                     girilen parametreyi içeren dosyaların görüntülenmesini sağlar.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/27.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/27.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -349,7 +423,8 @@
                     kullanılabilir.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/28.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/28.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -357,7 +432,8 @@
                     merhaba yazmasına rağmen “shred deneme.txt” girdisini girdiğimizde dosya şu hale gelir.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/29.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/29.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -365,7 +441,8 @@
                     “basename /usr/local/” girdisi “local” olarak sonuç verir.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/30.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/30.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -374,7 +451,8 @@
                     olarak sonuç verir.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/31.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/31.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -401,30 +479,39 @@
                         şeklindedir.</b>
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/32.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/32.webp" class="img-fluid" />
                 </div>
 
-                <p><b>stat “dosya/dizin ismi”:</b> Parametre olarak girilen dosya hakkında oluşturma tarihi, boyut gibi bilgileri döndürür.</p>
+                <p><b>stat “dosya/dizin ismi”:</b> Parametre olarak girilen dosya hakkında oluşturma tarihi, boyut gibi
+                    bilgileri döndürür.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/33.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/33.webp" class="img-fluid" />
                 </div>
 
-                <p><b>wc “dosya/dizin ismi”:</b> Dosya içerisindeki byte sayısı, kelime sayısını ve satır sayısını döner.</p>
+                <p><b>wc “dosya/dizin ismi”:</b> Dosya içerisindeki byte sayısı, kelime sayısını ve satır sayısını
+                    döner.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/34.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/34.webp" class="img-fluid" />
                 </div>
 
-                <p><b>du “dosya/dizin ismi”:</b> Parametre olarak verilen dosya veya klasörün diskte tuttuğu yeri döndürür.</p>
+                <p><b>du “dosya/dizin ismi”:</b> Parametre olarak verilen dosya veya klasörün diskte tuttuğu yeri
+                    döndürür.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/35.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/35.webp" class="img-fluid" />
                 </div>
 
                 <p>
-                    <b>file “dosya/dizin ismi”:</b> Dosyanın tipini ve içeriğini tahmin eder. Örnek bir metin dosyası için
+                    <b>file “dosya/dizin ismi”:</b> Dosyanın tipini ve içeriğini tahmin eder. Örnek bir metin dosyası
+                    için
                     (file deneme.txt — - deneme.txt:ASCII text) şeklinde çıktı görürülebilir.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/36.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/36.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -433,10 +520,12 @@
                     yönetici (root)’a atadığımda hata alıyorum.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/37.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/37.webp" class="img-fluid" />
                 </div>
 
-                <p><b>chgrp “dosya/dizin ismi”:</b> Dosyanın grup adını değiştirir. Yukarıdaki mantık ile aynı şekilde kullanabilirsiniz.</p>
+                <p><b>chgrp “dosya/dizin ismi”:</b> Dosyanın grup adını değiştirir. Yukarıdaki mantık ile aynı şekilde
+                    kullanabilirsiniz.</p>
                 <p>
                     <b>umask “dosya/dizin ismi”:</b> Chmod’a benzer olarak izin kümeleri atamak için kullanılır.
                     Genel olarak bir terminal üzerinde hazır chmod ayarı oluşturmaya yarar.
@@ -444,17 +533,21 @@
 
                 <p>
                     <b>chattr +i “dosya/dizin ismi”:</b> Bir dosyayı düzenlemeye karşı korumaya alır ve değiştirilemez,
-                    silenemez olmasını sağlar. Eski haline gelebilmesi için i paramatresini çarpan değerini “-” yapmamız yeterlidir.
+                    silenemez olmasını sağlar. Eski haline gelebilmesi için i paramatresini çarpan değerini “-” yapmamız
+                    yeterlidir.
                 </p>
 
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/38.webp" class="img-fluid" /><br>
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/39.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/38.webp" class="img-fluid" /><br>
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/39.webp" class="img-fluid" />
                 </div>
 
                 <p><b>lasttr “dosya/dizin ismi”:</b> Dizinlerin genişletilmiş özniteliklerini listeleyin.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/40.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/40.webp" class="img-fluid" />
                 </div>
 
                 <h3>Metin Editörleri ve Dosya Düzenleme</h3>
@@ -466,13 +559,16 @@
                     <b>gnumeric:</b> Excel dosyalarını editleme.
                 </p>
                 <p>
-                    <b>grep:</b> Yazılı dosya içerisinde değer arama ve bulma gerçekleştirir. Örneğin içerisinde “Merhabalar”
-                    yazan bir deneme.txt dosyamız bulunsun. (grep Merha deneme.txt) girdisi bizlere deneme.txt dosyası içerisinde
+                    <b>grep:</b> Yazılı dosya içerisinde değer arama ve bulma gerçekleştirir. Örneğin içerisinde
+                    “Merhabalar”
+                    yazan bir deneme.txt dosyamız bulunsun. (grep Merha deneme.txt) girdisi bizlere deneme.txt dosyası
+                    içerisinde
                     Merha girdisini arar ve console üzerinde Merha kırmızı olacak şekilde döndürür → Merhabalar
                 </p>
                 <p>!Büyük küçük harf ayrımına duyarlıdır. “merha” şeklinde bir aramada dönüt vermez.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/41.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/41.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -481,32 +577,41 @@
                     girdisi sonucu olarak “Merh” dönüşünü verir.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/42.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/42.webp" class="img-fluid" />
                 </div>
 
                 <p><b>paste “dosya1” “dosya2”:</b> İki dosya içeriğini bir arada ekrana basar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/43.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/43.webp" class="img-fluid" />
                 </div>
 
-                <p><b>sort “dosya_ismi”:</b> Sıralama yapılmasını sağlar. Txt içerisindeki satırlar arası harf sıralaması döndürür.</p>
+                <p><b>sort “dosya_ismi”:</b> Sıralama yapılmasını sağlar. Txt içerisindeki satırlar arası harf
+                    sıralaması döndürür.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/44.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/44.webp" class="img-fluid" />
                 </div>
 
-                <p><b>tr:</b> Dosya içerisinde harf değişikliği yapmamızı sağlar. (Change to) Örn: Deneme → tr D E → Eeneme</p>
+                <p><b>tr:</b> Dosya içerisinde harf değişikliği yapmamızı sağlar. (Change to) Örn: Deneme → tr D E →
+                    Eeneme</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/45.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/45.webp" class="img-fluid" />
                 </div>
 
-                <p><b>uniq:</b> Tekrar eden içerikleri elememizi ve metin dosyası içerisinde sıralama yapma gibi ek işlevleri sağlar.</p>
+                <p><b>uniq:</b> Tekrar eden içerikleri elememizi ve metin dosyası içerisinde sıralama yapma gibi ek
+                    işlevleri sağlar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/46.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/46.webp" class="img-fluid" />
                 </div>
 
                 <p><b>tee:</b> Okuduğu dosya içeriğini birden fazla alan içerisine yazmayı sağlar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/47.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/47.webp" class="img-fluid" />
                 </div>
 
                 <h3>Sıkıştırma ve Paketleme</h3>
@@ -521,7 +626,8 @@
                 <h3>Kıyaslama İşlemi İçin</h3>
                 <p><b>meld “filename1” “filename2”:</b> İki dosya arasındaki farkları görüntülememizi sağlar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/48.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/48.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -532,42 +638,53 @@
 
                 <p><b>comm “filename1” “filename2”:</b> İki dosya içeriğini satır satır kıyaslar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/49.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/49.webp" class="img-fluid" />
                 </div>
 
                 <p><b>md5sum “filename1” “filename2”:</b> MD5 ile iki dosya arasında sağlama toplamı yapılması.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/50.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/50.webp" class="img-fluid" />
                 </div>
 
                 <h3>Process Yönetimi</h3>
                 <p><b>pstree:</b> Process’leri hiyerarşik görmemizi sağlar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/51.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/51.webp" class="img-fluid" />
                 </div>
 
                 <p><b>top:</b> Çalışmakta olan uygulama ve hizmetleri listeler.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/52.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/52.webp" class="img-fluid" />
                 </div>
 
                 <p>
-                    <b>htop:</b> Top verilerini console üzerinde grafiksel, renkli bir biçimde sunar. Genel kullanıma uygun ve kapsamlı
-                    filtreleme vb. işlevleri içerisinde barındırır. İlk kurulumda yüklü gelmemektedir. “sudo apt install htop” komutu
+                    <b>htop:</b> Top verilerini console üzerinde grafiksel, renkli bir biçimde sunar. Genel kullanıma
+                    uygun ve kapsamlı
+                    filtreleme vb. işlevleri içerisinde barındırır. İlk kurulumda yüklü gelmemektedir. “sudo apt install
+                    htop” komutu
                     ile kolaylıklarla kurabilirsiniz.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/53.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/53.webp" class="img-fluid" />
                 </div>
 
-                <p><b>gnome-system-monitor:</b> Grafiksel olarak görev yöneticisine benzer bir yapıyı çağırır. Console üzerinde çalışmaz.</p>
+                <p><b>gnome-system-monitor:</b> Grafiksel olarak görev yöneticisine benzer bir yapıyı çağırır. Console
+                    üzerinde çalışmaz.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/54.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/54.webp" class="img-fluid" />
                 </div>
 
-                <p><b>ps / ps aux:</b> Process’lerin tamamını listeler. Sadece ps kullanıcı için geçerli, aux eklenirse tüm sistem içi geçerli.</p>
+                <p><b>ps / ps aux:</b> Process’lerin tamamını listeler. Sadece ps kullanıcı için geçerli, aux eklenirse
+                    tüm sistem içi geçerli.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/55.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/55.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -593,7 +710,8 @@
                 <p>
                     <b>jobs:</b> İşleri listeler. Bu komut yalnızca csh, bash, tcsh ve ksh kabuklarında mevcuttur.<br>
                     <b>&:</b> Operatörü işin arkaplanda koşulmasını sağlar.<br>
-                    <b>bg “jod id/name”:</b> İşin arkaplanda koşmasını sağlar, fakat bu sırada herhangi bir terminal vb. emir almaz.<br>
+                    <b>bg “jod id/name”:</b> İşin arkaplanda koşmasını sağlar, fakat bu sırada herhangi bir terminal vb.
+                    emir almaz.<br>
                     <b>fg “job id/name”:</b> İşin önyüz üzerinde koşulmasını sağlar.<br>
                     <b>suspend: </b> Kabuğu ve terminali askıya alır. Birnevi not defteri işlevine bürünür.
                 </p>
@@ -632,23 +750,28 @@
                     (DNS Sunucu, Mail Sunucu ..) Bu yol ile oluşan içeriğe özgü paketleri yükler.
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/56.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/56.webp" class="img-fluid" />
                 </div>
 
                 <h3>Ağ ve Sağlayıcı Komutları</h3>
                 <p><b>uname:</b> Sistem bilgisini döner. (Linux / Win)</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/57.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/57.webp" class="img-fluid" />
                 </div>
 
                 <p><b>hostname:</b> System hesap sahibi ismini döner.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/58.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/58.webp" class="img-fluid" />
                 </div>
 
-                <p><b>ifconfig:</b> Sistemde bulunan ağ bağlantı ve IP yapılandırması ayarlarını inceleyip değiştirmemize olanak tanır.</p>
+                <p><b>ifconfig:</b> Sistemde bulunan ağ bağlantı ve IP yapılandırması ayarlarını inceleyip
+                    değiştirmemize olanak tanır.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/59.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/59.webp" class="img-fluid" />
                 </div>
 
                 <p>
@@ -658,56 +781,70 @@
                     google.com)
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/60.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/60.webp" class="img-fluid" />
                 </div>
 
                 <p>
-                    <b>host:</b> Hedef adres hakkında bilgi almanızı sağlar. Host komutu ile IP adresinden alan adı(domain name)
+                    <b>host:</b> Hedef adres hakkında bilgi almanızı sağlar. Host komutu ile IP adresinden alan
+                    adı(domain name)
                     ve alan adından(domain name) IP adresine ulaşabiliriz. (host www.outlook.com)
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/61.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/61.webp" class="img-fluid" />
                 </div>
 
                 <p><b>whois:</b> Domain’e dair bilgileri döndürür. (whois www.medium.com)</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/62.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/62.webp" class="img-fluid" />
                 </div>
 
                 <p><b>route / route -n:</b> Ip yönlendirme tablosunu görüntüler.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/63.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/63.webp" class="img-fluid" />
                 </div>
 
-                <p><b>traceroute:</b> Belirli bir hedefe gönderilen paketin hangi host’lardan geçtiğini bizlere gösterir. (traceroute www.google.com)</p>
+                <p><b>traceroute:</b> Belirli bir hedefe gönderilen paketin hangi host’lardan geçtiğini bizlere
+                    gösterir. (traceroute www.google.com)</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/64.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/64.webp" class="img-fluid" />
                 </div>
 
-                <p><b>dig “bağıntı":</b> DNS kayıtlarına bakmak için kullanımı oldukça kolay olduğundan yaygın olarak kullanılmaktadır.</p>
+                <p><b>dig “bağıntı":</b> DNS kayıtlarına bakmak için kullanımı oldukça kolay olduğundan yaygın olarak
+                    kullanılmaktadır.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/65.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/65.webp" class="img-fluid" />
                 </div>
 
                 <p><b>arp:</b> IP-MAC Adresi eşleştirmelerinin tutulduğu tablolardır.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/66.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/66.webp" class="img-fluid" />
                 </div>
 
-                <p><b>tcpdump:</b> Sistemimizin yaptığı bağlantıları ve sistemimize yapılan bağlantıları anlık olarak görüntülememize olanak sağla</p>
+                <p><b>tcpdump:</b> Sistemimizin yaptığı bağlantıları ve sistemimize yapılan bağlantıları anlık olarak
+                    görüntülememize olanak sağla</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/67.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/67.webp" class="img-fluid" />
                 </div>
 
                 <h3>Ağ Bağlantısı</h3>
                 <p>
-                    <b>ssh:</b> SSH (Secure Shell/Güvenli Kabuk) - Ağ üzerinden başka bilgisayara erişim sağlamak, uzak bir bilgisayar da komutlar
+                    <b>ssh:</b> SSH (Secure Shell/Güvenli Kabuk) - Ağ üzerinden başka bilgisayara erişim sağlamak, uzak
+                    bir bilgisayar da komutlar
                     çalıştırmak ve bir bilgisayardan diğerine dosya transferi amaçlı geliştirilmiş bir protokoldür.
                     Güvensiz kanallar(internet vs) üzerinden güvenli haberleşme olanağı sağlar.<br><br>
                     Bu SSH komutu 3 farklı kısımdan oluşur:<br>
                     ssh {user}@{host}<br>
 
-                    Bu komut içerisinde user genellikle kullanıcıdır(Root olabilir). Host ulaşılmak istenen noktayı simgeler.
+                    Bu komut içerisinde user genellikle kullanıcıdır(Root olabilir). Host ulaşılmak istenen noktayı
+                    simgeler.
                     Host bir IP adresi (244.235.23.19) veya domain (www.xyzdomain.com) olabilir.
                 </p>
                 <p>
@@ -732,8 +869,10 @@
                     Uzak bilgisayarlar arası kopyalayacaksak:<br>
                     $ scp kullanıcı_adı@host_ismi:kopyalacak_dosyanın_adi kullanıcı_adı@host_ismi:kopyalanacağı_yer
                 </p>
-                <p><b>sftp:</b> https://www.hostinger.web.tr/rehberler/sftp-nedir-ve-nasil-kullanilir/ (Basit ve Nitelikli Anlatım)</p>
-                <p><b>ftp:</b> FTP (File Transfer Protocol — Dosya Aktarma Protokolü) dosyaları Internet’e yollamak ve Internet’ten almak için, kullandığımız protokoldür.</p>
+                <p><b>sftp:</b> https://www.hostinger.web.tr/rehberler/sftp-nedir-ve-nasil-kullanilir/ (Basit ve
+                    Nitelikli Anlatım)</p>
+                <p><b>ftp:</b> FTP (File Transfer Protocol — Dosya Aktarma Protokolü) dosyaları Internet’e yollamak ve
+                    Internet’ten almak için, kullandığımız protokoldür.</p>
 
                 <h3>Genel Açma Ve Kapatma İşlemleri</h3>
                 <p>
@@ -784,59 +923,70 @@
                 <h3>Dosya İşlemleri</h3>
                 <p><b>df:</b> Boş alan ve var olan içerikleri görüntüler.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/68.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/68.webp" class="img-fluid" />
                 </div>
 
                 <p><b>mount:</b> Sistem içerisindeki erişelebilir tüm dosyaları tek bir ağaç içerisinde döndürür.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/69.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/69.webp" class="img-fluid" />
                 </div>
 
                 <h3>Yedek İşlemleri</h3>
                 <p><b>dump:</b> Aldığı parametreler doğrultusunda yedeklenmesi gereken sistem dosyalarını işaretler.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/70.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/70.webp" class="img-fluid" />
                 </div>
 
                 <p><b>restore:</b> Dump ile yedeklenmiş noktaya dönmemizi sağlar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/71.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/71.webp" class="img-fluid" />
                 </div>
                 <p>
                     <b>cdrecord:</b> Bir Cd vb. aygıt içerisine yedeği yazar.<br>
-                    <b>rsync “kaynak_dosya” “hedef_dosya”:</b> Uzak veya lokal bir bağlantı içerisinde dosya transferi işlemini gerçekler.
+                    <b>rsync “kaynak_dosya” “hedef_dosya”:</b> Uzak veya lokal bir bağlantı içerisinde dosya transferi
+                    işlemini gerçekler.
                     <b>mt:</b> Uzak sürücü kontrolü gerçekler.
                 </p>
 
                 <h3>Gün ve Zaman</h3>
                 <p><b>xclock:</b> Ekranda görsel olarak saatin görüntüleceği bir araç çağırır.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/72.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/72.webp" class="img-fluid" />
                 </div>
 
                 <p><b>cal:</b>Takvimi çağırır.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/73.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/73.webp" class="img-fluid" />
                 </div>
 
                 <p><b>date:</b>Terminal console’u içerisine var olan tarihi yazar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/74.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/74.webp" class="img-fluid" />
                 </div>
 
                 <p><b>ntpdate:</b> Sunucu cihaz saatini internet üzerinden günceller ve doğrular.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/75.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/75.webp" class="img-fluid" />
                 </div>
 
                 <p><b>fsck:</b> Dosya sistemi içerisinde denetim gerçekleştirir.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/76.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/76.webp" class="img-fluid" />
                 </div>
 
                 <p><b>sync:</b> Disklerin önbelleklerini sıfırlar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/77.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/77.webp" class="img-fluid" />
                 </div>
 
                 <h3>Mail İşlemleri</h3>
@@ -848,12 +998,14 @@
                 <h3>Tarayıcı</h3>
                 <p><b>lynx “link”:</b> Sadce metin bazlı görüntüleme</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/78.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/78.webp" class="img-fluid" />
                 </div>
 
                 <p><b>wget:</b> Web dosyaları indirmeyi sağlar.</p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/79.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/79.webp" class="img-fluid" />
                 </div>
 
                 <h3>Harf Kontrolleri</h3>
@@ -873,7 +1025,8 @@
                     <b>update-manager -c -d</b>
                 </p>
                 <div style="text-align: center;">
-                    <img width="65%" height="65%" src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/80.webp" class="img-fluid" />
+                    <img width="65%" height="65%"
+                        src="../../images/blogs/linux_kavramı_ve_temel_linux_komutları/80.webp" class="img-fluid" />
                 </div>
                 <p>
                     Burada anlatmış olduğum içerikler ve komutlar elbette bu kadarla sınırlı değil. Birçok araştırma,
@@ -891,13 +1044,18 @@
                 <a href="https://tr.wikipedia.org/wiki/Linux#:~:text=Linux">Linux — Vikipedi (wikipedia.org)</a><br>
                 <a href="https://linux-dersleri.github.io/index.html">Linux Dersleri</a><br>
                 <a href="https://networkkampus.com/centos-telnet-komutu/">Telnet Komutu</a><br>
-                <a href="https://www.liquidweb.com/kb/what-is-umask-and-how-to-use-it-effectively">What is umask and how to use it effectively</a><br>
-                <a href="https://www.geeksforgeeks.org/process-control-commands-unixlinux/">Process Control Commands</a><br>
-                <a href="https://www.youtube.com/watch?v=u1YXHlZYfYU&list=PLh9ECzBB8tJOnxXrUTOqXfurKOZkN4mEY&index=1">Linux#11 Kullanıcı Yönetimi</a><br>
+                <a href="https://www.liquidweb.com/kb/what-is-umask-and-how-to-use-it-effectively">What is umask and how
+                    to use it effectively</a><br>
+                <a href="https://www.geeksforgeeks.org/process-control-commands-unixlinux/">Process Control
+                    Commands</a><br>
+                <a href="https://www.youtube.com/watch?v=u1YXHlZYfYU&list=PLh9ECzBB8tJOnxXrUTOqXfurKOZkN4mEY&index=1">Linux#11
+                    Kullanıcı Yönetimi</a><br>
                 <a href="https://ceaksan.com/tr/rsync-komutu-ve-kullanimi">Rsync Komutu ve Kullanımı</a><br>
                 <a href="https://www.hostinger.web.tr/rehberler/linux-komutlari/">Linux Komutları</a><br>
-                <a href="https://www.vargonen.com/blog/en-cok-kullanilan-linux-komutlari/">En Çok Kullanılan Linux Komutları</a><br>
-                <a href="https://medium.com/@gokhansengun/linux-komut-satırında-hayatta-kalma-ipuçları-3-614c0542459a">gokhansengun | Linux Komut Satırında Hayatta Kalma İpuçları</a><br>
+                <a href="https://www.vargonen.com/blog/en-cok-kullanilan-linux-komutlari/">En Çok Kullanılan Linux
+                    Komutları</a><br>
+                <a href="https://medium.com/@gokhansengun/linux-komut-satırında-hayatta-kalma-ipuçları-3-614c0542459a">gokhansengun
+                    | Linux Komut Satırında Hayatta Kalma İpuçları</a><br>
                 <a href="https://www.yusufsezer.com.tr/linux-nedir/">Yusuf Sezer | Linux Nedir?</a><br>
                 <a href="https://www.yusufsezer.com.tr/linux-dagitimlari/">Yusuf Sezer | Linux Dağıtımları</a><br>
                 <a href="https://www.yusufsezer.com.tr/linux-dersleri/">Yusuf Sezer | Linux Dersleri</a><br>
