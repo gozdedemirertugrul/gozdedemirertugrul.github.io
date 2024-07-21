@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 // VARIABLES
-$font-base: 'Maven Pro', sans-serif;
+$font-base: 'Open Sans', sans-serif;
 $body-font-size: 18px;
 $h1-font-size: 2.8em;
 $h2-font-size: 2.4em;
@@ -15,7 +15,7 @@ $h2-font-color: #353535;
 $h3-font-color: #484848;
 $body-font-color: #5b5b5b;
 $text-white: #ffffff;
-$dark-mode-color: #0c0c0d;
+$dark-mode-color: var(--background-color);
 $main-color: var(--themeColor);
 $border-color: #f2f2f1;
 $button-color: #474559;
