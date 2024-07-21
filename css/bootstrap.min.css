@@ -40,6 +40,7 @@ body {
     font-family: 'Maven Pro', sans-serif;
     padding-top: 70px;
     color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 body p {
@@ -157,12 +158,13 @@ dd {
 }
 
 blockquote {
-    margin: 20px 0;
+    margin: 0;
+    padding: 1em 2em;
     text-align: center;
     position: relative;
     font-style: italic;
-    border-radius: 5px;
     border-left: 5px solid var(--themeColor);
+    border-radius: 8px;
 }
 
 blockquote p {
@@ -266,7 +268,8 @@ figure {
 
 img {
     vertical-align: middle;
-    border-style: none
+    border-style: none;
+    border-radius: 2%;
 }
 
 svg {
@@ -583,8 +586,8 @@ pre code {
 
 .container-fluid {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 0;
+    padding-right: 0;
     margin-right: auto;
     margin-left: auto
 }
@@ -2082,6 +2085,36 @@ pre code {
 
 .table-responsive>.table-bordered {
     border: 0
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    align-items: center;
+    gap: 10px;
+    padding: 2% 4%;
+    background: transparent;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px transparent;
+}
+
+.timeline-content small {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.timeline-year {
+    writing-mode: vertical-rl;
+    color: var(--themeColor);
 }
 
 .form-control {
@@ -4500,7 +4533,7 @@ input[type=submit].btn-block {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem
+    padding: .5rem 1rem;
 }
 
 .navbar>.container,
