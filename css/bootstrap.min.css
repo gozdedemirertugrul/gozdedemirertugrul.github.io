@@ -31,11 +31,6 @@ section {
     display: block;
 }
 
-nav {
-    display: block;
-    background-color: #fff;
-}
-
 body {
     font-family: 'Maven Pro', sans-serif;
     padding-top: 70px;
@@ -75,6 +70,25 @@ body.dark-mode p {
 
 [tabindex="-1"]:focus {
     outline: 0 !important
+}
+
+.company-logo-container {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.company-logo-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px transparent;
+}
+
+.company-logo {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    transition: filter 0.3s ease, filter 0.3s ease;
 }
 
 hr {
@@ -4889,11 +4903,6 @@ input[type=submit].btn-block {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
     color: rgba(0, 0, 0, .9)
-}
-
-.navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, .5);
-    border-color: rgba(0, 0, 0, .1)
 }
 
 .navbar-light .navbar-toggler-icon {

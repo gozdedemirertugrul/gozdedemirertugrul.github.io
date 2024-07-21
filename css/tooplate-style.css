@@ -182,7 +182,6 @@ b, strong {
 }
 .navbar[class*="headroom--not-top"] {
   background: #ffffff;
-  border-bottom: 1px solid #f0f0f0;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -289,7 +288,6 @@ b, strong {
 }
 .dark-mode .navbar[class*="headroom--not-top"] {
   background: var(--background-dark);
-  border-bottom: 1px solid #1f1f1f;
 }
 .dark-mode .small-text {
   background: #0d0c15;
