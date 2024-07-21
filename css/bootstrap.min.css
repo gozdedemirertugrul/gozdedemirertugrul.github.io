@@ -1,7 +1,7 @@
 :root {
-    --themeColor: #00b6b6;
-    --link-color-light-theme: #00b3b3;
-    --link-color-dark-theme: #00ffff;
+    --themeColor: #42EABD;
+    --link-color-light-theme: #00c28e;
+    --link-color-dark-theme: #00ffbb;
     --background-light: #FFFFFF;
     --background-dark: #0C0C0D;
     --text-light: #7c7c7c;
@@ -240,15 +240,15 @@ a {
     color: var(--link-color-light-theme);
     text-decoration: none;
     transition: color 0.3s;
-  }
-  
-  body.dark-theme a {
+}
+
+body.dark-mode a {
     color: var(--link-color-dark-theme);
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: var(--themeColor);
-  }
+}
 
 a:not([href]):not([tabindex]) {
     color: inherit;
