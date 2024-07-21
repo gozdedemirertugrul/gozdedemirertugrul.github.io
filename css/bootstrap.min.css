@@ -42,15 +42,10 @@ body p {
     text-align: justify;
     margin-bottom: 1.5rem;
     line-height: 1.6;
-}
-
-body.light-mode {
-    background-color: var(--background-light);
     color: var(--text-light);
 }
 
-body.dark-mode {
-    background-color: var(--background-dark);
+body.dark-mode p {
     color: var(--text-dark);
 }
 
@@ -10775,7 +10770,11 @@ a.text-dark:hover {
     h3,
     p {
         orphans: 3;
-        widows: 3
+        widows: 3;
+    }
+
+    p.dark-theme {
+        color: var(--text-dark);
     }
 
     h2,
