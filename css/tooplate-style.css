@@ -26,14 +26,6 @@ body {
   letter-spacing: 0.2px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul li {
-  list-style: none;
-}
-
 a {
   font-weight: normal;
   text-decoration: none !important;
@@ -203,21 +195,11 @@ b, strong {
   display: inline-block;
   transition: transform 0.3s;
 }
-.nav-link span:before {
-  position: absolute;
-  top: 100%;
-  content: attr(data-hover);
-  transform: translate3d(0, 0, 0);
-}
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
   color: var(--themeColor);
   font-weight: bold;
-}
-.navbar-light .navbar-nav .nav-link:focus span,
-.navbar-light .navbar-nav .nav-link:hover span {
-  transform: translateY(-100%);
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -260,22 +242,35 @@ b, strong {
 .color-mode {
   font-weight: bold;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
+
 .color-mode-icon {
-  font-size: 22px;
   cursor: pointer;
+  font-size: 115%;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .color-mode-icon:after {
   font-family: 'Font Awesome 6 Free';
   content: '\f186';
-  font-style: normal;
+  font-size: 115%;
+  width: 20px;
+  height: 20px;
 }
 
 .color-mode-icon.active:after {
   content: '\f185';
+  font-size: 115%;
+  width: 20px;
+  height: 20px;
 }
+
 
 .dark-mode {
   background: var(--background-dark);
