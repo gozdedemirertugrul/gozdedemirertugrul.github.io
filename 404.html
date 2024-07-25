@@ -35,12 +35,12 @@
 
             <div style="background-color: transparent;" class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a href="pages/projects.html" class="nav-link">Projeler</a></li>
-                    <li class="nav-item"><a href="pages/main_blog_page.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="pages/design.html" class="nav-link">Tasarım</a></li>
-                    <li class="nav-item"><a href="pages/about_me.html" class="nav-link">Hakkında</a></li>
+                    <li class="nav-item"><a href="/pages/projects.html" class="nav-link">Projeler</a></li>
+                    <li class="nav-item"><a href="/pages/main_blog_page.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="/pages/design.html" class="nav-link">Tasarım</a></li>
+                    <li class="nav-item"><a href="/pages/about_me.html" class="nav-link">Hakkında</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
-                    <li class="nav-item"><a href="pages/hayat_anlam_katanlar_manifestosu.html" class="nav-link">🪁</a>
+                    <li class="nav-item"><a href="/pages/hayat_anlam_katanlar_manifestosu.html" class="nav-link">🪁</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -55,7 +55,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h1>Oops! Sayfa Bulunamadı...</h1>
-                    <p> 
+                    <p>
                         Merhaba! Görünüşe göre bu sevimli kedi, ipliğiyle oynarken seni yanlış bir yere yönlendirdi. Ya
                         da belki de sayfa başka bir yere taşındı veya kaldırıldı. Hatta belki de komple siteyi kapatıp
                         gitmişimdir. 🐾
@@ -68,8 +68,8 @@
                     <h3>Neler Yapabilirsin?</h3>
                     <p>
                         <a href="/index.html">Ana Sayfaya</a> ulaşarak, yeniden başlayabilir veya aradığın bir içerik
-                        ise <a href="/pages/main_blog_page.html">Blog</a>, <a
-                            href="/pages/projects.html">Projeler</a> gibi sayfalara göz atıp keşif yapabilirsin.
+                        ise <a href="/pages/main_blog_page.html">Blog</a>, <a href="/pages/projects.html">Projeler</a>
+                        gibi sayfalara göz atıp keşif yapabilirsin.
                     </p>
                 </div>
                 <div class="col-lg-6">
@@ -82,7 +82,15 @@
             </div>
         </div>
     </section>
-
+    <!-- Contact -->
+    <section id="contact-container"></section>
+    <script>
+        fetch('/pages/page_partial/contact.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('contact-container').innerHTML = data;
+            });
+    </script>
 
 
     <!-- Scripts -->
