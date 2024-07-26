@@ -1,13 +1,18 @@
 (function ($) {
   "use strict";
 
-  window.onload = function () {
+  document.addEventListener("DOMContentLoaded", function () {
     if (localStorage.getItem('dark-mode-state') == 1) {
-      $('.color-mode-icon').toggleClass('active');
-      $('body').toggleClass('dark-mode');
+      $('.color-mode-icon').addClass('active');
+      $('body').addClass('dark-mode');
       setTheme();
     }
-  };
+    setLoaderBackground();
+  });
+
+  window.addEventListener("load", function () {
+    $('#loader').fadeOut('slow');
+  });
 
   function setTheme() {
     // Navbar color setting
@@ -23,6 +28,18 @@
       $('body').css('color', 'var(--text-light)');
       $('p').css('color', 'var(--text-light)');
       $('strong, em, blockquote').css('color', 'var(--text-light)');
+    }
+    setLoaderBackground();
+  }
+
+  function setLoaderBackground() {
+    const loader = document.getElementById('loader');
+    if ($('body').hasClass('dark-mode')) {
+      loader.classList.remove('loader-light');
+      loader.classList.add('loader-dark');
+    } else {
+      loader.classList.remove('loader-dark');
+      loader.classList.add('loader-light');
     }
   }
 
