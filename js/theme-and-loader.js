@@ -64,9 +64,14 @@
   $(function () {
     $('.nav-link, .custom-btn-link').on('click', function (event) {
       var $anchor = $(this);
-      $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 49
-      }, 1000);
+      var target = $anchor.attr('href');
+
+      if (target && target !== '#') {
+        $('html, body').stop().animate({
+          scrollTop: $(target).offset().top - 49
+        }, 1000);
+      }
+
       event.preventDefault();
     });
   });
