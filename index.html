@@ -31,15 +31,32 @@
     <div class="dot"></div>
   </div>
 
-  <!-- Navbar -->
-  <section id="navbar-container"></section>
-  <script>
-    fetch('/pages/page_partial/navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-container').innerHTML = data;
-      });
-  </script>
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Kağan Can Şit</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div style="background-color: transparent;" class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a href="pages/projects.html" class="nav-link">Projeler</a></li>
+          <li class="nav-item"><a href="pages/main_blog_page.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="pages/design.html" class="nav-link">Tasarım</a></li>
+          <li class="nav-item"><a href="pages/about_me.html" class="nav-link">Hakkında</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
+          <li class="nav-item"><a href="pages/hayat_anlam_katanlar_manifestosu.html" class="nav-link">🪁</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link"><span class="color-mode color-mode-icon"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <section class="full-screen">
     <div class="container">
