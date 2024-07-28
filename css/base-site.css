@@ -99,8 +99,8 @@ body.dark-mode p {
     transform: scale(1.05);
     box-shadow: 0 4px 8px transparent;
 }
-/***********************************************************/
 
+/*********************** Blog Card **********************/
 .card {
     position: relative;
     margin-bottom: 24px;
@@ -134,7 +134,7 @@ body.dark-mode p {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -144,14 +144,27 @@ body.dark-mode p {
 }
 
 .card__title {
-    font-size: 18px;
-    color: white;
+    font-size: 125%;
+    color: var(--headers-dark);
 }
 
 .card__date {
-    color: white;
+    font-size: 100%;
+    color: var(--headers-dark);
 }
 
+@media (max-width: 768px) {
+    .card__title {
+        font-size: 75%;
+    }
+
+    .card__date {
+        font-size: 50%;
+        color: var(--headers-dark);
+    }
+}
+
+/*********************** Headers **********************/
 hr {
     box-sizing: content-box;
     height: 0;
