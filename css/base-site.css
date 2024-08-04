@@ -20,7 +20,8 @@ html {
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 
 article,
@@ -70,12 +71,6 @@ body.dark-mode p {
 }
 
 /*********************** Company Area **********************/
-.companies-section {
-    background-color: var(--background-light);
-    border-radius: 1%;
-    padding: 2rem 0;
-}
-
 .company-logos {
     display: flex;
     justify-content: center;
@@ -100,6 +95,21 @@ body.dark-mode p {
     box-shadow: 0 4px 8px transparent;
 }
 
+.light-logo {
+    display: inline;
+}
+
+.dark-logo {
+    display: none;
+}
+
+body.dark-mode .light-logo {
+    display: none;
+}
+
+body.dark-mode .dark-logo {
+    display: inline;
+}
 /*********************** Blog Card **********************/
 .card {
     position: relative;
@@ -372,13 +382,32 @@ kbd,
 pre,
 samp {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 1em
+    font-size: 1em;
 }
 
 pre {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    overflow: auto
+    color: #e83e8c;
+    border-style: none;
+    overflow: auto;
+    position: relative;
+    padding-top: 2%;
+}
+
+pre code {
+    font-size: inherit;
+    color: inherit;
+    word-break: normal;
+}
+
+.pre-scrollable {
+    max-height: 340px;
+    overflow-y: scroll;
+}
+
+.copy-button {
+    background: none;
+    border: none;
+    color: #e83e8c;
 }
 
 figure {
@@ -745,23 +774,6 @@ kbd kbd {
     font-weight: 700
 }
 
-pre {
-    display: block;
-    font-size: 87.5%;
-    color: #212529
-}
-
-pre code {
-    font-size: inherit;
-    color: inherit;
-    word-break: normal
-}
-
-.pre-scrollable {
-    max-height: 340px;
-    overflow-y: scroll
-}
-
 .container {
     max-width: 75%;
     padding-right: 15px;
@@ -775,7 +787,7 @@ pre code {
     padding-left: 0;
     padding-right: 0;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
 }
 
 .row {
@@ -10903,6 +10915,26 @@ a.text-dark:hover {
 .invisible {
     visibility: hidden !important
 }
+
+/********************** Scroll Bar **********************/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-light);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/********************************************************/
 
 @media print {
 
