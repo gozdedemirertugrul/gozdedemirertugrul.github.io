@@ -720,10 +720,43 @@ mark {
     text-transform: uppercase
 }
 
+/* Blog görselleri için temel stil */
 .img-fluid {
     max-width: 100%;
     height: auto;
-    margin: 3%;
+    display: block;
+    margin: 2rem auto;
+}
+
+/* Blog başlık görselleri için özel stil */
+.blog-header-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 3rem auto;
+}
+
+/* Blog içi görseller için özel stil */
+.blog-content-image {
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+    .blog-header-image {
+        max-height: 300px;
+        border-radius: 8px;
+        margin: 0 auto 2rem auto;
+    }
+    
+    .blog-content-image {
+        max-width: 100%;
+        margin: 1.5rem auto;
+    }
 }
 
 .img-thumbnail {
