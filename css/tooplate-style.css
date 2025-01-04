@@ -11,10 +11,8 @@ body {
 
 .full-screen {
   min-height: 100vh;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .small-text {
@@ -470,4 +468,509 @@ p {
     display: inline-block;
     vertical-align: top;
   }
+}
+
+/* Index page main header and subtitle */
+.hero-title {
+    font-size: clamp(3rem, 8vw, 8rem);
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    letter-spacing: 0.8em;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin-bottom: 2rem;
+    white-space: nowrap;
+}
+
+.hero-text {
+    letter-spacing: 0.5em;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.6;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: clamp(2.5rem, 6vw, 6rem);
+    }
+    
+    .hero-subtitle {
+        letter-spacing: 0.6em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: clamp(2rem, 5vw, 5rem);
+        margin-top: 2rem;
+    }
+    
+    .hero-subtitle {
+        letter-spacing: 0.4em;
+        margin: 1rem 0;
+    }
+    
+    .hero-text {
+        letter-spacing: 0.3em;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: clamp(1.8rem, 4vw, 4rem);
+    }
+    
+    .hero-subtitle {
+        letter-spacing: 0.2em;
+    }
+    
+    .hero-text {
+        letter-spacing: 0.2em;
+    }
+}
+
+@media (max-width: 991px) {
+    .full-screen {
+        padding-bottom: 4rem;
+    }
+    
+    .hero-text {
+        margin-top: 2rem;
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+.page-transition {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.interactive-element {
+    transition: all 0.3s ease;
+}
+
+:root {
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+}
+
+/* Company Section Styles */
+.company-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.company-logo-container {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.company-logo-container:hover {
+    transform: translateY(-5px);
+}
+
+.company-logo {
+    max-width: 200px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+/* Dark/Light mode logo handling */
+.dark-logo {
+    display: none;
+}
+
+.light-logo {
+    display: block;
+}
+
+[data-theme="dark"] .dark-logo {
+    display: block;
+}
+
+[data-theme="dark"] .light-logo {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .company-logo {
+        max-width: 150px;
+    }
+    
+    .company-logos {
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .company-logo {
+        max-width: 120px;
+    }
+    
+    .company-logos {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Timeline Section Styles */
+.timeline-section {
+    padding: 5rem 0;
+    background-color: var(--bg-color);
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--themeColor);
+    opacity: 0.2;
+}
+
+/* Timeline Items */
+.timeline-item {
+    position: relative;
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-year {
+    position: absolute;
+    left: -2.5rem;
+    background-color: var(--bg-color);
+    color: var(--themeColor);
+    font-weight: 600;
+    padding: 0.25rem 0;
+}
+
+/* Timeline Content */
+.timeline-content {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(var(--themeColor-rgb), 0.1);
+}
+
+.timeline-content:hover {
+    border-color: rgba(var(--themeColor-rgb), 0.2);
+}
+
+[data-theme="dark"] .timeline-content {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .timeline-content:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.timeline-header {
+    margin-bottom: 1rem;
+}
+
+.timeline-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--headers-color);
+}
+
+.timeline-content small {
+    display: block;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+/* Details Styling */
+.timeline-details {
+    margin-top: 1rem;
+}
+
+.timeline-details summary {
+    cursor: pointer;
+    color: var(--themeColor);
+    font-weight: 500;
+    outline: none;
+    padding: 0.5rem 0;
+}
+
+.timeline-details summary:hover {
+    opacity: 0.8;
+}
+
+.details-content {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-left: 2px solid var(--themeColor);
+    background-color: rgba(var(--themeColor-rgb), 0.05);
+}
+
+/* Details Section Content */
+.details-section {
+    margin-bottom: 1.5rem;
+}
+
+.details-section:last-child {
+    margin-bottom: 0;
+}
+
+.details-section .section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--headers-color);
+}
+
+.details-list {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.details-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.details-list li::before {
+    content: "•";
+    position: absolute;
+    left: -0.5rem;
+    color: var(--themeColor);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-year {
+        left: -2rem;
+    }
+    
+    .timeline-content {
+        padding: 1rem;
+    }
+}
+
+/* Companies Section */
+.companies-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.companies-section .container {
+    flex: 1;
+}
+
+.companies-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.company-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.company-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.company-link:hover {
+    transform: translateY(-5px);
+}
+
+.company-logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+/* Dark/Light mode logo handling */
+.dark-logo {
+    display: none;
+}
+
+.light-logo {
+    display: block;
+}
+
+[data-theme="dark"] .dark-logo {
+    display: block;
+}
+
+[data-theme="dark"] .light-logo {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .companies-section {
+        min-height: 80vh;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .company-logo {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .companies-section {
+        min-height: 60vh;
+    }
+
+    .company-logo {
+        max-width: 120px;
+    }
+}
+
+/* Social Links Styles */
+.social-links-container {
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    font-size: 200%;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.social-link:hover {
+    color: var(--bg-color);
+    transform: translateY(-3px);
+}
+
+/* Specific social media colors on hover */
+.social-link:hover i.fa-envelope {
+    color: #EA4335;
+}
+
+.social-link:hover i.fa-linkedin {
+    color: #0A66C2;
+}
+
+.social-link:hover i.fa-github {
+    color: #171515;
+}
+
+.social-link:hover i.fa-twitter {
+    color: #1DA1F2;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .social-link {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .social-link:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .social-links {
+        gap: 1rem;
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Optional: Loading Animation */
+.social-link {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+.social-link:nth-child(1) { animation-delay: 0.1s; }
+.social-link:nth-child(2) { animation-delay: 0.2s; }
+.social-link:nth-child(3) { animation-delay: 0.3s; }
+.social-link:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -2,26 +2,55 @@
 <html lang="tr">
 
 <head>
+    <!-- Primary Meta Tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-        content="Kağan Can Şit'in portföy sitesi. Projeler, blog yazıları, tasarımlar ve daha fazlası...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kağan Can Şit | Software Engineer - Projects, blog posts, designs and more...">
     <meta name="author" content="Kağan Can Şit">
-
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kagancansit.com/">
+    <meta property="og:title" content="Kağan Can Şit - Software Engineer">
+    <meta property="og:description" content="Software Engineer focusing on security and server software development">
+    <meta property="og:image" content="/images/base_site_images/og-image.webp">
+  
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@kagancansit">
+    <meta name="twitter:title" content="Kağan Can Şit - Software Engineer">
+    <meta name="twitter:description" content="Software Engineer focusing on security and server software development">
+    <meta name="twitter:image" content="/images/base_site_images/og-image.webp">
+  
+    <!-- Title and Favicon -->
     <title>Kağan Can Şit</title>
     <link rel="icon" href="/images/base_site_images/designPng.webp" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="/css/base-site.css" as="style">
+    <link rel="preload" href="/css/tooplate-style.css" as="style">
+  
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/css/base-site.css">
     <link rel="stylesheet" href="/css/tooplate-style.css">
-
+  
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BLQV2M3JL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-2BLQV2M3JL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-2BLQV2M3JL', {
+        'anonymize_ip': true,
+        'cookie_flags': 'SameSite=None;Secure'
+      });
     </script>
-</head>
+  </head>
 
 <body>
     <div id="loader" class="loader-light">
@@ -44,12 +73,11 @@
 
             <div style="background-color: transparent;" class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a href="../projects.html" class="nav-link">Projeler</a></li>
-                    <li class="nav-item"><a href="../main_blog_page.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="../design.html" class="nav-link">Tasarım</a></li>
-                    <li class="nav-item"><a href="../about_me.html" class="nav-link">Hakkında</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
-                    <li class="nav-item"><a href="../hayat_anlam_katanlar_manifestosu.html" class="nav-link">🪁</a></li>
+                    <li class="nav-item"><a href="/index.html#project" class="nav-link">Project</a></li>
+                    <li class="nav-item"><a href="/index.html#blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="/index.html#design" class="nav-link">Design</a></li>
+                    <li class="nav-item"><a href="/index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/index.html#contact" class="nav-link">Contact</a></li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -576,16 +604,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Contact -->
-    <section id="contact-container"></section>
-    <script>
-        fetch('/pages/page_partial/contact.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('contact-container').innerHTML = data;
-            });
-    </script>
 
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/popper.min.js"></script>

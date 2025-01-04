@@ -1,25 +1,54 @@
-<!doctype html>
-<html lang="tr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <!-- Primary Meta Tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description"
-    content="Kağan Can Şit'in portföy sitesi. Projeler, blog yazıları, tasarımlar ve daha fazlası...">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kağan Can Şit | Software Engineer - Projects, blog posts, designs and more...">
   <meta name="author" content="Kağan Can Şit">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kagancansit.com/">
+  <meta property="og:title" content="Kağan Can Şit - Software Engineer">
+  <meta property="og:description" content="Software Engineer focusing on security and server software development">
+  <meta property="og:image" content="/images/base_site_images/og-image.webp">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@kagancansit">
+  <meta name="twitter:title" content="Kağan Can Şit - Software Engineer">
+  <meta name="twitter:description" content="Software Engineer focusing on security and server software development">
+  <meta name="twitter:image" content="/images/base_site_images/og-image.webp">
+
+  <!-- Title and Favicon -->
   <title>Kağan Can Şit</title>
   <link rel="icon" href="/images/base_site_images/designPng.webp" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preload" href="/css/base-site.css" as="style">
+  <link rel="preload" href="/css/tooplate-style.css" as="style">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="/css/base-site.css">
   <link rel="stylesheet" href="/css/tooplate-style.css">
 
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BLQV2M3JL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-2BLQV2M3JL');
+    gtag('config', 'G-2BLQV2M3JL', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
   </script>
 </head>
 
@@ -42,12 +71,11 @@
 
       <div style="background-color: transparent;" class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a href="pages/projects.html" class="nav-link">Projeler</a></li>
-          <li class="nav-item"><a href="pages/main_blog_page.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="pages/design.html" class="nav-link">Tasarım</a></li>
-          <li class="nav-item"><a href="pages/about_me.html" class="nav-link">Hakkında</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
-          <li class="nav-item"><a href="pages/hayat_anlam_katanlar_manifestosu.html" class="nav-link">🪁</a></li>
+          <li class="nav-item"><a href="#project" class="nav-link">Project</a></li>
+          <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#design" class="nav-link">Design</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -58,31 +86,303 @@
     </div>
   </nav>
 
+  <!-- Hero Section -->
   <section class="full-screen">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 mx-auto">
-          <h1>👋 Merhaba, Hoş Geldiniz!</h1>
-          <p>Ben Kağan, yazılım mühendisiyim.</p>
-          <p>
-            Kendimden kısaca bahsetmem gerekirse, boş zamanlarımda yazılım ve teknolojiyle ilgilenmeyi, müzik dinlemeyi,
-            sakinliği seven biriyim. Bu site aracılığıyla öğrendiklerimi ve tecrübelerimi
-            paylaşmayı, çevremden geri dönüşler alarak kendimi geliştirmeyi amaçlıyorum.
-          </p>
-          <p>Hakkımda daha fazla bilgi edinmek için "Hakkında" sayfasını inceleyebilirsiniz! Tanıştığımıza memnun oldum.</p>
-          <a href="/pages/about_me.html" class="btn btn-dark custom-btn mx-auto d-block" style="color:black;">"Hakkında"
-            sayfasına git!</a>
+        <div class="col-lg-6">
+          <h1 class="hero-title">KAĞAN CAN ŞİT</h1>
+          <p class="hero-subtitle">SOFTWARE ENGINEER</p>
         </div>
-        <div class="col-lg-5 mx-auto">
-          <img src="images/base_site_images/potraitImage.webp" loading="lazy" class="img-fluid"
-            alt="Kağan Can Şit'in Fotoğrafı">
+        <div class="col-lg-6">
+          <p class="hero-text">"I'M LOOKING FOR LITTLE INFORMATION THAT WILL BROADEN MY <u>HORIZON</u>."<br><br>
+            <a href="#about">Learn More</a>
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Project Content -->
+  <!-- About Me -->
+  <section class="full-screen" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2>About Me</h2>
+          <p>
+            I am Kağan. I work as a software engineer in the defense industry, primarily focusing on security
+            and server software.
+          </p>
+          <p>
+            Creating solutions in the fields of technology and security, as well as automating processes, is my
+            passion. I closely follow innovations in the C++ programming language and leverage these skills to develop
+            security solutions and create software that enhances efficiency. Additionally, I value knowledge sharing to
+            foster a culture of continuous learning and development within the team.
+          </p>
+          <p>I see myself as a detail-oriented, hardworking, and eager-to-learn individual.</p>
+          <div class="social-links-container">
+            <div class="social-links">
+              <a href="mailto:kagancansit@hotmail.com" class="social-link" aria-label="Email" title="Contact by email">
+                <i class="fas fa-envelope"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/kagancansit/" class="social-link" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn" title="Visit my LinkedIn profile">
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <a href="https://github.com/KaganCanSit" class="social-link" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub" title="Visit my GitHub profile">
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a href="https://x.com/kagancansit" class="social-link" target="_blank" rel="noopener noreferrer"
+                aria-label="Twitter" title="Visit my Twitter profile">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="../images/base_site_images/potraitImage.webp" loading="lazy" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience | Education -->
+  <section class="timeline-section">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Experience -->
+        <div class="col-lg-6">
+          <h2 class="section-title mb-4">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">2023</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Software Engineer</h3>
+                  <small>TÜBİTAK BİLGEM - UEKAE | <i>June 2023 - Present</i></small>
+                </div>
+
+                <details class="timeline-details">
+                  <summary>Learn More</summary>
+                  <div class="details-content">
+                    <p>
+                      I work as part of the National Public Key Infrastructure (MA3) team, focusing on the design and
+                      development of high-performance and secure software solutions using C++.
+                    </p>
+
+                    <div class="details-section">
+                      <p class="section-title">Key Areas of Expertise</p>
+                      <ul class="details-list">
+                        <li>Designing security protocols and developing related software.</li>
+                        <li>Providing strategic solutions to enhance the security of HSM modules.</li>
+                        <li>Designing and configuring modules tailored for operating systems.</li>
+                        <li>Implementing performance improvements and security optimizations.</li>
+                        <li>Developing and implementing secure cryptographic algorithms.</li>
+                        <li>Conducting security and effectiveness analyses of algorithms.</li>
+                      </ul>
+                    </div>
+
+                    <div class="details-section">
+                      <p class="section-title">Tools and Technologies</p>
+                      <ul class="details-list">
+                        <li>Programming Languages: C++</li>
+                        <li>Static Code Analysis Tools: Valgrind, GDB, CppCheck, Shellcheck</li>
+                        <li>Operating Systems: Linux, Windows</li>
+                        <li>Project Management Tools: Atlassian ecosystem (Bitbucket, Jira, Confluence)</li>
+                      </ul>
+                    </div>
+
+                    <div class="details-section">
+                      <p class="section-title">Certifications and Standards</p>
+                      <ul class="details-list">
+                        <li>PCI, ISO19790 Level-3, and Common Criteria (CC) EAL4+: Actively involved in certification
+                          processes</li>
+                        <li>PKCS#11 Standard: Experienced in developing software fully compliant with security standards
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2022</div>
+              <div class="timeline-content">
+                <h3>Junior Software Engineer</h3>
+                <small>TÜBİTAK BİLGEM - UEKAE | <i>November 2022 - June 2023</i></small>
+
+                <details class="timeline-details">
+                  <summary>Learn More</summary>
+                  <div class="details-content">
+                    <p>
+                      At UEKAE (National Electronics and Cryptology Research Institute) - TUBITAK, I worked full-time in
+                      the MA3 (National Public Key Infrastructure) team from my last year as a student until my
+                      graduation. During this time, I deepened my expertise in software development in accordance with
+                      national security standards. I also significantly improved my skills in creating, auditing and
+                      editing efficient and reliable software architectures.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2022</div>
+              <div class="timeline-content">
+                <h3>Candidate Software Engineer</h3>
+                <small>TÜBİTAK BİLGEM - UEKAE | <i>September 2022 - October 20222</i></small>
+                <details class="timeline-details">
+                  <summary>Learn More</summary>
+                  <div class="details-content">
+                    <p>In the National Public Key Infrastructure (MA3) team, I started as an intern and continued as a
+                      "Candidate Engineer" for two months.</p>
+                  </div>
+                </details>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2022</div>
+              <div class="timeline-content">
+                <h3>Software Engineer Summer Intern</h3>
+                <small>TÜBİTAK BİLGEM - UEKAE | <i>July 2022 - September 2022</i></small>
+
+                <details class="timeline-details">
+                  <summary>Learn More</summary>
+                  <div class="details-content">
+                    <p>I worked as an intern in the National Public Key Infrastructure (MA3) team for a total of 40
+                      working days.</p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="col-lg-6">
+          <h2 class="section-title mb-4">Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">2023</div>
+              <div class="timeline-content">
+                <h3>Software Engineering</h3>
+                <small>Manisa Celal Bayar University | <i>September 2020 - June 2023</i></small>
+                <small>GNO: 3.69</small>
+                <details class="timeline-details">
+                  <summary>Learn More</summary>
+                  <div class="details-content">
+                    <p>
+                      I completed my undergraduate degree in Software Engineering at Manisa Celal Bayar University.
+                      During my education, I worked on various side projects to improve my competencies in the software
+                      field.
+                      In addition, I paid attention to expanding my professional network and gaining new perspectives by
+                      communicating with experienced people in the industry via e-mail and social media tools.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2019</div>
+              <div class="timeline-content">
+                <h3>Mechatronics Engineering</h3>
+                <small>Düzce University | <i>November 2019 - June 2020</i></small>
+                <small>GNO: 3.60</small>
+                <details class="timeline-details">
+                  <summary>Learn More</summary>
+                  <div class="details-content">
+                    <p>I participated in many events such as Python training and cyber security training given by
+                      HAVELSAN
+                      by taking part in the UAV team in Düzce Mekatek community.</p>
+                    <p>After completing the 1st year of Mechatronics Engineering at Düzce University, I transferred to
+                      Manisa Celal Bayar University, Software Engineering Department.</p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology -->
   <section class="full-screen">
+    <div class="container row align-items-center mx-auto">
+      <div class="col-lg-5 mx-auto text-center">
+        <div class="text-center">
+          <a href="https://www.freepik.com/designer">
+            <img src="/images/resume/freepik-tools-illustration.webp" class="img-fluid" alt="Freepik Illustration">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <h2>Technologies</h2>
+        <p>
+          I primarily use C++ in my software development processes, but I also work with other programming languages and
+          tools to create comprehensive solutions. I use static code analysis tools like CppCheck and ShellCheck to
+          improve code quality and security, Valgrind and GDB for memory checking and debugging, and Bash scripts for
+          automation and process management.
+        </p>
+        <p>
+          I use Atlassian tools like Bitbucket, Jira and Confluence to optimize teamwork and workflow, and Git is one of
+          my main tools for version control. I also have experience developing on Linux-based systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section class="full-screen">
+    <div class="container row align-items-center mx-auto">
+      <div class="col-lg-6">
+        <h2>Goals</h2>
+        <p>
+          I want to have in-depth knowledge of the C++ language and further develop my skills. For this reason, I follow
+          and use the C++ Standard Library and modern standards such as C++17, C++20, C++23 in my applications.
+        </p>
+        <p>
+          My goals include getting more involved in open source projects, getting feedback from experienced developers
+          and improving myself in the process. I would like to better understand computer architecture, improve software
+          quality and gain deeper knowledge about the Linux operating system. I am also interested in improving my
+          ability to read and speak English documentation.
+        </p>
+      </div>
+
+      <div class="col-lg-5 mx-auto text-center">
+        <div class="text-center">
+          <a href="https://www.freepik.com/designer">
+            <img src="/images/resume/freepik-goals-illustration.webp" loading="lazy" class="img-fluid"
+              alt="Freepik Illustration">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companies -->
+  <section class="full-screen companies-section">
+    <div class="container">
+      <div class="companies-content">
+        <h2 class="section-title mb-5">Companies</h2>
+        <div class="company-grid">
+          <a href="https://bilgem.tubitak.gov.tr/" target="_blank" rel="noopener noreferrer" class="company-link">
+            <img src="/images/resume/TUBITAK-Bilgem-DarkMode.webp" loading="lazy" alt="Tübitak Bilgem Logo Dark Mode"
+              class="company-logo dark-logo">
+            <img src="/images/resume/TUBITAK-Bilgem.webp" loading="lazy" alt="Tübitak Bilgem Logo Light Mode"
+              class="company-logo light-logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project -->
+  <section class="full-screen" id="project">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 mx-auto text-center">
@@ -92,42 +392,261 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <h1><span>Projeler</span></h1>
-          <p>Mühendislik, problem çözme becerisi üzerine gelişen bir disiplin. Bu becerinin gelişimi deneyim, emek ve
-            pratik gerektiriyor. Bu nedenle birçok proje geliştiriyor ve deneyimli kişilerle görüşüyorum.
+          <h2><span>Project</span></h2>
+          <p>
+            Engineering is a discipline that develops on problem solving skills. The development of this skill requires
+            experience, labor and practice. For this reason, I develop many projects and meet with experienced people.
           </p>
           <p>
-            Örneğin açık kaynak projelerde Türkçe dil desteği, dokümantasyon düzenleme ve açılan hata bildirimi inceleyerek çözüm
-            üretme gibi katkılar sağlıyorum. Şu an küçük adımlar atıyorum ama zamanla daha kapsamlı katkılar sağlayacağıma inanıyorum.
+            The software world has always attracted me with its open source and free software principles, forums based
+            on knowledge sharing, and globally accessible educational resources. Especially platforms like GitHub, Stack
+            Overflow and Reddit have inspired me to learn and contribute to the community. People around the world are
+            sharing knowledge to make life easier by developing projects with limited resources. As an engineer, I
+            embrace this sharing and inclusive aspect of software and develop my own projects, which I share on GitHub.
           </p>
-          <p>GitHub hesabımı, kullandığım teknolojileri ve katkıda bulunduğum projeleri incelemek için "Projeler"
-            sayfasına göz atabilirsiniz.</p>
-          <a href="/pages/projects.html" class="btn btn-dark custom-btn mx-auto d-block" style="color:black;">"Projeler"
-            sayfasına git!</a>
+          <p class="social-links text-center">
+            <a href="https://github.com/KaganCanSit" class="social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub" title="Visit my GitHub profile">
+              <i class="fab fa-github"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Source Projects Logo Content -->
+  <section class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <div class="text-center">
+          <a href="https://www.freepik.com/designer">
+            <img src="/images/project/freepik-open-source-project-illustration.webp" class="img-fluid"
+              alt="Freepik Illustration">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mx-auto">
+        <h2><span>Open Source</span></h2>
+        <p>
+          Open source projects are a world where people from different civilizations, languages and cultures come
+          together for a common purpose. In this world, concrete steps are being taken for the future. For my part, I
+          would like to contribute to these steps as much as I can and grow the list below.
+        </p>
+        <p>Hoping to develop many more open source projects together...</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <a href="https://github.com/LuNiZz/siber-guvenlik-sss/pull/154">
+                <h3>siber-guvenlik-sss</h3>
+                <small>Some broken links found and removed it</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <a href="https://github.com/rubytr/ruby-tr/pull/224">
+                <h3>ruby-tr</h3>
+                <small>Broken links were discovered and fixed.</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <a href="https://github.com/mue/marketplace/pull/17">
+                <h3>Mue</h3>
+                <small>"Sky Perspective" photo packages added and Mustafa Kemal Atatürk Queto typo fault fixed.</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <a href="https://github.com/randombit/botan/pull/4093">
+                <h3>Botan</h3>
+                <small>The entire directory was prevented from being displayed in doxy documents created using
+                  website.py</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <a href="https://github.com/mue/marketplace/pull/16#event-13152991033">
+                <h3>Mue</h3>
+                <small>Added Mustafa Kemal Ataturk Quotes</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <a href="https://github.com/fatihacet/turkcekaynaklar-com/pull/486">
+                <h3>turkcekaynaklar-com</h3>
+                <small>Broken links removed and markdown style fixed with plugin.</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <a href="https://github.com/ruby/www.ruby-lang.org/pull/3258">
+                <h3>Ruby-lang.org</h3>
+                <small>Many broken and old links were found and identified for necessary changes.</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <a href="https://github.com/gabime/spdlog/pull/3052">
+                <h3>spdlog</h3>
+                <small>INSTALL.md has been updated to provide current status information.</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <div class="timeline-content">
+              <a href="https://github.com/hyperledger/cacti/pull/2907">
+                <h3>cacti</h3>
+                <small>fix(weaver): usage of weak PRNG issue</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <div class="timeline-content">
+              <a href="https://github.com/mue/mue/pull/478">
+                <h3>Mue</h3>
+                <small>Turkish Language Support Expanded</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-content">
+              <a href="https://github.com/mue/mue/pull/329">
+                <h3>Mue</h3>
+                <small>TR Translation Update.</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-content">
+              <a href="https://github.com/mue/mue/pull/290">
+                <h3>Mue</h3>
+                <small>Grammar And Simplification For Turkish Language.</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-content">
+              <a href="https://github.com/mue/mue/pull/285">
+                <h3>Mue</h3>
+                <small>Turkish_Language_Support_Added</small>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Blog Content -->
-  <section class="full-screen">
+  <section class="full-screen" id="blog">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <h1><span>Blog</span></h1>
+          <h2><span>Blog</span></h2>
           <p>
-            "Araştırmak, öğrenmek ve denemek" gelişmek için gereken unsurlardır. Çözmeye çalıştığımız problemler, yeni
-            yollar denememize ve keşifler yapmamıza yol açar. Bu nedenle yazılım mühendisliği alanında sürekli öğrenmeye
-            ve gelişmeye ihtiyaç vardır.
+            Life is a journey, sometimes surrounded by challenging obstacles, sometimes with peaceful and serene paths.
+            The conditions, the equipment we take with us and the experiences we accumulate along the way are different
+            for each of us. Yet every step, every turn leads us to new discoveries. Sometimes our paths cross; we share
+            our experiences, have a cup of tea together and chat.
           </p>
           <p>
-            Mühendislik, asla "Artık öğrenmeye gerek yok." diyebileceğimiz bir disiplin değildir. Bu sebeple, yazılımın
-            doğasındaki bilgi paylaşımını benimseyerek keşiflerimi ve öğrendiklerimi burada paylaşıyorum.
+            On this page you will find small notes from my own journey. They contain my mistakes, moments of learning
+            and endless discoveries. There are many roads ahead of me that I have yet to complete and explore, but
+            looking at the maps of the roads I have crossed and trying to make sense of them is also part of this
+            adventure.
           </p>
-          <p>"Blog" sayfasından yazmış olduğum içerikleri keşfedebilirsin!</p>
-          <a href="pages/main_blog_page.html" class="btn btn-dark custom-btn mx-auto d-block"
-            style="color:black;">"Blog" sayfasından
-            yazdığım içerikleri keşfedebilirsiniz!</a>
+          <p>
+            I hope you find something inspiring or useful for your own discoveries...
+          </p>
         </div>
         <div class="col-lg-5 mx-auto text-center">
           <a href="https://www.freepik.com/designer">
@@ -139,48 +658,266 @@
     </div>
   </section>
 
-  <!-- Design Content -->
   <section class="full-screen">
+    <div class="container">
+      <div class="row" id="blog_content_area">
+        <!-- Blog Card -->
+        <div class="col-lg-6">
+          <div class="card">
+            <a href="/pages/blogs/09.dahi_yazilimci_efsanesi&&yetersizlik_hissi.html">
+              <div class="card__image-container">
+                <img src="/images/blogs/dahi_yazilimci_efsanesi&&yetersizlik hissi/header_image.webp"
+                  class="card__image" alt="Albert Einsten Image | Dahi Yazılımcısı Efsanesi" />
+                <div class="card__overlay">
+                  <h4 class="card__title">Dahi Programcı Efsanesi ve Yetersizlik Hissi</h4>
+                  <time class="card__date">Eylül 24, 2023</time>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card -->
+        <div class="col-lg-6">
+          <div class="card">
+            <a href="/pages/blogs/08.yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar.html">
+              <div class="card__image-container">
+                <img src="/images/blogs/yazilimcinin_otomasyoncusu_bash_betikleri_hakkinda_tuyolar/header_image.webp"
+                  loading="lazy" class="card__image" alt="Yazilimcinin Otomasyoncusu Bash" />
+                <div class="card__overlay">
+                  <h4 class="card__title">Yazılımcının Otomasyoncusu Bash Betikleri Hakkında Tüyolar</h4>
+                  <time class="card__date">Ağustos 26, 2023</time>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card -->
+        <div class="col-lg-6">
+          <div class="card">
+            <a href="/pages/blogs/07.cpp_ile_gelistirme_yapilirken_neden_new_kullanimi_en_aza_indirgenmeli.html">
+              <div class="card__image-container">
+                <img src="/images/blogs/C++_Ile_Gelistirme_Yap._Neden_new_En_Aza_Ind/header_image.webp" loading="lazy"
+                  class="card__image" alt="C++ İle Geliştirme Yapılırken Neden new Kullanımı En Aza İndirgenmeli?" />
+                <div class="card__overlay">
+                  <h4 class="card__title">C++ İle Geliştirme Yapılırken Neden "new" Kullanımı En Aza İndirgenmeli?</h4>
+                  <time class="card__date">Mart 12, 2023</time>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card -->
+        <div class="col-lg-6">
+          <div class="card">
+            <a href="/pages/blogs/06.git_gitflow_github_ve_bazi_git_kavramlari.html">
+              <div class="card__image-container">
+                <img src="/images/blogs/git_gitflow_github_kavramlari_ve_bazi_git_komutlari/header_image.webp"
+                  loading="lazy" class="card__image" alt="git_gitflow_github_kavramlari_ve_bazi_git_komutlari" />
+                <div class="card__overlay">
+                  <h4 class="card__title">Git, Git Flow, Github Kavramları ve Bazı Git Komutları</h4>
+                  <time class="card__date">Temmuz 30, 2022</time>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card -->
+        <div class="col-lg-4">
+          <div class="card">
+            <a href="/pages/blogs/05.linux_kavrami_ve_temel_linux_terminal_komutlari.html">
+              <div class="card__image-container">
+                <img src="/images/blogs/linux_kavramı_ve_temel_linux_komutları/header_image.webp" loading="lazy"
+                  class="card__image" alt="linux_kavramı_ve_temel_linux_komutları" />
+                <div class="card__overlay">
+                  <h4 class="card__title"> Linux Kavramı ve Temel Linux Terminal Komutları </h4>
+                  <time class="card__date">Temmuz 23, 2022</time>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card -->
+        <div class="col-lg-4">
+          <div class="card">
+            <a href="/pages/blogs/04.github_profili_icin_readme_dosyasi_olusturma_ve_ozellestirme.html">
+              <div class="card__image-container">
+                <img src="/images/blogs/github_profili_icin_readme_olusturma/header_image.webp" loading="lazy"
+                  class="card__image" alt="github_profili_icin_readme_olusturma" />
+                <div class="card__overlay">
+                  <h4 class="card__title">Github Profili İçin Readme Dosyası Oluşturma ve Özelleştirme</h4>
+                  <time class="card__date">Temmuz 6, 2022</time>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card -->
+        <div class="col-lg-4  ">
+          <div class="card">
+            <a href="/pages/blogs/03.acik_kaynaga_katkida_bulunmaya_dair_ilk_adimlar.html">
+              <div class="card__image-container">
+                <img src="/images/blogs/acik_kaynaga_katikida_bulunmak/header_iamge.webp" loading="lazy"
+                  class="card__image" alt="acik_kaynaga_katikida_bulunmak" />
+                <div class="card__overlay">
+                  <h4 class="card__title"> Açık Kaynak Kavramı ve Açık Kaynağa Katkıda Bulunmaya Dair İlk Adımlar </h4>
+                  <time class="card__date">Temmuz 4, 2022</time>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card -->
+        <div class="col-lg-4">
+          <div class="card">
+            <a href="/pages/blogs/02.notion_ile_markdown_dosyasi_olusturmak.html">
+              <div class="card__image-container">
+                <img src="/images/blogs/notion_ile_markdawn_dosyası_olusturmak/header_image.webp" loading="lazy"
+                  class="card__image" alt="notion_ile_markdawn_dosyası_olusturmak" />
+                <div class="card__overlay">
+                  <h4 class="card__title"> Notion İle Markdown Dosyası Oluşturmak</h4>
+                  <time class="card__date">Haziran 15, 2022</time>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card -->
+        <div class="col-lg-4">
+          <div class="card">
+            <a href="/pages/blogs/01.idealler_ve_inanclar.html">
+              <div class="card__image-container">
+                <img src="/images/blogs/idealler_ve_inanclar/headerImage.webp" loading="lazy" class="card__image"
+                  alt="idealler_ve_inanclar" />
+                <div class="card__overlay">
+                  <h4 class="card__title">İdealler ve İnançlar</h4>
+                  <time class="card__date">Eylül 15, 2021</time>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card -->
+        <div class="col-lg-4">
+          <div class="card">
+            <a href="/pages/blogs/00.youtube_kanal_onerileri.html">
+              <div class="card__image-container">
+                <img src="/images/blogs/youtube_kanal_onerileri/headerImage.webp" loading="lazy" class="card__image"
+                  alt="youtube_kanal_onerileri" />
+                <div class="card__overlay">
+                  <h4 class="card__title"> Yeni Bilgiler Edinmek İçin YouTube Kanal Önerileri </h4>
+                  <time class="card__date">Ağustos 12, 2020</time>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination Link -->
+      <div style="text-align: center;" id="pagination"></div>
+    </div>
+  </section>
+
+  <!-- Design -->
+  <section class="full-screen" style="margin-top: 10%;" id="design">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 mx-auto text-center">
           <a href="https://www.freepik.com/designe">
-            <img src="/images/base_site_images/freepik-digital-design-illustration.webp" loading="lazy" class="img-fluid mb-5" alt="Freepik Illustration">
+            <img src="/images/base_site_images/freepik-digital-design-illustration.webp" loading="lazy"
+              class="img-fluid mb-5" alt="Freepik Illustration">
           </a>
         </div>
         <div class="col-lg-6">
-          <h1><span>Tasarım</span></h1>
+          <h2><span>Design</span></h2>
           <p>
-            Grafik tasarım, bilgisayarla tanıştığım ilk zamanlarda edindiğim hobilerimden biriydi. "Dijital Sürreal" ve
-            katmanlama yöntemiyle farklı bakış açıları oluşturmaya çalıştığım, film sahnelerini kopyaladığım veya kitap
-            bölümleri oluşturduğum çalışmalarım oldu. Okul harçlıklarımı kazanmak için çalıştığım zamanlarda Onedio'da
-            haber oldum.
+            Graphic design has been one of my hobbies since the first time I met computers. I tried to create different
+            perspectives with “Digital Surreal” and layering methods, I copied movie scenes or created book chapters. I
+            made news on Onedio when I was working to earn my school allowance.
           </p>
           <p>
-            Tasarım yeteneğimi geliştirirken araştırma ve öğrenme konusunda da kendimi ilerlettiğime inanıyorum.
-            İnternetten bilgi edinmek, yabancı kaynakları incelemek ve insanlara sorular sormak gibi birçok beceriyi
-            kazandım. Bu yüzden grafik tasarım benim için önemli bir hobi olmuştur. Şu anda ise tamamen yazılım üzerinde
-            yoğunlaşıyorum.
+            While developing my design skills, I believe I have also improved myself in research and learning. I have
+            gained many skills such as obtaining information from the internet, examining foreign sources and asking
+            people questions.
           </p>
-          <p>Tasarımlarımın birkaçını görmek için "Tasarım" sayfasını ziyaret edebilirsiniz.</p>
-          <a href="/pages/design.html" class="btn btn-dark custom-btn mx-auto d-block" style="color:black;">"Tasarım"
-            sayfasına git!</a>
+        </div>
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-3">
+              <img src="../images/design/00.Atam_Mustafa_Kemal_Ataturk.webp" loading="lazy" class="img-fluid">
+              <img src="../images/design/01.Dusuncelerinde_Kayip.webp" loading="lazy" class="img-fluid">
+            </div>
+            <div class="col-lg-3">
+              <img src="../images/design/03.Warrior_mother.webp" loading="lazy" class="img-fluid">
+              <img src="../images/design/04.One_Book.webp" loading="lazy" class="img-fluid">
+            </div>
+            <div class="col-lg-3">
+              <img src="../images/design/05.Rules.webp" loading="lazy" class="img-fluid">
+              <img src="../images/design/06.Wound.webp" loading="lazy" class="img-fluid">
+            </div>
+            <div class="col-lg-3">
+              <img src="../images/design/07.Exploration Of The Stars.webp" loading="lazy" class="img-fluid">
+              <img src="../images/design/08.UnderTheStars.webp" loading="lazy" class="img-fluid">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact-container"></section>
-  <script>
-    fetch('/pages/page_partial/contact.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('contact-container').innerHTML = data;
-      });
-  </script>
+  <section id="contact" style="padding-top: 5%;">
+    <div class="container mx-auto">
+      <div class="row align-items-center">
+        <div class="col-lg-3 mx-auto text-center">
+          <img src="/images/base_site_images/designGIF.webp" loading="lazy" class="img-fluid">
+        </div>
+        <div class="col-lg-8">
+          <div class="contact-form">
+            <h3><span>Would you like to meet? Let's talk!</span></h3>
+            <p>You may have questions you are curious about or have questions in your mind. In these cases, do not
+              hesitate to contact me you can reach.</p>
+            <p>Take care until we meet again.</p>
+          </div>
+        </div>
+      </div>
+      <div class="social-links-container">
+        <div class="social-links">
+          <a href="mailto:kagancansit@hotmail.com" class="social-link" aria-label="Email" title="Contact by email">
+            <i class="fas fa-envelope"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/kagancansit/" class="social-link" target="_blank"
+            rel="noopener noreferrer" aria-label="LinkedIn" title="Visit my LinkedIn profile">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/KaganCanSit" class="social-link" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub" title="Visit my GitHub profile">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://x.com/kagancansit" class="social-link" target="_blank" rel="noopener noreferrer"
+            aria-label="Twitter" title="Visit my Twitter profile">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <p class="copyright-text text-center">Kağan Can Şit | I hope you found content that contributed and informed you
+        🏹</p>
+    </div>
+  </section>
 
   <!-- Scripts -->
+  <script src="/js/blogPagination.js"></script>
   <script src="/js/jquery-3.3.1.min.js"></script>
   <script src="/js/popper.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
