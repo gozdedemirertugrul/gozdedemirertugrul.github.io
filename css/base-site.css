@@ -110,6 +110,7 @@ body.dark-mode .light-logo {
 body.dark-mode .dark-logo {
     display: inline;
 }
+
 /*********************** Blog Card **********************/
 .card {
     position: relative;
@@ -752,7 +753,7 @@ mark {
         border-radius: 8px;
         margin: 0 auto 2rem auto;
     }
-    
+
     .blog-content-image {
         max-width: 100%;
         margin: 1.5rem auto;
