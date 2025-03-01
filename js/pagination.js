@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     pageLink.href = '#';
     pageLink.textContent = page;
     pageLink.classList.add('page-link');
+    pageLink.style.color = 'var(--text-light)';
 
     pageLink.addEventListener('click', (event) => {
       event.preventDefault();
@@ -35,4 +36,38 @@ window.addEventListener('DOMContentLoaded', (event) => {
       }
     }
   }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const prContainer = document.querySelector('#pr-section .row');
+  const prItems = Array.from(prContainer.querySelectorAll('.timeline-item'));
+  const paginationDiv = document.getElementById('pr-pagination');
+  
+  const itemsPerPage = 10;
+  const totalPages = Math.ceil(prItems.length / itemsPerPage);
+
+  for (let i = 1; i <= totalPages; i++) {
+    const pageLink = document.createElement('a');
+    pageLink.href = '#';
+    pageLink.textContent = i;
+    pageLink.classList.add('page-link');
+    pageLink.style.color = 'var(--text-light)';
+
+    pageLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      updatePage(i);
+    });
+
+    paginationDiv.appendChild(pageLink);
+  }
+
+  function updatePage(page) {
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+
+    prItems.forEach((item, index) => {
+      item.style.display = index >= startIndex && index < endIndex ? 'block' : 'none';
+    });
+  }
+  updatePage(1);
 });
