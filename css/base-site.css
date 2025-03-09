@@ -36,6 +36,11 @@ section {
     display: block;
 }
 
+.citation {
+    text-indent: -25px;
+    padding-left: 25px !important;
+}
+
 body {
     /* font-family: 'Maven Pro', sans-serif; */
     transition: background-color 0.3s, color 0.3s;

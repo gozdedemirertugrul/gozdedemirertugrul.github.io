@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <!-- Title and Favicon -->
+    <title>Gözde Demir Ertuğrul</title>
+    <link rel="icon" href="/images/base_site_images/designPng.webp" type="image/x-icon" />
+
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="/css/base-site.css" as="style">
+    <link rel="preload" href="/css/tooplate-style.css" as="style">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/css/base-site.css">
+    <link rel="stylesheet" href="/css/tooplate-style.css">
+
+
+</head>
+
+<body>
+    <div id="loader" class="loader-light">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">Gözde Demir Ertuğrul</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div style="background-color: transparent;" class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="/index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/index.html#blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="/index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"><span class="color-mode color-mode-icon"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+   
+
+
+    <!-- Blog -->
+    <section class="full-screen" id="project">
+        <div class="container row">
+            <img src="../../images/blogs/reliability/Reliability.jpeg" class="img-fluid blog-header-image">
+            <div class="col-lg-12 mx-auto">
+                <h2>WHAT IS THE RELIABILITY?</h2>
+                <p><small>March 1, 2025</small></p>
+                <p>
+                    <b>Welcome!</b><br>
+                    In the research, reliability is important concept. Only in research? How and when can being reliable ever be unimportant? I can almost hear your answers. :) Okay, so let's look at what reliability is in statistical terms.
+                </p>
+                <p>
+                    Reliability refers to the extent to which test scores remain stable and are not influenced by random factors. It ensures that a test taker's score does not vary based on the specific day and time of the test, the particular set of questions included in a given version compared to others, or the individuals who evaluate the responses when subjective judgment is involved (Livingston, et al., 2018). 
+                </p>
+                <p>
+                    Reliability refers to the ratio of true score variance V(T) to the total variance in observed scores V(O) (Hayes & Coutts, 2020). A higher reliability value indicates that a most of the observed score variation in observed scores reflects differences in the actual construct being measured, rather than measurement error (Hayes & Coutts, 2020).  </p>
+                <p>
+                    It could be formulated as: 
+                    \[
+                    \text{Reliability} = \frac{V(T)}{V(O)}
+                    \]
+                </p>
+                <p style="text-align: right">Eq. 1</p>
+                <p>
+                    where V(T) represents True Score Variance and V(O) represents Observed Score Variance
+                </p>
+                <p>
+                    This formula (Eq.1) explains that, within the framework of Classical Test Theory (CTT), reliability shows how much of the observed scores are due to the true score. If the reliability is 1.0 (perfect), this means that all of the observed variance comes from the true variance and there is no measurement error (Hayes & Coutts, 2020). Of course, this is not the case because there is no error-free person, and no error-free measurement is possible. :) Therefore, since it is not possible to have no measurement error in any case, reliability is not perfect.
+                </p>
+                <p>
+                    When discussing reliability, testing professionals frequently refer to two key concepts: true score and standard error of measurement.
+                </p>
+                <b>3.1.1.	True Score </b>
+                <p>
+                    Classical Test Theory serves as the foundation for many reliability measures used by Behavioral scientists. When applied to a multi-item measurement scale (MIMS), it assumes that a person's response to an item (X_i) is determined by their true score (T) and random measurement error (Hayes & Coutts, 2020).
+                </p>
+                <p>
+                    \[
+                    X_i = \mu_i + \lambda_i T + e_i
+                    \]
+                </p>
+                <p style="text-align: right">Eq. 2</p>
+                <p>
+                    where \(\mu_i\) is a constant, \(\lambda_i\) is item i’s factor loading and \(e_i\) is an error in estimation of that response to item i. 
+                </p>
+                <p>
+                    This model is illustrated in Figure 1 (without constants) as a unidimensional factor model, where the latent variable T is measured using k indicators (\(X_i\) items).
+                </p>
+
+                <p>
+                    <b>Figure 1</b> <br>
+                    A unidimensional factor model of latent variable T with k observed indicators (Xi) (Livingston, et al., 2018).   
+                </p>
+
+                <img src="../../images/blogs/reliability/Figure1.png" >
+                <p>Now, I would like to present the Cronbach’s Alpha (α) formula;</p>
+                <p>\[
+                    (\alpha) = \frac{k}{k-1} \left( 1 - \frac{\sum_{i=1}^{k} V(X_i)}{V(O)} \right)
+                    \]
+                </p>
+                <p style="text-align: right">Eq. 3</p>
+                <p>where V (Xi) is the variance of responses to item i and V (O) is the variance of the observed sum. </p>
+
+
+
+
+                <p>Cronbach’s Alpha (α) is a widely used measure of reliability, estimating the squared correlation between true scores (T) and observed scores (O) (Hayes & Coutts, 2020). It represents the proportion of variance in observed scores that can be attributed to the actual differences in the measured construct (Hayes & Coutts, 2020). Due to its ease of calculation and historical significance, Cronbach’s Alpha (α) has become the dominant reliability statistic in behavioral sciences. Studies have shown that it is frequently reported in research, particularly in psychology journals (Hayes & Coutts, 2020). For example, content analyses of psychology journals indicate that over 90% of studies using multi-item measurement scales (MIMS) report Cronbach’s Alpha (α) as the primary reliability measure (McNeish, 2018).</p>
+                <p>Despite its widespread use, Cronbach’s Alpha (α) is often misunderstood. One of the most common misconceptions is that a high Cronbach’s Alpha (α) value confirms that a set of items measures a single construct (unidimensionality). However, Cronbach’s Alpha (α) assumes essential tau-equivalence, meaning that all items contribute equally to the construct being measured. This assumption is rarely met in real-world data, making Cronbach’s Alpha (α) less accurate under certain conditions. Additionally, Cronbach’s Alpha (α) increases as the number of test items grows, which can lead to overestimations of reliability even when item correlations are low. These issues highlight the limitations of Cronbach’s Alpha (α) and why it should not be the only reliability measure used in research (Hayes & Coutts, 2020).</p>
+                <p>McDonald’s Omega (ω) has been proposed as a more precise alternative to Cronbach’s Alpha (α) because it does not assume essential tau-equivalence (Hayes & Coutts, 2020). Let’s look at the how McDonald’s Omega (ω) can be calculated. Like α, it can be calculated from a single administration of a set of items as:</p>
+                <p>\[
+                    (\omega) = \frac{\left( \sum \lambda_i \right)^2}{\left( \sum \lambda_i \right)^2 + \sum V(e_i)}
+                    \]
+                </p>
+                <p style="text-align: right">Eq. 4</p>
+                <p>where V(\(e_i\)) is the variance of the errors in estimation of item i from Equation (2) (also see Figure 1) and the summation is over all i = 1 to k items. </p>
+
+                <p>McDonald’s Omega (ω) accounts for differences in factor loadings across items, making it a more general and accurate estimator of reliability. Research comparing the two methods suggests that when tau-equivalence is violated, McDonald’s Omega (ω) provides a better reliability estimate than Cronbach’s Alpha (α)  (Green & Yang, 2009; Raykov, 1998; Trizano-Hermosilla & Alvarado, 2016). Due to these advantages, many psychometricians advocate for using McDonald’s Omega (ω) instead of Cronbach’s Alpha (α). The remainder of the paper focuses on practical ways to compute McDonald’s Omega (ω) in different statistical software programs to help researchers adopt this more robust reliability measure (Hayes & Coutts, 2020).</p>
+
+                <b>3.1.2.  Standard Error of Measurement  </b>
+                <p>So, while we're at it, let's take a look at standard error of measurement. Then we'll examine the types of reliability. Just as the entire group possesses a standard deviation, in theory, each test taker has a personal distribution of potential observed scores surrounding their true score, which also has a standard deviation. When these individual error standard deviations are averaged across the group, the outcome is referred to as the standard error of measurement.<p>
+                <p>The standard error of measurement is a measure of how much measured test scores are spread around a “true score”. Thus, the standard deviation of errors of measurement that is associated with the test scores for a specified group of test takers is called the standard error of measurement (Crocker & Algina, 2006). The standard error of measurement is defined as a number explained in the same units as the scores. Standard error of measurement means to—questions answered correctly, percent correct, scaled-score points, or any other units used to report scores (Field, 2018).</p>
+                <p>The standard error of measurement reflects the expected variability in observed test scores within a group due to measurement error, similar to how the reliability coefficient assesses score consistency. (Generally, standard error of measurement and the reliability coefficient are reported for the same group of test takers.) The standard error of measurement gives an answer to the question, “On average, do test takers' scores differ from their “true scores” and if yes, by how much?”  Though the standard error of measurement can alter from one group of test takers to another, it generally does not change extremely. It tends to be almost the same for different demographic groups, for groups tested at different times. Although it could feasibly differ by enough to matter, it nearly never does. The standard error of measurement shows the consistency of the test takers’ scores instead of the test takers’ relative positions in the group. A standard error of measurement of 0.00 would demonstrate that each individual test taker would take the same score on any application of the testing procedure —that the scores were excellently consistent (Livingston et al., 2018).</p>
+                <p>The standard error of measurement is an estimate of the expected variability in observed scores due to measurement error (Harvill, 1991). The error of measurement in any individual test taker’s score can never actually be computed, regardless of the sources of inconsistency that are considered. However, if the error of measurement in each test taker’s score could be computed, a distribution of those errors of measurement would exist, just as the scores do. The standard deviation of that distribution would show how far, on average, the test takers’ actual scores were from their “true scores”. If that standard deviation could be estimated, it could be used to indicate how strongly the errors of measurement affect the scores. In fact, it can be estimated, and it is used in that way. Because saying “standard deviation of the distribution of errors of measurement” is weird, it is referred to as the “standard error of measurement.” In a large population of test takers, the measurement errors in their scores generally follow a normal distribution (the well-known bell curve), even when the scores themselves do not. This characteristic makes the standard error of measurement standard error of measurement a valuable statistical tool for assessing score reliability (Livingston et al., 2018). </p>
+                <p>Standard error of measurement shows how much an individual's “true score” can vary (Crocker & Algina, 2006). It could be formulated as:</p>
+                <p>\[
+                    \sigma_E = \sigma_X \sqrt{1 - P_{XX'}}
+                    \]</p>
+                <p style="text-align: right">Eq. 5</p>
+                <p>
+                    \(\sigma_E\) } The SEM <br>
+                    \(\sigma_X\) } the standard deviation for a set of observed test scores <br>
+                    \(P_{XX'}\)  } the test reliability coefficient
+                </p>
+                <p>Therefore, if the standard deviation for a set of observed test scores is known to be 10 points and the test reliability coefficient is \(P_{XX'}\) = 0.91,</p>
+                <p>
+                    \(\sigma_E = 10 \sqrt{1-0.91}\) <br>
+                    \(\sigma_E = 10 * 0.3\) <br>
+                    \(\sigma_E = 3\)
+                </p>
+                <p>It means that if SEM is 3, it means that a person's test score can vary around his/her true score with a margin of error of ±3 points.</p>
+                <p>We've nailed reliability, but the types are still waiting for us. :) Anyway, let's take a closer look at the types of reliability. Meanwhile, different types of reliability imply different types of consistency (Livingston, et al., 2018). It is important to be consistent to be reliable. So, what do we pay attention to understand whether it is consistent? I think it will be important to look at these three statements (Livingston, et al., 2018):</p>
+                <p>1. Would the test taker's performance results be the same if s/he took this test on another day?<br>
+                2. How would the test taker perform on different questions designed to measure the same general knowledge and skills?<br>
+                3. Would the test taker's results vary if scored by another rater?</p>
+                <p>Each item here actually refers to a type of reliability. For this reason, if each expression represents a type of reliability, we can say that we have a total of three types of reliability:</p>
+
+                <b>1.Test-retest Reliability <br>
+                    2.Alternate-forms Reliability <br>
+                    3.Interrater Reliability <br>
+                </b>
+
+                <p>Now, if we are ready, let's start with the first of these.</p>
+
+                <b>1.	Test-retest Reliability (Stability)</b>
+                <p>Test-retest reliability means how consistent a test taker’s performance is when they take the same test on different days or at different times (Livingston, et al., 2018). It means that stability of test takers' performance across different testing times. While discussing the Standard Error of Measurement (SEM), I also want to explain its relationship with test-retest reliability.</p>
+                <p>The type of reliability coefficient used to calculate the Standard Error of Measurement (SEM) can influence both its interpretation and magnitude. For example, a long-term test-retest reliability (e.g., after six months) is usually lower than a short-term test-retest reliability (e.g., after two weeks). Since lower reliability leads to a higher SEM, the choice of reliability coefficient affects the final SEM value (Harvill, 1991).</p>
+                <p>When comparing scores from different versions of a test, alternate-form reliability should be used to determine standard error of measurement (SEM) (Livingston, et al., 2018). If predicting how a test taker might score on the same test form after six months, then test-retest reliability is more appropriate. Because different reliability coefficients reflect various sources of measurement error (e.g., test conditions, examinee characteristics, scoring variations), the resulting SEM values carry different meanings (Harvill, 1991).</p>
+                
+                <b>2.	Alternate-forms Reliability</b>
+                <p>Alternate-forms reliability refers to the stability of test-takers’ scores across different versions of an assessment that evaluate the same skills or knowledge while maintaining an equivalent level of difficulty. It seeks to answer the question: "To what degree do individuals who score well on one version of the test achieve similar results on another?" This form of reliability is a major concern for test developers, particularly when multiple versions of an exam are available. Even in cases where only a single version of a test exists, users often expect scores to be applicable beyond the specific items included in that version. Alternate-forms reliability helps test creators understand an inconsistency factor they can influence. Increasing the length of the test by incorporating additional questions or tasks is one way to enhance this reliability, ensuring more stable and consistent scores across different test editions (Livingston, et al., 2018).</p>
+                <p>To directly assess alternate-forms reliability, we need data from individuals who take two different versions of the test while maintaining the same level of knowledge and skills. However, such data is often unavailable. Instead, we typically estimate alternate-forms reliability using the responses from a single version of the test. On the other hand, internal consistency evaluates how consistently test-takers perform across different items within the same version of a test. It addresses the question: "To what extent do individuals who perform well on one item also perform well on others?" When all items measure a similar skill or knowledge area, internal consistency tends to be high. Conversely, if the test items assess different skills or concepts, internal consistency is lower (Livingston, et al., 2018).</p>
+                <p>In most technical reports and test manuals, reliability statistics primarily focus on internal consistency. But does this metric truly matter? Should we be concerned with whether test-takers perform consistently across items within a single test version? According to Livingston, et al. (2018) the answer is no. What truly matters is alternate-forms reliability. The reason internal consistency statistics are widely used comes down to two practical considerations. First, they can be computed using the data we already have—test-takers’ responses from a single version of the test. Second, under an assumption that generally holds true, internal consistency serves as a strong approximation of alternate-forms reliability. This is why internal consistency is measured—not because it is inherently important, but because it provides a useful estimate of alternate-forms reliability (Livingston, et al., 2018).</p>
+
+                <b>3.	Inter-rater Reliability</b>
+                <p>Now let's come to interrater reliability. As the name suggests, interrater reliability represents the war of raters! Just kidding, :) it looks at the harmony of raters.</p>
+	            <p>Inter-rater reliability (IRR) refers to how consistently different raters score the same responses when a test requires subjective evaluation. It measures the level of agreement between raters and considers rater selection as the only possible source of inconsistency. Estimating inter-rater reliability (IRR) is necessary whenever human judgment is involved in scoring. However, if a test is scored objectively—such as in multiple-choice questions—interrater reliability should be perfect (Livingston, et al., 2018 and Hallgren, 2012).</p>
+                <p>There are two main methods for scoring constructed-response tests. Analytic scoring assigns points based on specific response features. For example, in a history test, a rater may give separate points for identifying key causes and effects of an event. Holistic scoring, on the other hand, evaluates the response as a whole and assigns a single score. Analytic scoring generally leads to higher interrater reliability than holistic scoring. However, in many cases, it is difficult to create analytic scoring systems that fully capture all important aspects of a response (Livingston, et al., 2018).</p>
+                <p>In large-scale tests scored by raters, different raters could have been assigned to evaluate a test taker’s responses. If another group of raters had graded the same responses, the scores might have been different. The key question is: How much could the scores change, and how likely is this variation? Inter rater reliability (IRR) statistics help answer this question (Livingston, et al., 2018). </p>
+                <p>Inter-rater reliability (IRR) is also connected to alternate-forms reliability. If a test taker completes two different versions of a test that requires rater scoring, it is unlikely that the same raters will grade both versions. Even if the raters are selected from the same pool, an individual test taker is unlikely to receive the same raters each time. As a result, alternate-forms reliability is affected by two factors: rater selection and test content differences. For alternate-forms reliability to be strong, both sources of variation must be minimized (Livingston, et al., 2018).</p>
+                <p>While high interrater reliability does not necessarily mean that alternate-forms reliability will be high, low interrater reliability always leads to low alternate-forms reliability. If scoring is inconsistent across raters, test takers’ scores on different test versions will not align, even if their actual performance remains stable (Livingston, et al., 2018).</p>
+
+                <b>Cohen’s Kappa for Nominal Variables; </b>
+                <p>Cohen’s kappa (1960) and its variations are widely used to evaluate inter-rater reliability (IRR) for categorical (nominal) data. Different forms of kappa make it possible to assess inter-rater reliability (IRR) in both fully crossed and partially crossed study designs (Hallgren, 2012). </p>
+                <p>It could be formulated as: </p>
+                <p>\[
+                    K = \frac{P(a) - P(e)}{1 - P(e)}
+                    \]</p>
+                <p style="text-align: right">Eq. 6</p>
+                <p>where P(a) represents the observed percentage of agreement, while P(e) refers to the the probability of expected agreement that could occur by chance.</p>
+                <p>Cohen’s kappa statistics can take values ranging from -1 to 1. A value of 1 represents perfect agreement, 0 indicates agreement that occurs purely by chance, and -1 reflects complete disagreement between raters.</p>
+                <p>Landis and Koch (1977) suggest the following interpretation for kappa values:</p>
+                <ul>
+                    <li>0.00 – 0.20 → Slight agreement</li>
+                    <li>0.21 – 0.40 → Fair agreement</li>
+                    <li>0.41 – 0.60 → Moderate agreement</li>
+                    <li>0.61 – 0.80 → Substantial agreement</li>
+                    <li>0.81 – 1.00 → Almost perfect or perfect agreement</li>
+                </ul>
+                <p>However, the validity of these qualitative categories is debated. Krippendorff (1980) provides a more cautious approach, arguing that:</p>
+                <ul>
+                    <li>Values below 0.67 → Should not be used for drawing conclusions</li>
+                    <li>Values between 0.67 and 0.80 → Can be interpreted with caution</li>
+                    <li>Values above 0.80 → Allow for confident conclusions</li>
+                </ul>
+                <p>Despite Krippendorff’s stricter guidelines, many studies still report kappa values below 0.67, as acceptable inter-rater reliability (IRR) thresholds can depend on study design and research objectives.</p>
+                <p>According to Turner and Carlson (2003)’s study; </p>
+                <p style="text-align: center"> 
+                    “Although the cutoff value is a floating criterion, a generally accepted value might be a minimum of .75 (Turner & Carlson, 2003, p.167).”
+                </p>
+
+                <p>It seems that there is some uncertainty on this matter. In our studies, whichever value we choose, it is always beneficial to provide a proper reference—just a friendly reminder! :)</p>
+                <b>ICCs for Ordinal, Interval, or Ratio Variables;</b>
+                <p>It is important to remember that Cohen’s Kappa is an inter-rater reliability measure specifically for nominal variables. However, when dealing with ordinal, interval, or ratio variables, a different approach is needed. In such cases, we use Intra-Class Correlation (ICC) for reliability assessment (Hallgren, 2012).</p>
+                <p>The Intra-Class Correlation (ICC) is a widely used statistic for assessing inter-rater reliability (IRR) when dealing with ordinal, interval, and ratio variables. ICC is applicable in studies with two or more raters, whether all subjects are rated by multiple coders or only a subset receives multiple ratings. Unlike Cohen’s Kappa, which only considers whether raters completely agree or disagree, ICC accounts for the magnitude of disagreement, meaning larger discrepancies between raters lead to lower ICC values (Hallgren, 2012).</p>
+                <p>Mathematically, ICC is based on the assumption that ratings given by different coders consist of two components: the true score and measurement error (Hallgren, 2012). </p>
+                <p>It is calculated as (Hallgren, 2012) :</p>
+                <p>\[
+                    X_{ij} = \mu + r_i + e_{ij}
+                    \]</p>
+                <p style="text-align: right">Eq. 7</p>
+                <p>where Xij is the rating provided to subject i by coder j, μ is the mean of the true score for variable X, ri is the deviation of the true score from the mean for subject i, and eij is the measurement error. </p>
+                <p>In cases where coders systematically rate subjects differently, a coder effect (c_(j )) is added to the model as (Hallgren, 2012) :</p>
+                <p>\[
+                    X_{ij} = \mu + r_i + c_j + rc_{ij} + e_{ij}
+                    \]</p>
+                <p style="text-align: right">Eq. 8</p>
+                <p>where c_(j ) represents the degree that coder j systematically deviates from the mean and 〖rc〗_ij represents the interaction between subject deviation and coder deviation. </p>
+                <p>The variances of these components are used to compute ICC values, with different formulas applied based on the study design (Hallgren, 2012).</p>
+                <p>Interpretation of ICC Values (Cicchetti, 1994)</p>
+                <ul>
+                    <li>Below 0.40 → Poor reliability</li>
+                    <li>0.40 – 0.59 → Fair reliability</li>
+                    <li>0.60 – 0.74 → Good reliability</li>
+                    <li>0.75 – 1.00 → Excellent reliability</li>
+                </ul>
+                <p>Higher ICC values indicate stronger agreement among raters, with 1.0 representing perfect agreement and 0.0 indicating random agreement. In cases of systematic disagreement, ICC values can be negative, and when there are three or more raters, some ICC values may drop below -1 (Hallgren, 2012).</p>
+                
+                <b>Why McDonald’s Omega instead of Cronbach’s Alpha when Estimating Reliability?</b>
+                <p>We have mentioned reliability up to now. Now, let's look at how we can estimate the reliability. There are two methods for estimating reliability whose of them is Cronbach’s Alpha (α) and the other one is McDonald’s Omega (ω). Cronbach’s Alpha (α) is a reliability measurement to measure a total score produced from a multi-item measurement scale and the amount of randomized error on average. However, the methodologists warned users that Cronbach’s Alpha (α) is not the most suitable measurement compared to the McDonald’s Omega (ω).  Hayes & Coutts (2020) discussed why we should use Mc Donalds Omega (ω) rathen than Cronbach’s Alpha (α) widely used up to now. </p>
+                <p>The most important reason is a little bit compulsory reason because many popular statistic (SPSS and SAS) programs could have not calculate the Mc Donald’s Omega (ω) in the past and at the same time there was a need factor loadings from the factor analysis (CFA). Hayes & Coutts wrote an article in 2020, and that time it could have not calculated by the program, but now IBM SPSS Statistics 29 version can calculate Mc Donald’s Omega (ω). However, I would like to underlie that Mc Donald’s Omega (ω ) could not calculated by the SPSS programs when this article was published. Therefore, Cronbach’s Alpha (α) was preferred mostly than Mc Donald’s Omega (ω) at that times. Although it could not be calculated with the SPSS at the time, ω could be calculated using two structural equation modeling (SEM) programs (Mplus and AMOS) and R researchers (Hayes & Coutts, 2020).</p>
+                <p>Yes, Cronbach’s Cronbach’s Alpha (α) is a commonly used metric in behavioral sciences for assessing internal consistency reliability. However, it operates under the assumption of essential tau-equivalence, implying that all test items have an equal influence on the underlying construct. In reality, this assumption is frequently not met, which can result in reliability being either underestimated or overestimated. Moreover, a high Cronbach’s Alpha (α) value does not automatically confirm that a test is unidimensional, though it is often misinterpreted as such by researchers (Hayes & Coutts, 2020).</p>
+                <p>McDonald’s Omega (ω) does not assume that all test items have the same factor loadings, making it a more flexible and accurate measure of reliability. Unlike Cronbach’s Alpha (α), which can be biased when the assumption of equal factor loadings is not met, McDonald’s Omega (ω) provides a more precise estimate by accounting for the true variance in responses. Studies (Dunn, Baguley, & Brunsden, 2014; Graham, 2006; Green & Yang, 2009; McNeish, 2018; Raykov, 1998) suggest that McDonald’s Omega (ω) is particularly useful in psychometric assessments, as it offers more reliable results compared to Cronbach’s Alpha (α).</p>
+
+                <b>Conclusion</b>
+                <p>I tried to explain the statistical term reliability in this text. As I mentioned at the beginning, reliability is a crucial concept not only in everyday life but also in scientific research. Therefore, I believe it is a topic that deserves careful attention. Before discussing reliability itself, I first explained two key concepts that are essential for understanding it: "True Score" and "Standard Error of Measurement".</p>
+                <p>Then, I explored three types of reliability in detail: test-retest reliability, alternate-forms reliability, and inter-rater reliability. Finally, I discussed why McDonald’s Omega (ω) should be preferred over Cronbach’s Alpha (α) when estimating reliability.</p>
+                <p>I hope that reliability is no longer just a vague concept we’ve heard many times before, but rather a clearer and more understandable idea. Wishing you all the best! :)</p>
+
+                <b>References</b>
+                <p class="citation">Cicchetti DV (1994). Guidelines, criteria, and rules of thumb for evaluating normed and standardized assessment instruments in psychology. <i>Psychological Assessment.</i> 6(4):284–290. </p>
+                <p class="citation">Cohen J. (1960). A coefficient of agreement for nominal scales. <i>Educational and Psychological Measurement.</i> 20(1):37–46. </p>
+                <p class="citation">Crocker, L., & Algina, J. (2006). Introduction to Classical and Modern Test Theory; Wadsworth Pub. Co.: <i>Belmont, MA, USA.</i></p>
+                <p class="citation">Dunn, T. J., Baguley, T., & Brunsden, V. (2014). From alpha to omega: A practical solution to the pervasive problem of internal consistency estimation. <i>British Journal of Psychology</i>, 105, 399–412. doi:10.1111/bjop.12046 </p>
+                <p class="citation">Field, A. (2018). <i>Discovering Statistics Using IBM SPSS Statistics (5th edn).</i> Sage Publications Ltd.</p>
+                <p class="citation">Graham, J. M. (2006). Congeneric and (essentially) tau-equivalent estimates of score reliability: What they are and how to use them. <i>Educational and Psychological Measurement</i>, 66, 930–944. doi:10.1177/0013164406288165 </p>
+                <p class="citation">Green, S. B., & Yang, Y. (2009). Commentary on coefficient alpha: A cautionary tale. <i>Psychometrika</i>, 74, 121–135. doi:10.1007/s11336-008-9098-4 </p>
+                <p class="citation">Hallgren, K. A. (2012). Computing inter-rater reliability for observational data: an overview and tutorial. <i>Tutorials in quantitative methods for psychology</i>, 8(1), 23.</p>
+                <p class="citation">Harvill, L. M. (1991). Standard error of measurement: an NCME instructional module on. <i>Educational Measurement: issues and practice</i>, 10(2), 33-</p>
+                <p class="citation">Hayes, A. F., & Coutts, J. J. (2020). Use omega rather than Cronbach’s alpha for estimating reliability. But…. <i>Communication Methods and Measures</i>, 14(1), 1-24.</p>
+                <p class="citation">Krippendorff, K. (1980). Content analysis: An introduction to its methodology. <i>Sage Publications</i>; Beverly Hills, CA. </p>
+                <p class="citation">Landis JR, Koch GG. (1977) The measurement of observer agreement for categorical data. <i>Biometrics</i>. 33(1):159–174. [PubMed: 843571].</p>
+                <p class="citation">Livingston, Samuel A., J. Carlson, and B. Bridgeman (2018). "Test reliability-basic concepts." <i>Research Memorandum No. RM-18-01). Princeton, NJ: Educational Testing Service 8.</i></p>
+                <p class="citation">McNeish, D. (2018). Thanks coefficient alpha, we’ll take it from here. <i>Psychological methods</i>, 23(3), 412.</p>
+                <p class="citation">Raykov, T. (1998). A method for obtaining standard errors and confidence intervals of composite reliability for congeneric items. <i>Applied Psychological Measurement</i>, 22, 369–374. doi:10.1177/014662169802200406.</p>
+                <p class="citation">Turner, R. C., & Carlson, L. (2003). Indexes of item-objective congruence for multidimensional items. <i>International journal of testing</i>, 3(2), 163-171.</p>
+                <p class="citation">Trizano-Hermosilla, I., & Alvarado, J. M. (2016). Best alternatives to Cronbach’s alpha reliability in realistic condi- tions: Congeneric and asymmetrical measurements. <i>Frontiers in Psychology</i>, 7, Article 769. doi:10.3389/ fpsyg.2016.00769.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/Headroom.js"></script>
+    <script src="/js/jQuery.headroom.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/theme-and-loader.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
