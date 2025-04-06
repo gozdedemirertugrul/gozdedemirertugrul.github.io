@@ -28,31 +28,36 @@
         <div class="dot"></div>
     </div>
 
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../../index.html">Gözde Demir Ertuğrul</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div style="background-color: transparent;" class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a href="/index.html#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="/index.html#blog" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="/index.html#contact" class="nav-link">Contact</a></li>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <!-- About -->
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link">Home Page</a>
+              </li>
+      
+              <!-- Dropdown (hover ile açılır) -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="/pages/blogs/reliability.html">Reliability</a></li>
+                  <li><a class="dropdown-item" href="/pages/blogs/validity.html">Validity</a></li>
                 </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link"><span class="color-mode color-mode-icon"></span></a>
-                    </li>
-                </ul>
-            </div>
+              </li>
+      
+              <!-- Contact -->
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+      
+          </div>
         </div>
-    </nav>
+      </nav>
 
 
     <!-- Blog -->
