@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Title and Favicon -->
+    <title>Gözde Demir Ertuğrul</title>
+    <link rel="icon" href="/images/base_site_images/logo.webp" type="image/x-icon" />
+
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="/css/base-site.css" as="style">
+    <link rel="preload" href="/css/tooplate-style.css" as="style">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/css/base-site.css">
+    <link rel="stylesheet" href="/css/tooplate-style.css">
+</head>
+
+<body>
+    <div id="loader" class="loader-light">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <!-- About -->
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link">Home Page</a>
+              </li>
+      
+              <!-- Dropdown (hover ile açılır) -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="/pages/blogs/reliability.html">Reliability</a></li>
+                  <li><a class="dropdown-item" href="/pages/blogs/validity.html">Validity</a></li>
+                </ul>
+              </li>
+      
+              <!-- Contact -->
+              <li class="nav-item">
+                <a href="/index.html#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+      
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- Blog -->
+    <section class="full-screen" id="project">
+        <div class="container row">
+            <img src="/images/blogs/reliability/Reliability.jpeg" class="img-fluid blog-header-image">
+            <div class="col-lg-12 mx-auto">
+                <h2>CTT and IRT</h2>
+                <p><small>April 26, 2025</small></p>
+                <p>
+                    Hello all! Today, we will mention to Classical Test Theory (CTT) and Item Response Theory (IRT). 
+                </p>
+                <p>
+                    First of all, I would like to start with test construction, reliability, validity, and then Classical Test Theory (CTT), which was developed in the 1920s. Then I will cover in depth Item Response Theory (IRT), a new test theory that has emerged over the last four decades and is conceptually stronger than Classical Test Theory(CTT). While the basic concepts of this new approach, which is based on items instead of test scores, are simple, the underlying mathematics are a bit advanced compared to classical test theory. Enough spoilers, let's get started on our IRT adventure. :) But let me tell you in advance that it will take a while, read it without holding your breath and taking deep breaths. :)
+                </p>
+
+                <b>1.	Test Construction</b>
+                <p>
+                    A key starting point in constructing an effective (language) test is the clear definition of the specific (linguistic) ability or knowledge domain to be measured. This core concept, known as the construct, is essential for informing the creation of appropriate test tasks and items. If the construct is vague or not properly defined, the test may not accurately represent the intended skill, reducing the value and interpretability of the scores (Fulcher & Davidson, 2007). Once the construct is established, test tasks should be developed to reflect real-world uses of language when applicable and to suit the background and needs of the test-takers. For example, when measuring academic writing, tasks might include argument development, logical structure, and use of references, rather than simply testing sentence grammar (Cambridge English Language Assessment, 2015).
+                </p>
+                <p>
+                    Reliability and validity are core concerns throughout test development. Validity relates to the accuracy of what the test measures, while reliability refers to score consistency across administrations or scorers (Weir, 2005). To ensure both, instructions should be clear, content must align with the construct, and scoring must be guided by transparent and consistent criteria. Trial administrations help identify weak items, time issues, or misunderstandings before full deployment.
+                </p>
+                <p>
+                    Productive language skills such as speaking and writing require specific scoring procedures. Analytic or holistic rubrics should be selected based on the test purpose and designed to reflect relevant dimensions of performance. Raters need proper training to apply these consistently, which helps reduce scoring bias and improve fairness (Alderson, Clapham, & Wall, 1995).
+                </p>
+                <p>
+                    Beyond theoretical planning, logistical factors such as the length of the test, item quantity, and constraints related to administration also influence how the final form of the assessment is structured.After piloting, test data should be reviewed both statistically and conceptually. Items that do not function as expected may need to be revised or replaced, while maintaining coverage of all important content areas (Bachman & Palmer, 1996).
+                </p>
+                <p>
+                    Effective test construction is an iterative process that balances theoretical soundness, empirical evidence, and real-world constraints. Through careful planning, review, and continuous refinement, tests can be made fair, reliable, and suitable for their intended purposes.
+                </p>
+                
+                <b>2.	Reliability</b>
+                <p>
+                    In IRT, reliability is understood as how precisely an instrument measures across different levels of the underlying trait (θ). This precision is not constant but varies depending on where a person falls on the trait continuum. It is illustrated through item information curves, which highlight the trait levels where each item is most informative. These curves can be generated for individual items, groups of items, or entire scales. They are especially helpful when developing shorter or adaptive tests, as they help ensure sufficient precision across the intended range of the trait. Mathematically, the standard error of measurement is the inverse of the square root of the item information (Edelen & Reeve, 2007).
+                </p>
+
+                <b>3.	Validity</b>
+                <p>
+                    Quality indicators are essential in both social work research and practice. This text adopts a broad, argument-based view of measurement validity as proposed by Messick (1988), which frames validity as the appropriateness of using test scores to draw research conclusions and make practical decisions. According to the Standards for Psychological and Educational Testing (American Educational Research Association et al., 2014), validity is defined as the extent to which evidence and theoretical rationale support the interpretation of test scores for their intended purposes. According to the Standards for Educational and Psychological Testing (American Psychological Association et al. 1999), validity refers to "the appropriateness, meaningfulness, and usefulness of the specific inferences made from test scores” (p.9). There are three types of validity;
+                </p>
+
+                <b>3.1.	Content Validity</b>
+
+                <p>
+                    Content validity refers to the degree to which the items in a test accurately represent the content area or performance domain the test aims to assess (Crocker & Algina, 2006). Rather than relying on statistical relationships, content validity is typically evaluated through expert judgment. It ensures that test items comprehensively reflect the scope and structure of the intended construct, particularly in educational and psychological measurement (Crocker & Algina, 2006).
+                </p>
+                
+                <p style="margin-bottom: 0.2em;">
+                    A structured process is often followed to establish content validity:                
+                </p>
+                <ul>
+                    <li>Clearly defining the performance domain of interest</li>
+                    <li>Selecting independent and qualified experts in the relevant content area</li>
+                    <li>Creating a formal framework—such as a table of specifications—that aligns items with specific objectives or content categories</li>
+                    <li>Having experts review whether the test items adequately cover each objective</li>
+                    <li>Summarizing expert judgments through both qualitative and quantitative analyses</li>
+                </ul>               
+
+
+                <p>
+                    One frequently used quantitative method is the Index of Item–Objective Congruence (IOC). The formula is:
+                </p>
+                <p>
+                    \( \frac{N}{2N - 2} (\mu_k - \mu) \)
+                </p>
+                <p style="text-align: right">Eq. 1</p>
+
+                <p style="margin-bottom: 0.2em;">
+                    Where:
+                </p>
+                <ul>
+                    <li>\({N}\)= total number of objectives,</li>
+                    <li>\(\mu_k\) = mean rating of item i on the kth objective by the panel,</li>
+                    <li>\(\mu\) = average rating of item i across all objectives.</li>
+                </ul>
+
+                
+                <p>This index helps identify how strongly each item aligns with the intended objective. A low or negative value suggests misalignment and may indicate a problem with the item or the objective itself.</p>
+                <p>
+                    However, one challenge in establishing content validity is ensuring that the objectives themselves fully and accurately represent the domain of interest. If the objectives are too narrow or incomplete, even well-written items cannot compensate for that limitation (Anastasi & Urbina, 1997).
+                </p>
+
+                <b>3.2.	Criterion-Related Validity</b>
+                <p>Criterion-related validity describes how effectively a test score corresponds with a real-life behavior or performance that the test intends to reflect, even though it does not measure it directly (Crocker & Algina, 2006). This type of validity is especially important when test results are used to make future predictions or immediate classifications, such as in educational or occupational settings. The process requires selecting a meaningful external criterion, testing a relevant sample, and evaluating the strength of association between the test outcomes and the criterion (Crocker & Algina, 2006). This form of validity is typically divided into two types: predictive and concurrent validity, depending on when the criterion is measured.</p>
+
+                <b>3.2.1.	Predictive Validity</b>
+                <p>Predictive validity refers to how well a test can estimate an individual's future performance on a related task. In this case, the test is administered before the criterion data are collected. For example, if standardized admission tests such as the SAT are found to correlate with students’ later academic performance, such as cumulative GPA, this indicates that the test has a degree of predictive validity. A correlation of approximately r = .40 between SAT scores and college GPA, as reported in several studies, reflects a moderate predictive relationship (Crocker & Algina, 2006). This form of validity is commonly used in contexts such as admissions, recruitment, and certification procedures.</p>
+
+                <b>3.2.2.	Concurrent Validity</b>
+                <p>Concurrent validity addresses the relationship between test scores and criterion data collected at the same point in time. An example might involve administering a skills-based test to professionals, such as airplane navigators, and simultaneously evaluating their actual job performance. A significant positive correlation between the two would indicate that the test possesses concurrent validity (Crocker & Algina, 2006). This type is frequently applied when it is not practical to wait for long-term outcomes, especially in clinical, educational, or employment screening settings.</p>
+
+                <b>3.3.	Construct Validity </b>
+
+                <p>
+                    Construct validity refers to how accurately a test measures the theoretical concept or construct it is intended to assess. It requires both a clear definition of the construct and empirical evidence supporting the claim that the test reflects that construct (Cronbach & Meehl, 1955). Definitions of constructs may be both syntactic, referring to how the construct is embedded within a broader theory, and operational, referring to how it is specifically observed or measured in practice (Messick, 1995).Construct validity seeks agreement between a theoretical concept and a specific measurement. 
+                </p>
+                
+                <p>
+                    As stated in the Standards, validity is the most crucial factor when designing and assessing tests, and any claims about validity must be directly related to the specific interpretations and intended uses of the test results (p. 11). 
+                </p>
+
+                <p>
+                    Bean & Bowen’s article (2021) highlights how combining Item Response Theory (IRT) and Confirmatory Factor Analysis (CFA) provides a comprehensive evaluation of scales with dichotomous or ordinal items. While CFA is commonly used in social work research, IRT though widely applied in fields like education, healthcare, and psychology remains underutilized despite its valuable contributions to understanding item and scale quality.
+                </p>
+
+            
+                <p>
+                    Confirmatory Factor Analysis (CFA) is widely used in social work research to test how well observed item responses represent underlying constructs, especially when items are ordinal or dichotomous. CFA is a latent variable modeling technique that assumes scores on sets of related questionnaire items reflect a common complex, unobservable phenomenon (construct). Unlike Exploratory Factor Analysis (EFA), CFA allows for more complex model testing and offers flexible estimation methods suited to non-normally distributed data (Bean & Bowen, 2021).
+                </p>
+                
+                <p>
+                    Item Response Theory (IRT) is known as a modern measurement method, but it has been developed since the early 1900s to address the limits of Classical Test Theory (CTT), especially in education. IRT uses statistical models to explain how people respond to items based on an unobserved (latent) trait, called theta (θ), such as social isolation. Each person is assumed to have a certain level of this trait, which affects the chance of choosing a specific response. Items are described by parameters:
+                </p>
+
+                <li>Item Discrimination \((a)\)</li>
+                
+                <p>
+                    The discrimination parameter \((a)\), which shows how well an item separates individuals with different trait levels, and the difficulty or location parameter. Item discrimination refers to how effectively the response options of an item can separate individuals based on their levels of the underlying trait being measured. In other words item discrimination refers to how much an item can separate individuals based on their level of the trait being measured. When an item clearly distinguishes between low and high trait levels, it offers more useful information. However, discrimination alone does not show which part of the trait range the item is focused on. That’s where item difficulty becomes important has (Bean & Bowen, 2021).
+                </p>
+                
+                <div>
+                    <b>Figure 1</b> </br>
+                    <i style="margin-top: 0.2em;">A unidimensional factor model of latent variable T with k observed indicators (Xi) (Livingston, et al., 2018).</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/TargetTraitA.png" >
+                <img src="/images/blogs/ctt_irt/TargetTraitB.png" >
+           
+                    
+
+                <li>Item Difficulty  \((b)\)</li>
+                
+                <p>
+                    Item difficulty (b), which shows the point on the θ scale where a person has a 50% chance of choosing a certain response. Polytomous items (with more than two response options) have several location parameters depending on how many categories the item has (Bean & Bowen, 2021).
+                </p>
+                
+                <p>
+                    IRT models are usually estimated using a method called full information marginal maximum likelihood. In Bean & Bowen’s (2021) study, the graded response model (GRM) was used, which is suitable for items with ordered response categories like Likert scales. After estimating the model, researchers can check how well it fits the data and explore several useful outputs. These include item and test information, standard errors, conditional reliability, and person scores on the θ scale. Researchers can also examine whether items work differently for different groups (differential item functioning). These results help give a detailed picture of how well the items and the full scale measure the intended trait (Bean & Bowen, 2021).
+                </p>
+
+                <p>
+                    Item difficulty indicates the point along the trait continuum where the item gives the most information. For example, items with high difficulty provide data about people with high trait levels, while items with low difficulty inform us about those with lower levels.
+                </p>
+
+                <div>
+                    <b>Figure 2</b> </br>
+                    <i style="margin-top: 0.2em;">Diagram Showing Item Discrimination </i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/ItemDificulty.png" >
+
+                <p>
+                    Figure 2 shows item discrimination (arrow height) and difficulty (arrow position) for four items labeled A (low difficulty, moderate discrimination), B (moderate difficulty, high discrimination), C (moderate difficulty, low discrimination), and D (high difficulty, moderate discrimination). A visual representation of these concepts is shown in Figure. In the diagram, the horizontal line shows the trait continuum, and the vertical line shows the amount of information provided. Each arrow represents one item. The height of the arrow shows how discriminative the item is, and its position indicates its difficulty. The diagram illustrates four items, each represented by an arrow, where the height of the arrow indicates the item's discrimination level and its position along the horizontal axis reflects its difficulty. Item A has low difficulty and moderate discrimination; Item B shows moderate difficulty with high discrimination; Item C has moderate difficulty but low discrimination; and Item D represents high difficulty with moderate discrimination (Penfield, 2013).
+                </p>
+
+                <p>
+                    In short, items differ in both how much and where they provide information. Effective assessments include a variety of items to cover different trait levels with high precision (Penfield, 2013).
+                </p>
+
+                <b>Guidelines for Interpreting Item Parameter Values </b>
+
+                <p>
+                    Item parameters in IRT help describe how a question behaves, and their values can be linked to verbal labels for easier interpretation. For example, discrimination values can be classified into categories like “low” or “high” based on specific numerical ranges, which are meaningful in the logistic model. If a normal ogive model is used, these values should be divided by 1.7. Interpreting difficulty is more complex, as terms like “easy” or “hard” are relative and depend on the ability scale. In IRT, item difficulty refers to the ability level at which a person has a 50% chance of answering correctly (or (1 + c) / 2 in the 3PL model). This means the item is most informative for examinees near that ability level. For example, an item with a difficulty of –1 targets lower-ability individuals, while a difficulty of +1 indicates usefulness for higher-ability test takers. The discrimination value shows how well the item separates individuals around its difficulty point. Lastly, the guessing parameter (c) represents the chance of answering correctly by guessing, and is directly interpreted as a probability (e.g., c = .12 means 12% chance by guessing at any ability level) (Baker, 2001).
+                </p>
+
+                 <div style="margin-bottom: 1em;">
+                    <b>Table 1</b> </br>
+                    <i style="margin-top: 0.2em;" > Labels for item discrimination (a)  parameter values</i>   
+                </div>
+
+                <table border="1" cellpadding="8" cellspacing="0" style="margin-bottom: 2em;">
+                <thead>
+                    <tr>
+                    <th>Verbal Label</th>
+                    <th>Range of Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>None</td>
+                    <td>0</td>
+                    </tr>
+                    <tr>
+                    <td>Very Low</td>
+                    <td>0.01 – 0.34</td>
+                    </tr>
+                    <tr>
+                    <td>Low</td>
+                    <td>0.35 – 0.64</td>
+                    </tr>
+                    <tr>
+                    <td>Moderate</td>
+                    <td>0.65 – 1.34</td>
+                    </tr>
+                    <tr>
+                    <td>High</td>
+                    <td>1.35 – 1.69</td>
+                    </tr>
+                    <tr>
+                    <td>Very High</td>
+                    <td>&gt; 1.70</td>
+                    </tr>
+                    <tr>
+                    <td>Perfect</td>
+                    <td>&#x221E;</td> <!-- Infinity symbol -->
+                    </tr>
+                </tbody>
+                </table>
+
+                 <div style="margin-bottom: 1em;">
+                    <b>Table 2</b> </br>
+                    <i style="margin-top: 0.2em;" > Labels for item discrimination (a)  parameter values</i>   
+                </div>
+
+                <table border="1" cellpadding="8" cellspacing="0" style="margin-bottom: 2em;">
+                <thead>
+                    <tr>
+                    <th>b Value Range</th>
+                    <th>Interpretation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>b ≈ 0</td>
+                    <td>Average difficulty</td>
+                    </tr>
+                    <tr>
+                    <td>–2 ≤ b ≤ +2</td>
+                    <td>Acceptable difficulty range for most tests</td>
+                    </tr>
+                    <tr>
+                    <td>b &lt; –2 or b &gt; +2</td>
+                    <td>May be considered too easy or too difficult</td>
+                    </tr>
+                    <tr>
+                    <td>–3 ≤ b ≤ +3</td>
+                    <td>Commonly used inclusion range</td>
+                    </tr>
+                    <tr>
+                    <td>b &lt; –3 or b &gt; +3</td>
+                    <td>Often excluded from final analyses due to extremity</td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <b>Estimating Item Parameters</b>
+                
+                <p>Understanding how test questions behave involves finding out how difficult they are, how sharply they can tell apart high and low performers, and how much guessing might affect responses. These characteristics are not guessed they’re calculated based on actual test-taker responses. To do this, researchers use special statistical tools that gradually adjust item values until they fit the observed data well. Since these values depend on the variety and number of responses, results are more trustworthy when many different participants are included in the analysis (Baker, 2001).</p>
+
+                <p>When items are modeled in more detail, like when the chance of guessing is also considered, the process becomes more advanced. But the main aim stays the same: to describe each question in a way that reflects how it works across the full range of ability. Doing this well helps make tests more accurate and fair. It also ensures that scores tell us something meaningful about what test-takers really know or can do (Baker, 2001).</p>
+
+
+                <b>3.3.1.	Confirmatory Factor Analysis (CFA)</b>
+
+
+                <p>
+                    The null hypothesis in a CFA analysis is that the matrix implied or reproduced by the data and the specified model is statistically identical to the input or analysis matrix. The overall model fit indicates how accurately the proposed model can replicate the original polychoric correlation matrix. Ideally, researchers aim to retain the null hypothesis, suggesting no significant difference between the two matrices (Bean & Bowen, 2021). Key components about CFA;
+                </p>
+                
+                <p>
+                     A nonsignificant chi-square (χ²) result is preferred; however, it is frequently not achieved in large samples, even when other fit indices suggest a good model fit (Bean & Bowen, 2021).
+                </p>
+
+                <p>
+                    Loadings provide useful information to researchers; they indicate how much scores on an item change with a one-unit change in the latent factor. Items with higher loadings are more sensitive to changes in levels of the latent construct the items measure and play a larger role in defining the construct than items will lower loadings (Bean & Bowen, 2021). 
+                </p>
+
+                <p>
+                    Thresholds represent the points along the underlying social isolation scale where each response option becomes likely. Specifically, a threshold marks the level of social isolation at which a respondent has a 50% probability of moving from one response category (such as “No, never”) to the next higher category (like “Yes, sometimes” or “Yes, often”) (Bean & Bowen, 2021).
+                </p>
+
+                <p>
+                    Item R² values, also known as squared multiple correlations (SMCs), show how much of each item's variance is explained by the underlying factor like social isolation. These are calculated by squaring the standardized factor loadings. Higher R² values indicate that an item more effectively measures the factor. While there is no strict rule, values above .50 are generally preferred. The portion of variance not explained by the factor (error or residual variance) is simply what remains after subtracting the R² from 1 (Bean & Bowen, 2021).
+                </p>
+
+                <p>
+                    Root Mean Square Error of Approximation (RMSEA) is a fit index used in confirmatory factor analysis to assess how well a proposed model matches the data. A lower RMSEA value shows a better model fit, with values below 0.06 generally considered acceptable. In the study by Bean and Bowen (2021), the RMSEA value for the model was 0.05, suggesting a good fit. However, they pointed out that the upper limit of the 90% confidence interval was slightly above the suggested threshold, emphasizing the importance of evaluating all fit indices collectively when interpreting model adequacy (Bean & Bowen, 2021).
+                </p>
+                
+                <p>
+                    Comparative Fit Index (CFI) evaluates how well a tested model fits the data in comparison to a baseline model. It adjusts for sample size and complexity, with values above 0.95 indicating excellent fit. In this study, the CFI was reported as 0.99, which strongly supports the adequacy of the model. Bean and Bowen (2021) highlighted this as one of the clearest indicators that their factor model was appropriate for the data .
+                </p>
+                
+                <p>
+                    Tucker-Lewis Index (TLI), like CFI, is used to assess model fit by comparing it to a null model, but it penalizes for model complexity. Values near or above 0.95 suggest that the model represents the data well. In their research, Bean and Bowen (2021) reported a TLI value of 0.98, reinforcing the conclusion that their confirmatory factor model had strong statistical support.
+                </p>
+
+                <b>4.	Classical Test Theory and Related Models</b>
+                
+                <p>
+                    Classical Test Theory (CTT) provides a framework to understand how test scores are formed. It assumes that a person’s observed score (X) consists of three components: the true score (T), which reflects their actual ability, and the error score (E), which represents random influences. This relationship is written as:
+                </p>
+
+                <p>
+                    \( X = T + E \)
+                </p>
+                <p style="text-align: right">Eq. 2</p>
+
+                <p>
+                    To use this equation, certain assumptions are made: (1) true scores and error scores are not related, (2) the average error score in the group is zero, and (3) error scores on parallel tests are not correlated. Under these rules, the true score becomes the expected average score across different versions of the same test (Hambleton & Jones, 1993).
+                </p>
+
+	            <p>
+                    A parallel form means a test that covers the same material, gives the same true score, and has the same level of error as another form. Based on this model, several important testing formulas have been developed, such as the Spearman-Brown formula for estimating reliability when test length is changed (Hambleton & Jones, 1993).
+                </p>
+
+                <p>
+                    Over time, CTT has evolved. Some models have changed original assumptions or added statistical distributions (e.g., binomial or normal errors). One special version, the binomial test model, helps in tests that classify students, such as mastery tests. Other models study different sources of error, such as scoring differences, item design, or test administration, and analyze how these affect score reliability (Hambleton & Jones, 1993).
+                </p>
+
+                <p>
+                    CTT usually focuses on whole test scores rather than individual items. Still, it includes item-level tools, like item difficulty and item discrimination, which help improve test quality. These statistics are useful but depend on the group being tested. If the sample is not similar to the actual population, these values may be misleading. To help with this, some tests include anchor items questions used across versions to compare results more accurately, though this method has its limits (Hambleton & Jones, 1993).
+                </p>
+
+                <p>
+                    One major strength of CTT is that it works well under realistic testing conditions and is supported by many years of research. Its main weakness is that both person and item statistics depend on the test and the sample, which can limit how widely the results can be used. Despite this, CTT remains a valuable approach in educational measurement (Hambleton & Jones, 1993).
+                </p>
+
+                
+                <b>5.	Item Response Theory and Related Models </b>
+
+
+                <p>
+                    Item analysis plays an important role in test development by evaluating how well individual items perform. The goal is to ensure that each item contributes effectively to measuring the intended psychological construct. As Crocker and Algina (2006) noted, analyzing item characteristics helps improve both the reliability and validity of a test. Poorly performing items may lead to inaccurate interpretations of test scores, so they should be identified and either revised or removed. 
+                </p>
+
+                <p>
+                    Item response theory (IRT) is the most widely used measurement theory. Unlike classical measurement models, IRT models include these desirable features: item and test characteristics are group independent, examinee scores are not test dependent, item analysis is performed at the item level rather than at the test level, and a measure of precision for each ability score is provided (Hambleton & Swaminathan, 1985; Hambleton, Swaminathan, & Rogers, 1991).
+                </p>
+
+                <b>5.1.	The Item Characteristic Curve (ICC)</b>
+
+
+                <p>
+                    The item characteristic curve (ICC), or trace line, is the basis of IRT, and is most commonly defined as a logistic function that models the relationship between a person’s response to an item and his/her level on the construct measured by the scale. For items with dichotomous re- sponse options, the two parameter logistic (2PL) model is often applied. This model yields a trace line that is de- scribed by the location (b) and slope (a) parameters. The b parameter (also called the threshold parameter) is the point along the ICC at which the probability of a positive re- sponse for a dichotomous item is 50%. The larger the location parameter, the more of the measured construct (often denoted as h) a respondent must have to endorse that item. The a parameter (also called the discrimination parameter) represents the slope of the ICC at the value of the location parameter and indicates the extent to which the item is related to the underlying construct. A steeper slope indicates a closer relationship to the construct and therefore a more discriminating item (Edelen & Reeve, 2007). 
+                </p>
+                
+                <p>
+                    In many psychological and educational measurement process, there is one variable whose name is unobservable or latent trait. This latent trait cannot be measured directly. This type of variables could described as “ability” in IRT (Baker, 2001). 
+                </p>
+
+                <p>
+                    To measure how much a person has of a latent trait, it is necessary to have a scale of measurement, that is, a ruler with a certain metric. For a number of technical reasons, defining the scale of measurement, the numbers on the scale, and the quantity of the trait that the numbers represent is not an easy task. To solve this problem, it will be necessary to define a simple scale of basic ability. Whatever the ability, it will be assumed that it can be measured on a scale having a zero midpoint, a unit of measurement, and a range from negative infinity to positive infinity. Since there is a unit of measurement and an arbitrary zero point, such a scale is said to exist at the level of the range of measurement (Baker, 2001).
+                </p>
+
+                <p>
+                    The basic idea here is that if we could physically determine a person's ability, this scale could be used to tell how much ability a particular person had, and the abilities of several people could be compared. Although the theoretical range for ability is from negative infinity to positive infinity, practical considerations usually limit the range of values to between -3 and +3 (Baker, 2001).
+                </p>
+
+                <p>
+                    The generally accepted approach to measuring an ability is to develop a test consisting of a series of items (questions). Each of these items measures an aspect of the particular ability of interest. From a purely technical point of view, such items should be free-response items, in which the examinee can write any response that seems appropriate. The test scorer must then decide whether the response is correct. If an item response is determined to be correct, the examinee receives one point; an incorrect response receives zero points, meaning the item is scored dichotomously. According to classical test theory, an examinee's raw test score will be the sum of the scores from the items on the test. According to item response theory, the primary interest is whether the examinee answered each item correctly, rather than the raw test score. This is because the basic concepts of item response theory are based on the individual items on a test, not on the sum of the item responses as a test score (Baker, 2001).
+                </p>
+                
+                <p>
+                    From a practical standpoint, free-response items are difficult to use in a test. In particular, they are difficult to score reliably. As a result, most tests used under item response theory consist of multiple-choice items. These are scored dichotomously: the correct response receives one point, and distractors each receive zero points. Dichotomously scored items are often called dichotomous items (Baker, 2001).
+                </p>
+                
+                <p>
+                    A reasonable assumption is that each examinee who responds to a test item has some amount of the underlying ability. Therefore, each examinee can be thought of as having a score, a numerical value that places him or her somewhere on the ability scale. This ability score will be denoted by the Greek letter theta (θ) or, è. At each ability level, there will be a certain probability that an examinee with that ability will give a correct response to the item. This probability will be denoted by P(è). In the case of a typical test item, this probability will be small for examinees with low ability and large for examinees with high ability. If P(è) is plotted as a function of ability, the result will be a smooth S-shaped curve, as shown in Figure 3. The probability of a correct response is close to zero at the lowest ability levels. At the highest ability levels, the probability of a correct response increases until it approaches 1. This S-shaped curve describes the relationship between the probability of a correct response to an item and the ability scale. In item response theory, it is known as the item characteristic curve. Each item in a test will have its own item characteristic curve (Baker, 2001). Figure 3 illustrates Item Characteristic Curve (ICC).
+                </p>
+
+                 <div>
+                    <b>Figure 3</b> </br>
+                    <i style="margin-top: 0.2em;">Item Characteristic Curve </i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/Item Characteristic Curve.png" >
+                
+                <p>
+                    The Item Characteristic Curve (ICC) is the basic building block of item response theory; all other structures of the theory depend on this curve. An item characteristic curve has two technical properties used to describe it. The first is the item difficulty. According to item response theory, the difficulty of an item describes where the item functions on the ability scale. For example, an easy item functions among low ability examinees and a difficult item functions among high ability examinees; thus, difficulty is an index of position. The second technical property is discrimination, which describes how well an item discriminates between examinees with abilities below the item position and examinees with abilities above the item position. This property essentially reflects the steepness of the item characteristic curve in its middle section. The steeper the curve, the better the item discriminates. The flatter the curve, the less the item discriminates because the probability of a correct response at low ability levels is about the same as at high ability levels. Using these two descriptors, we can describe the general shape of the item characteristic curve. These descriptors are also used to discuss the technical characteristics of an item. It is important to note that these two properties say nothing about whether the item actually measures an aspect of the underlying ability; that is a matter of validity. These two properties simply describe the shape of the item characteristic curve (Baker, 2001).
+                </p>
+                
+                <p>
+                    Based on the knowledge that item difficulty is an index of position, Figure 4. shows three item characteristic curves on the same graph. They all have the same level of discrimination, but they differ in difficulty. The curve on the left represents an easy item, as the probability of a correct response approaches 1 for low-ability candidates and 1 for high-ability candidates. The middle curve represents an item of medium difficulty, as the probability of a correct response is low at the lowest ability levels, around .5 in the middle of the ability scale and close to 1 at the highest ability levels. The curve on the right represents a difficult item. The probability of a correct response is low for most of the ability scale and only increases as higher ability levels are reached. Even at the highest ability level shown (+3), the probability of a correct response is only .8 for the most difficult item (Baker, 2001).
+                </p>
+                
+                <div>
+                    <b>Figure 4</b> </br>
+                    <i style="margin-top: 0.2em;">Three item characteristic curves with the same item discrimination and different levels of difficulty</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/CurevesDiffLevelsOfDifficulty.png" >
+
+                <p>
+                    Discrimination concepts are presented in Figure 5. This figure contains three item characteristics that have the same difficulty but differ in item discrimination. The upper curve has a high multiplication of skilled correct response characteristics with the curve quite steep in the middle and very rapid change. Slightly to the left of the center of the curve, the probability of a correct response is much less than .5, and slightly more to the right, the probability is much more reliable than .5. The middle curve represents an item with a moderate level of discrimination. The slope of this curve changes much less than the previous curve, and the probability of a correct answer at ability level ability changes less dramatically than the previous curve. However, the probability of a correct answer is close to zero for test takers with the lowest ability and close to 1 for test takers with the highest ability. The third represents an item with low discrimination. The slope of the curve varies across all ability changes that involve multiple dimensions and the probability of a correct answer. Even at low ability levels, the probability of a correct answer is reasonably large and increases only slightly when high ability levels are reached. The reader should be warned that although it only shows an ability range from -3 to +3, the theoretical ability range is from negative infinity to positive infinity. Therefore, all item attribute curves of the type used here actually become asymptotic to probability zero in one tail and probability 1.0 in the other tail. The limited range in the numbers used is only necessary to ensure that the curves fit the computer image reasonably well (Baker, 2001).
+                </p>
+
+                <div>
+                    <b>Figure 5</b> </br>
+                    <i style="margin-top: 0.2em;">Three item characteristic curves with the different item discrimination and same levels of difficulty</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/CurvesSameLevelsOfDifficulty.png" >
+
+
+                <p>
+                    There is a special case of interest: an item with perfect discrimination in Figure 6. The item characteristic curve of such an item is a vertical line at a point along the ability scale. Figure 6. shows such an item. To the left of the vertical line, the probability of a correct response at è = 1.5 is zero; to the right of the line, the probability of a correct response is 1. The item therefore discriminates perfectly between examinees whose abilities are above and below 1.5 ability scores. Such items would be ideal for discriminating between examinees whose abilities are just above and below 1.5. However, such an item would not discriminate between examinees whose abilities are above 1.5 or those whose abilities are below 1.5. (Baker, 2001)
+                </p>
+
+                <div>
+                    <b>Figure 6</b> </br>
+                    <i style="margin-top: 0.2em;">An item with perfect discrimination at è = 1.5</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/PerfectDiscrimination.png" >
+
+                <p>
+                    Different terms are used for difficulty and discrimination levels. For difficulty, very easy, easy, medium, hard, very hard are used, while for discrimination, none, low, moderate, high, perfect are used (Baker, 2001).
+                </p>
+
+                <b>5.2.	Item Characteristic Curve Models/ The Performance of IRT Model Selection Methods With Mixed-Format Tests</b>
+
+                <p>
+                    Model selection is a key step for researchers aiming to accurately reflect their data. Although not a new concept, it has been widely studied in areas such as multiple regression, multilevel modeling, and structural equation modeling. More recently, interest in model selection has extended to Item Response Theory (IRT), where choosing the wrong model can result in misleading interpretations and flawed outcomes in areas like parameter estimation and person-fit analysis. Since different IRT models are available, selecting the most suitable one is essential for properly evaluating test-taker performance. Although previous studies have explored model selection methods for either dichotomous or polytomous IRT models separately, there has been no known research on how these methods apply to mixed-format IRT models tests that include both multiple-choice and constructed-response items, Therefore, this article aims to investigate how model selection criteria can be used when comparing mixed-format IRT models (Whittaker et al., 2012).
+                </p>
+
+                <b>Dichotomous IRT models or polytomous IRT models </b>
+
+                <p>
+                    There is limited research on relative model selection in the context of Item Response Theory (IRT), especially when comparing different model fit indices. Most existing studies have focused on either dichotomous or polytomous IRT models separately. For example, Kang and Cohen (2007) conducted a simulation study to evaluate the effectiveness of various model selection indices—including the likelihood ratio test (LRT),  Akaike’s information criterion (AIC; Akaike, 1973), the Bayesian information criterion (BIC; Schwarz, 1978), the cross-validation log likelihood (CVLL; Bolt, Cohen, & Wollack, 2001; Geisser & Eddy, 1979; Gelfand & Dey, 1994), and the deviance information criterion (DIC; Spiegelhalter, Best, Carlin, & van der Linde, 2002)—in choosing the correct dichotomous IRT model (1PL, 2PL, or 3PL). Their findings showed that while all indices performed well for 1PL and 2PL models, CVLL was the most accurate for identifying the correct 3PL model, followed by DIC. In contrast, LRT and AIC were less effective, and BIC failed to correctly select the 3PL model under any condition. Overall, CVLL demonstrated the highest accuracy across conditions (Whittaker et al., 2012).
+                </p>
+
+                <p>
+                    Whittaker, Chang, and Dodd’s study (2012) investigates how well various model selection methods perform when applied to mixed-format tests that include both multiple-choice (dichotomous) and constructed-response (polytomous) items. Since each item format may require a different IRT model (e.g., 3PL for dichotomous items and GPC for polytomous items), the study examines the effectiveness of six model selection criteria—Likelihood Ratio Test (LRT), AIC, AICC, BIC, HQIC, and CAIC—across several conditions involving different sample sizes, scoring combinations, and model complexities. The research uses simulation data based on the 2000 NAEP math exam and compares three IRT model combinations: 1PL/PC, 2PL/GPC, and 3PL/GPC (Whittaker et al., 2012).
+                </p>
+
+                <p>
+                    The results show that all criteria reliably selected simpler models like the 1PL and PC across test formats, but struggled with identifying more complex models such as 3PL or 3PL/GPC. The BIC and CAIC tended to favor simpler models even when more complex models were correct, while AIC, AICC, and LRT showed better—but still inconsistent—performance depending on sample size and the mix of item types. The LRT, in particular, showed improved performance with larger samples but was still sensitive to parameter estimation issues, especially for guessing parameters in the 3PL model (Whittaker et al., 2012).
+                </p>
+
+                <p>
+                    Li et all., 2009’s study explores the challenges of selecting appropriate models in Item Response Theory (IRT) when analyzing tests that include polytomous (multi-category) items. While much of the past research focused on dichotomous models, the growing use of rating scales and partial credit scoring in assessments has increased the need to evaluate model selection methods suitable for polytomous data. The authors specifically examine the effectiveness of commonly used indices—Akaike’s Information Criterion (AIC), Bayesian Information Criterion (BIC), Deviance Information Criterion (DIC), Cross-Validation Log Likelihood (CVLL), and the Likelihood Ratio Test (LRT)—in correctly identifying the most appropriate IRT model. Through simulation studies, they test these criteria under different conditions, such as sample size, number of items, and model complexity (Kang & Cohen, 2007).
+                </p>
+
+                <p>
+                    Findings indicate that no single model selection criterion performs optimally in every situation. For instance, BIC tends to select more parsimonious models, which may lead to underfitting when more complex models are appropriate. In contrast, AIC and CVLL are more likely to choose complex models, which can result in overfitting the data. The LRT showed more reliable performance with larger samples, but was less effective with small sample sizes or when detecting differences between closely related models (Li et all., 2009). Given these trade-offs, the authors recommend that researchers apply multiple model selection criteria in combination rather than relying on a single index, especially when dealing with mixed-format or polytomous item structures (Kang & Cohen, 2007). The study underscores the importance of contextual factors in model selection and calls for more nuanced approaches in real-world assessment applications (Li et all., 2009).
+                </p>
+
+                <p>
+                    Overall, the findings highlight that no single selection method works best in all scenarios, particularly for complex mixed-format assessments. The authors recommend caution when relying solely on model selection criteria and suggest that researchers also consider item-level fit statistics and model plausibility. Future research should explore combining multiple evaluation methods or incorporating additional criteria like CVLL or DIC for a more robust assessment of model fit (Whittaker et al., 2012).
+                </p>
+
+                <p>
+                    There are three mathematical equation for the relation of the probability of correct response to ability. Each model uses one or more parameters whose numerical values define a specific element characteristic curve. Such mathematical models are needed to develop a measurement theory that can be precisely defined and is suitable for further growth. In addition, these models and their parameters provide a means of conveying information about the technical properties of an element (Baker, 2001).
+                </p>
+
+                <b>5.2.1.	Logistic Function</b>
+
+                <p>
+                    In item response theory, the standard mathematical model for the item characteristic curve is the cumulative form of the logistic function. This logistic fuction was first used as a model for the item characteristic curve in the late 1950s and became the model of choice because of its simplicity. The two-parameter logistic model equation is given by equation 3 below (Baker, 2001).
+                </p>
+
+                <p>
+                    \( P(\theta) = \frac{1}{1 + e^{-L}} = \frac{1}{1 + e^{-a(\theta - b)}} \)
+                </p>
+                <p style="text-align: right">Eq. 3</p>
+
+                <i>Where e is the constant 2.718 <br>
+                    b= the difficulty parameter (location) <br>
+                    a= the discrimination parameter (higher values reflect more discriminating items) (slope) <br>
+                    L= a(è-b) is the logistic deviate and  <br>
+                    è = an ability level <br>
+                </i>
+
+                <p>
+                    Although, generally, range of difficulty parameter could be -3 ≤ b ≤ +3, the theoretically the range of it is -4 ≤ b ≤ +4. 
+                </p>
+
+                <p>
+                    Because the item characteristic curve is S-shaped, the slope of the curve varies with ability level and reaches a maximum value when ability level equals item difficulty. Therefore, the discrimination parameter does not represent the overall slope of the item characteristic curve. This parameter is proportional to the slope of the item characteristic curve at è = b. The actual slope at è = b is a/4, but considering a to be the slope at b is an acceptable approximation that simplifies practical interpretation of the parameter. The theoretical range of values for this parameter is -4<= a <= +4, but the usual range seen in practice is -2.80 to +2.80. Figure 7 shows ICC for two parameter model.
+                </p>
+
+                <div>
+                    <b>Figure 7</b> </br>
+                    <i style="margin-top: 0.2em;">Item Characteristic Curve for Two-Parameter Model</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/CurveforTwoParameterModel.png" >
+
+
+                <b>5.2.2.	The Rasch, or One-Parameter, Logistic Model </b>
+
+                <p>
+                    In the Rash model, the discrimination parameter of the two-parameter logistic model is fixed at a = 1.0 for all items; only the difficulty parameter can take different values. Therefore, the Rasch model is frequently referred to as a logistic model with one parameter (Baker, 2001). The one-parameter logistic model equation is given by equation 4 below:
+                </p>
+                
+                <p>
+                    \( P(\theta) = \frac{1}{1 + e^{-1(\theta - b)}} \)
+                </p>
+                <p style="text-align: right">Eq. 4</p>
+
+                <i>b= the difficulty parameter <br>
+                    è= the ability level = θ= latent variable <br></br>
+                </i>
+
+                <i>Note. It should be noted that a discrimination parameter is used according to the equation, but is usually not shown in the formula because it always has a value of 1.0.</i>
+
+
+                <div>
+                    <b>Figure 8</b> </br>
+                    <i style="margin-top: 0.2em;">Item Characteristic Curve for One-Parameter Model</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/CurveforOneParameterModel.png" >
+
+                <b>5.2.3.	The Three-Parameter Model </b>
+
+                <p>
+                    One important reality in testing is that examinees may guess and sometimes answer items correctly by chance. Because of this, the probability of a correct response includes a small component related to guessing. The earlier two item characteristic curve (ICC) models did not account for guessing. To address this, Birnbaum (1968) revised the two-parameter logistic model by adding a third parameter, which represents the effect of guessing on the likelihood of a correct answer. Although this change removed some mathematical simplicity of the logistic function, the resulting model is still commonly referred to as the three-parameter logistic (3PL) model. In this model, the “c” parameter shows the probability of getting an item right purely by guessing, and it does not depend on ability level. This means both low- and high-ability test-takers have the same chance of guessing correctly. While the theoretical range of the guessing parameter is between 0 and 1, values above .35 are generally seen as unrealistic. Introducing the guessing parameter also changes the meaning of the difficulty parameter: unlike in earlier models where the difficulty was the point at which the probability of a correct response was 0.5, in the 3PL model the lower bound of the curve starts at c rather than zero, so the difficulty point shifts accordingly on the ability scale (Baker, 2001). The three-parameter logistic model equation is given by equation 5 below:
+                </p>
+
+                <p>
+                    \( P(\theta) = c + (1 - c)\frac{1}{1 + e^{-a(\theta - b)}} \)
+                </p>
+                <p style="text-align: right">Eq. 5</p>
+
+                <i> b= the difficulty parameter (is an item location parameter which typically ranges between -2.5 and 2.5. Items with high endorsement rates have negative location parameters and IRCs shifted to the left. Items with low endorsement rates have positive location parameters and IRCs shifted to the right) (location) <br>
+                    a= the discrimination parameter (Items with higher are more discriminating or psychometrically informative) ( slope) <br>
+                    c= guessing parameter (is used with model multile-choice aptitude test items) <br>
+                    è = an ability level <br>
+                </i>
+
+                <p>
+                    In the 3PL model, the difficulty parameter shows the point on the ability scale where the probability of a correct answer is halfway between the guessing level (c) and 1.0. This means the formula becomes: 
+                </p>
+
+                <p>
+                    \( P(\hat{e}) = c + (1 - c)(0.5) = \frac{1 + c}{2} \)
+                </p>
+                <p style="text-align: right">Eq. 6</p>
+
+                <p>
+                    The c value sets the lowest point of the curve, and difficulty now refers to where the probability is midway between this lower limit and the maximum. The discrimination parameter a still reflects the steepness of the curve at è = b, but under this model, the actual slope is a(1 – c) / 4. Although these adjustments in the definitions of b and a may seem minor, they play an important role in understanding test results. Figure 9 shows ICC for three parameter model.
+                </p>
+
+                <div>
+                    <b>Figure 9</b> </br>
+                    <i style="margin-top: 0.2em;">Item Characteristic Curve for Three-Parameter Model</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/CurveForThreeParameterModel.png" >
+
+                 <p>
+                    Item Response Theory (IRT) is a statistical framework used to understand how individuals respond to test items and how those responses relate to the ability being measured. It can handle various types of item responses, including dichotomous or polytomous scoring, and can account for one or multiple underlying skills. Within this flexible system, many models exist. This module focuses on models that assume a single ability, use dichotomous scoring, and apply logistic functions with one, two, or three parameters. Two key assumptions in IRT are that test data reflect one main ability (unidimensionality) and that item performance follows a specific mathematical function, called the item characteristic curve (ICC). Figure 10 illustrates the general form of item characteristic functions with the three-parameter logistic model (Hambleton & Jones, 1993).
+                </p>
+
+                <div>
+                    <b>Figure 10</b> </br>
+                    <i style="margin-top: 0.2em;">A Three-parameter logistic Model Item Characteristic Curve</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/ThreeParameterLogisticModelItemCharacteristicCurve.png" >
+
+
+                 <p>
+                    Item Response Theory (IRT) offers flexibility by placing both item properties and ability levels on the same measurement scale. This allows researchers to see exactly where each item gives the most accurate information and how item performance changes based on ability. In contrast, Classical Test Theory does not provide this kind of alignment (Hambleton & Jones, 1993).
+                </p>
+
+                 <p>
+                    One key component of IRT is the test characteristic function, which is the combined output of all item characteristic curves in a test. It shows the expected test score at different ability levels. If a test includes mostly difficult items, the curve shifts rightward, meaning that people with the same ability will likely score lower. This function helps explain why two tests measuring the same skill can still result in different scores for the same person. It also links the IRT ability score with the concept of true score in Classical Test Theory (Hambleton & Jones, 1993).
+                </p>
+
+                <div>
+                    <b>Figure 11</b> </br>
+                    <i style="margin-top: 0.2em;">A Three-parameter ICCs for Four Test Items</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/ThreeParameterICCsforFourTestItems.png" >
+
+
+                 <p>
+                    A common set of ICCs is presented in Figure 11.
+                </p>
+
+                 <p>
+                    Figure 12 illustrates the relationship between latent ability (θ) and relative true score in an item response theory (IRT) framework. As shown in the figure, the true score increases monotonically with ability, reflecting the expected positive relationship between a person’s underlying trait level and their performance. According to Baker (2001), this S-shaped curve demonstrates how true score estimates are asymptotically bounded between 0 and 1 and are most sensitive to changes in ability around the middle of the scale (θ ≈ 0).
+                </p>
+
+                <div>
+                    <b>Figure 12</b> </br>
+                    <i style="margin-top: 0.2em;">Relationship between Ability and True Score</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/RelationshipBetweenAbilityandTrueScore.png" >
+
+                <b>5.2.4.	Negative Discrimination</b>
+
+                 <p>
+                    Typically, test questions are designed so that individuals with higher ability have a greater chance of answering correctly. However, in some rare cases, an item may show the opposite pattern where more skilled individuals are less likely to respond correctly. This situation is referred to as negative discrimination. Such a result can happen for two reasons. First, in a two-option question, if one answer has strong positive discrimination, the other will naturally show a negative value. Second, and more critically, even the correct answer might produce a negative discrimination value, which often points to a flaw in the item such as confusing wording or content that misleads higher-ability examinees. Items with this issue require revision or removal. Normally, the discrimination value should be positive. When both correct and incorrect options share the same difficulty level but have discrimination values with opposite signs, their curves reflect that contrast in direction while keeping the same steepness (Baker, 2001). Figur 13 shows the ICC with negative discrimination under a 2PL Model.
+                </p>
+
+                <div>
+                    <b>Figure 13</b> </br>
+                    <i style="margin-top: 0.2em;">An Item Characteristic Curve with Negative Discrimination under a Two-Parameter Model</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/An Item Characteristic Curve with Negative Discrimination under a Two-Parameter Model.png" >
+
+
+                <b>5.3.	The Test Characteristic Curve</b>
+
+
+                 <p>
+                    In educational testing, the overall performance of a test is not just based on its individual items but also on how those items work together. One way to observe this is through the test characteristic curve, which shows the expected total score for each ability level. It is built by summing the probabilities of correct responses across all items for a range of ability points. This curve helps test developers see whether a test is best suited for low, average, or high-ability individuals by showing where the test provides the most information (Baker, 2001).
+                </p>
+
+                <div>
+                    <b>Figure 14</b> </br>
+                    <i style="margin-top: 0.2em;">Test Characteristic Curve Example</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/Test Characteristic Curve Example.png" >
+
+                <p>
+                    The test characteristic curve is the functional relationship between the true score and the ability scale shown in Figure 14. Given any ability level, the corresponding true score can be found via the test characteristic curve (Baker, 2001).
+                </p>
+
+                <p>
+                    The shape and slope of the curve depend on the features of the items included. For example, if a test has mostly easy items, the curve will rise sharply for lower ability levels and then level off. If item difficulty is more balanced, the curve will gradually increase across the full ability scale. Also, items with strong discrimination values make the curve steeper in specific ability regions, indicating the test is better at distinguishing between individuals with slightly different skills in those areas (Baker, 2001).
+                </p>
+
+                <p>
+                    This curve is useful for both evaluating a test and improving it. If a test is meant to measure middle-range skills but the curve shows high scores even for low-ability examinees, the test might be too easy. On the other hand, if only very high-ability individuals score well, it might be too difficult. By using the test characteristic curve, designers can fine-tune item combinations to better match their measurement goals and ensure fairness across different ability groups (Baker, 2001).
+                </p>
+
+                <b>5.4.	The Information Function</b>
+
+                <p>
+                    In test design, it is not enough to know if an item is correct or incorrect. What really matters is how much the item tells us about a person's ability. This is where the concept of information comes in. Each question gives different amounts of detail depending on the person’s skill level. Some items help more at certain levels like near their difficulty point while others may offer little insight if the person is much stronger or weaker. The function that shows how much is learned from an item at each level of ability is called the item information function (Baker, 2001).
+                </p>
+
+                <p>
+                    An item provides more useful information when it can clearly separate people with similar abilities. This usually happens when the item has a high discrimination value. When we add up the information from all items in a test, we get the test information function. This tells us how well the test measures ability across different skill levels. A good test gives the most information around the ability level it aims to assess. For example, if a test is made for average students, it should offer the most precision around that range (Baker, 2001).
+                </p>
+
+
+                <p>
+                    More information means we can estimate someone’s ability more accurately. When the information is high, the margin of error is smaller. This is why test makers use information functions they help choose items that give the clearest picture of what someone knows. By focusing on where the test gives the most insight, designers can build better assessments that are fairer and more targeted (Baker, 2001).
+                </p>
+
+                <div>
+                    <b>Figure 15</b> </br>
+                    <i style="margin-top: 0.2em;">An Information Function</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/An Information Function.png" >
+
+
+                <p>
+                    The figure 15 shows that the amount of information is at a maximum at the ability level of -1.0 and is about 3 for the ability range of -2≤ è ≤ 2. Within this range, ability is estimated with some precision. Outside this range, the amount of information decreases rapidly and the corresponding ability levels are not estimated very well. Therefore, the information function tells us how well each ability level is estimated. In other words, how well give information to an item differentiate or discriminate among individuals along the latent variable  continuum. Items with high slope give more information and where that information is located is determined by the location parameter. 
+                </p>
+
+                <p>
+                    It is important for the reader to realize that the information function does not depend on the distribution of examinees on the ability scale. In this respect, it is like the item characteristic curve and the test characteristic curve. On a general-purpose test, the ideal information function would be a horizontal line at a large value of I, and all ability levels would be estimated with the same precision. Unfortunately, such an information function is difficult to obtain. A typical information function looks like the one shown in Figure 6-1, and different ability levels are estimated with different degrees of precision. This is of great importance to both the test creator and the test consumer, because it means that the precision with which an examinee's ability is estimated depends on where the examinee's ability falls on the ability scale (Baker, 2001).
+                </p>
+
+                <li>Item Information Function (IIF)</li>
+
+
+                <p>
+                    Another central concept is the Item Information Function (IIF), which indicates how much a single item helps estimate ability. Items with high discrimination values provide more precise measurement, especially near their difficulty level (b-parameter). When multiple items are combined, their information functions form the test information function (Hambleton & Jones, 1993).
+                </p>
+
+                <div>
+                    <b>Figure 16</b> </br>
+                    <i style="margin-top: 0.2em;">Item Information Functions for Four Test Items</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/Item Information Functions for Four Test Items.png" >
+
+
+                <p>
+                    Figure 16 presents the information functions. For instance, since Item 2 has a higher difficulty level than Item 1, its information curve is located further along the ability scale. In contrast, Item 1 provides more information at lower ability levels. Additionally, Items 3 and 4 have weaker discrimination compared to Items 1 and 2, which results in their information curves being lower in height. Figure shows that higher test information at a given ability level leads to lower error in estimating ability. These functions guide test construction by showing which items add the most value (Hambleton & Jones, 1993).
+                </p>
+
+                <p>
+                    A key benefit of item response theory is that the values representing item features and examinee ability do not shift across different test-taker groups, as long as the model appropriately represents the data. This stands in contrast to classical test theory, where item behavior can change depending on the sample. IRT allows ability levels to be calculated without depending on which particular items were used, which increases the usefulness of the scores across various contexts (Hambleton & Jones, 1993).
+                </p>
+
+                <p>
+                    New models have also been developed in recent years to handle more complex data, such as polytomous responses and multidimensional abilities. These models are especially useful in performance-based assessments like writing tasks. Today, IRT models are widely used by national and local institutions for test design, score comparison, bias analysis, and reporting (Hambleton & Jones, 1993).
+                </p>
+
+                <b>Estimating an Examinee’s Ability</b>
+
+                <p>
+                    One of the main goals in testing is to estimate how skilled a person is, based on their answers. In item response theory, this is done by using the pattern of right and wrong responses to find the most likely ability level for that individual. This process often relies on likelihood functions, which compare different possible ability values to see which one makes the observed answers most probable. The point with the highest likelihood becomes the person’s estimated ability (Baker, 2001).
+                </p>
+
+                <p>
+                    The process works best when a person answers a range of items some easy, some hard, and some in between. If a test only includes very difficult or very easy items, it becomes harder to estimate the test taker's true ability accurately. Also, when a person gets all items right or all wrong, the method cannot give a precise score. These cases are called “extreme scores,” and they are a known limitation in maximum likelihood estimation (Baker, 2001).
+                </p>
+
+                <p>
+                    Traditional methods like maximum likelihood estimation may not always work well, especially when a person answers all items correctly or incorrectly. In such situations, other techniques are needed to estimate ability more effectively. Bayesian approaches offer a solution by combining test responses with assumed information about ability levels. Two widely used methods under this approach are expected a posteriori (EAP) and maximum a posteriori (MAP). These methods produce reliable results, even when standard techniques fail. They are also a good fit for adaptive tests, where ability must be recalculated after each question is answered (Embretson & Reise, 2013).
+                </p>
+
+                <p>
+                    Ultimately, estimating ability is not just about getting a single score it’s about understanding what a person likely knows or can do. Good estimation methods make test results more meaningful and fair. They also help educators and researchers make better decisions by providing ability estimates that reflect both the response data and the uncertainty around those responses (Baker, 2001).
+                </p>
+
+                <b>6.	Test Calibration</b>
+
+                <p>
+                    Before a test can be used to measure abilities properly, its items must be aligned on the same measurement scale. This step, often called calibration, helps us understand how each item behaves, no matter who takes the test. It is a way to make sure that an item labeled as “hard” or “easy” really means the same thing across different test versions or groups. Instead of focusing on scores, calibration looks at patterns of responses to figure out how questions perform (Baker, 2001).
+                </p>
+
+                <p>
+                    To do this, we need to fix a starting point on the scale otherwise, the positions of items and test-takers can float without clear meaning. One common solution is to set a known average level, such as giving the average ability a value of zero. From this fixed point, all other estimates can be placed consistently. This process allows new items to be added later, as long as they are linked to the original calibrated set (Baker, 2001).
+                </p>
+
+                <p>
+                    Having items placed on a shared scale is essential for comparing test results over time or across forms. For example, if two students take different versions of a test, calibration makes it possible to say whether their scores reflect similar ability. This is especially useful when tests are used for selection or progress tracking. Through calibration, we build a stronger foundation for fair and accurate testing (Baker, 2001).
+                </p>
+
+                <b>7.	Specifying the Characteristics of a Test</b>
+
+                <p>
+                    Test consturction begins by deciding what the test should measure and for whom it is intended. Items are chosen based on how well they match the purpose of the assessment. A pre-calibrated item pool is often used to select questions with known properties, which helps in building tests that function reliably across different levels of ability (Baker, 2001).
+                </p>
+
+                <p>
+                    Item selection focuses on including questions that provide accurate measurement at specific points along the ability scale. Items are picked not only for their difficulty but also for how much information they offer. This approach helps produce tests that are efficient and suited to the intended examinee group without unnecessary length (Baker, 2001).
+                </p>
+
+                <p>
+                    Test quality can be predicted before administration by analyzing the combination of items. If the test appears too easy, too hard, or imbalanced, changes can be made. Adjustments allow developers to improve measurement precision and fairness. The final test can then serve its purpose with greater accuracy and confidence (Baker, 2001).
+                </p>
+
+                <p>
+                    Traditional IRT analyses have relied on commercial software like BILOG-MG, flexMIRT, IRTPRO, Mplus, and PARSCALE. However, these tools can be challenging for researchers due to their complexity, lack of accessibility, and high cost. In response, the development of IRT-related R packages has increased, with approximately 45 packages created in the past ten years (Choi & Asilkalkan, 2019).
+                </p>
+
+                <p>
+                    Choi & Asilkalkan’s study (2019) aims to introduce these R packages and outline the types of measurement analyses they support. It serves as a practical guide for researchers seeking to apply IRT, helping them identify suitable analysis types and select the most appropriate R tools.
+                </p>
+
+                <p>
+                    IRT-related R packages offer a wide range of tools for analyzing both dichotomous and polytomous item response models. These packages support parameter estimation methods (e.g., MLE, pseudolikelihood), model fit evaluation, graphical output, information functions (for items and tests), and even simulation studies (Choi & Asilkalkan, 2019).
+                </p>
+
+                <p>
+                    The plRasch package, for instance, extends Rasch model applications by allowing pseudolikelihood and maximum likelihood estimation for polytomous items and multiple latent traits (Choi & Asilkalkan, 2019).
+                </p>
+
+                <p>
+                   Two key statistical indicators in item analysis are item difficulty and item discrimination. Difficulty refers to the point on the ability scale where the item provides the most information, typically where the probability of a correct or endorsed response is 0.50. Discrimination measures how well the item separates individuals with higher versus lower levels of the latent trait. According to Baker (2001), high discrimination values are desirable because they show the item is sensitive to individual differences across ability levels. 
+                </p>
+
+                <p>
+                    Classical Test Theory (CTT) and Item Response Theory (IRT) offer different approaches to item analysis. CTT uses indices such as item-total correlations and item means, which depend on the specific sample. In contrast, IRT provides sample-independent parameters (a for discrimination and b for difficulty), making it more flexible and informative (Embretson & Reise, 2000). IRT also allows for item-level precision and can support decisions about test design, such as adaptive testing (van der Linden & Glas, 2000).
+                </p>
+
+                <p>
+                    Lastly, Penfield (2013) highlights that statistical results should be considered along with content relevance. Even if an item performs poorly in statistical terms, it may still represent an essential part of the construct domain. Therefore, item analysis is both a quantitative and qualitative process. Test developers must combine statistical evidence with expert judgment to create fair, accurate, and meaningful assessments.
+                </p>
+
+                <b>Assessment Development Proces Using Item Analysis </b>
+
+                <p>
+                    The concepts of item discrimination and item difficulty play a key role in developing assessments that yield accurate and dependable scores. When items do not effectively separate individuals or fail to align with the trait spectrum being assessed, the overall quality of the test may decline. For this reason, conducting item analysis is a critical part of test construction, particularly following the pilot testing phase. It helps identify which items perform well and which may need to be revised, removed, or replaced. However, perfect item properties are rarely achievable, so decisions must balance psychometric quality with practical limitations such as time, resources, and item availability (Penfield, 2013).
+                </p>
+
+                <p>
+                    Beyond statistical considerations, item removal must also take into account the content areas the assessment intends to measure. If poorly performing items represent key aspects of the trait, removing them may reduce the test’s content coverage. In such cases, developers may choose to keep those items or create new ones to fill the gap. Item analysis is not only useful during development but also after large-scale test administrations to ensure items function as intended (Penfield, 2013). Additionally, it contributes to gathering internal structure evidence for validity by showing whether items work together to measure the same trait, supporting the test’s overall interpretability (AERA-American Educational Research Association, APA-American Psychological Association, & NCME-National Council on Measurement in Education, 1999; Loevinger, 1957).
+                </p>
+
+                <b>Sample Size Requirements</b>
+
+                <p>
+                    Selecting a suitable sample size is important for obtaining reliable item statistics when planning pilot studies and item analysis. Although there is no exact rule, some general suggestions exist. A sample of around 200 participants usually gives stable estimates for both item difficulty (item mean) and discrimination (item–total correlation). A sample of 100 is often seen as the minimum acceptable size. While it may be enough for evaluating item difficulty, it may not offer consistent results for item discrimination. If the sample is below 100—especially in the range of 50 to 70—caution is needed. In such cases, the results should only be used to detect general patterns or highlight items with extreme values (Penfield ,2013).
+                </p>
+
+                <b>Assumptions for the Item Response Theory</b>
+
+                <b>1.	Monotonicity</b>
+
+                <p>
+                    When evaluating item discrimination and difficulty, it is assumed that item scores increase in step with the level of the trait being measured. This means that higher scores should reflect higher trait levels. For instance, in an item scored from 1 to 3, people scoring 3 are expected to show more of the trait than those scoring 2, and those scoring 2 more than those scoring 1. However, some items may be coded in a reverse manner for example, lower scores might indicate higher levels of a trait, such as in items assessing social anxiety through frequency of social activity. In such cases, the scoring must be reversed before analysis to ensure that higher scores align with higher trait levels. If this is not done, estimates of discrimination and difficulty may become distorted and lead to unreliable or invalid conclusions (Penfield, 2013).
+                </p>
+
+                <b>2.	Dimentionality</b>
+
+                <p>
+                    Observed variables (like test items) are believed to be related because they reflect one or more underlying constructs, also known as latent dimensions. Dimensionality refers to the structure of these latent factors. When only one dominant latent factor is assumed, it is called unidimensionality (Slocum-Gori & Zumbo, 2011).
+                </p>
+
+                <p>
+                    To examine dimensionality, researchers often use statistical methods such as factor analysis (FA) or multidimensional scaling. These methods help determine the number of underlying dimensions and explain how observed items are related (Slocum-Gori & Zumbo, 2011).
+                </p>
+
+                <p>
+                    It is generally assumed that if items are correlated, they likely measure the same hidden construct. These latent variables are thought to exist before and influence the observed variables. Despite the usefulness of factor analysis in examining dimensionality, there is still no single accepted index that definitively confirms whether a set of items is truly unidimensional (Slocum-Gori & Zumbo, 2011).
+                </p>
+
+                <p>
+                    Psycho-educational and health assessments often strive to achieve strict unidimensionality, where all items measure a single latent trait without influence from other factors. However, many scales instead satisfy the more flexible condition of essential unidimensionality, in which a dominant factor is accompanied by minor secondary dimensions that do not significantly distort the overall interpretation of the total score (Slocum-Gori et al., 2009; Humphreys, 1952, 1962). In the present study, these two forms of unidimensionality were investigated by systematically varying key parameters: communalities, which reflect how much of an item's variance is explained by common factors; the proportion of shared variance on a secondary factor, indicating the strength of influence from minor dimensions; and the number of items with non-zero loadings on multiple factors, which can suggest the presence of multidimensionality if too many items are influenced by more than one latent trait (Slocum-Gori & Zumbo, 2011).
+                </p>
+
+                <b>3.	Local Dependence</b>
+
+                <b>Dichotomous or polytomous items</b>
+
+                <p>
+                    Dichotomous items have only two response options (pass-fail, yes-no, correct-incorrect). Polytomous items have more than two  response options (5-likert type) (Reise et al., 2013).
+                </p>
+
+                <p>
+                    Graded Response Model (GRM) is one of the numerous polytomous IRT models. Figure 17 presents the category response curves for Item 5 and Item 6 under a graded response model. Both items display the probability of selecting each response category across different levels of the latent trait (θ). Item 5 shows relatively high discrimination, as indicated by the steeper and more distinct curves that peak sharply at different θ values. This suggests that Item 5 is more effective in distinguishing between individuals with varying levels of ability. In contrast, Item 6 exhibits flatter and more overlapping curves, indicating lower discrimination and less sensitivity to differences in the latent trait. These patterns are consistent with the interpretation that steeper category response curves reflect higher item discrimination in IRT (Baker, 2001).
+                </p>
+
+                <div>
+                    <b>Figure 17</b> </br>
+                    <i style="margin-top: 0.2em;">Probability of responding</i>   
+                </div>
+                <img src="/images/blogs/ctt_irt/Probability of responding.png" >
+
+                <p>
+                    Item 5 with relatively high discrimination and Item 6 with relativly low discrimination.
+                </p>
+
+                <img src="/images/blogs/ctt_irt/Probability of respondingItem6.png" >
+      
+                <b>Comparison of Classical Test Theory and Item Response Theory and Their Applications to Test Construction</b>
+
+                <p>
+                    Forty years ago, Dr. Frederic Lord made the important observation that examinees' observed scores and their true scores are not synonymous with their ability scores. Ability scores are more basic as they are independent of tests, while observed scores and true scores depend on tests (Lord, 1953). Examinees take lower true scores from difficult tests and higher scores from easy tests, whereas examinees’ ability scores stay constant over any test which across all tests developed to evaluate the construct (Hambleton & Jones, 1993).
+                </p>
+
+                <p>
+                    At the time of a test, a person’s ability is considered stable and tied to the skill or trait being measured. This ability score should not change based on which specific test items are used, even if the items vary in form or difficulty. This idea becomes especially important in adaptive testing, where different examinees may answer different sets of questions. Ability scores that remain constant across item sets allow for fairer comparisons between individuals. Early researchers in measurement theory focused on creating models that support this kind of consistency (Hambleton & Jones, 1993).
+                </p>
+
+                <p>
+                    Many traditional testing methods rely on statistics that are affected by the specific group of test-takers, such as item difficulty and discrimination. These values may change if the sample changes, which limits how generalizable the test results are. To address this problem, item response theory was developed. It allows both item and person parameters to be placed on a common scale. This shift began with the work of researchers like Lord, Rasch, and Birnbaum, who developed models that make test results more stable and interpretable across different samples and situations (Hambleton & Jones, 1993).
+                </p>
+
+                <p>
+                    A strong measurement model also supports better test construction and use. It helps define how test items relate to ability levels and how errors behave across the test. For example, in computer-based adaptive testing, it is important to select items that give the most accurate information about the test-taker’s ability at each point. Models that align item difficulty and person ability on the same scale make this process possible. These models improve the overall quality and fairness of tests by making ability estimates more meaningful and less dependent on test form (Hambleton & Jones, 1993).
+                </p>
+
+                <p>
+                    While Classical Test Theory (CTT) is based on the idea that observed scores are directly and linearly related to true scores, Item Response Theory (IRT) takes a probabilistic approach and models a nonlinear connection between a person’s underlying ability and their chance of answering correctly (Hambleton & Jones, 1993).
+                </p>
+
+                <p>
+                    CTT item discrimination indices make estimates based on either the correlation between item and total score or group performance differences while the IRT a index is calculated using the slope of the ICC (Arikan & Aybek, 2022).
+                </p>
+
+                <div style="margin-bottom: 1em;">
+                    <b>Table 3</b> </br>
+                    <i style="margin-top: 0.2em;" > Main Differences Between Classical and Item Response Theories and Models</i>   
+                </div>
+
+                <table border="1" cellpadding="8" cellspacing="0" style="margin-bottom: 2em;">
+                <thead>
+                    <tr>
+                    <th>Area</th>
+                    <th>Classical Test Theory</th>
+                    <th>Item Response Theory</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Model</td>
+                    <td>Linear</td>
+                    <td>Nonlinear</td>
+                    </tr>
+                    <tr>
+                    <td>Level</td>
+                    <td>Test</td>
+                    <td>Item</td>
+                    </tr>
+                    <tr>
+                    <td>Assumptions</td>
+                    <td>Weak (i.e., easy to meet with test data)</td>
+                    <td>Strong (i.e., more difficult to meet with test data)</td>
+                    </tr>
+                    <tr>
+                    <td>Item-ability relationship</td>
+                    <td>Not specified</td>
+                    <td>Item characteristic functions</td>
+                    </tr>
+                    <tr>
+                    <td>Ability</td>
+                    <td>
+                        Test scores or estimated true scores are reported on the test-score scale
+                        (or a transformed test-score scale)
+                    </td>
+                    <td>
+                        Ability scores are reported on the scale −∞ to +∞ (or a transformed scale)
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Invariance of item and person statistics</td>
+                    <td>No—item and person parameters are sample dependent</td>
+                    <td>Yes—item and person parameters are sample independent, if model fits the test data</td>
+                    </tr>
+                    <tr>
+                    <td>Item statistics</td>
+                    <td>p, r</td>
+                    <td>b, a, and c (for the three-parameter model) plus corresponding item information functions</td>
+                    </tr>
+                    <tr>
+                    <td>Sample size (for item parameter estimation)</td>
+                    <td>200 to 500 (in general)</td>
+                    <td>Depends on the IRT model but larger samples, i.e., over 500, in general, are needed</td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <b>Conclusion</b>
+                
+                <p>
+                    As a final note, this IRT study is quite comprehensive, as I consulted various sources while preparing this section. With this post, I am concluding my last blog entry for the semester. I hope you enjoy reading it without getting bored. After a semester full of valuable experiences and learning outcomes, we are saying goodbye to this academic year. Who knows, we might continue where we left off next year—perhaps this is just a season finale. :)
+                </p>
+
+                <p>
+                    Measure well, evaluate wisely, and stay kind, curious, and loving. :)
+                </p>
+
+                <br>
+                <br>
+                <br>
+
+                <b>References</b>
+                <p class="citation">Akaike, H. (1973). Information theory and an extension of the maximum likelihood principle. In B. N. Petrov & F. Csaki (Eds.), Second international symposium on information theory, 267-281. Budapest, Hungary: Akademiai Kiado.</p>
+                <p class="citation">American Educational Research Association, American Psychological Association, & National Council on Measurement in Education, (Eds.). (2014).<i>Standards for educational and psychological testing</i>. American Educational Research Association.</p>
+                <p class="citation">Anastasi, A., & Urbina, S. (1997). <i>Psychological testing</i>. Prentice Hall/Pearson Education.</p>
+                <p class="citation">Arikan, S., & Aybek, E. C. (2022). A Special Case of Brennan's Index for Tests That Aim to Select a Limited Number of Students: A Monte Carlo Simulation Study. <i>Educational Measurement: Issues and Practice</i>, 41(4), 35-49.</p>
+                <p class="citation">Baker, F. B. (2001). <i>The basics of item response theory (2nd ed.)</i>. ERIC Clearinghouse on Assessment and Evaluation. https://eric.ed.gov/?id=ED458219.</p>
+                <p class="citation">Bean, G. J., & Bowen, N. K. (2021). Item response theory and confirmatory factor analysis: Complementary approaches for scale development. Journal of Evidence-Based Social Work, 18(6), 597-618.</p>
+                <p class="citation">Bolt, D. M., Cohen, A. S., & Wollack, J. A. (2001). A mixture model for multiple choice data. Journal of Educational and Behavioral Statistics, 26, 381-409.</p>
+                <p class="citation">Cambridge English Language Assessment. (2015, February). <i>Research Notes (Issue 59)</i>. https://www.cambridgeenglish.org/research-notes/.</p>
+                <p class="citation">Choi, Y.J. & Asilkalkan,A (2019) R Packages for Item Response Theory Analysis: Descriptions and Features, <i>Measurement: Interdisciplinary Research and Perspectives</i>, 17:3, 168-175, DOI: 10.1080/15366367.2019.1586404</p>
+                <p class="citation">Crocker, L., & Algina, J. (1986). <i>Introduction to classical and modern test theory</i>. Fort Worth, TX: Harcourt Brace Jovanovich.</p>
+                <p class="citation">Crocker, L., & Algina, J. (2006). <i>Introduction to classical and modern test theory</i>. Cengage Learning.</p>
+                <p class="citation">Edelen, M. O., & Reeve, B. B. (2007). Applying item response theory (IRT) modeling to questionnaire development, evaluation, and refinement. <i>Quality of life research</i>, 16, 5-18.</p>
+                <p class="citation">Embretson, S. E., & Reise, S. P. (2000). <i>Item response theory for psychologists</i>. Lawrence Erlbaum Associates.</p>    
+                <p class="citation">Embretson, S. E., & Reise, S. P. (2013). Item response theory for psychologists. Psychology Press.</p>
+                <p class="citation">Fulcher, G., & Davidson, F. (2007). <i>Language testing and assessment</i>. London and New York: Routledge.</p>
+                <p class="citation">Geisser, S., & Eddy, W. F. (1979). A predictive approach to model selection. Journal of the American Statistical Association, 74, 153-160.</p>
+                <p class="citation">Gelfand, A. E., & Dey, D. K. (1994). Bayesian model choice: Asymptotics and exact calculations. Journal of the Royal Statistical Society B, 56, 501-514.</p>
+                <p class="citation">Hambleton, R. K., & Swaminathan, H. (1985). Item response theory: Principles and applications. <i>New York, NY: Springer Science+Business Media.</i></p>
+                <p class="citation">Hambleton, R. K., Swaminathan, H., & Rogers, H. J. (1991). Fundamentals of item response theory. <i>Newbury Park, CA: Sage.</i></p>
+                <p class="citation">Hambleton, R. K., & Jones, R. W. (1993). Comparison of classical test theory and item response theory and their applications to test development. Educational measurement: issues and practice, 12(3), 38-47.</p>
+                <p class="citation">Humphreys, L. G. (1952). Individual differences. <i>Annual Review of Psychology</i>, 3, 131-150.</p>
+                <p class="citation">Humphreys, L. G. (1962). The organization of human abilities. <i>American Psychologist</i>, 17, 47</p>
+                <p class="citation">Kang, T., Cohen, A. S., & Sung, H.-J. (2009). Model selection indices for polytomous items. Applied Psychological Measurement, 33, 499-518.</p>
+                <p class="citation">Loevinger, J. (1957). Objective tests as instruments of psychological theory. <i>Psychological Reports</i>, 3(Suppl. 9), 635–694.</p>
+                <p class="citation">Lord, F. M. (1953). The relation of test score to the trait underlying the test. <i>Educational and psychological measurement</i>, 13(4), 517-549.</p>
+                <p class="citation">Li, F., Cohen, A. S., Kim, S. H., & Cho, S. J. (2009). Model selection methods for mixture dichotomous IRT models. <i>Applied Psychological Measurement</i>, 33(5), 353-373.</p>
+                <p class="citation">Messick, S. (1988). The once and future issues of validity: Assessing the meaning and consequences of measurement. In H. Wainer & H. I. Braun (Eds.), <i>Test validity</i> (pp. 33–45). Lawrence Erlbaum.</p>
+                <p class="citation">Penfield, R. D. (2013). Item analysis. In K. F. Geisinger (Ed.), <i>APA handbook of testing and assessment in psychology: Vol. 1. Test theory and testing and assessment in industrial and organizational psychology</i> (pp. 189–203). American Psychological Association. https://doi.org/10.1037/14047-011</p>
+                <p class="citation">Reise, S. P., Moore, T. M., & Haviland, M. G. (2013). Applying unidimensional item response theory models to psychological data.</p>
+                <p class="citation">Schwarz, G. (1978). Estimating the dimension of a model. Annals of Statistics, 6, 461-464.</p>
+                <p class="citation">Slocum-Gori, S. L., Zumbo, B. D., Michalos, A. C., & Diener, E. (2009). A note on the dimensionality of quality of life scales: An illustration with the Satisfaction with Life Scale (SWLS). <i>Social Indicators Research</i>, 92, 489-496.</p>
+                <p class="citation">Slocum-Gori, S. L., & Zumbo, B. D. (2011). Assessing the unidimensionality of psychological scales: Using multiple criteria from factor analysis. <i>Social Indicators Research</i>, 102, 443-461.</p>
+                <p class="citation">Spiegelhalter, D. J., Best, N. G., Carlin, B. P., & van der Linde, A. (2002). Bayesian measures of model complexity and fit. <i>Journal of the Royal Statistical Society B</i>, 64, 583-616.</p>
+                <p class="citation">Van der Linden, W. J., & Glas, C. A. W. (2000). <i>Computerized adaptive testing: Theory and practice</i>. Springer.</p>
+                <p class="citation">Whittaker, T. A., Chang, W., & Dodd, B. G. (2012). The performance of IRT model selection methods with mixed-format tests. <i>Applied Psychological Measurement</i>, 36(3), 159-180.</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/Headroom.js"></script>
+    <script src="/js/jQuery.headroom.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/theme-and-loader.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
